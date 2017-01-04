@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Class Name="eu.skillpro.see.CS.SeeStateMachine">
+    <Position X="3.25" Y="1.25" Width="6" />
+    <Members>
+      <Method Name="createMappingDictionary" Hidden="true" />
+      <Method Name="onChangingMode" Hidden="true" />
+      <Method Name="onChangingState" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <NestedTypes>
+      <Delegate Name="eu.skillpro.see.CS.SeeStateMachine.StateChangedDelegate" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>src\SeeStateMachine.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+      <Delegate Name="eu.skillpro.see.CS.SeeStateMachine.ModeChangedDelegate" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>src\SeeStateMachine.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAASAAAABCAAoCBMAQAQCAgAgAAABCQ=</HashCode>
+      <FileName>src\SeeStateMachine.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="eu.skillpro.see.CS.SeeModes">
+    <Position X="10.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAQAAAAAQAAAAAAAAAAAAAAAAAIAAAAAAAAAAA=</HashCode>
+      <FileName>src\SkillProDefinitions.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="eu.skillpro.see.CS.SeeResourceMode">
+    <Position X="10.25" Y="2.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgJAAAAAAQAAAAAAIAAAAAAAAAAEAgAAAAAAAAA=</HashCode>
+      <FileName>src\SkillProDefinitions.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="eu.skillpro.see.CS.SeeResourceModeTransition">
+    <Position X="0.5" Y="1.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>YAAAAACAAAAQAIAEAAAAAAEAABBBIAAAgCAAAIAAAAA=</HashCode>
+      <FileName>src\SkillProDefinitions.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Tahoma" Size="8.25" />
+</ClassDiagram>

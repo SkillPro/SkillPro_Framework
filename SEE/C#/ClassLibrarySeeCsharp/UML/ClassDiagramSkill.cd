@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Class Name="eu.skillpro.see.CS.Skill">
+    <Position X="1.5" Y="0.5" Width="6" />
+    <Members>
+      <Method Name="_PauseToken_SkillPaused" Hidden="true" />
+      <Method Name="_PauseToken_SkillUnPaused" Hidden="true" />
+      <Method Name="OnAsyncExeFinished" Hidden="true" />
+      <Method Name="OnSkillPaused" Hidden="true" />
+      <Method Name="OnSkillUnPaused" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <NestedTypes>
+      <Delegate Name="eu.skillpro.see.CS.Skill.MethodToExecute">
+        <TypeIdentifier>
+          <NewMemberFileName>src\Skill.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+      <Delegate Name="eu.skillpro.see.CS.Skill.AsyncExecutionFinishedDelegate" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>src\Skill.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AgBABAAADABCIAQAADAAIAGARIAAACBAAggAACAQAMA=</HashCode>
+      <FileName>src\Skill.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Tahoma" Size="8.25" />
+</ClassDiagram>

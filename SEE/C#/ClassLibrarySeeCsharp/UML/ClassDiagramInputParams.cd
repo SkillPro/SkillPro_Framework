@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Class Name="eu.skillpro.see.CS.InputParams">
+    <Position X="3.25" Y="1.25" Width="5" />
+    <Members>
+      <Field Name="_CreationDate" Hidden="true" />
+      <Field Name="_IsProductive" Hidden="true" />
+      <Field Name="_PreviousReturnCode" Hidden="true" />
+      <Field Name="_RemainingDuration" Hidden="true" />
+      <Method Name="OnCancelling" Hidden="true" />
+      <Method Name="OnPausing" Hidden="true" />
+      <Method Name="OnProductiveValueChanged" Hidden="true" />
+      <Method Name="OnRemainingDurationValueChanged" Hidden="true" />
+      <Method Name="OnResuming" Hidden="true" />
+      <Method Name="PauseIfRequired" Hidden="true" />
+    </Members>
+    <NestedTypes>
+      <Delegate Name="eu.skillpro.see.CS.InputParams.ProductiveValueChangedDelegate" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>src\Skill.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+      <Delegate Name="eu.skillpro.see.CS.InputParams.RemainingDurationValueChangedDelegate" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>src\Skill.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>QEBIQAQBAAQARAAEAAAAQQAgQAEQAAAAAAAwIIgAhAQ=</HashCode>
+      <FileName>src\Skill.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Tahoma" Size="8.25" />
+</ClassDiagram>

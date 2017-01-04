@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2E41E04A-3F03-4D25-8E0E-A5576CF86B91}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ClassLibrarySeeCsharp</RootNamespace>
+    <AssemblyName>ClassLibrarySeeCsharp</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UnifiedAutomation.UaBase">
+      <HintPath>..\ClassLibraryCsharpOPCUA\lib\UnifiedAutomation.UaBase.dll</HintPath>
+    </Reference>
+    <Reference Include="UnifiedAutomation.UaClient">
+      <HintPath>..\ClassLibraryCsharpOPCUA\lib\UnifiedAutomation.UaClient.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="src\AML\AMLDocument.cs" />
+    <Compile Include="src\AML\AMLExecutableSKill.cs" />
+    <Compile Include="src\AML\AMLResource.cs" />
+    <Compile Include="src\AML\AMLSerializer.cs" />
+    <Compile Include="src\AML\AMLSkillExecutionEngine.cs" />
+    <Compile Include="src\AML\CommType.cs" />
+    <Compile Include="src\AML\Condition.cs" />
+    <Compile Include="src\AML\Execution.cs" />
+    <Compile Include="src\AmsService\AmsServiceConfiguration.cs" />
+    <Compile Include="src\AmsService\AmsServiceWebClient.cs" />
+    <Compile Include="src\AmsService\AnswerRetrieveExecutableSkill.cs" />
+    <Compile Include="src\AmsService\AnswerStatusMessage.cs" />
+    <Compile Include="src\BiDictionary.cs" />
+    <Compile Include="src\ExecutableSkill.cs" />
+    <Compile Include="src\OpcUaConfiguration.cs" />
+    <Compile Include="src\See.cs" />
+    <Compile Include="src\SeeStateMachine.cs" />
+    <Compile Include="src\Skill.cs" />
+    <Compile Include="src\SkillBasedResourceController.cs" />
+    <Compile Include="src\SkillProDefinitions.cs" />
+    <Compile Include="src\SkillProException.cs" />
+    <Compile Include="src\SkillProUtils.cs" />
+    <Compile Include="src\SkillRepository.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ClassLibraryCsharpOPCUA\ClassLibraryCsharpOPCUA.csproj">
+      <Project>{0491c83e-df6f-48c8-ba7b-43e233e9e7ad}</Project>
+      <Name>ClassLibraryCsharpOPCUA</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="UML\ClassDiagramAml.cd" />
+    <None Include="UML\ClassDiagramAmsService.cd" />
+    <None Include="UML\ClassDiagramInputParams.cd" />
+    <None Include="UML\ClassDiagramOutputParams.cd" />
+    <None Include="UML\ClassDiagramSee.cd" />
+    <None Include="UML\ClassDiagramSeeSimplified.cd" />
+    <None Include="UML\ClassDiagramSkill.cd" />
+    <None Include="UML\ClassDiagramStateMachine.cd" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

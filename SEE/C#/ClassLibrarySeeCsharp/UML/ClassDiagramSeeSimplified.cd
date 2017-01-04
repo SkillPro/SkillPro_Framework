@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Class Name="eu.skillpro.see.CS.See">
+    <Position X="4.5" Y="2" Width="7" />
+    <Members>
+      <Method Name="~See" Hidden="true" />
+      <Method Name="CheckGivenSkillIsPotentiallyExecutable" Hidden="true" />
+      <Method Name="ClearQueuedSkill" Hidden="true" />
+      <Method Name="ConstructorSeeFromAmlSee" Hidden="true" />
+      <Method Name="CreateSeeOnServer" Hidden="true" />
+      <Property Name="CurrentRemainingDuration" Hidden="true" />
+      <Property Name="CurrentSkillIsProductive" Hidden="true" />
+      <Method Name="Dispose" Hidden="true" />
+      <Method Name="ExecuteSbrcCurSkillAsync" Hidden="true" />
+      <Method Name="GetOutputsOfExecutedSkill_private" Hidden="true" />
+      <Method Name="inputForSkill_RemainingDurationValueChanged" Hidden="true" />
+      <Method Name="LogStringEvent" Hidden="true" />
+      <Method Name="LogStringException" Hidden="true" />
+      <Method Name="LogStringTODO" Hidden="true" />
+      <Method Name="MainConstructorSee" Hidden="true" />
+      <Method Name="OnCallInvokedByServer" Hidden="true" />
+      <Method Name="OnConnectionStatusUpdate" Hidden="true" />
+      <Method Name="OnLastExceptionValueChanged" Hidden="true" />
+      <Method Name="OpcUaSetCallVariable" Hidden="true" />
+      <Method Name="OpcUaSetConfigurationCondition" Hidden="true" />
+      <Method Name="OpcUaSetProductCondition" Hidden="true" />
+      <Method Name="OpcUaSetProductive" Hidden="true" />
+      <Method Name="OpcUaSetRemainingDuration" Hidden="true" />
+      <Method Name="OpcUaSetResourceMode" Hidden="true" />
+      <Method Name="OpcUaSetSkillId" Hidden="true" />
+      <Method Name="OpcUaUpdateComplete" Hidden="true" />
+      <Method Name="OpcUaWriteCallExceptionOnTheServer" Hidden="true" />
+      <Method Name="ParametersForTheSkill_ProductiveValueChanged" Hidden="true" />
+      <Method Name="PauseCurrentSkill" Hidden="true" />
+      <Method Name="ProvideInputDataForSkillExecution_private" Hidden="true" />
+      <Method Name="ProvideSkillToExecute_private" Hidden="true" />
+      <Method Name="ResumeSkillExecution" Hidden="true" />
+      <Method Name="See" Hidden="true" />
+      <Method Name="SetLastException" Hidden="true" />
+      <Method Name="SetTheFirstFieldsOnSeeServer" Hidden="true" />
+      <Method Name="SkillToExecute_AsyncExecutionFinished" Hidden="true" />
+      <Method Name="SkillToExecute_SkillPaused" Hidden="true" />
+      <Method Name="SleepingInLoops" Hidden="true" />
+      <Method Name="SleepWhileQueueing" Hidden="true" />
+      <Method Name="StringIdentifierOfSeeFieldOrMethod" Hidden="true" />
+      <Method Name="SubscribeToCallNodeNotifications" Hidden="true" />
+      <Method Name="ToString" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Private" Collapsed="true" />
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <NestedTypes>
+      <Delegate Name="eu.skillpro.see.CS.See.NewExceptionOccuredDelegate" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>src\See.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>VVxxgIAkADHMxjClAmQCIQI4AhAhYECECJFQgAn5KAQ=</HashCode>
+      <FileName>src\See.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Font Name="Tahoma" Size="8.25" />
+</ClassDiagram>

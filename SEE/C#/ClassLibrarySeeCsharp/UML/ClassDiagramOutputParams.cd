@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Class Name="eu.skillpro.see.CS.OutputParams">
+    <Position X="1.75" Y="1.25" Width="8.25" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAAAAoAAAAAAQAgAAAAAAAAQAAABAAAggAAAAAA=</HashCode>
+      <FileName>src\Skill.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Tahoma" Size="8.25" />
+</ClassDiagram>

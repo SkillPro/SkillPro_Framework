@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="eu.skillpro.see.CS.See">
+    <Position X="5.75" Y="1.25" Width="4.25" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Delegate Name="eu.skillpro.see.CS.See.NewExceptionOccuredDelegate" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>src\See.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>VVxxgIAkADGMxjClAiQCIQI4AhAhYECECJFQgAn5KAQ=</HashCode>
+      <FileName>src\See.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Font Name="Tahoma" Size="8.25" />
+</ClassDiagram>
