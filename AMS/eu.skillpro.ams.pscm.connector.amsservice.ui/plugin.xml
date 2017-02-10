@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.ui.commands">
+      <command
+            defaultHandler="eu.skillpro.ams.pscm.connector.amsservice.ui.GetConfigurationHandler"
+            id="eu.skillpro.ams.pscm.connector.amsservice.ui.GetConfigurationHandler"
+            name="Get Configuration">
+      </command>
+      <command
+            defaultHandler="eu.skillpro.ams.pscm.connector.amsservice.ui.CheckConnectionHandler"
+            id="eu.skillpro.ams.pscm.connector.amsservice.ui.CheckConnectionHandler"
+            name="Check Connection">
+      </command>
+      <command
+            defaultHandler="eu.skillpro.ams.pscm.connector.amsservice.ui.SaveConfigurationHandler"
+            id="eu.skillpro.ams.pscm.connector.amsservice.ui.SaveConfigurationHandler"
+            name="Save Configuration">
+      </command>
+      <command
+            defaultHandler="eu.skillpro.ams.pscm.connector.amsservice.ui.ConfigureConnection"
+            id="eu.skillpro.ams.pscm.connector.amsservice.ui.ConfigureConnection"
+            name="Configure AMS-Service Connector">
+      </command>
+      <command
+            defaultHandler="eu.skillpro.ams.pscm.connector.amsservice.ui.RetrieveSEEHandler"
+            id="eu.skillpro.ams.pscm.connector.amsservice.ui.RetrieveSEEHandler"
+            name="Retrieve SEEs">
+      </command>
+      <command
+            defaultHandler="eu.skillpro.ams.pscm.connector.amsservice.ui.UpdateRegisteredSEEsHandler"
+            id="eu.skillpro.ams.pscm.connector.amsservice.ui.UpdateRegisteredSEEsHandler"
+            name="Update Registered SEEs">
+      </command>
+      <command
+            defaultHandler="eu.skillpro.ams.pscm.connector.amsservice.ui.AutomaticOrdersProcessingHandler"
+            id="eu.skillpro.ams.pscm.connector.amsservice.ui.AutomaticOrdersProcessingHandler"
+            name="Retrieve and Send Orders Automatically">
+      </command>
+      <command
+            defaultHandler="dummy.sendscenario.UploadScenarioToAMSHandler"
+            id="dummy.sendscenario.UploadScenarioToAMSHandler"
+            name="Upload Scenario">
+      </command>
+      <command
+            defaultHandler="eu.skillpro.ams.pscm.connector.amsservice.ui.WipeResourceExecutableSkillsHandler"
+            id="eu.skillpro.ams.pscm.connector.amsservice.ui.WipeResourceExecutableSkillsHandler"
+            name="Wipe stored resource executable skills">
+      </command>
+   </extension>
+   <extension
+         point="org.eclipse.ui.menus">
+      <menuContribution
+            allPopups="false"
+            locationURI="menu:org.eclipse.ui.main.menu?after=skillpro.menu.synchronize">
+         <menu
+               id="skillpro.menu.ams.service"
+               label="AMS Service">
+            <command
+                  commandId="eu.skillpro.ams.pscm.connector.amsservice.ui.SaveConfigurationHandler"
+                  label="Push PSC to server"
+                  style="push"
+                  tooltip="Push the production system configuration (PSC) to the AMS server ">
+            </command>
+            <command
+                  commandId="eu.skillpro.ams.pscm.connector.amsservice.ui.GetConfigurationHandler"
+                  label="Get PSC from server"
+                  style="push">
+            </command>
+            <separator
+                  name="eu.skillpro.ams.pscm.connector.amsservice.ui.separator1"
+                  visible="true">
+            </separator>
+            <command
+                  commandId="eu.skillpro.ams.pscm.connector.amsservice.ui.RetrieveSEEHandler"
+                  label="Retrieve SEEs"
+                  style="push">
+            </command>
+            <command
+                  commandId="eu.skillpro.ams.pscm.connector.amsservice.ui.UpdateRegisteredSEEsHandler"
+                  label="Update Registered SEEs"
+                  style="push">
+            </command>
+            <separator
+                  name="eu.skillpro.ams.pscm.connector.amsservice.ui.separator2"
+                  visible="true">
+            </separator>
+            <command
+                  commandId="eu.skillpro.ams.pscm.connector.amsservice.ui.ConfigureConnection"
+                  label="Configure connection"
+                  style="push">
+            </command>
+            <command
+                  commandId="eu.skillpro.ams.pscm.connector.amsservice.ui.CheckConnectionHandler"
+                  label="Check connection to AMS server"
+                  style="push">
+            </command>
+            <separator
+                  name="eu.skillpro.ams.pscm.connector.amsservice.ui.separator3"
+                  visible="true">
+            </separator>
+            <command
+                  commandId="eu.skillpro.ams.pscm.connector.amsservice.ui.AutomaticOrdersProcessingHandler"
+                  label="Retrieve and Send Orders Automatically"
+                  style="push">
+            </command>
+            <separator
+                  name="eu.skillpro.ams.pscm.connector.amsservice.ui.separator4"
+                  visible="true">
+            </separator>
+            <command
+                  commandId="eu.skillpro.ams.pscm.connector.amsservice.ui.WipeResourceExecutableSkillsHandler"
+                  label="Wipe stored resource executable skills"
+                  style="push">
+            </command>
+         </menu>
+      </menuContribution>
+      <menuContribution
+            allPopups="false"
+            locationURI="menu:org.eclipse.ui.main.menu?after=skillpro.menu.see">
+         <menu
+               id="skillpro.menu.exskill"
+               label="ExecutableSkills">
+            <command
+                  commandId="dummy.sendscenario.UploadScenarioToAMSHandler"
+                  label="Upload Scenario to AMS"
+                  style="push">
+            </command>
+         </menu>
+      </menuContribution>
+   </extension>
+
+</plugin>

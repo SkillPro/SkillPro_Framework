@@ -1,0 +1,3195 @@
+<?xml version="1.0" encoding="UTF-8"?><CAEXFile FileName="D:\SkillPro-Workspace\projects\common\eu.skillpro.automationml.data\ExecutableSkill-Test\onlychocolate.aml">
+    <InstanceHierarchy Name="Configuration">
+        <InternalElement Name="PlatformDeleteBoxAtpos-kr6-SChoc" ID="ID_PlatformDeleteBoxAtpos-kr6-SChoc">
+            <InternalElement Name="PlatformDeleteBoxAtpos-kr6-SChoc" ID="ID_PlatformDeleteBoxAtpos-kr6-SChoc">
+                <Attribute Name="ResourceId" AttributeDataType="xs:string">
+                    <Value>MobilePlatform</Value>
+                </Attribute>
+                <Attribute Name="ResponsibleSEE" AttributeDataType="xs:string">
+                    <Value>MobilePlatform</Value>
+                </Attribute>
+                <Attribute Name="Duration" Unit="sec" AttributeDataType="xs:integer">
+                    <Value>0</Value>
+                </Attribute>
+                <Attribute Name="Slack" Unit="sec" AttributeDataType="xs:integer">
+                    <Value>0</Value>
+                </Attribute>
+                <Attribute Name="Execution" AttributeDataType="xs:string">
+                    <Attribute Name="Type" AttributeDataType="xs:string">
+                        <Value>Waiting</Value>
+                    </Attribute>
+                    <Attribute Name="Data" AttributeDataType="xs:string">
+                        <Attribute Name="Duration" Unit="sec" AttributeDataType="xs:string">
+                            <Value>0</Value>
+                        </Attribute>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="PreCondition" AttributeDataType="xs:string">
+                    <Attribute Name="Configuration" AttributeDataType="xs:string">
+                        <Value>pos-kr6</Value>
+                    </Attribute>
+                    <Attribute Name="Product" AttributeDataType="xs:string">
+                        <Value>box-empty</Value>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="PostCondition" AttributeDataType="xs:string">
+                    <Attribute Name="Configuration" AttributeDataType="xs:string">
+                        <Value>pos-kr6</Value>
+                    </Attribute>
+                    <Attribute Name="Product" AttributeDataType="xs:string">
+                        <Value>empty</Value>
+                    </Attribute>
+                </Attribute>
+                <SupportedRoleClass RefRoleClassPath="HannoverDemoRoleClassLib/Waiting"/>
+                <RoleRequirements RefBaseRoleClassPath="SkillProRoleClassLib/ResourceExecutableSkill"/>
+            </InternalElement>
+            <RoleRequirements RefBaseRoleClassPath="SkillProRoleClassLib/ExecutableSkill"/>
+        </InternalElement>
+        <InternalElement Name="EmptyPlatformToWP1-SChoc" ID="ID_EmptyPlatformToWP1-SChoc">
+            <InternalElement Name="MobilePlatform-EmptyPlatformToWP1-SChoc" ID="ID_MobilePlatform-EmptyPlatformToWP1-SChoc">
+                <Attribute Name="ResourceId" AttributeDataType="xs:string">
+                    <Value>MobilePlatform</Value>
+                </Attribute>
+                <Attribute Name="ResponsibleSEE" AttributeDataType="xs:string">
+                    <Value>MobilePlatform</Value>
+                </Attribute>
+                <Attribute Name="Duration" Unit="sec" AttributeDataType="xs:integer">
+                    <Value>5</Value>
+                </Attribute>
+                <Attribute Name="Slack" Unit="sec" AttributeDataType="xs:integer">
+                    <Value>0</Value>
+                </Attribute>
+                <Attribute Name="Execution" AttributeDataType="xs:string">
+                    <Attribute Name="Type" AttributeDataType="xs:string">
+                        <Value>Transport3D</Value>
+                    </Attribute>
+                    <Attribute Name="Data" AttributeDataType="xs:string">
+                        <Attribute Name="Position" AttributeDataType="xs:string">
+                            <Value>WP1</Value>
+                        </Attribute>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="PreCondition" AttributeDataType="xs:string">
+                    <Attribute Name="Configuration" AttributeDataType="xs:string">
+                        <Value>neutral</Value>
+                    </Attribute>
+                    <Attribute Name="Product" AttributeDataType="xs:string">
+                        <Value>empty</Value>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="PostCondition" AttributeDataType="xs:string">
+                    <Attribute Name="Configuration" AttributeDataType="xs:string">
+                        <Value>pos-wp1</Value>
+                    </Attribute>
+                    <Attribute Name="Product" AttributeDataType="xs:string">
+                        <Value>empty</Value>
+                    </Attribute>
+                </Attribute>
+                <SupportedRoleClass RefRoleClassPath="HannoverDemoRoleClassLib/Transport3D"/>
+                <RoleRequirements RefBaseRoleClassPath="SkillProRoleClassLib/ResourceExecutableSkill"/>
+            </InternalElement>
+            <RoleRequirements RefBaseRoleClassPath="SkillProRoleClassLib/ExecutableSkill"/>
+        </InternalElement>
+        <InternalElement Name="MoveEmptyPlatformFromWP1ToNeutralempty-SChoc" ID="ID_MoveEmptyPlatformFromWP1ToNeutralempty-SChoc">
+            <InternalElement Name="MobilePlatform-MoveEmptyPlatformFromWP1ToNeutralempty-SChoc" ID="ID_MobilePlatform-MoveEmptyPlatformFromWP1ToNeutralempty-SChoc">
+                <Attribute Name="ResourceId" AttributeDataType="xs:string">
+                    <Value>MobilePlatform</Value>
+                </Attribute>
+                <Attribute Name="ResponsibleSEE" AttributeDataType="xs:string">
+                    <Value>MobilePlatform</Value>
+                </Attribute>
+                <Attribute Name="Duration" Unit="sec" AttributeDataType="xs:integer">
+                    <Value>30</Value>
+                </Attribute>
+                <Attribute Name="Slack" Unit="sec" AttributeDataType="xs:integer">
+                    <Value>0</Value>
+                </Attribute>
+                <Attribute Name="Execution" AttributeDataType="xs:string">
+                    <Attribute Name="Type" AttributeDataType="xs:string">
+                        <Value>Transport3D</Value>
+                    </Attribute>
+                    <Attribute Name="Data" AttributeDataType="xs:string">
+                        <Attribute Name="Position" AttributeDataType="xs:string">
+                            <Value>NEUT</Value>
+                        </Attribute>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="PreCondition" AttributeDataType="xs:string">
+                    <Attribute Name="Configuration" AttributeDataType="xs:string">
+                        <Value>pos-wp1</Value>
+                    </Attribute>
+                    <Attribute Name="Product" AttributeDataType="xs:string">
+                        <Value>empty</Value>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="PostCondition" AttributeDataType="xs:string">
+                    <Attribute Name="Configuration" AttributeDataType="xs:string">
+                        <Value>neutral</Value>
+                    </Attribute>
+                    <Attribute Name="Product" AttributeDataType="xs:string">
+                        <Value>empty</Value>
+                    </Attribute>
+                </Attribute>
+                <SupportedRoleClass RefRoleClassPath="HannoverDemoRoleClassLib/Transport3D"/>
+                <RoleRequirements RefBaseRoleClassPath="SkillProRoleClassLib/ResourceExecutableSkill"/>
+            </InternalElement>
+            <RoleRequirements RefBaseRoleClassPath="SkillProRoleClassLib/ExecutableSkill"/>
+        </InternalElement>
+        <InternalElement Name="PlatformGoesToUR5box-empty-SChoc" ID="ID_PlatformGoesToUR5box-empty-SChoc">
+            <InternalElement Name="MobilePlatform-PlatformGoesToUR5box-empty-SChoc" ID="ID_MobilePlatform-PlatformGoesToUR5box-empty-SChoc">
+                <Attribute Name="ResourceId" AttributeDataType="xs:string">
+                    <Value>MobilePlatform</Value>
+                </Attribute>
+                <Attribute Name="ResponsibleSEE" AttributeDataType="xs:string">
+                    <Value>MobilePlatform</Value>
+                </Attribute>
+                <Attribute Name="Duration" Unit="sec" AttributeDataType="xs:integer">
+                    <Value>30</Value>
+                </Attribute>
+                <Attribute Name="Slack" Unit="sec" AttributeDataType="xs:integer">
+                    <Value>0</Value>
+                </Attribute>
+                <Attribute Name="Execution" AttributeDataType="xs:string">
+                    <Attribute Name="Type" AttributeDataType="xs:string">
+                        <Value>Transport3D</Value>
+                    </Attribute>
+                    <Attribute Name="Data" AttributeDataType="xs:string">
+                        <Attribute Name="Position" AttributeDataType="xs:string">
+                            <Value>UR5</Value>
+                        </Attribute>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="PreCondition" AttributeDataType="xs:string">
+                    <Attribute Name="Configuration" AttributeDataType="xs:string">
+                        <Value>neutral</Value>
+                    </Attribute>
+                    <Attribute Name="Product" AttributeDataType="xs:string">
+                        <Value>box-empty</Value>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="PostCondition" AttributeDataType="xs:string">
+                    <Attribute Name="Configuration" AttributeDataType="xs:string">
+                        <Value>pos-ur5</Value>
+                    </Attribute>
+                    <Attribute Name="Product" AttributeDataType="xs:string">
+                        <Value>box-empty</Value>
+                    </Attribute>
+                </Attribute>
+                <SupportedRoleClass RefRoleClassPath="HannoverDemoRoleClassLib/Transport3D"/>
+                <RoleRequirements RefBaseRoleClassPath="SkillProRoleClassLib/ResourceExecutableSkill"/>
+            </InternalElement>
+            <RoleRequirements RefBaseRoleClassPath="SkillProRoleClassLib/ExecutableSkill"/>
+        </InternalElement>
+        <InternalElement Name="GripperPicksChocolate-SChoc" ID="ID_GripperPicksChocolate-SChoc">
+            <InternalElement Name="UR5-GripperPicksChocolate-SChoc" ID="ID_UR5-GripperPicksChocolate-SChoc">
+                <Attribute Name="ResourceId" AttributeDataType="xs:string">
+                    <Value>UR5</Value>
+                </Attribute>
+                <Attribute Name="ResponsibleSEE" AttributeDataType="xs:string">
+                    <Value>UR5</Value>
+                </Attribute>
+                <Attribute Name="Duration" Unit="sec" AttributeDataType="xs:integer">
+                    <Value>3</Value>
+                </Attribute>
+                <Attribute Name="Slack" Unit="sec" AttributeDataType="xs:integer">
+                    <Value>0</Value>
+                </Attribute>
+                <Attribute Name="Execution" AttributeDataType="xs:string">
+                    <Attribute Name="Type" AttributeDataType="xs:string">
+                        <Value>Waiting</Value>
+                    </Attribute>
+                    <Attribute Name="Data" AttributeDataType="xs:string">
+                        <Attribute Name="Duration" Unit="sec" AttributeDataType="xs:integer">
+                            <Value>3</Value>
+                        </Attribute>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="PreCondition" AttributeDataType="xs:string">
+                    <Attribute Name="Configuration" AttributeDataType="xs:string">
+                        <Value>pos-chocolate</Value>
+                    </Attribute>
+                    <Attribute Name="Product" AttributeDataType="xs:string">
+                        <Value>chocolate</Value>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="PostCondition" AttributeDataType="xs:string">
+                    <Attribute Name="Configuration" AttributeDataType="xs:string">
+                        <Value>pos-chocolate</Value>
+                    </Attribute>
+                    <Attribute Name="Product" AttributeDataType="xs:string">
+                        <Value>chocolate</Value>
+                    </Attribute>
+                </Attribute>
+                <SupportedRoleClass RefRoleClassPath="HannoverDemoRoleClassLib/Waiting"/>
+                <RoleRequirements RefBaseRoleClassPath="SkillProRoleClassLib/ResourceExecutableSkill"/>
+            </InternalElement>
+            <InternalElement Name="UR5-Gripper-GripperPicksChocolate-SChoc" ID="ID_UR5-Gripper-GripperPicksChocolate-SChoc">
+                <Attribute Name="ResourceId" AttributeDataType="xs:string">
+                    <Value>UR5-Gripper</Value>
+                </Attribute>
+                <Attribute Name="ResponsibleSEE" AttributeDataType="xs:string">
+                    <Value>UR5-Gripper</Value>
+                </Attribute>
+                <Attribute Name="Duration" Unit="sec" AttributeDataType="xs:integer">
+                    <Value>0</Value>
+                </Attribute>
+                <Attribute Name="Slack" Unit="sec" AttributeDataType="xs:integer">
+                    <Value>0</Value>
+                </Attribute>
+                <Attribute Name="Execution" AttributeDataType="xs:string">
+                    <Attribute Name="Type" AttributeDataType="xs:string">
+                        <Value>Picking</Value>
+                    </Attribute>
+                    <Attribute Name="Data" AttributeDataType="xs:string"/>
+                </Attribute>
+                <Attribute Name="PreCondition" AttributeDataType="xs:string">
+                    <Attribute Name="Configuration" AttributeDataType="xs:string">
+                        <Value>neutral</Value>
+                    </Attribute>
+                    <Attribute Name="Product" AttributeDataType="xs:string">
+                        <Value>empty</Value>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="PostCondition" AttributeDataType="xs:string">
+                    <Attribute Name="Configuration" AttributeDataType="xs:string">
+                        <Value>neutral</Value>
+                    </Attribute>
+                    <Attribute Name="Product" AttributeDataType="xs:string">
+                        <Value>chocolate</Value>
+                    </Attribute>
+                </Attribute>
+                <SupportedRoleClass RefRoleClassPath="HannoverDemoRoleClassLib/Picking"/>
+                <RoleRequirements RefBaseRoleClassPath="SkillProRoleClassLib/ResourceExecutableSkill"/>
+            </InternalElement>
+            <RoleRequirements RefBaseRoleClassPath="SkillProRoleClassLib/ExecutableSkill"/>
+        </InternalElement>
+        <InternalElement Name="HumanWP1TakesChocolate-SChoc" ID="ID_HumanWP1TakesChocolate-SChoc">
+            <InternalElement Name="Human-HumanWP1TakesChocolate-SChoc" ID="ID_Human-HumanWP1TakesChocolate-SChoc">
+                <Attribute Name="ResourceId" AttributeDataType="xs:string">
+                    <Value>HumanWP1</Value>
+                </Attribute>
+                <Attribute Name="ResponsibleSEE" AttributeDataType="xs:string">
+                    <Value>HumanWP1</Value>
+                </Attribute>
+                <Attribute Name="Duration" Unit="sec" AttributeDataType="xs:integer">
+                    <Value>3</Value>
+                </Attribute>
+                <Attribute Name="Slack" Unit="sec" AttributeDataType="xs:integer">
+                    <Value>0</Value>
+                </Attribute>
+                <Attribute Name="Execution" AttributeDataType="xs:string">
+                    <Attribute Name="Type" AttributeDataType="xs:string">
+                        <Value>Instruction</Value>
+                    </Attribute>
+                    <Attribute Name="Data" AttributeDataType="xs:string">
+                        <Attribute Name="Instruction" AttributeDataType="xs:string">
+                            <Value>Please take your box with the chocolate, and put a SkillPro sticker on it.</Value>
+                        </Attribute>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="PreCondition" AttributeDataType="xs:string">
+                    <Attribute Name="Configuration" AttributeDataType="xs:string">
+                        <Value>neutral</Value>
+                    </Attribute>
+                    <Attribute Name="Product" AttributeDataType="xs:string">
+                        <Value>empty</Value>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="PostCondition" AttributeDataType="xs:string">
+                    <Attribute Name="Configuration" AttributeDataType="xs:string">
+                        <Value>neutral</Value>
+                    </Attribute>
+                    <Attribute Name="Product" AttributeDataType="xs:string">
+                        <Value>box-with-chocolate</Value>
+                    </Attribute>
+                </Attribute>
+                <SupportedRoleClass RefRoleClassPath="HannoverDemoRoleClassLib/Instruction"/>
+                <RoleRequirements RefBaseRoleClassPath="SkillProRoleClassLib/ResourceExecutableSkill"/>
+            </InternalElement>
+            <InternalElement Name="MobilePlatform-HumanWP1TakesChocolate-SChoc" ID="ID_MobilePlatform-HumanWP1TakesChocolate-SChoc">
+                <Attribute Name="ResourceId" AttributeDataType="xs:string">
+                    <Value>MobilePlatform</Value>
+                </Attribute>
+                <Attribute Name="ResponsibleSEE" AttributeDataType="xs:string">
+                    <Value>MobilePlatform</Value>
+                </Attribute>
+                <Attribute Name="Duration" Unit="sec" AttributeDataType="xs:integer">
+                    <Value>1</Value>
+                </Attribute>
+                <Attribute Name="Slack" Unit="sec" AttributeDataType="xs:integer">
+                    <Value>0</Value>
+                </Attribute>
+                <Attribute Name="Execution" AttributeDataType="xs:string">
+                    <Attribute Name="Type" AttributeDataType="xs:string">
+                        <Value>Waiting</Value>
+                    </Attribute>
+                    <Attribute Name="Data" AttributeDataType="xs:string">
+                        <Attribute Name="Duration" Unit="sec" AttributeDataType="xs:string">
+                            <Value>1</Value>
+                        </Attribute>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="PreCondition" AttributeDataType="xs:string">
+                    <Attribute Name="Configuration" AttributeDataType="xs:string">
+                        <Value>pos-wp1</Value>
+                    </Attribute>
+                    <Attribute Name="Product" AttributeDataType="xs:string">
+                        <Value>box-with-chocolate</Value>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="PostCondition" AttributeDataType="xs:string">
+                    <Attribute Name="Configuration" AttributeDataType="xs:string">
+                        <Value>pos-wp1</Value>
+                    </Attribute>
+                    <Attribute Name="Product" AttributeDataType="xs:string">
+                        <Value>empty</Value>
+                    </Attribute>
+                </Attribute>
+                <SupportedRoleClass RefRoleClassPath="HannoverDemoRoleClassLib/Waiting"/>
+                <RoleRequirements RefBaseRoleClassPath="SkillProRoleClassLib/ResourceExecutableSkill"/>
+            </InternalElement>
+            <RoleRequirements RefBaseRoleClassPath="SkillProRoleClassLib/ExecutableSkill"/>
+        </InternalElement>
+        <InternalElement Name="MoveEmptyPlatformFromWP2ToNeutral-SChoc" ID="ID_MoveEmptyPlatformFromWP2ToNeutral-SChoc">
+            <InternalElement Name="MobilePlatform-MoveEmptyPlatformFromWP2ToNeutral-SChoc" ID="ID_MobilePlatform-MoveEmptyPlatformFromWP2ToNeutral-SChoc">
+                <Attribute Name="ResourceId" AttributeDataType="xs:string">
+                    <Value>MobilePlatform</Value>
+                </Attribute>
+                <Attribute Name="ResponsibleSEE" AttributeDataType="xs:string">
+                    <Value>MobilePlatform</Value>
+                </Attribute>
+                <Attribute Name="Duration" Unit="sec" AttributeDataType="xs:integer">
+                    <Value>30</Value>
+                </Attribute>
+                <Attribute Name="Slack" Unit="sec" AttributeDataType="xs:integer">
+                    <Value>0</Value>
+                </Attribute>
+                <Attribute Name="Execution" AttributeDataType="xs:string">
+                    <Attribute Name="Type" AttributeDataType="xs:string">
+                        <Value>Transport3D</Value>
+                    </Attribute>
+                    <Attribute Name="Data" AttributeDataType="xs:string">
+                        <Attribute Name="Position" AttributeDataType="xs:string">
+                            <Value>NEUT</Value>
+                        </Attribute>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="PreCondition" AttributeDataType="xs:string">
+                    <Attribute Name="Configuration" AttributeDataType="xs:string">
+                        <Value>pos-wp2</Value>
+                    </Attribute>
+                    <Attribute Name="Product" AttributeDataType="xs:string">
+                        <Value>empty</Value>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="PostCondition" AttributeDataType="xs:string">
+                    <Attribute Name="Configuration" AttributeDataType="xs:string">
+                        <Value>neutral</Value>
+                    </Attribute>
+                    <Attribute Name="Product" AttributeDataType="xs:string">
+                        <Value>empty</Value>
+                    </Attribute>
+                </Attribute>
+                <SupportedRoleClass RefRoleClassPath="HannoverDemoRoleClassLib/Transport3D"/>
+                <RoleRequirements RefBaseRoleClassPath="SkillProRoleClassLib/ResourceExecutableSkill"/>
+            </InternalElement>
+            <RoleRequirements RefBaseRoleClassPath="SkillProRoleClassLib/ExecutableSkill"/>
+        </InternalElement>
+        <InternalElement Name="EmptyPlatformToWP2-SChoc" ID="ID_EmptyPlatformToWP2-SChoc">
+            <InternalElement Name="MobilePlatform-EmptyPlatformToWP2-SChoc" ID="ID_MobilePlatform-EmptyPlatformToWP2-SChoc">
+                <Attribute Name="ResourceId" AttributeDataType="xs:string">
+                    <Value>MobilePlatform</Value>
+                </Attribute>
+                <Attribute Name="ResponsibleSEE" AttributeDataType="xs:string">
+                    <Value>MobilePlatform</Value>
+                </Attribute>
+                <Attribute Name="Duration" Unit="sec" AttributeDataType="xs:integer">
+                    <Value>5</Value>
+                </Attribute>
+                <Attribute Name="Slack" Unit="sec" AttributeDataType="xs:integer">
+                    <Value>0</Value>
+                </Attribute>
+                <Attribute Name="Execution" AttributeDataType="xs:string">
+                    <Attribute Name="Type" AttributeDataType="xs:string">
+                        <Value>Transport3D</Value>
+                    </Attribute>
+                    <Attribute Name="Data" AttributeDataType="xs:string">
+                        <Attribute Name="Position" AttributeDataType="xs:string">
+                            <Value>WP2</Value>
+                        </Attribute>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="PreCondition" AttributeDataType="xs:string">
+                    <Attribute Name="Configuration" AttributeDataType="xs:string">
+                        <Value>neutral</Value>
+                    </Attribute>
+                    <Attribute Name="Product" AttributeDataType="xs:string">
+                        <Value>empty</Value>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="PostCondition" AttributeDataType="xs:string">
+                    <Attribute Name="Configuration" AttributeDataType="xs:string">
+                        <Value>pos-wp2</Value>
+                    </Attribute>
+                    <Attribute Name="Product" AttributeDataType="xs:string">
+                        <Value>empty</Value>
+                    </Attribute>
+                </Attribute>
+                <SupportedRoleClass RefRoleClassPath="HannoverDemoRoleClassLib/Transport3D"/>
+                <RoleRequirements RefBaseRoleClassPath="SkillProRoleClassLib/ResourceExecutableSkill"/>
+            </InternalElement>
+            <RoleRequirements RefBaseRoleClassPath="SkillProRoleClassLib/ExecutableSkill"/>
+        </InternalElement>
+        <InternalElement Name="PlatformToWP1-SChoc" ID="ID_PlatformToWP1-SChoc">
+            <InternalElement Name="MobilePlatform-PlatformToWP1-SChoc" ID="ID_MobilePlatform-PlatformToWP1-SChoc">
+                <Attribute Name="ResourceId" AttributeDataType="xs:string">
+                    <Value>MobilePlatform</Value>
+                </Attribute>
+                <Attribute Name="ResponsibleSEE" AttributeDataType="xs:string">
+                    <Value>MobilePlatform</Value>
+                </Attribute>
+                <Attribute Name="Duration" Unit="sec" AttributeDataType="xs:integer">
+                    <Value>5</Value>
+                </Attribute>
+                <Attribute Name="Slack" Unit="sec" AttributeDataType="xs:integer">
+                    <Value>0</Value>
+                </Attribute>
+                <Attribute Name="Execution" AttributeDataType="xs:string">
+                    <Attribute Name="Type" AttributeDataType="xs:string">
+                        <Value>Transport3D</Value>
+                    </Attribute>
+                    <Attribute Name="Data" AttributeDataType="xs:string">
+                        <Attribute Name="Position" AttributeDataType="xs:string">
+                            <Value>WP1</Value>
+                        </Attribute>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="PreCondition" AttributeDataType="xs:string">
+                    <Attribute Name="Configuration" AttributeDataType="xs:string">
+                        <Value>pos-ur5</Value>
+                    </Attribute>
+                    <Attribute Name="Product" AttributeDataType="xs:string">
+                        <Value>box-with-chocolate</Value>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="PostCondition" AttributeDataType="xs:string">
+                    <Attribute Name="Configuration" AttributeDataType="xs:string">
+                        <Value>pos-wp1</Value>
+                    </Attribute>
+                    <Attribute Name="Product" AttributeDataType="xs:string">
+                        <Value>box-with-chocolate</Value>
+                    </Attribute>
+                </Attribute>
+                <SupportedRoleClass RefRoleClassPath="HannoverDemoRoleClassLib/Transport3D"/>
+                <RoleRequirements RefBaseRoleClassPath="SkillProRoleClassLib/ResourceExecutableSkill"/>
+            </InternalElement>
+            <RoleRequirements RefBaseRoleClassPath="SkillProRoleClassLib/ExecutableSkill"/>
+        </InternalElement>
+        <InternalElement Name="MoveEmptyPlatformFromWP1ToNeutral-SChoc" ID="ID_MoveEmptyPlatformFromWP1ToNeutral-SChoc">
+            <InternalElement Name="MobilePlatform-MoveEmptyPlatformFromWP1ToNeutral-SChoc" ID="ID_MobilePlatform-MoveEmptyPlatformFromWP1ToNeutral-SChoc">
+                <Attribute Name="ResourceId" AttributeDataType="xs:string">
+                    <Value>MobilePlatform</Value>
+                </Attribute>
+                <Attribute Name="ResponsibleSEE" AttributeDataType="xs:string">
+                    <Value>MobilePlatform</Value>
+                </Attribute>
+                <Attribute Name="Duration" Unit="sec" AttributeDataType="xs:integer">
+                    <Value>30</Value>
+                </Attribute>
+                <Attribute Name="Slack" Unit="sec" AttributeDataType="xs:integer">
+                    <Value>0</Value>
+                </Attribute>
+                <Attribute Name="Execution" AttributeDataType="xs:string">
+                    <Attribute Name="Type" AttributeDataType="xs:string">
+                        <Value>Transport3D</Value>
+                    </Attribute>
+                    <Attribute Name="Data" AttributeDataType="xs:string">
+                        <Attribute Name="Position" AttributeDataType="xs:string">
+                            <Value>NEUT</Value>
+                        </Attribute>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="PreCondition" AttributeDataType="xs:string">
+                    <Attribute Name="Configuration" AttributeDataType="xs:string">
+                        <Value>pos-wp1</Value>
+                    </Attribute>
+                    <Attribute Name="Product" AttributeDataType="xs:string">
+                        <Value>empty</Value>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="PostCondition" AttributeDataType="xs:string">
+                    <Attribute Name="Configuration" AttributeDataType="xs:string">
+                        <Value>neutral</Value>
+                    </Attribute>
+                    <Attribute Name="Product" AttributeDataType="xs:string">
+                        <Value>empty</Value>
+                    </Attribute>
+                </Attribute>
+                <SupportedRoleClass RefRoleClassPath="HannoverDemoRoleClassLib/Transport3D"/>
+                <RoleRequirements RefBaseRoleClassPath="SkillProRoleClassLib/ResourceExecutableSkill"/>
+            </InternalElement>
+            <RoleRequirements RefBaseRoleClassPath="SkillProRoleClassLib/ExecutableSkill"/>
+        </InternalElement>
+        <InternalElement Name="MoveEmptyPlatformFromWP1ToNeutralbox-empty-SChoc" ID="ID_MoveEmptyPlatformFromWP1ToNeutralbox-empty-SChoc">
+            <InternalElement Name="MobilePlatform-MoveEmptyPlatformFromWP1ToNeutralbox-empty-SChoc" ID="ID_MobilePlatform-MoveEmptyPlatformFromWP1ToNeutralbox-empty-SChoc">
+                <Attribute Name="ResourceId" AttributeDataType="xs:string">
+                    <Value>MobilePlatform</Value>
+                </Attribute>
+                <Attribute Name="ResponsibleSEE" AttributeDataType="xs:string">
+                    <Value>MobilePlatform</Value>
+                </Attribute>
+                <Attribute Name="Duration" Unit="sec" AttributeDataType="xs:integer">
+                    <Value>30</Value>
+                </Attribute>
+                <Attribute Name="Slack" Unit="sec" AttributeDataType="xs:integer">
+                    <Value>0</Value>
+                </Attribute>
+                <Attribute Name="Execution" AttributeDataType="xs:string">
+                    <Attribute Name="Type" AttributeDataType="xs:string">
+                        <Value>Transport3D</Value>
+                    </Attribute>
+                    <Attribute Name="Data" AttributeDataType="xs:string">
+                        <Attribute Name="Position" AttributeDataType="xs:string">
+                            <Value>NEUT</Value>
+                        </Attribute>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="PreCondition" AttributeDataType="xs:string">
+                    <Attribute Name="Configuration" AttributeDataType="xs:string">
+                        <Value>pos-wp1</Value>
+                    </Attribute>
+                    <Attribute Name="Product" AttributeDataType="xs:string">
+                        <Value>box-empty</Value>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="PostCondition" AttributeDataType="xs:string">
+                    <Attribute Name="Configuration" AttributeDataType="xs:string">
+                        <Value>neutral</Value>
+                    </Attribute>
+                    <Attribute Name="Product" AttributeDataType="xs:string">
+                        <Value>box-empty</Value>
+                    </Attribute>
+                </Attribute>
+                <SupportedRoleClass RefRoleClassPath="HannoverDemoRoleClassLib/Transport3D"/>
+                <RoleRequirements RefBaseRoleClassPath="SkillProRoleClassLib/ResourceExecutableSkill"/>
+            </InternalElement>
+            <RoleRequirements RefBaseRoleClassPath="SkillProRoleClassLib/ExecutableSkill"/>
+        </InternalElement>
+        <InternalElement Name="HumanWP2FoldsBox-SChoc" ID="ID_HumanWP2FoldsBox-SChoc">
+            <InternalElement Name="Human-HumanWP2FoldsBox-SChoc" ID="ID_Human-HumanWP2FoldsBox-SChoc">
+                <Attribute Name="ResourceId" AttributeDataType="xs:string">
+                    <Value>HumanWP2</Value>
+                </Attribute>
+                <Attribute Name="ResponsibleSEE" AttributeDataType="xs:string">
+                    <Value>HumanWP2</Value>
+                </Attribute>
+                <Attribute Name="Duration" Unit="sec" AttributeDataType="xs:integer">
+                    <Value>3</Value>
+                </Attribute>
+                <Attribute Name="Slack" Unit="sec" AttributeDataType="xs:integer">
+                    <Value>0</Value>
+                </Attribute>
+                <Attribute Name="Execution" AttributeDataType="xs:string">
+                    <Attribute Name="Type" AttributeDataType="xs:string">
+                        <Value>Instruction</Value>
+                    </Attribute>
+                    <Attribute Name="Data" AttributeDataType="xs:string">
+                        <Attribute Name="Instruction" AttributeDataType="xs:string">
+                            <Value>Please fold a new box!</Value>
+                        </Attribute>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="PreCondition" AttributeDataType="xs:string">
+                    <Attribute Name="Configuration" AttributeDataType="xs:string">
+                        <Value>neutral</Value>
+                    </Attribute>
+                    <Attribute Name="Product" AttributeDataType="xs:string">
+                        <Value>box-unfolded</Value>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="PostCondition" AttributeDataType="xs:string">
+                    <Attribute Name="Configuration" AttributeDataType="xs:string">
+                        <Value>neutral</Value>
+                    </Attribute>
+                    <Attribute Name="Product" AttributeDataType="xs:string">
+                        <Value>box-empty</Value>
+                    </Attribute>
+                </Attribute>
+                <SupportedRoleClass RefRoleClassPath="HannoverDemoRoleClassLib/Instruction"/>
+                <RoleRequirements RefBaseRoleClassPath="SkillProRoleClassLib/ResourceExecutableSkill"/>
+            </InternalElement>
+            <RoleRequirements RefBaseRoleClassPath="SkillProRoleClassLib/ExecutableSkill"/>
+        </InternalElement>
+        <InternalElement Name="HumanWP3TakesChocolate-SChoc" ID="ID_HumanWP3TakesChocolate-SChoc">
+            <InternalElement Name="Human-HumanWP3TakesChocolate-SChoc" ID="ID_Human-HumanWP3TakesChocolate-SChoc">
+                <Attribute Name="ResourceId" AttributeDataType="xs:string">
+                    <Value>HumanWP3</Value>
+                </Attribute>
+                <Attribute Name="ResponsibleSEE" AttributeDataType="xs:string">
+                    <Value>HumanWP3</Value>
+                </Attribute>
+                <Attribute Name="Duration" Unit="sec" AttributeDataType="xs:integer">
+                    <Value>3</Value>
+                </Attribute>
+                <Attribute Name="Slack" Unit="sec" AttributeDataType="xs:integer">
+                    <Value>0</Value>
+                </Attribute>
+                <Attribute Name="Execution" AttributeDataType="xs:string">
+                    <Attribute Name="Type" AttributeDataType="xs:string">
+                        <Value>Instruction</Value>
+                    </Attribute>
+                    <Attribute Name="Data" AttributeDataType="xs:string">
+                        <Attribute Name="Instruction" AttributeDataType="xs:string">
+                            <Value>Please take your box with the chocolate, and put a SkillPro sticker on it.</Value>
+                        </Attribute>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="PreCondition" AttributeDataType="xs:string">
+                    <Attribute Name="Configuration" AttributeDataType="xs:string">
+                        <Value>neutral</Value>
+                    </Attribute>
+                    <Attribute Name="Product" AttributeDataType="xs:string">
+                        <Value>empty</Value>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="PostCondition" AttributeDataType="xs:string">
+                    <Attribute Name="Configuration" AttributeDataType="xs:string">
+                        <Value>neutral</Value>
+                    </Attribute>
+                    <Attribute Name="Product" AttributeDataType="xs:string">
+                        <Value>box-with-chocolate</Value>
+                    </Attribute>
+                </Attribute>
+                <SupportedRoleClass RefRoleClassPath="HannoverDemoRoleClassLib/Instruction"/>
+                <RoleRequirements RefBaseRoleClassPath="SkillProRoleClassLib/ResourceExecutableSkill"/>
+            </InternalElement>
+            <InternalElement Name="MobilePlatform-HumanWP3TakesChocolate-SChoc" ID="ID_MobilePlatform-HumanWP3TakesChocolate-SChoc">
+                <Attribute Name="ResourceId" AttributeDataType="xs:string">
+                    <Value>MobilePlatform</Value>
+                </Attribute>
+                <Attribute Name="ResponsibleSEE" AttributeDataType="xs:string">
+                    <Value>MobilePlatform</Value>
+                </Attribute>
+                <Attribute Name="Duration" Unit="sec" AttributeDataType="xs:integer">
+                    <Value>1</Value>
+                </Attribute>
+                <Attribute Name="Slack" Unit="sec" AttributeDataType="xs:integer">
+                    <Value>0</Value>
+                </Attribute>
+                <Attribute Name="Execution" AttributeDataType="xs:string">
+                    <Attribute Name="Type" AttributeDataType="xs:string">
+                        <Value>Waiting</Value>
+                    </Attribute>
+                    <Attribute Name="Data" AttributeDataType="xs:string">
+                        <Attribute Name="Duration" Unit="sec" AttributeDataType="xs:string">
+                            <Value>1</Value>
+                        </Attribute>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="PreCondition" AttributeDataType="xs:string">
+                    <Attribute Name="Configuration" AttributeDataType="xs:string">
+                        <Value>pos-wp3</Value>
+                    </Attribute>
+                    <Attribute Name="Product" AttributeDataType="xs:string">
+                        <Value>box-with-chocolate</Value>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="PostCondition" AttributeDataType="xs:string">
+                    <Attribute Name="Configuration" AttributeDataType="xs:string">
+                        <Value>pos-wp3</Value>
+                    </Attribute>
+                    <Attribute Name="Product" AttributeDataType="xs:string">
+                        <Value>empty</Value>
+                    </Attribute>
+                </Attribute>
+                <SupportedRoleClass RefRoleClassPath="HannoverDemoRoleClassLib/Waiting"/>
+                <RoleRequirements RefBaseRoleClassPath="SkillProRoleClassLib/ResourceExecutableSkill"/>
+            </InternalElement>
+            <RoleRequirements RefBaseRoleClassPath="SkillProRoleClassLib/ExecutableSkill"/>
+        </InternalElement>
+        <InternalElement Name="MoveEmptyPlatformFromWP3ToNeutralempty-SChoc" ID="ID_MoveEmptyPlatformFromWP3ToNeutralempty-SChoc">
+            <InternalElement Name="MobilePlatform-MoveEmptyPlatformFromWP3ToNeutralempty-SChoc" ID="ID_MobilePlatform-MoveEmptyPlatformFromWP3ToNeutralempty-SChoc">
+                <Attribute Name="ResourceId" AttributeDataType="xs:string">
+                    <Value>MobilePlatform</Value>
+                </Attribute>
+                <Attribute Name="ResponsibleSEE" AttributeDataType="xs:string">
+                    <Value>MobilePlatform</Value>
+                </Attribute>
+                <Attribute Name="Duration" Unit="sec" AttributeDataType="xs:integer">
+                    <Value>30</Value>
+                </Attribute>
+                <Attribute Name="Slack" Unit="sec" AttributeDataType="xs:integer">
+                    <Value>0</Value>
+                </Attribute>
+                <Attribute Name="Execution" AttributeDataType="xs:string">
+                    <Attribute Name="Type" AttributeDataType="xs:string">
+                        <Value>Transport3D</Value>
+                    </Attribute>
+                    <Attribute Name="Data" AttributeDataType="xs:string">
+                        <Attribute Name="Position" AttributeDataType="xs:string">
+                            <Value>NEUT</Value>
+                        </Attribute>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="PreCondition" AttributeDataType="xs:string">
+                    <Attribute Name="Configuration" AttributeDataType="xs:string">
+                        <Value>pos-wp3</Value>
+                    </Attribute>
+                    <Attribute Name="Product" AttributeDataType="xs:string">
+                        <Value>empty</Value>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="PostCondition" AttributeDataType="xs:string">
+                    <Attribute Name="Configuration" AttributeDataType="xs:string">
+                        <Value>neutral</Value>
+                    </Attribute>
+                    <Attribute Name="Product" AttributeDataType="xs:string">
+                        <Value>empty</Value>
+                    </Attribute>
+                </Attribute>
+                <SupportedRoleClass RefRoleClassPath="HannoverDemoRoleClassLib/Transport3D"/>
+                <RoleRequirements RefBaseRoleClassPath="SkillProRoleClassLib/ResourceExecutableSkill"/>
+            </InternalElement>
+            <RoleRequirements RefBaseRoleClassPath="SkillProRoleClassLib/ExecutableSkill"/>
+        </InternalElement>
+        <InternalElement Name="HumanWP1FoldsBox-SChoc" ID="ID_HumanWP1FoldsBox-SChoc">
+            <InternalElement Name="Human-HumanWP1FoldsBox-SChoc" ID="ID_Human-HumanWP1FoldsBox-SChoc">
+                <Attribute Name="ResourceId" AttributeDataType="xs:string">
+                    <Value>HumanWP1</Value>
+                </Attribute>
+                <Attribute Name="ResponsibleSEE" AttributeDataType="xs:string">
+                    <Value>HumanWP1</Value>
+                </Attribute>
+                <Attribute Name="Duration" Unit="sec" AttributeDataType="xs:integer">
+                    <Value>3</Value>
+                </Attribute>
+                <Attribute Name="Slack" Unit="sec" AttributeDataType="xs:integer">
+                    <Value>0</Value>
+                </Attribute>
+                <Attribute Name="Execution" AttributeDataType="xs:string">
+                    <Attribute Name="Type" AttributeDataType="xs:string">
+                        <Value>Instruction</Value>
+                    </Attribute>
+                    <Attribute Name="Data" AttributeDataType="xs:string">
+                        <Attribute Name="Instruction" AttributeDataType="xs:string">
+                            <Value>Please fold a new box!</Value>
+                        </Attribute>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="PreCondition" AttributeDataType="xs:string">
+                    <Attribute Name="Configuration" AttributeDataType="xs:string">
+                        <Value>neutral</Value>
+                    </Attribute>
+                    <Attribute Name="Product" AttributeDataType="xs:string">
+                        <Value>box-unfolded</Value>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="PostCondition" AttributeDataType="xs:string">
+                    <Attribute Name="Configuration" AttributeDataType="xs:string">
+                        <Value>neutral</Value>
+                    </Attribute>
+                    <Attribute Name="Product" AttributeDataType="xs:string">
+                        <Value>box-empty</Value>
+                    </Attribute>
+                </Attribute>
+                <SupportedRoleClass RefRoleClassPath="HannoverDemoRoleClassLib/Instruction"/>
+                <RoleRequirements RefBaseRoleClassPath="SkillProRoleClassLib/ResourceExecutableSkill"/>
+            </InternalElement>
+            <RoleRequirements RefBaseRoleClassPath="SkillProRoleClassLib/ExecutableSkill"/>
+        </InternalElement>
+        <InternalElement Name="PlatformGoesToUR5-SChoc" ID="ID_PlatformGoesToUR5-SChoc">
+            <InternalElement Name="MobilePlatform-PlatformGoesToUR5-SChoc" ID="ID_MobilePlatform-PlatformGoesToUR5-SChoc">
+                <Attribute Name="ResourceId" AttributeDataType="xs:string">
+                    <Value>MobilePlatform</Value>
+                </Attribute>
+                <Attribute Name="ResponsibleSEE" AttributeDataType="xs:string">
+                    <Value>MobilePlatform</Value>
+                </Attribute>
+                <Attribute Name="Duration" Unit="sec" AttributeDataType="xs:integer">
+                    <Value>30</Value>
+                </Attribute>
+                <Attribute Name="Slack" Unit="sec" AttributeDataType="xs:integer">
+                    <Value>0</Value>
+                </Attribute>
+                <Attribute Name="Execution" AttributeDataType="xs:string">
+                    <Attribute Name="Type" AttributeDataType="xs:string">
+                        <Value>Transport3D</Value>
+                    </Attribute>
+                    <Attribute Name="Data" AttributeDataType="xs:string">
+                        <Attribute Name="Position" AttributeDataType="xs:string">
+                            <Value>UR5</Value>
+                        </Attribute>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="PreCondition" AttributeDataType="xs:string">
+                    <Attribute Name="Configuration" AttributeDataType="xs:string">
+                        <Value>neutral</Value>
+                    </Attribute>
+                    <Attribute Name="Product" AttributeDataType="xs:string">
+                        <Value>box-empty</Value>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="PostCondition" AttributeDataType="xs:string">
+                    <Attribute Name="Configuration" AttributeDataType="xs:string">
+                        <Value>pos-ur5</Value>
+                    </Attribute>
+                    <Attribute Name="Product" AttributeDataType="xs:string">
+                        <Value>box-empty</Value>
+                    </Attribute>
+                </Attribute>
+                <SupportedRoleClass RefRoleClassPath="HannoverDemoRoleClassLib/Transport3D"/>
+                <RoleRequirements RefBaseRoleClassPath="SkillProRoleClassLib/ResourceExecutableSkill"/>
+            </InternalElement>
+            <RoleRequirements RefBaseRoleClassPath="SkillProRoleClassLib/ExecutableSkill"/>
+        </InternalElement>
+        <InternalElement Name="PlatformGoesToWP1empty-SChoc" ID="ID_PlatformGoesToWP1empty-SChoc">
+            <InternalElement Name="MobilePlatform-PlatformGoesToWP1empty-SChoc" ID="ID_MobilePlatform-PlatformGoesToWP1empty-SChoc">
+                <Attribute Name="ResourceId" AttributeDataType="xs:string">
+                    <Value>MobilePlatform</Value>
+                </Attribute>
+                <Attribute Name="ResponsibleSEE" AttributeDataType="xs:string">
+                    <Value>MobilePlatform</Value>
+                </Attribute>
+                <Attribute Name="Duration" Unit="sec" AttributeDataType="xs:integer">
+                    <Value>30</Value>
+                </Attribute>
+                <Attribute Name="Slack" Unit="sec" AttributeDataType="xs:integer">
+                    <Value>0</Value>
+                </Attribute>
+                <Attribute Name="Execution" AttributeDataType="xs:string">
+                    <Attribute Name="Type" AttributeDataType="xs:string">
+                        <Value>Transport3D</Value>
+                    </Attribute>
+                    <Attribute Name="Data" AttributeDataType="xs:string">
+                        <Attribute Name="Position" AttributeDataType="xs:string">
+                            <Value>WP1</Value>
+                        </Attribute>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="PreCondition" AttributeDataType="xs:string">
+                    <Attribute Name="Configuration" AttributeDataType="xs:string">
+                        <Value>neutral</Value>
+                    </Attribute>
+                    <Attribute Name="Product" AttributeDataType="xs:string">
+                        <Value>empty</Value>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="PostCondition" AttributeDataType="xs:string">
+                    <Attribute Name="Configuration" AttributeDataType="xs:string">
+                        <Value>pos-wp1</Value>
+                    </Attribute>
+                    <Attribute Name="Product" AttributeDataType="xs:string">
+                        <Value>empty</Value>
+                    </Attribute>
+                </Attribute>
+                <SupportedRoleClass RefRoleClassPath="HannoverDemoRoleClassLib/Transport3D"/>
+                <RoleRequirements RefBaseRoleClassPath="SkillProRoleClassLib/ResourceExecutableSkill"/>
+            </InternalElement>
+            <RoleRequirements RefBaseRoleClassPath="SkillProRoleClassLib/ExecutableSkill"/>
+        </InternalElement>
+        <InternalElement Name="GoesToBoxPosition-SChoc" ID="ID_GoesToBoxPosition-SChoc">
+            <InternalElement Name="UR5-GoesToBoxPosition-SChoc" ID="ID_UR5-GoesToBoxPosition-SChoc">
+                <Attribute Name="ResourceId" AttributeDataType="xs:string">
+                    <Value>UR5</Value>
+                </Attribute>
+                <Attribute Name="ResponsibleSEE" AttributeDataType="xs:string">
+                    <Value>UR5</Value>
+                </Attribute>
+                <Attribute Name="Duration" Unit="sec" AttributeDataType="xs:integer">
+                    <Value>3</Value>
+                </Attribute>
+                <Attribute Name="Slack" Unit="sec" AttributeDataType="xs:integer">
+                    <Value>0</Value>
+                </Attribute>
+                <Attribute Name="Execution" AttributeDataType="xs:string">
+                    <Attribute Name="Type" AttributeDataType="xs:string">
+                        <Value>Transport6D</Value>
+                    </Attribute>
+                    <Attribute Name="Data" AttributeDataType="xs:string">
+                        <Attribute Name="Position" AttributeDataType="xs:string">
+                            <Value>place</Value>
+                        </Attribute>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="PreCondition" AttributeDataType="xs:string">
+                    <Attribute Name="Configuration" AttributeDataType="xs:string">
+                        <Value>pos-chocolate</Value>
+                    </Attribute>
+                    <Attribute Name="Product" AttributeDataType="xs:string">
+                        <Value>chocolate</Value>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="PostCondition" AttributeDataType="xs:string">
+                    <Attribute Name="Configuration" AttributeDataType="xs:string">
+                        <Value>pos-box</Value>
+                    </Attribute>
+                    <Attribute Name="Product" AttributeDataType="xs:string">
+                        <Value>chocolate</Value>
+                    </Attribute>
+                </Attribute>
+                <SupportedRoleClass RefRoleClassPath="HannoverDemoRoleClassLib/Transport6D"/>
+                <RoleRequirements RefBaseRoleClassPath="SkillProRoleClassLib/ResourceExecutableSkill"/>
+            </InternalElement>
+            <InternalElement Name="MobilePlatform-GoesToBoxPosition-SChoc" ID="ID_MobilePlatform-GoesToBoxPosition-SChoc">
+                <Attribute Name="ResourceId" AttributeDataType="xs:string">
+                    <Value>MobilePlatform</Value>
+                </Attribute>
+                <Attribute Name="ResponsibleSEE" AttributeDataType="xs:string">
+                    <Value>MobilePlatform</Value>
+                </Attribute>
+                <Attribute Name="Duration" Unit="sec" AttributeDataType="xs:integer">
+                    <Value>1</Value>
+                </Attribute>
+                <Attribute Name="Slack" Unit="sec" AttributeDataType="xs:integer">
+                    <Value>0</Value>
+                </Attribute>
+                <Attribute Name="Execution" AttributeDataType="xs:string">
+                    <Attribute Name="Type" AttributeDataType="xs:string">
+                        <Value>Waiting</Value>
+                    </Attribute>
+                    <Attribute Name="Data" AttributeDataType="xs:string">
+                        <Attribute Name="Duration" Unit="sec" AttributeDataType="xs:integer">
+                            <Value>1</Value>
+                        </Attribute>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="PreCondition" AttributeDataType="xs:string">
+                    <Attribute Name="Configuration" AttributeDataType="xs:string">
+                        <Value>pos-ur5</Value>
+                    </Attribute>
+                    <Attribute Name="Product" AttributeDataType="xs:string">
+                        <Value>box-empty</Value>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="PostCondition" AttributeDataType="xs:string">
+                    <Attribute Name="Configuration" AttributeDataType="xs:string">
+                        <Value>pos-ur5</Value>
+                    </Attribute>
+                    <Attribute Name="Product" AttributeDataType="xs:string">
+                        <Value>box-empty</Value>
+                    </Attribute>
+                </Attribute>
+                <SupportedRoleClass RefRoleClassPath="HannoverDemoRoleClassLib/Waiting"/>
+                <RoleRequirements RefBaseRoleClassPath="SkillProRoleClassLib/ResourceExecutableSkill"/>
+            </InternalElement>
+            <RoleRequirements RefBaseRoleClassPath="SkillProRoleClassLib/ExecutableSkill"/>
+        </InternalElement>
+        <InternalElement Name="PlatformDeleteBoxAtpos-wp3-SChoc" ID="ID_PlatformDeleteBoxAtpos-wp3-SChoc">
+            <InternalElement Name="PlatformDeleteBoxAtpos-wp3-SChoc" ID="ID_PlatformDeleteBoxAtpos-wp3-SChoc">
+                <Attribute Name="ResourceId" AttributeDataType="xs:string">
+                    <Value>MobilePlatform</Value>
+                </Attribute>
+                <Attribute Name="ResponsibleSEE" AttributeDataType="xs:string">
+                    <Value>MobilePlatform</Value>
+                </Attribute>
+                <Attribute Name="Duration" Unit="sec" AttributeDataType="xs:integer">
+                    <Value>0</Value>
+                </Attribute>
+                <Attribute Name="Slack" Unit="sec" AttributeDataType="xs:integer">
+                    <Value>0</Value>
+                </Attribute>
+                <Attribute Name="Execution" AttributeDataType="xs:string">
+                    <Attribute Name="Type" AttributeDataType="xs:string">
+                        <Value>Waiting</Value>
+                    </Attribute>
+                    <Attribute Name="Data" AttributeDataType="xs:string">
+                        <Attribute Name="Duration" Unit="sec" AttributeDataType="xs:string">
+                            <Value>0</Value>
+                        </Attribute>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="PreCondition" AttributeDataType="xs:string">
+                    <Attribute Name="Configuration" AttributeDataType="xs:string">
+                        <Value>pos-wp3</Value>
+                    </Attribute>
+                    <Attribute Name="Product" AttributeDataType="xs:string">
+                        <Value>box-empty</Value>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="PostCondition" AttributeDataType="xs:string">
+                    <Attribute Name="Configuration" AttributeDataType="xs:string">
+                        <Value>pos-wp3</Value>
+                    </Attribute>
+                    <Attribute Name="Product" AttributeDataType="xs:string">
+                        <Value>empty</Value>
+                    </Attribute>
+                </Attribute>
+                <SupportedRoleClass RefRoleClassPath="HannoverDemoRoleClassLib/Waiting"/>
+                <RoleRequirements RefBaseRoleClassPath="SkillProRoleClassLib/ResourceExecutableSkill"/>
+            </InternalElement>
+            <RoleRequirements RefBaseRoleClassPath="SkillProRoleClassLib/ExecutableSkill"/>
+        </InternalElement>
+        <InternalElement Name="MoveEmptyPlatformFromKR6ToNeutralbox-empty-SChoc" ID="ID_MoveEmptyPlatformFromKR6ToNeutralbox-empty-SChoc">
+            <InternalElement Name="MobilePlatform-MoveEmptyPlatformFromKR6ToNeutralbox-empty-SChoc" ID="ID_MobilePlatform-MoveEmptyPlatformFromKR6ToNeutralbox-empty-SChoc">
+                <Attribute Name="ResourceId" AttributeDataType="xs:string">
+                    <Value>MobilePlatform</Value>
+                </Attribute>
+                <Attribute Name="ResponsibleSEE" AttributeDataType="xs:string">
+                    <Value>MobilePlatform</Value>
+                </Attribute>
+                <Attribute Name="Duration" Unit="sec" AttributeDataType="xs:integer">
+                    <Value>30</Value>
+                </Attribute>
+                <Attribute Name="Slack" Unit="sec" AttributeDataType="xs:integer">
+                    <Value>0</Value>
+                </Attribute>
+                <Attribute Name="Execution" AttributeDataType="xs:string">
+                    <Attribute Name="Type" AttributeDataType="xs:string">
+                        <Value>Transport3D</Value>
+                    </Attribute>
+                    <Attribute Name="Data" AttributeDataType="xs:string">
+                        <Attribute Name="Position" AttributeDataType="xs:string">
+                            <Value>NEUT</Value>
+                        </Attribute>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="PreCondition" AttributeDataType="xs:string">
+                    <Attribute Name="Configuration" AttributeDataType="xs:string">
+                        <Value>pos-kr6</Value>
+                    </Attribute>
+                    <Attribute Name="Product" AttributeDataType="xs:string">
+                        <Value>box-empty</Value>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="PostCondition" AttributeDataType="xs:string">
+                    <Attribute Name="Configuration" AttributeDataType="xs:string">
+                        <Value>neutral</Value>
+                    </Attribute>
+                    <Attribute Name="Product" AttributeDataType="xs:string">
+                        <Value>box-empty</Value>
+                    </Attribute>
+                </Attribute>
+                <SupportedRoleClass RefRoleClassPath="HannoverDemoRoleClassLib/Transport3D"/>
+                <RoleRequirements RefBaseRoleClassPath="SkillProRoleClassLib/ResourceExecutableSkill"/>
+            </InternalElement>
+            <RoleRequirements RefBaseRoleClassPath="SkillProRoleClassLib/ExecutableSkill"/>
+        </InternalElement>
+        <InternalElement Name="PlatformGoesToKR6empty-SChoc" ID="ID_PlatformGoesToKR6empty-SChoc">
+            <InternalElement Name="MobilePlatform-PlatformGoesToKR6empty-SChoc" ID="ID_MobilePlatform-PlatformGoesToKR6empty-SChoc">
+                <Attribute Name="ResourceId" AttributeDataType="xs:string">
+                    <Value>MobilePlatform</Value>
+                </Attribute>
+                <Attribute Name="ResponsibleSEE" AttributeDataType="xs:string">
+                    <Value>MobilePlatform</Value>
+                </Attribute>
+                <Attribute Name="Duration" Unit="sec" AttributeDataType="xs:integer">
+                    <Value>30</Value>
+                </Attribute>
+                <Attribute Name="Slack" Unit="sec" AttributeDataType="xs:integer">
+                    <Value>0</Value>
+                </Attribute>
+                <Attribute Name="Execution" AttributeDataType="xs:string">
+                    <Attribute Name="Type" AttributeDataType="xs:string">
+                        <Value>Transport3D</Value>
+                    </Attribute>
+                    <Attribute Name="Data" AttributeDataType="xs:string">
+                        <Attribute Name="Position" AttributeDataType="xs:string">
+                            <Value>KR6</Value>
+                        </Attribute>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="PreCondition" AttributeDataType="xs:string">
+                    <Attribute Name="Configuration" AttributeDataType="xs:string">
+                        <Value>neutral</Value>
+                    </Attribute>
+                    <Attribute Name="Product" AttributeDataType="xs:string">
+                        <Value>empty</Value>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="PostCondition" AttributeDataType="xs:string">
+                    <Attribute Name="Configuration" AttributeDataType="xs:string">
+                        <Value>pos-kr6</Value>
+                    </Attribute>
+                    <Attribute Name="Product" AttributeDataType="xs:string">
+                        <Value>empty</Value>
+                    </Attribute>
+                </Attribute>
+                <SupportedRoleClass RefRoleClassPath="HannoverDemoRoleClassLib/Transport3D"/>
+                <RoleRequirements RefBaseRoleClassPath="SkillProRoleClassLib/ResourceExecutableSkill"/>
+            </InternalElement>
+            <RoleRequirements RefBaseRoleClassPath="SkillProRoleClassLib/ExecutableSkill"/>
+        </InternalElement>
+        <InternalElement Name="Give$chocolate-color$ChocolateToUR5-SChoc" ID="ID_Give$chocolate-color$ChocolateToUR5-SChoc">
+            <InternalElement Name="Simulation-Give$chocolate-color$ChocolateToUR5-SChoc" ID="ID_Simulation-Give$chocolate-color$ChocolateToUR5-SChoc">
+                <Attribute Name="ResourceId" AttributeDataType="xs:string">
+                    <Value>Simulation</Value>
+                </Attribute>
+                <Attribute Name="ResponsibleSEE" AttributeDataType="xs:string">
+                    <Value>Simulation</Value>
+                </Attribute>
+                <Attribute Name="Duration" Unit="sec" AttributeDataType="xs:integer">
+                    <Value>1</Value>
+                </Attribute>
+                <Attribute Name="Slack" Unit="sec" AttributeDataType="xs:integer">
+                    <Value>0</Value>
+                </Attribute>
+                <Attribute Name="Execution" AttributeDataType="xs:string">
+                    <Attribute Name="Type" AttributeDataType="xs:string">
+                        <Value>Simulate</Value>
+                    </Attribute>
+                    <Attribute Name="Data" AttributeDataType="xs:string"/>
+                </Attribute>
+                <Attribute Name="PreCondition" AttributeDataType="xs:string">
+                    <Attribute Name="Configuration" AttributeDataType="xs:string">
+                        <Value>neutral</Value>
+                    </Attribute>
+                    <Attribute Name="Product" AttributeDataType="xs:string">
+                        <Value>chocolate</Value>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="PostCondition" AttributeDataType="xs:string">
+                    <Attribute Name="Configuration" AttributeDataType="xs:string">
+                        <Value>neutral</Value>
+                    </Attribute>
+                    <Attribute Name="Product" AttributeDataType="xs:string">
+                        <Value>empty</Value>
+                    </Attribute>
+                </Attribute>
+                <SupportedRoleClass RefRoleClassPath="HannoverDemoRoleClassLib/Simulate"/>
+                <RoleRequirements RefBaseRoleClassPath="SkillProRoleClassLib/ResourceExecutableSkill"/>
+            </InternalElement>
+            <InternalElement Name="UR5-Give$chocolate-color$ChocolateToUR5-SChoc" ID="ID_UR5-Give$chocolate-color$ChocolateToUR5-SChoc">
+                <Attribute Name="ResourceId" AttributeDataType="xs:string">
+                    <Value>UR5</Value>
+                </Attribute>
+                <Attribute Name="ResponsibleSEE" AttributeDataType="xs:string">
+                    <Value>UR5</Value>
+                </Attribute>
+                <Attribute Name="Duration" Unit="sec" AttributeDataType="xs:integer">
+                    <Value>1</Value>
+                </Attribute>
+                <Attribute Name="Slack" Unit="sec" AttributeDataType="xs:integer">
+                    <Value>0</Value>
+                </Attribute>
+                <Attribute Name="Execution" AttributeDataType="xs:string">
+                    <Attribute Name="Type" AttributeDataType="xs:string">
+                        <Value>Waiting</Value>
+                    </Attribute>
+                    <Attribute Name="Data" AttributeDataType="xs:string">
+                        <Attribute Name="Duration" Unit="sec" AttributeDataType="xs:integer">
+                            <Value>1</Value>
+                        </Attribute>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="PreCondition" AttributeDataType="xs:string">
+                    <Attribute Name="Configuration" AttributeDataType="xs:string">
+                        <Value>neutral</Value>
+                    </Attribute>
+                    <Attribute Name="Product" AttributeDataType="xs:string">
+                        <Value>empty</Value>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="PostCondition" AttributeDataType="xs:string">
+                    <Attribute Name="Configuration" AttributeDataType="xs:string">
+                        <Value>neutral</Value>
+                    </Attribute>
+                    <Attribute Name="Product" AttributeDataType="xs:string">
+                        <Value>chocolate</Value>
+                    </Attribute>
+                </Attribute>
+                <SupportedRoleClass RefRoleClassPath="HannoverDemoRoleClassLib/Waiting"/>
+                <RoleRequirements RefBaseRoleClassPath="SkillProRoleClassLib/ResourceExecutableSkill"/>
+            </InternalElement>
+            <RoleRequirements RefBaseRoleClassPath="SkillProRoleClassLib/ExecutableSkill"/>
+        </InternalElement>
+        <InternalElement Name="PlatformCreateBoxAtpos-wp3-SChoc" ID="ID_PlatformCreateBoxAtpos-wp3-SChoc">
+            <InternalElement Name="PlatformCreateBoxAtpos-wp3-SChoc" ID="ID_PlatformCreateBoxAtpos-wp3-SChoc">
+                <Attribute Name="ResourceId" AttributeDataType="xs:string">
+                    <Value>MobilePlatform</Value>
+                </Attribute>
+                <Attribute Name="ResponsibleSEE" AttributeDataType="xs:string">
+                    <Value>MobilePlatform</Value>
+                </Attribute>
+                <Attribute Name="Duration" Unit="sec" AttributeDataType="xs:integer">
+                    <Value>0</Value>
+                </Attribute>
+                <Attribute Name="Slack" Unit="sec" AttributeDataType="xs:integer">
+                    <Value>0</Value>
+                </Attribute>
+                <Attribute Name="Execution" AttributeDataType="xs:string">
+                    <Attribute Name="Type" AttributeDataType="xs:string">
+                        <Value>Waiting</Value>
+                    </Attribute>
+                    <Attribute Name="Data" AttributeDataType="xs:string">
+                        <Attribute Name="Duration" Unit="sec" AttributeDataType="xs:string">
+                            <Value>0</Value>
+                        </Attribute>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="PreCondition" AttributeDataType="xs:string">
+                    <Attribute Name="Configuration" AttributeDataType="xs:string">
+                        <Value>pos-wp3</Value>
+                    </Attribute>
+                    <Attribute Name="Product" AttributeDataType="xs:string">
+                        <Value>empty</Value>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="PostCondition" AttributeDataType="xs:string">
+                    <Attribute Name="Configuration" AttributeDataType="xs:string">
+                        <Value>pos-wp3</Value>
+                    </Attribute>
+                    <Attribute Name="Product" AttributeDataType="xs:string">
+                        <Value>box-empty</Value>
+                    </Attribute>
+                </Attribute>
+                <SupportedRoleClass RefRoleClassPath="HannoverDemoRoleClassLib/Waiting"/>
+                <RoleRequirements RefBaseRoleClassPath="SkillProRoleClassLib/ResourceExecutableSkill"/>
+            </InternalElement>
+            <RoleRequirements RefBaseRoleClassPath="SkillProRoleClassLib/ExecutableSkill"/>
+        </InternalElement>
+        <InternalElement Name="PlatformGoesToKR6box-empty-SChoc" ID="ID_PlatformGoesToKR6box-empty-SChoc">
+            <InternalElement Name="MobilePlatform-PlatformGoesToKR6box-empty-SChoc" ID="ID_MobilePlatform-PlatformGoesToKR6box-empty-SChoc">
+                <Attribute Name="ResourceId" AttributeDataType="xs:string">
+                    <Value>MobilePlatform</Value>
+                </Attribute>
+                <Attribute Name="ResponsibleSEE" AttributeDataType="xs:string">
+                    <Value>MobilePlatform</Value>
+                </Attribute>
+                <Attribute Name="Duration" Unit="sec" AttributeDataType="xs:integer">
+                    <Value>30</Value>
+                </Attribute>
+                <Attribute Name="Slack" Unit="sec" AttributeDataType="xs:integer">
+                    <Value>0</Value>
+                </Attribute>
+                <Attribute Name="Execution" AttributeDataType="xs:string">
+                    <Attribute Name="Type" AttributeDataType="xs:string">
+                        <Value>Transport3D</Value>
+                    </Attribute>
+                    <Attribute Name="Data" AttributeDataType="xs:string">
+                        <Attribute Name="Position" AttributeDataType="xs:string">
+                            <Value>KR6</Value>
+                        </Attribute>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="PreCondition" AttributeDataType="xs:string">
+                    <Attribute Name="Configuration" AttributeDataType="xs:string">
+                        <Value>neutral</Value>
+                    </Attribute>
+                    <Attribute Name="Product" AttributeDataType="xs:string">
+                        <Value>box-empty</Value>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="PostCondition" AttributeDataType="xs:string">
+                    <Attribute Name="Configuration" AttributeDataType="xs:string">
+                        <Value>pos-kr6</Value>
+                    </Attribute>
+                    <Attribute Name="Product" AttributeDataType="xs:string">
+                        <Value>box-empty</Value>
+                    </Attribute>
+                </Attribute>
+                <SupportedRoleClass RefRoleClassPath="HannoverDemoRoleClassLib/Transport3D"/>
+                <RoleRequirements RefBaseRoleClassPath="SkillProRoleClassLib/ResourceExecutableSkill"/>
+            </InternalElement>
+            <RoleRequirements RefBaseRoleClassPath="SkillProRoleClassLib/ExecutableSkill"/>
+        </InternalElement>
+        <InternalElement Name="HumanWP1Logout-SChoc" ID="ID_HumanWP1Logout-SChoc">
+            <InternalElement Name="Human-HumanWP1Logout-SChoc" ID="ID_Human-HumanWP1Logout-SChoc">
+                <Attribute Name="ResourceId" AttributeDataType="xs:string">
+                    <Value>HumanWP1</Value>
+                </Attribute>
+                <Attribute Name="ResponsibleSEE" AttributeDataType="xs:string">
+                    <Value>HumanWP1</Value>
+                </Attribute>
+                <Attribute Name="Duration" Unit="sec" AttributeDataType="xs:integer">
+                    <Value>3</Value>
+                </Attribute>
+                <Attribute Name="Slack" Unit="sec" AttributeDataType="xs:integer">
+                    <Value>0</Value>
+                </Attribute>
+                <Attribute Name="Execution" AttributeDataType="xs:string">
+                    <Attribute Name="Type" AttributeDataType="xs:string">
+                        <Value>Instruction</Value>
+                    </Attribute>
+                    <Attribute Name="Data" AttributeDataType="xs:string">
+                        <Attribute Name="Instruction" AttributeDataType="xs:string">
+                            <Value>Thank you and enjoy! Please log out from the system now.</Value>
+                        </Attribute>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="PreCondition" AttributeDataType="xs:string">
+                    <Attribute Name="Configuration" AttributeDataType="xs:string">
+                        <Value>neutral</Value>
+                    </Attribute>
+                    <Attribute Name="Product" AttributeDataType="xs:string">
+                        <Value>box-with-chocolate</Value>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="PostCondition" AttributeDataType="xs:string">
+                    <Attribute Name="Configuration" AttributeDataType="xs:string">
+                        <Value>neutral</Value>
+                    </Attribute>
+                    <Attribute Name="Product" AttributeDataType="xs:string">
+                        <Value>box-unfolded</Value>
+                    </Attribute>
+                </Attribute>
+                <SupportedRoleClass RefRoleClassPath="HannoverDemoRoleClassLib/Instruction"/>
+                <RoleRequirements RefBaseRoleClassPath="SkillProRoleClassLib/ResourceExecutableSkill"/>
+            </InternalElement>
+            <RoleRequirements RefBaseRoleClassPath="SkillProRoleClassLib/ExecutableSkill"/>
+        </InternalElement>
+        <InternalElement Name="PlatformDeleteBoxAtpos-wp2-SChoc" ID="ID_PlatformDeleteBoxAtpos-wp2-SChoc">
+            <InternalElement Name="PlatformDeleteBoxAtpos-wp2-SChoc" ID="ID_PlatformDeleteBoxAtpos-wp2-SChoc">
+                <Attribute Name="ResourceId" AttributeDataType="xs:string">
+                    <Value>MobilePlatform</Value>
+                </Attribute>
+                <Attribute Name="ResponsibleSEE" AttributeDataType="xs:string">
+                    <Value>MobilePlatform</Value>
+                </Attribute>
+                <Attribute Name="Duration" Unit="sec" AttributeDataType="xs:integer">
+                    <Value>0</Value>
+                </Attribute>
+                <Attribute Name="Slack" Unit="sec" AttributeDataType="xs:integer">
+                    <Value>0</Value>
+                </Attribute>
+                <Attribute Name="Execution" AttributeDataType="xs:string">
+                    <Attribute Name="Type" AttributeDataType="xs:string">
+                        <Value>Waiting</Value>
+                    </Attribute>
+                    <Attribute Name="Data" AttributeDataType="xs:string">
+                        <Attribute Name="Duration" Unit="sec" AttributeDataType="xs:string">
+                            <Value>0</Value>
+                        </Attribute>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="PreCondition" AttributeDataType="xs:string">
+                    <Attribute Name="Configuration" AttributeDataType="xs:string">
+                        <Value>pos-wp2</Value>
+                    </Attribute>
+                    <Attribute Name="Product" AttributeDataType="xs:string">
+                        <Value>box-empty</Value>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="PostCondition" AttributeDataType="xs:string">
+                    <Attribute Name="Configuration" AttributeDataType="xs:string">
+                        <Value>pos-wp2</Value>
+                    </Attribute>
+                    <Attribute Name="Product" AttributeDataType="xs:string">
+                        <Value>empty</Value>
+                    </Attribute>
+                </Attribute>
+                <SupportedRoleClass RefRoleClassPath="HannoverDemoRoleClassLib/Waiting"/>
+                <RoleRequirements RefBaseRoleClassPath="SkillProRoleClassLib/ResourceExecutableSkill"/>
+            </InternalElement>
+            <RoleRequirements RefBaseRoleClassPath="SkillProRoleClassLib/ExecutableSkill"/>
+        </InternalElement>
+        <InternalElement Name="MoveEmptyPlatformFromWP3ToNeutralbox-empty-SChoc" ID="ID_MoveEmptyPlatformFromWP3ToNeutralbox-empty-SChoc">
+            <InternalElement Name="MobilePlatform-MoveEmptyPlatformFromWP3ToNeutralbox-empty-SChoc" ID="ID_MobilePlatform-MoveEmptyPlatformFromWP3ToNeutralbox-empty-SChoc">
+                <Attribute Name="ResourceId" AttributeDataType="xs:string">
+                    <Value>MobilePlatform</Value>
+                </Attribute>
+                <Attribute Name="ResponsibleSEE" AttributeDataType="xs:string">
+                    <Value>MobilePlatform</Value>
+                </Attribute>
+                <Attribute Name="Duration" Unit="sec" AttributeDataType="xs:integer">
+                    <Value>30</Value>
+                </Attribute>
+                <Attribute Name="Slack" Unit="sec" AttributeDataType="xs:integer">
+                    <Value>0</Value>
+                </Attribute>
+                <Attribute Name="Execution" AttributeDataType="xs:string">
+                    <Attribute Name="Type" AttributeDataType="xs:string">
+                        <Value>Transport3D</Value>
+                    </Attribute>
+                    <Attribute Name="Data" AttributeDataType="xs:string">
+                        <Attribute Name="Position" AttributeDataType="xs:string">
+                            <Value>NEUT</Value>
+                        </Attribute>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="PreCondition" AttributeDataType="xs:string">
+                    <Attribute Name="Configuration" AttributeDataType="xs:string">
+                        <Value>pos-wp3</Value>
+                    </Attribute>
+                    <Attribute Name="Product" AttributeDataType="xs:string">
+                        <Value>box-empty</Value>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="PostCondition" AttributeDataType="xs:string">
+                    <Attribute Name="Configuration" AttributeDataType="xs:string">
+                        <Value>neutral</Value>
+                    </Attribute>
+                    <Attribute Name="Product" AttributeDataType="xs:string">
+                        <Value>box-empty</Value>
+                    </Attribute>
+                </Attribute>
+                <SupportedRoleClass RefRoleClassPath="HannoverDemoRoleClassLib/Transport3D"/>
+                <RoleRequirements RefBaseRoleClassPath="SkillProRoleClassLib/ResourceExecutableSkill"/>
+            </InternalElement>
+            <RoleRequirements RefBaseRoleClassPath="SkillProRoleClassLib/ExecutableSkill"/>
+        </InternalElement>
+        <InternalElement Name="PlatformDeleteBoxAtpos-wp1-SChoc" ID="ID_PlatformDeleteBoxAtpos-wp1-SChoc">
+            <InternalElement Name="PlatformDeleteBoxAtpos-wp1-SChoc" ID="ID_PlatformDeleteBoxAtpos-wp1-SChoc">
+                <Attribute Name="ResourceId" AttributeDataType="xs:string">
+                    <Value>MobilePlatform</Value>
+                </Attribute>
+                <Attribute Name="ResponsibleSEE" AttributeDataType="xs:string">
+                    <Value>MobilePlatform</Value>
+                </Attribute>
+                <Attribute Name="Duration" Unit="sec" AttributeDataType="xs:integer">
+                    <Value>0</Value>
+                </Attribute>
+                <Attribute Name="Slack" Unit="sec" AttributeDataType="xs:integer">
+                    <Value>0</Value>
+                </Attribute>
+                <Attribute Name="Execution" AttributeDataType="xs:string">
+                    <Attribute Name="Type" AttributeDataType="xs:string">
+                        <Value>Waiting</Value>
+                    </Attribute>
+                    <Attribute Name="Data" AttributeDataType="xs:string">
+                        <Attribute Name="Duration" Unit="sec" AttributeDataType="xs:string">
+                            <Value>0</Value>
+                        </Attribute>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="PreCondition" AttributeDataType="xs:string">
+                    <Attribute Name="Configuration" AttributeDataType="xs:string">
+                        <Value>pos-wp1</Value>
+                    </Attribute>
+                    <Attribute Name="Product" AttributeDataType="xs:string">
+                        <Value>box-empty</Value>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="PostCondition" AttributeDataType="xs:string">
+                    <Attribute Name="Configuration" AttributeDataType="xs:string">
+                        <Value>pos-wp1</Value>
+                    </Attribute>
+                    <Attribute Name="Product" AttributeDataType="xs:string">
+                        <Value>empty</Value>
+                    </Attribute>
+                </Attribute>
+                <SupportedRoleClass RefRoleClassPath="HannoverDemoRoleClassLib/Waiting"/>
+                <RoleRequirements RefBaseRoleClassPath="SkillProRoleClassLib/ResourceExecutableSkill"/>
+            </InternalElement>
+            <RoleRequirements RefBaseRoleClassPath="SkillProRoleClassLib/ExecutableSkill"/>
+        </InternalElement>
+        <InternalElement Name="PlatformToWP2-SChoc" ID="ID_PlatformToWP2-SChoc">
+            <InternalElement Name="MobilePlatform-PlatformToWP2-SChoc" ID="ID_MobilePlatform-PlatformToWP2-SChoc">
+                <Attribute Name="ResourceId" AttributeDataType="xs:string">
+                    <Value>MobilePlatform</Value>
+                </Attribute>
+                <Attribute Name="ResponsibleSEE" AttributeDataType="xs:string">
+                    <Value>MobilePlatform</Value>
+                </Attribute>
+                <Attribute Name="Duration" Unit="sec" AttributeDataType="xs:integer">
+                    <Value>5</Value>
+                </Attribute>
+                <Attribute Name="Slack" Unit="sec" AttributeDataType="xs:integer">
+                    <Value>0</Value>
+                </Attribute>
+                <Attribute Name="Execution" AttributeDataType="xs:string">
+                    <Attribute Name="Type" AttributeDataType="xs:string">
+                        <Value>Transport3D</Value>
+                    </Attribute>
+                    <Attribute Name="Data" AttributeDataType="xs:string">
+                        <Attribute Name="Position" AttributeDataType="xs:string">
+                            <Value>WP2</Value>
+                        </Attribute>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="PreCondition" AttributeDataType="xs:string">
+                    <Attribute Name="Configuration" AttributeDataType="xs:string">
+                        <Value>pos-ur5</Value>
+                    </Attribute>
+                    <Attribute Name="Product" AttributeDataType="xs:string">
+                        <Value>box-with-chocolate</Value>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="PostCondition" AttributeDataType="xs:string">
+                    <Attribute Name="Configuration" AttributeDataType="xs:string">
+                        <Value>pos-wp2</Value>
+                    </Attribute>
+                    <Attribute Name="Product" AttributeDataType="xs:string">
+                        <Value>box-with-chocolate</Value>
+                    </Attribute>
+                </Attribute>
+                <SupportedRoleClass RefRoleClassPath="HannoverDemoRoleClassLib/Transport3D"/>
+                <RoleRequirements RefBaseRoleClassPath="SkillProRoleClassLib/ResourceExecutableSkill"/>
+            </InternalElement>
+            <RoleRequirements RefBaseRoleClassPath="SkillProRoleClassLib/ExecutableSkill"/>
+        </InternalElement>
+        <InternalElement Name="MoveEmptyPlatformFromWP2ToNeutralempty-SChoc" ID="ID_MoveEmptyPlatformFromWP2ToNeutralempty-SChoc">
+            <InternalElement Name="MobilePlatform-MoveEmptyPlatformFromWP2ToNeutralempty-SChoc" ID="ID_MobilePlatform-MoveEmptyPlatformFromWP2ToNeutralempty-SChoc">
+                <Attribute Name="ResourceId" AttributeDataType="xs:string">
+                    <Value>MobilePlatform</Value>
+                </Attribute>
+                <Attribute Name="ResponsibleSEE" AttributeDataType="xs:string">
+                    <Value>MobilePlatform</Value>
+                </Attribute>
+                <Attribute Name="Duration" Unit="sec" AttributeDataType="xs:integer">
+                    <Value>30</Value>
+                </Attribute>
+                <Attribute Name="Slack" Unit="sec" AttributeDataType="xs:integer">
+                    <Value>0</Value>
+                </Attribute>
+                <Attribute Name="Execution" AttributeDataType="xs:string">
+                    <Attribute Name="Type" AttributeDataType="xs:string">
+                        <Value>Transport3D</Value>
+                    </Attribute>
+                    <Attribute Name="Data" AttributeDataType="xs:string">
+                        <Attribute Name="Position" AttributeDataType="xs:string">
+                            <Value>NEUT</Value>
+                        </Attribute>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="PreCondition" AttributeDataType="xs:string">
+                    <Attribute Name="Configuration" AttributeDataType="xs:string">
+                        <Value>pos-wp2</Value>
+                    </Attribute>
+                    <Attribute Name="Product" AttributeDataType="xs:string">
+                        <Value>empty</Value>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="PostCondition" AttributeDataType="xs:string">
+                    <Attribute Name="Configuration" AttributeDataType="xs:string">
+                        <Value>neutral</Value>
+                    </Attribute>
+                    <Attribute Name="Product" AttributeDataType="xs:string">
+                        <Value>empty</Value>
+                    </Attribute>
+                </Attribute>
+                <SupportedRoleClass RefRoleClassPath="HannoverDemoRoleClassLib/Transport3D"/>
+                <RoleRequirements RefBaseRoleClassPath="SkillProRoleClassLib/ResourceExecutableSkill"/>
+            </InternalElement>
+            <RoleRequirements RefBaseRoleClassPath="SkillProRoleClassLib/ExecutableSkill"/>
+        </InternalElement>
+        <InternalElement Name="HumanWP1HumanPutsEmptyBoxOnPlatform-SChoc" ID="ID_HumanWP1HumanPutsEmptyBoxOnPlatform-SChoc">
+            <InternalElement Name="Human-HumanWP1HumanPutsEmptyBoxOnPlatform-SChoc" ID="ID_Human-HumanWP1HumanPutsEmptyBoxOnPlatform-SChoc">
+                <Attribute Name="ResourceId" AttributeDataType="xs:string">
+                    <Value>HumanWP1</Value>
+                </Attribute>
+                <Attribute Name="ResponsibleSEE" AttributeDataType="xs:string">
+                    <Value>HumanWP1</Value>
+                </Attribute>
+                <Attribute Name="Duration" Unit="sec" AttributeDataType="xs:integer">
+                    <Value>3</Value>
+                </Attribute>
+                <Attribute Name="Slack" Unit="sec" AttributeDataType="xs:integer">
+                    <Value>0</Value>
+                </Attribute>
+                <Attribute Name="Execution" AttributeDataType="xs:string">
+                    <Attribute Name="Type" AttributeDataType="xs:string">
+                        <Value>Instruction</Value>
+                    </Attribute>
+                    <Attribute Name="Data" AttributeDataType="xs:string">
+                        <Attribute Name="Instruction" AttributeDataType="xs:string">
+                            <Value>Please put the box on the mobile platform!</Value>
+                        </Attribute>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="PreCondition" AttributeDataType="xs:string">
+                    <Attribute Name="Configuration" AttributeDataType="xs:string">
+                        <Value>neutral</Value>
+                    </Attribute>
+                    <Attribute Name="Product" AttributeDataType="xs:string">
+                        <Value>box-empty</Value>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="PostCondition" AttributeDataType="xs:string">
+                    <Attribute Name="Configuration" AttributeDataType="xs:string">
+                        <Value>neutral</Value>
+                    </Attribute>
+                    <Attribute Name="Product" AttributeDataType="xs:string">
+                        <Value>empty</Value>
+                    </Attribute>
+                </Attribute>
+                <SupportedRoleClass RefRoleClassPath="HannoverDemoRoleClassLib/Instruction"/>
+                <RoleRequirements RefBaseRoleClassPath="SkillProRoleClassLib/ResourceExecutableSkill"/>
+            </InternalElement>
+            <InternalElement Name="MobilePlatform-HumanWP1HumanPutsEmptyBoxOnPlatform-SChoc" ID="ID_MobilePlatform-HumanWP1HumanPutsEmptyBoxOnPlatform-SChoc">
+                <Attribute Name="ResourceId" AttributeDataType="xs:string">
+                    <Value>MobilePlatform</Value>
+                </Attribute>
+                <Attribute Name="ResponsibleSEE" AttributeDataType="xs:string">
+                    <Value>MobilePlatform</Value>
+                </Attribute>
+                <Attribute Name="Duration" Unit="sec" AttributeDataType="xs:integer">
+                    <Value>1</Value>
+                </Attribute>
+                <Attribute Name="Slack" Unit="sec" AttributeDataType="xs:integer">
+                    <Value>0</Value>
+                </Attribute>
+                <Attribute Name="Execution" AttributeDataType="xs:string">
+                    <Attribute Name="Type" AttributeDataType="xs:string">
+                        <Value>Waiting</Value>
+                    </Attribute>
+                    <Attribute Name="Data" AttributeDataType="xs:string">
+                        <Attribute Name="Duration" Unit="sec" AttributeDataType="xs:integer">
+                            <Value>1</Value>
+                        </Attribute>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="PreCondition" AttributeDataType="xs:string">
+                    <Attribute Name="Configuration" AttributeDataType="xs:string">
+                        <Value>pos-wp1</Value>
+                    </Attribute>
+                    <Attribute Name="Product" AttributeDataType="xs:string">
+                        <Value>empty</Value>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="PostCondition" AttributeDataType="xs:string">
+                    <Attribute Name="Configuration" AttributeDataType="xs:string">
+                        <Value>pos-wp1</Value>
+                    </Attribute>
+                    <Attribute Name="Product" AttributeDataType="xs:string">
+                        <Value>box-empty</Value>
+                    </Attribute>
+                </Attribute>
+                <SupportedRoleClass RefRoleClassPath="HannoverDemoRoleClassLib/Waiting"/>
+                <RoleRequirements RefBaseRoleClassPath="SkillProRoleClassLib/ResourceExecutableSkill"/>
+            </InternalElement>
+            <RoleRequirements RefBaseRoleClassPath="SkillProRoleClassLib/ExecutableSkill"/>
+        </InternalElement>
+        <InternalElement Name="PlatformGoesToUR5empty-SChoc" ID="ID_PlatformGoesToUR5empty-SChoc">
+            <InternalElement Name="MobilePlatform-PlatformGoesToUR5empty-SChoc" ID="ID_MobilePlatform-PlatformGoesToUR5empty-SChoc">
+                <Attribute Name="ResourceId" AttributeDataType="xs:string">
+                    <Value>MobilePlatform</Value>
+                </Attribute>
+                <Attribute Name="ResponsibleSEE" AttributeDataType="xs:string">
+                    <Value>MobilePlatform</Value>
+                </Attribute>
+                <Attribute Name="Duration" Unit="sec" AttributeDataType="xs:integer">
+                    <Value>30</Value>
+                </Attribute>
+                <Attribute Name="Slack" Unit="sec" AttributeDataType="xs:integer">
+                    <Value>0</Value>
+                </Attribute>
+                <Attribute Name="Execution" AttributeDataType="xs:string">
+                    <Attribute Name="Type" AttributeDataType="xs:string">
+                        <Value>Transport3D</Value>
+                    </Attribute>
+                    <Attribute Name="Data" AttributeDataType="xs:string">
+                        <Attribute Name="Position" AttributeDataType="xs:string">
+                            <Value>UR5</Value>
+                        </Attribute>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="PreCondition" AttributeDataType="xs:string">
+                    <Attribute Name="Configuration" AttributeDataType="xs:string">
+                        <Value>neutral</Value>
+                    </Attribute>
+                    <Attribute Name="Product" AttributeDataType="xs:string">
+                        <Value>empty</Value>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="PostCondition" AttributeDataType="xs:string">
+                    <Attribute Name="Configuration" AttributeDataType="xs:string">
+                        <Value>pos-ur5</Value>
+                    </Attribute>
+                    <Attribute Name="Product" AttributeDataType="xs:string">
+                        <Value>empty</Value>
+                    </Attribute>
+                </Attribute>
+                <SupportedRoleClass RefRoleClassPath="HannoverDemoRoleClassLib/Transport3D"/>
+                <RoleRequirements RefBaseRoleClassPath="SkillProRoleClassLib/ResourceExecutableSkill"/>
+            </InternalElement>
+            <RoleRequirements RefBaseRoleClassPath="SkillProRoleClassLib/ExecutableSkill"/>
+        </InternalElement>
+        <InternalElement Name="PlatformDeleteBoxAtpos-ur5-SChoc" ID="ID_PlatformDeleteBoxAtpos-ur5-SChoc">
+            <InternalElement Name="PlatformDeleteBoxAtpos-ur5-SChoc" ID="ID_PlatformDeleteBoxAtpos-ur5-SChoc">
+                <Attribute Name="ResourceId" AttributeDataType="xs:string">
+                    <Value>MobilePlatform</Value>
+                </Attribute>
+                <Attribute Name="ResponsibleSEE" AttributeDataType="xs:string">
+                    <Value>MobilePlatform</Value>
+                </Attribute>
+                <Attribute Name="Duration" Unit="sec" AttributeDataType="xs:integer">
+                    <Value>0</Value>
+                </Attribute>
+                <Attribute Name="Slack" Unit="sec" AttributeDataType="xs:integer">
+                    <Value>0</Value>
+                </Attribute>
+                <Attribute Name="Execution" AttributeDataType="xs:string">
+                    <Attribute Name="Type" AttributeDataType="xs:string">
+                        <Value>Waiting</Value>
+                    </Attribute>
+                    <Attribute Name="Data" AttributeDataType="xs:string">
+                        <Attribute Name="Duration" Unit="sec" AttributeDataType="xs:string">
+                            <Value>0</Value>
+                        </Attribute>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="PreCondition" AttributeDataType="xs:string">
+                    <Attribute Name="Configuration" AttributeDataType="xs:string">
+                        <Value>pos-ur5</Value>
+                    </Attribute>
+                    <Attribute Name="Product" AttributeDataType="xs:string">
+                        <Value>box-empty</Value>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="PostCondition" AttributeDataType="xs:string">
+                    <Attribute Name="Configuration" AttributeDataType="xs:string">
+                        <Value>pos-ur5</Value>
+                    </Attribute>
+                    <Attribute Name="Product" AttributeDataType="xs:string">
+                        <Value>empty</Value>
+                    </Attribute>
+                </Attribute>
+                <SupportedRoleClass RefRoleClassPath="HannoverDemoRoleClassLib/Waiting"/>
+                <RoleRequirements RefBaseRoleClassPath="SkillProRoleClassLib/ResourceExecutableSkill"/>
+            </InternalElement>
+            <RoleRequirements RefBaseRoleClassPath="SkillProRoleClassLib/ExecutableSkill"/>
+        </InternalElement>
+        <InternalElement Name="PlatformCreateBoxAtpos-kr6-SChoc" ID="ID_PlatformCreateBoxAtpos-kr6-SChoc">
+            <InternalElement Name="PlatformCreateBoxAtpos-kr6-SChoc" ID="ID_PlatformCreateBoxAtpos-kr6-SChoc">
+                <Attribute Name="ResourceId" AttributeDataType="xs:string">
+                    <Value>MobilePlatform</Value>
+                </Attribute>
+                <Attribute Name="ResponsibleSEE" AttributeDataType="xs:string">
+                    <Value>MobilePlatform</Value>
+                </Attribute>
+                <Attribute Name="Duration" Unit="sec" AttributeDataType="xs:integer">
+                    <Value>0</Value>
+                </Attribute>
+                <Attribute Name="Slack" Unit="sec" AttributeDataType="xs:integer">
+                    <Value>0</Value>
+                </Attribute>
+                <Attribute Name="Execution" AttributeDataType="xs:string">
+                    <Attribute Name="Type" AttributeDataType="xs:string">
+                        <Value>Waiting</Value>
+                    </Attribute>
+                    <Attribute Name="Data" AttributeDataType="xs:string">
+                        <Attribute Name="Duration" Unit="sec" AttributeDataType="xs:string">
+                            <Value>0</Value>
+                        </Attribute>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="PreCondition" AttributeDataType="xs:string">
+                    <Attribute Name="Configuration" AttributeDataType="xs:string">
+                        <Value>pos-kr6</Value>
+                    </Attribute>
+                    <Attribute Name="Product" AttributeDataType="xs:string">
+                        <Value>empty</Value>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="PostCondition" AttributeDataType="xs:string">
+                    <Attribute Name="Configuration" AttributeDataType="xs:string">
+                        <Value>pos-kr6</Value>
+                    </Attribute>
+                    <Attribute Name="Product" AttributeDataType="xs:string">
+                        <Value>box-empty</Value>
+                    </Attribute>
+                </Attribute>
+                <SupportedRoleClass RefRoleClassPath="HannoverDemoRoleClassLib/Waiting"/>
+                <RoleRequirements RefBaseRoleClassPath="SkillProRoleClassLib/ResourceExecutableSkill"/>
+            </InternalElement>
+            <RoleRequirements RefBaseRoleClassPath="SkillProRoleClassLib/ExecutableSkill"/>
+        </InternalElement>
+        <InternalElement Name="HumanWP3HumanPutsEmptyBoxOnPlatform-SChoc" ID="ID_HumanWP3HumanPutsEmptyBoxOnPlatform-SChoc">
+            <InternalElement Name="Human-HumanWP3HumanPutsEmptyBoxOnPlatform-SChoc" ID="ID_Human-HumanWP3HumanPutsEmptyBoxOnPlatform-SChoc">
+                <Attribute Name="ResourceId" AttributeDataType="xs:string">
+                    <Value>HumanWP3</Value>
+                </Attribute>
+                <Attribute Name="ResponsibleSEE" AttributeDataType="xs:string">
+                    <Value>HumanWP3</Value>
+                </Attribute>
+                <Attribute Name="Duration" Unit="sec" AttributeDataType="xs:integer">
+                    <Value>3</Value>
+                </Attribute>
+                <Attribute Name="Slack" Unit="sec" AttributeDataType="xs:integer">
+                    <Value>0</Value>
+                </Attribute>
+                <Attribute Name="Execution" AttributeDataType="xs:string">
+                    <Attribute Name="Type" AttributeDataType="xs:string">
+                        <Value>Instruction</Value>
+                    </Attribute>
+                    <Attribute Name="Data" AttributeDataType="xs:string">
+                        <Attribute Name="Instruction" AttributeDataType="xs:string">
+                            <Value>Please put the box on the mobile platform!</Value>
+                        </Attribute>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="PreCondition" AttributeDataType="xs:string">
+                    <Attribute Name="Configuration" AttributeDataType="xs:string">
+                        <Value>neutral</Value>
+                    </Attribute>
+                    <Attribute Name="Product" AttributeDataType="xs:string">
+                        <Value>box-empty</Value>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="PostCondition" AttributeDataType="xs:string">
+                    <Attribute Name="Configuration" AttributeDataType="xs:string">
+                        <Value>neutral</Value>
+                    </Attribute>
+                    <Attribute Name="Product" AttributeDataType="xs:string">
+                        <Value>empty</Value>
+                    </Attribute>
+                </Attribute>
+                <SupportedRoleClass RefRoleClassPath="HannoverDemoRoleClassLib/Instruction"/>
+                <RoleRequirements RefBaseRoleClassPath="SkillProRoleClassLib/ResourceExecutableSkill"/>
+            </InternalElement>
+            <InternalElement Name="MobilePlatform-HumanWP3HumanPutsEmptyBoxOnPlatform-SChoc" ID="ID_MobilePlatform-HumanWP3HumanPutsEmptyBoxOnPlatform-SChoc">
+                <Attribute Name="ResourceId" AttributeDataType="xs:string">
+                    <Value>MobilePlatform</Value>
+                </Attribute>
+                <Attribute Name="ResponsibleSEE" AttributeDataType="xs:string">
+                    <Value>MobilePlatform</Value>
+                </Attribute>
+                <Attribute Name="Duration" Unit="sec" AttributeDataType="xs:integer">
+                    <Value>1</Value>
+                </Attribute>
+                <Attribute Name="Slack" Unit="sec" AttributeDataType="xs:integer">
+                    <Value>0</Value>
+                </Attribute>
+                <Attribute Name="Execution" AttributeDataType="xs:string">
+                    <Attribute Name="Type" AttributeDataType="xs:string">
+                        <Value>Waiting</Value>
+                    </Attribute>
+                    <Attribute Name="Data" AttributeDataType="xs:string">
+                        <Attribute Name="Duration" Unit="sec" AttributeDataType="xs:integer">
+                            <Value>1</Value>
+                        </Attribute>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="PreCondition" AttributeDataType="xs:string">
+                    <Attribute Name="Configuration" AttributeDataType="xs:string">
+                        <Value>pos-wp3</Value>
+                    </Attribute>
+                    <Attribute Name="Product" AttributeDataType="xs:string">
+                        <Value>empty</Value>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="PostCondition" AttributeDataType="xs:string">
+                    <Attribute Name="Configuration" AttributeDataType="xs:string">
+                        <Value>pos-wp3</Value>
+                    </Attribute>
+                    <Attribute Name="Product" AttributeDataType="xs:string">
+                        <Value>box-empty</Value>
+                    </Attribute>
+                </Attribute>
+                <SupportedRoleClass RefRoleClassPath="HannoverDemoRoleClassLib/Waiting"/>
+                <RoleRequirements RefBaseRoleClassPath="SkillProRoleClassLib/ResourceExecutableSkill"/>
+            </InternalElement>
+            <RoleRequirements RefBaseRoleClassPath="SkillProRoleClassLib/ExecutableSkill"/>
+        </InternalElement>
+        <InternalElement Name="HumanWP2Logout-SChoc" ID="ID_HumanWP2Logout-SChoc">
+            <InternalElement Name="Human-HumanWP2Logout-SChoc" ID="ID_Human-HumanWP2Logout-SChoc">
+                <Attribute Name="ResourceId" AttributeDataType="xs:string">
+                    <Value>HumanWP2</Value>
+                </Attribute>
+                <Attribute Name="ResponsibleSEE" AttributeDataType="xs:string">
+                    <Value>HumanWP2</Value>
+                </Attribute>
+                <Attribute Name="Duration" Unit="sec" AttributeDataType="xs:integer">
+                    <Value>3</Value>
+                </Attribute>
+                <Attribute Name="Slack" Unit="sec" AttributeDataType="xs:integer">
+                    <Value>0</Value>
+                </Attribute>
+                <Attribute Name="Execution" AttributeDataType="xs:string">
+                    <Attribute Name="Type" AttributeDataType="xs:string">
+                        <Value>Instruction</Value>
+                    </Attribute>
+                    <Attribute Name="Data" AttributeDataType="xs:string">
+                        <Attribute Name="Instruction" AttributeDataType="xs:string">
+                            <Value>Thank you and enjoy! Please log out from the system now.</Value>
+                        </Attribute>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="PreCondition" AttributeDataType="xs:string">
+                    <Attribute Name="Configuration" AttributeDataType="xs:string">
+                        <Value>neutral</Value>
+                    </Attribute>
+                    <Attribute Name="Product" AttributeDataType="xs:string">
+                        <Value>box-with-chocolate</Value>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="PostCondition" AttributeDataType="xs:string">
+                    <Attribute Name="Configuration" AttributeDataType="xs:string">
+                        <Value>neutral</Value>
+                    </Attribute>
+                    <Attribute Name="Product" AttributeDataType="xs:string">
+                        <Value>box-unfolded</Value>
+                    </Attribute>
+                </Attribute>
+                <SupportedRoleClass RefRoleClassPath="HannoverDemoRoleClassLib/Instruction"/>
+                <RoleRequirements RefBaseRoleClassPath="SkillProRoleClassLib/ResourceExecutableSkill"/>
+            </InternalElement>
+            <RoleRequirements RefBaseRoleClassPath="SkillProRoleClassLib/ExecutableSkill"/>
+        </InternalElement>
+        <InternalElement Name="GripperReleaseChocolate-SChoc" ID="ID_GripperReleaseChocolate-SChoc">
+            <InternalElement Name="UR5-GripperReleaseChocolate-SChoc" ID="ID_UR5-GripperReleaseChocolate-SChoc">
+                <Attribute Name="ResourceId" AttributeDataType="xs:string">
+                    <Value>UR5</Value>
+                </Attribute>
+                <Attribute Name="ResponsibleSEE" AttributeDataType="xs:string">
+                    <Value>UR5</Value>
+                </Attribute>
+                <Attribute Name="Duration" Unit="sec" AttributeDataType="xs:integer">
+                    <Value>1</Value>
+                </Attribute>
+                <Attribute Name="Slack" Unit="sec" AttributeDataType="xs:integer">
+                    <Value>0</Value>
+                </Attribute>
+                <Attribute Name="Execution" AttributeDataType="xs:string">
+                    <Attribute Name="Type" AttributeDataType="xs:string">
+                        <Value>Waiting</Value>
+                    </Attribute>
+                    <Attribute Name="Data" AttributeDataType="xs:string">
+                        <Attribute Name="Duration" Unit="sec" AttributeDataType="xs:integer">
+                            <Value>1</Value>
+                        </Attribute>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="PreCondition" AttributeDataType="xs:string">
+                    <Attribute Name="Configuration" AttributeDataType="xs:string">
+                        <Value>pos-box</Value>
+                    </Attribute>
+                    <Attribute Name="Product" AttributeDataType="xs:string">
+                        <Value>chocolate</Value>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="PostCondition" AttributeDataType="xs:string">
+                    <Attribute Name="Configuration" AttributeDataType="xs:string">
+                        <Value>pos-box</Value>
+                    </Attribute>
+                    <Attribute Name="Product" AttributeDataType="xs:string">
+                        <Value>empty</Value>
+                    </Attribute>
+                </Attribute>
+                <SupportedRoleClass RefRoleClassPath="HannoverDemoRoleClassLib/Waiting"/>
+                <RoleRequirements RefBaseRoleClassPath="SkillProRoleClassLib/ResourceExecutableSkill"/>
+            </InternalElement>
+            <InternalElement Name="UR5-Gripper-GripperReleaseChocolate-SChoc" ID="ID_UR5-Gripper-GripperReleaseChocolate-SChoc">
+                <Attribute Name="ResourceId" AttributeDataType="xs:string">
+                    <Value>UR5-Gripper</Value>
+                </Attribute>
+                <Attribute Name="ResponsibleSEE" AttributeDataType="xs:string">
+                    <Value>UR5-Gripper</Value>
+                </Attribute>
+                <Attribute Name="Duration" Unit="sec" AttributeDataType="xs:integer">
+                    <Value>0</Value>
+                </Attribute>
+                <Attribute Name="Slack" Unit="sec" AttributeDataType="xs:integer">
+                    <Value>0</Value>
+                </Attribute>
+                <Attribute Name="Execution" AttributeDataType="xs:string">
+                    <Attribute Name="Type" AttributeDataType="xs:string">
+                        <Value>Release</Value>
+                    </Attribute>
+                    <Attribute Name="Data" AttributeDataType="xs:string"/>
+                </Attribute>
+                <Attribute Name="PreCondition" AttributeDataType="xs:string">
+                    <Attribute Name="Configuration" AttributeDataType="xs:string">
+                        <Value>neutral</Value>
+                    </Attribute>
+                    <Attribute Name="Product" AttributeDataType="xs:string">
+                        <Value>chocolate</Value>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="PostCondition" AttributeDataType="xs:string">
+                    <Attribute Name="Configuration" AttributeDataType="xs:string">
+                        <Value>neutral</Value>
+                    </Attribute>
+                    <Attribute Name="Product" AttributeDataType="xs:string">
+                        <Value>empty</Value>
+                    </Attribute>
+                </Attribute>
+                <SupportedRoleClass RefRoleClassPath="HannoverDemoRoleClassLib/Release"/>
+                <RoleRequirements RefBaseRoleClassPath="SkillProRoleClassLib/ResourceExecutableSkill"/>
+            </InternalElement>
+            <InternalElement Name="MobilePlatform-GripperReleaseChocolate-SChoc" ID="ID_MobilePlatform-GripperReleaseChocolate-SChoc">
+                <Attribute Name="ResourceId" AttributeDataType="xs:string">
+                    <Value>MobilePlatform</Value>
+                </Attribute>
+                <Attribute Name="ResponsibleSEE" AttributeDataType="xs:string">
+                    <Value>MobilePlatform</Value>
+                </Attribute>
+                <Attribute Name="Duration" Unit="sec" AttributeDataType="xs:integer">
+                    <Value>5</Value>
+                </Attribute>
+                <Attribute Name="Slack" Unit="sec" AttributeDataType="xs:integer">
+                    <Value>0</Value>
+                </Attribute>
+                <Attribute Name="Execution" AttributeDataType="xs:string">
+                    <Attribute Name="Type" AttributeDataType="xs:string">
+                        <Value>Waiting</Value>
+                    </Attribute>
+                    <Attribute Name="Data" AttributeDataType="xs:string">
+                        <Attribute Name="Duration" Unit="sec" AttributeDataType="xs:integer">
+                            <Value>5</Value>
+                        </Attribute>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="PreCondition" AttributeDataType="xs:string">
+                    <Attribute Name="Configuration" AttributeDataType="xs:string">
+                        <Value>pos-ur5</Value>
+                    </Attribute>
+                    <Attribute Name="Product" AttributeDataType="xs:string">
+                        <Value>box-empty</Value>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="PostCondition" AttributeDataType="xs:string">
+                    <Attribute Name="Configuration" AttributeDataType="xs:string">
+                        <Value>pos-ur5</Value>
+                    </Attribute>
+                    <Attribute Name="Product" AttributeDataType="xs:string">
+                        <Value>box-with-chocolate</Value>
+                    </Attribute>
+                </Attribute>
+                <SupportedRoleClass RefRoleClassPath="HannoverDemoRoleClassLib/Waiting"/>
+                <RoleRequirements RefBaseRoleClassPath="SkillProRoleClassLib/ResourceExecutableSkill"/>
+            </InternalElement>
+            <RoleRequirements RefBaseRoleClassPath="SkillProRoleClassLib/ExecutableSkill"/>
+        </InternalElement>
+        <InternalElement Name="PlatformToWP3-SChoc" ID="ID_PlatformToWP3-SChoc">
+            <InternalElement Name="MobilePlatform-PlatformToWP3-SChoc" ID="ID_MobilePlatform-PlatformToWP3-SChoc">
+                <Attribute Name="ResourceId" AttributeDataType="xs:string">
+                    <Value>MobilePlatform</Value>
+                </Attribute>
+                <Attribute Name="ResponsibleSEE" AttributeDataType="xs:string">
+                    <Value>MobilePlatform</Value>
+                </Attribute>
+                <Attribute Name="Duration" Unit="sec" AttributeDataType="xs:integer">
+                    <Value>5</Value>
+                </Attribute>
+                <Attribute Name="Slack" Unit="sec" AttributeDataType="xs:integer">
+                    <Value>0</Value>
+                </Attribute>
+                <Attribute Name="Execution" AttributeDataType="xs:string">
+                    <Attribute Name="Type" AttributeDataType="xs:string">
+                        <Value>Transport3D</Value>
+                    </Attribute>
+                    <Attribute Name="Data" AttributeDataType="xs:string">
+                        <Attribute Name="Position" AttributeDataType="xs:string">
+                            <Value>WP3</Value>
+                        </Attribute>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="PreCondition" AttributeDataType="xs:string">
+                    <Attribute Name="Configuration" AttributeDataType="xs:string">
+                        <Value>pos-ur5</Value>
+                    </Attribute>
+                    <Attribute Name="Product" AttributeDataType="xs:string">
+                        <Value>box-with-chocolate</Value>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="PostCondition" AttributeDataType="xs:string">
+                    <Attribute Name="Configuration" AttributeDataType="xs:string">
+                        <Value>pos-wp3</Value>
+                    </Attribute>
+                    <Attribute Name="Product" AttributeDataType="xs:string">
+                        <Value>box-with-chocolate</Value>
+                    </Attribute>
+                </Attribute>
+                <SupportedRoleClass RefRoleClassPath="HannoverDemoRoleClassLib/Transport3D"/>
+                <RoleRequirements RefBaseRoleClassPath="SkillProRoleClassLib/ResourceExecutableSkill"/>
+            </InternalElement>
+            <RoleRequirements RefBaseRoleClassPath="SkillProRoleClassLib/ExecutableSkill"/>
+        </InternalElement>
+        <InternalElement Name="PlatformGoesToWP3box-empty-SChoc" ID="ID_PlatformGoesToWP3box-empty-SChoc">
+            <InternalElement Name="MobilePlatform-PlatformGoesToWP3box-empty-SChoc" ID="ID_MobilePlatform-PlatformGoesToWP3box-empty-SChoc">
+                <Attribute Name="ResourceId" AttributeDataType="xs:string">
+                    <Value>MobilePlatform</Value>
+                </Attribute>
+                <Attribute Name="ResponsibleSEE" AttributeDataType="xs:string">
+                    <Value>MobilePlatform</Value>
+                </Attribute>
+                <Attribute Name="Duration" Unit="sec" AttributeDataType="xs:integer">
+                    <Value>30</Value>
+                </Attribute>
+                <Attribute Name="Slack" Unit="sec" AttributeDataType="xs:integer">
+                    <Value>0</Value>
+                </Attribute>
+                <Attribute Name="Execution" AttributeDataType="xs:string">
+                    <Attribute Name="Type" AttributeDataType="xs:string">
+                        <Value>Transport3D</Value>
+                    </Attribute>
+                    <Attribute Name="Data" AttributeDataType="xs:string">
+                        <Attribute Name="Position" AttributeDataType="xs:string">
+                            <Value>WP3</Value>
+                        </Attribute>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="PreCondition" AttributeDataType="xs:string">
+                    <Attribute Name="Configuration" AttributeDataType="xs:string">
+                        <Value>neutral</Value>
+                    </Attribute>
+                    <Attribute Name="Product" AttributeDataType="xs:string">
+                        <Value>box-empty</Value>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="PostCondition" AttributeDataType="xs:string">
+                    <Attribute Name="Configuration" AttributeDataType="xs:string">
+                        <Value>pos-wp3</Value>
+                    </Attribute>
+                    <Attribute Name="Product" AttributeDataType="xs:string">
+                        <Value>box-empty</Value>
+                    </Attribute>
+                </Attribute>
+                <SupportedRoleClass RefRoleClassPath="HannoverDemoRoleClassLib/Transport3D"/>
+                <RoleRequirements RefBaseRoleClassPath="SkillProRoleClassLib/ResourceExecutableSkill"/>
+            </InternalElement>
+            <RoleRequirements RefBaseRoleClassPath="SkillProRoleClassLib/ExecutableSkill"/>
+        </InternalElement>
+        <InternalElement Name="MoveEmptyPlatformFromWP3ToNeutral-SChoc" ID="ID_MoveEmptyPlatformFromWP3ToNeutral-SChoc">
+            <InternalElement Name="MobilePlatform-MoveEmptyPlatformFromWP3ToNeutral-SChoc" ID="ID_MobilePlatform-MoveEmptyPlatformFromWP3ToNeutral-SChoc">
+                <Attribute Name="ResourceId" AttributeDataType="xs:string">
+                    <Value>MobilePlatform</Value>
+                </Attribute>
+                <Attribute Name="ResponsibleSEE" AttributeDataType="xs:string">
+                    <Value>MobilePlatform</Value>
+                </Attribute>
+                <Attribute Name="Duration" Unit="sec" AttributeDataType="xs:integer">
+                    <Value>30</Value>
+                </Attribute>
+                <Attribute Name="Slack" Unit="sec" AttributeDataType="xs:integer">
+                    <Value>0</Value>
+                </Attribute>
+                <Attribute Name="Execution" AttributeDataType="xs:string">
+                    <Attribute Name="Type" AttributeDataType="xs:string">
+                        <Value>Transport3D</Value>
+                    </Attribute>
+                    <Attribute Name="Data" AttributeDataType="xs:string">
+                        <Attribute Name="Position" AttributeDataType="xs:string">
+                            <Value>NEUT</Value>
+                        </Attribute>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="PreCondition" AttributeDataType="xs:string">
+                    <Attribute Name="Configuration" AttributeDataType="xs:string">
+                        <Value>pos-wp3</Value>
+                    </Attribute>
+                    <Attribute Name="Product" AttributeDataType="xs:string">
+                        <Value>empty</Value>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="PostCondition" AttributeDataType="xs:string">
+                    <Attribute Name="Configuration" AttributeDataType="xs:string">
+                        <Value>neutral</Value>
+                    </Attribute>
+                    <Attribute Name="Product" AttributeDataType="xs:string">
+                        <Value>empty</Value>
+                    </Attribute>
+                </Attribute>
+                <SupportedRoleClass RefRoleClassPath="HannoverDemoRoleClassLib/Transport3D"/>
+                <RoleRequirements RefBaseRoleClassPath="SkillProRoleClassLib/ResourceExecutableSkill"/>
+            </InternalElement>
+            <RoleRequirements RefBaseRoleClassPath="SkillProRoleClassLib/ExecutableSkill"/>
+        </InternalElement>
+        <InternalElement Name="EmptyPlatformToWP3-SChoc" ID="ID_EmptyPlatformToWP3-SChoc">
+            <InternalElement Name="MobilePlatform-EmptyPlatformToWP3-SChoc" ID="ID_MobilePlatform-EmptyPlatformToWP3-SChoc">
+                <Attribute Name="ResourceId" AttributeDataType="xs:string">
+                    <Value>MobilePlatform</Value>
+                </Attribute>
+                <Attribute Name="ResponsibleSEE" AttributeDataType="xs:string">
+                    <Value>MobilePlatform</Value>
+                </Attribute>
+                <Attribute Name="Duration" Unit="sec" AttributeDataType="xs:integer">
+                    <Value>5</Value>
+                </Attribute>
+                <Attribute Name="Slack" Unit="sec" AttributeDataType="xs:integer">
+                    <Value>0</Value>
+                </Attribute>
+                <Attribute Name="Execution" AttributeDataType="xs:string">
+                    <Attribute Name="Type" AttributeDataType="xs:string">
+                        <Value>Transport3D</Value>
+                    </Attribute>
+                    <Attribute Name="Data" AttributeDataType="xs:string">
+                        <Attribute Name="Position" AttributeDataType="xs:string">
+                            <Value>WP3</Value>
+                        </Attribute>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="PreCondition" AttributeDataType="xs:string">
+                    <Attribute Name="Configuration" AttributeDataType="xs:string">
+                        <Value>neutral</Value>
+                    </Attribute>
+                    <Attribute Name="Product" AttributeDataType="xs:string">
+                        <Value>empty</Value>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="PostCondition" AttributeDataType="xs:string">
+                    <Attribute Name="Configuration" AttributeDataType="xs:string">
+                        <Value>pos-wp3</Value>
+                    </Attribute>
+                    <Attribute Name="Product" AttributeDataType="xs:string">
+                        <Value>empty</Value>
+                    </Attribute>
+                </Attribute>
+                <SupportedRoleClass RefRoleClassPath="HannoverDemoRoleClassLib/Transport3D"/>
+                <RoleRequirements RefBaseRoleClassPath="SkillProRoleClassLib/ResourceExecutableSkill"/>
+            </InternalElement>
+            <RoleRequirements RefBaseRoleClassPath="SkillProRoleClassLib/ExecutableSkill"/>
+        </InternalElement>
+        <InternalElement Name="GoTo$chocolate-color$ChocolatePosition-SChoc" ID="ID_GoTo$chocolate-color$ChocolatePosition-SChoc">
+            <InternalElement Name="UR5-GoTo$chocolate-color$ChocolatePosition-SChoc" ID="ID_UR5-GoTo$chocolate-color$ChocolatePosition-SChoc">
+                <Attribute Name="ResourceId" AttributeDataType="xs:string">
+                    <Value>UR5</Value>
+                </Attribute>
+                <Attribute Name="ResponsibleSEE" AttributeDataType="xs:string">
+                    <Value>UR5</Value>
+                </Attribute>
+                <Attribute Name="Duration" Unit="sec" AttributeDataType="xs:integer">
+                    <Value>30</Value>
+                </Attribute>
+                <Attribute Name="Slack" Unit="sec" AttributeDataType="xs:integer">
+                    <Value>0</Value>
+                </Attribute>
+                <Attribute Name="Execution" AttributeDataType="xs:string">
+                    <Attribute Name="Type" AttributeDataType="xs:string">
+                        <Value>RecognizeGoToPosition</Value>
+                    </Attribute>
+                    <Attribute Name="Data" AttributeDataType="xs:string">
+                        <Attribute Name="Color" AttributeDataType="xs:string">
+                            <Value>$chocolate-color$</Value>
+                        </Attribute>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="PreCondition" AttributeDataType="xs:string">
+                    <Attribute Name="Configuration" AttributeDataType="xs:string">
+                        <Value>neutral</Value>
+                    </Attribute>
+                    <Attribute Name="Product" AttributeDataType="xs:string">
+                        <Value>chocolate</Value>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="PostCondition" AttributeDataType="xs:string">
+                    <Attribute Name="Configuration" AttributeDataType="xs:string">
+                        <Value>pos-chocolate</Value>
+                    </Attribute>
+                    <Attribute Name="Product" AttributeDataType="xs:string">
+                        <Value>chocolate</Value>
+                    </Attribute>
+                </Attribute>
+                <SupportedRoleClass RefRoleClassPath="HannoverDemoRoleClassLib/RecognizeGoToPosition"/>
+                <RoleRequirements RefBaseRoleClassPath="SkillProRoleClassLib/ResourceExecutableSkill"/>
+            </InternalElement>
+            <RoleRequirements RefBaseRoleClassPath="SkillProRoleClassLib/ExecutableSkill"/>
+        </InternalElement>
+        <InternalElement Name="MoveEmptyPlatformFromWP2ToNeutralbox-empty-SChoc" ID="ID_MoveEmptyPlatformFromWP2ToNeutralbox-empty-SChoc">
+            <InternalElement Name="MobilePlatform-MoveEmptyPlatformFromWP2ToNeutralbox-empty-SChoc" ID="ID_MobilePlatform-MoveEmptyPlatformFromWP2ToNeutralbox-empty-SChoc">
+                <Attribute Name="ResourceId" AttributeDataType="xs:string">
+                    <Value>MobilePlatform</Value>
+                </Attribute>
+                <Attribute Name="ResponsibleSEE" AttributeDataType="xs:string">
+                    <Value>MobilePlatform</Value>
+                </Attribute>
+                <Attribute Name="Duration" Unit="sec" AttributeDataType="xs:integer">
+                    <Value>30</Value>
+                </Attribute>
+                <Attribute Name="Slack" Unit="sec" AttributeDataType="xs:integer">
+                    <Value>0</Value>
+                </Attribute>
+                <Attribute Name="Execution" AttributeDataType="xs:string">
+                    <Attribute Name="Type" AttributeDataType="xs:string">
+                        <Value>Transport3D</Value>
+                    </Attribute>
+                    <Attribute Name="Data" AttributeDataType="xs:string">
+                        <Attribute Name="Position" AttributeDataType="xs:string">
+                            <Value>NEUT</Value>
+                        </Attribute>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="PreCondition" AttributeDataType="xs:string">
+                    <Attribute Name="Configuration" AttributeDataType="xs:string">
+                        <Value>pos-wp2</Value>
+                    </Attribute>
+                    <Attribute Name="Product" AttributeDataType="xs:string">
+                        <Value>box-empty</Value>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="PostCondition" AttributeDataType="xs:string">
+                    <Attribute Name="Configuration" AttributeDataType="xs:string">
+                        <Value>neutral</Value>
+                    </Attribute>
+                    <Attribute Name="Product" AttributeDataType="xs:string">
+                        <Value>box-empty</Value>
+                    </Attribute>
+                </Attribute>
+                <SupportedRoleClass RefRoleClassPath="HannoverDemoRoleClassLib/Transport3D"/>
+                <RoleRequirements RefBaseRoleClassPath="SkillProRoleClassLib/ResourceExecutableSkill"/>
+            </InternalElement>
+            <RoleRequirements RefBaseRoleClassPath="SkillProRoleClassLib/ExecutableSkill"/>
+        </InternalElement>
+        <InternalElement Name="HumanWP3Logout-SChoc" ID="ID_HumanWP3Logout-SChoc">
+            <InternalElement Name="Human-HumanWP3Logout-SChoc" ID="ID_Human-HumanWP3Logout-SChoc">
+                <Attribute Name="ResourceId" AttributeDataType="xs:string">
+                    <Value>HumanWP3</Value>
+                </Attribute>
+                <Attribute Name="ResponsibleSEE" AttributeDataType="xs:string">
+                    <Value>HumanWP3</Value>
+                </Attribute>
+                <Attribute Name="Duration" Unit="sec" AttributeDataType="xs:integer">
+                    <Value>3</Value>
+                </Attribute>
+                <Attribute Name="Slack" Unit="sec" AttributeDataType="xs:integer">
+                    <Value>0</Value>
+                </Attribute>
+                <Attribute Name="Execution" AttributeDataType="xs:string">
+                    <Attribute Name="Type" AttributeDataType="xs:string">
+                        <Value>Instruction</Value>
+                    </Attribute>
+                    <Attribute Name="Data" AttributeDataType="xs:string">
+                        <Attribute Name="Instruction" AttributeDataType="xs:string">
+                            <Value>Thank you and enjoy! Please log out from the system now.</Value>
+                        </Attribute>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="PreCondition" AttributeDataType="xs:string">
+                    <Attribute Name="Configuration" AttributeDataType="xs:string">
+                        <Value>neutral</Value>
+                    </Attribute>
+                    <Attribute Name="Product" AttributeDataType="xs:string">
+                        <Value>box-with-chocolate</Value>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="PostCondition" AttributeDataType="xs:string">
+                    <Attribute Name="Configuration" AttributeDataType="xs:string">
+                        <Value>neutral</Value>
+                    </Attribute>
+                    <Attribute Name="Product" AttributeDataType="xs:string">
+                        <Value>box-unfolded</Value>
+                    </Attribute>
+                </Attribute>
+                <SupportedRoleClass RefRoleClassPath="HannoverDemoRoleClassLib/Instruction"/>
+                <RoleRequirements RefBaseRoleClassPath="SkillProRoleClassLib/ResourceExecutableSkill"/>
+            </InternalElement>
+            <RoleRequirements RefBaseRoleClassPath="SkillProRoleClassLib/ExecutableSkill"/>
+        </InternalElement>
+        <InternalElement Name="HumanWP2HumanPutsEmptyBoxOnPlatform-SChoc" ID="ID_HumanWP2HumanPutsEmptyBoxOnPlatform-SChoc">
+            <InternalElement Name="Human-HumanWP2HumanPutsEmptyBoxOnPlatform-SChoc" ID="ID_Human-HumanWP2HumanPutsEmptyBoxOnPlatform-SChoc">
+                <Attribute Name="ResourceId" AttributeDataType="xs:string">
+                    <Value>HumanWP2</Value>
+                </Attribute>
+                <Attribute Name="ResponsibleSEE" AttributeDataType="xs:string">
+                    <Value>HumanWP2</Value>
+                </Attribute>
+                <Attribute Name="Duration" Unit="sec" AttributeDataType="xs:integer">
+                    <Value>3</Value>
+                </Attribute>
+                <Attribute Name="Slack" Unit="sec" AttributeDataType="xs:integer">
+                    <Value>0</Value>
+                </Attribute>
+                <Attribute Name="Execution" AttributeDataType="xs:string">
+                    <Attribute Name="Type" AttributeDataType="xs:string">
+                        <Value>Instruction</Value>
+                    </Attribute>
+                    <Attribute Name="Data" AttributeDataType="xs:string">
+                        <Attribute Name="Instruction" AttributeDataType="xs:string">
+                            <Value>Please put the box on the mobile platform!</Value>
+                        </Attribute>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="PreCondition" AttributeDataType="xs:string">
+                    <Attribute Name="Configuration" AttributeDataType="xs:string">
+                        <Value>neutral</Value>
+                    </Attribute>
+                    <Attribute Name="Product" AttributeDataType="xs:string">
+                        <Value>box-empty</Value>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="PostCondition" AttributeDataType="xs:string">
+                    <Attribute Name="Configuration" AttributeDataType="xs:string">
+                        <Value>neutral</Value>
+                    </Attribute>
+                    <Attribute Name="Product" AttributeDataType="xs:string">
+                        <Value>empty</Value>
+                    </Attribute>
+                </Attribute>
+                <SupportedRoleClass RefRoleClassPath="HannoverDemoRoleClassLib/Instruction"/>
+                <RoleRequirements RefBaseRoleClassPath="SkillProRoleClassLib/ResourceExecutableSkill"/>
+            </InternalElement>
+            <InternalElement Name="MobilePlatform-HumanWP2HumanPutsEmptyBoxOnPlatform-SChoc" ID="ID_MobilePlatform-HumanWP2HumanPutsEmptyBoxOnPlatform-SChoc">
+                <Attribute Name="ResourceId" AttributeDataType="xs:string">
+                    <Value>MobilePlatform</Value>
+                </Attribute>
+                <Attribute Name="ResponsibleSEE" AttributeDataType="xs:string">
+                    <Value>MobilePlatform</Value>
+                </Attribute>
+                <Attribute Name="Duration" Unit="sec" AttributeDataType="xs:integer">
+                    <Value>1</Value>
+                </Attribute>
+                <Attribute Name="Slack" Unit="sec" AttributeDataType="xs:integer">
+                    <Value>0</Value>
+                </Attribute>
+                <Attribute Name="Execution" AttributeDataType="xs:string">
+                    <Attribute Name="Type" AttributeDataType="xs:string">
+                        <Value>Waiting</Value>
+                    </Attribute>
+                    <Attribute Name="Data" AttributeDataType="xs:string">
+                        <Attribute Name="Duration" Unit="sec" AttributeDataType="xs:integer">
+                            <Value>1</Value>
+                        </Attribute>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="PreCondition" AttributeDataType="xs:string">
+                    <Attribute Name="Configuration" AttributeDataType="xs:string">
+                        <Value>pos-wp2</Value>
+                    </Attribute>
+                    <Attribute Name="Product" AttributeDataType="xs:string">
+                        <Value>empty</Value>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="PostCondition" AttributeDataType="xs:string">
+                    <Attribute Name="Configuration" AttributeDataType="xs:string">
+                        <Value>pos-wp2</Value>
+                    </Attribute>
+                    <Attribute Name="Product" AttributeDataType="xs:string">
+                        <Value>box-empty</Value>
+                    </Attribute>
+                </Attribute>
+                <SupportedRoleClass RefRoleClassPath="HannoverDemoRoleClassLib/Waiting"/>
+                <RoleRequirements RefBaseRoleClassPath="SkillProRoleClassLib/ResourceExecutableSkill"/>
+            </InternalElement>
+            <RoleRequirements RefBaseRoleClassPath="SkillProRoleClassLib/ExecutableSkill"/>
+        </InternalElement>
+        <InternalElement Name="PlatformCreateBoxAtpos-wp2-SChoc" ID="ID_PlatformCreateBoxAtpos-wp2-SChoc">
+            <InternalElement Name="PlatformCreateBoxAtpos-wp2-SChoc" ID="ID_PlatformCreateBoxAtpos-wp2-SChoc">
+                <Attribute Name="ResourceId" AttributeDataType="xs:string">
+                    <Value>MobilePlatform</Value>
+                </Attribute>
+                <Attribute Name="ResponsibleSEE" AttributeDataType="xs:string">
+                    <Value>MobilePlatform</Value>
+                </Attribute>
+                <Attribute Name="Duration" Unit="sec" AttributeDataType="xs:integer">
+                    <Value>0</Value>
+                </Attribute>
+                <Attribute Name="Slack" Unit="sec" AttributeDataType="xs:integer">
+                    <Value>0</Value>
+                </Attribute>
+                <Attribute Name="Execution" AttributeDataType="xs:string">
+                    <Attribute Name="Type" AttributeDataType="xs:string">
+                        <Value>Waiting</Value>
+                    </Attribute>
+                    <Attribute Name="Data" AttributeDataType="xs:string">
+                        <Attribute Name="Duration" Unit="sec" AttributeDataType="xs:string">
+                            <Value>0</Value>
+                        </Attribute>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="PreCondition" AttributeDataType="xs:string">
+                    <Attribute Name="Configuration" AttributeDataType="xs:string">
+                        <Value>pos-wp2</Value>
+                    </Attribute>
+                    <Attribute Name="Product" AttributeDataType="xs:string">
+                        <Value>empty</Value>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="PostCondition" AttributeDataType="xs:string">
+                    <Attribute Name="Configuration" AttributeDataType="xs:string">
+                        <Value>pos-wp2</Value>
+                    </Attribute>
+                    <Attribute Name="Product" AttributeDataType="xs:string">
+                        <Value>box-empty</Value>
+                    </Attribute>
+                </Attribute>
+                <SupportedRoleClass RefRoleClassPath="HannoverDemoRoleClassLib/Waiting"/>
+                <RoleRequirements RefBaseRoleClassPath="SkillProRoleClassLib/ResourceExecutableSkill"/>
+            </InternalElement>
+            <RoleRequirements RefBaseRoleClassPath="SkillProRoleClassLib/ExecutableSkill"/>
+        </InternalElement>
+        <InternalElement Name="HumanWP2TakesChocolate-SChoc" ID="ID_HumanWP2TakesChocolate-SChoc">
+            <InternalElement Name="Human-HumanWP2TakesChocolate-SChoc" ID="ID_Human-HumanWP2TakesChocolate-SChoc">
+                <Attribute Name="ResourceId" AttributeDataType="xs:string">
+                    <Value>HumanWP2</Value>
+                </Attribute>
+                <Attribute Name="ResponsibleSEE" AttributeDataType="xs:string">
+                    <Value>HumanWP2</Value>
+                </Attribute>
+                <Attribute Name="Duration" Unit="sec" AttributeDataType="xs:integer">
+                    <Value>3</Value>
+                </Attribute>
+                <Attribute Name="Slack" Unit="sec" AttributeDataType="xs:integer">
+                    <Value>0</Value>
+                </Attribute>
+                <Attribute Name="Execution" AttributeDataType="xs:string">
+                    <Attribute Name="Type" AttributeDataType="xs:string">
+                        <Value>Instruction</Value>
+                    </Attribute>
+                    <Attribute Name="Data" AttributeDataType="xs:string">
+                        <Attribute Name="Instruction" AttributeDataType="xs:string">
+                            <Value>Please take your box with the chocolate, and put a SkillPro sticker on it.</Value>
+                        </Attribute>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="PreCondition" AttributeDataType="xs:string">
+                    <Attribute Name="Configuration" AttributeDataType="xs:string">
+                        <Value>neutral</Value>
+                    </Attribute>
+                    <Attribute Name="Product" AttributeDataType="xs:string">
+                        <Value>empty</Value>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="PostCondition" AttributeDataType="xs:string">
+                    <Attribute Name="Configuration" AttributeDataType="xs:string">
+                        <Value>neutral</Value>
+                    </Attribute>
+                    <Attribute Name="Product" AttributeDataType="xs:string">
+                        <Value>box-with-chocolate</Value>
+                    </Attribute>
+                </Attribute>
+                <SupportedRoleClass RefRoleClassPath="HannoverDemoRoleClassLib/Instruction"/>
+                <RoleRequirements RefBaseRoleClassPath="SkillProRoleClassLib/ResourceExecutableSkill"/>
+            </InternalElement>
+            <InternalElement Name="MobilePlatform-HumanWP2TakesChocolate-SChoc" ID="ID_MobilePlatform-HumanWP2TakesChocolate-SChoc">
+                <Attribute Name="ResourceId" AttributeDataType="xs:string">
+                    <Value>MobilePlatform</Value>
+                </Attribute>
+                <Attribute Name="ResponsibleSEE" AttributeDataType="xs:string">
+                    <Value>MobilePlatform</Value>
+                </Attribute>
+                <Attribute Name="Duration" Unit="sec" AttributeDataType="xs:integer">
+                    <Value>1</Value>
+                </Attribute>
+                <Attribute Name="Slack" Unit="sec" AttributeDataType="xs:integer">
+                    <Value>0</Value>
+                </Attribute>
+                <Attribute Name="Execution" AttributeDataType="xs:string">
+                    <Attribute Name="Type" AttributeDataType="xs:string">
+                        <Value>Waiting</Value>
+                    </Attribute>
+                    <Attribute Name="Data" AttributeDataType="xs:string">
+                        <Attribute Name="Duration" Unit="sec" AttributeDataType="xs:string">
+                            <Value>1</Value>
+                        </Attribute>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="PreCondition" AttributeDataType="xs:string">
+                    <Attribute Name="Configuration" AttributeDataType="xs:string">
+                        <Value>pos-wp2</Value>
+                    </Attribute>
+                    <Attribute Name="Product" AttributeDataType="xs:string">
+                        <Value>box-with-chocolate</Value>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="PostCondition" AttributeDataType="xs:string">
+                    <Attribute Name="Configuration" AttributeDataType="xs:string">
+                        <Value>pos-wp2</Value>
+                    </Attribute>
+                    <Attribute Name="Product" AttributeDataType="xs:string">
+                        <Value>empty</Value>
+                    </Attribute>
+                </Attribute>
+                <SupportedRoleClass RefRoleClassPath="HannoverDemoRoleClassLib/Waiting"/>
+                <RoleRequirements RefBaseRoleClassPath="SkillProRoleClassLib/ResourceExecutableSkill"/>
+            </InternalElement>
+            <RoleRequirements RefBaseRoleClassPath="SkillProRoleClassLib/ExecutableSkill"/>
+        </InternalElement>
+        <InternalElement Name="PlatformGoesToWP3empty-SChoc" ID="ID_PlatformGoesToWP3empty-SChoc">
+            <InternalElement Name="MobilePlatform-PlatformGoesToWP3empty-SChoc" ID="ID_MobilePlatform-PlatformGoesToWP3empty-SChoc">
+                <Attribute Name="ResourceId" AttributeDataType="xs:string">
+                    <Value>MobilePlatform</Value>
+                </Attribute>
+                <Attribute Name="ResponsibleSEE" AttributeDataType="xs:string">
+                    <Value>MobilePlatform</Value>
+                </Attribute>
+                <Attribute Name="Duration" Unit="sec" AttributeDataType="xs:integer">
+                    <Value>30</Value>
+                </Attribute>
+                <Attribute Name="Slack" Unit="sec" AttributeDataType="xs:integer">
+                    <Value>0</Value>
+                </Attribute>
+                <Attribute Name="Execution" AttributeDataType="xs:string">
+                    <Attribute Name="Type" AttributeDataType="xs:string">
+                        <Value>Transport3D</Value>
+                    </Attribute>
+                    <Attribute Name="Data" AttributeDataType="xs:string">
+                        <Attribute Name="Position" AttributeDataType="xs:string">
+                            <Value>WP3</Value>
+                        </Attribute>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="PreCondition" AttributeDataType="xs:string">
+                    <Attribute Name="Configuration" AttributeDataType="xs:string">
+                        <Value>neutral</Value>
+                    </Attribute>
+                    <Attribute Name="Product" AttributeDataType="xs:string">
+                        <Value>empty</Value>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="PostCondition" AttributeDataType="xs:string">
+                    <Attribute Name="Configuration" AttributeDataType="xs:string">
+                        <Value>pos-wp3</Value>
+                    </Attribute>
+                    <Attribute Name="Product" AttributeDataType="xs:string">
+                        <Value>empty</Value>
+                    </Attribute>
+                </Attribute>
+                <SupportedRoleClass RefRoleClassPath="HannoverDemoRoleClassLib/Transport3D"/>
+                <RoleRequirements RefBaseRoleClassPath="SkillProRoleClassLib/ResourceExecutableSkill"/>
+            </InternalElement>
+            <RoleRequirements RefBaseRoleClassPath="SkillProRoleClassLib/ExecutableSkill"/>
+        </InternalElement>
+        <InternalElement Name="PlatformGoesToWP2empty-SChoc" ID="ID_PlatformGoesToWP2empty-SChoc">
+            <InternalElement Name="MobilePlatform-PlatformGoesToWP2empty-SChoc" ID="ID_MobilePlatform-PlatformGoesToWP2empty-SChoc">
+                <Attribute Name="ResourceId" AttributeDataType="xs:string">
+                    <Value>MobilePlatform</Value>
+                </Attribute>
+                <Attribute Name="ResponsibleSEE" AttributeDataType="xs:string">
+                    <Value>MobilePlatform</Value>
+                </Attribute>
+                <Attribute Name="Duration" Unit="sec" AttributeDataType="xs:integer">
+                    <Value>30</Value>
+                </Attribute>
+                <Attribute Name="Slack" Unit="sec" AttributeDataType="xs:integer">
+                    <Value>0</Value>
+                </Attribute>
+                <Attribute Name="Execution" AttributeDataType="xs:string">
+                    <Attribute Name="Type" AttributeDataType="xs:string">
+                        <Value>Transport3D</Value>
+                    </Attribute>
+                    <Attribute Name="Data" AttributeDataType="xs:string">
+                        <Attribute Name="Position" AttributeDataType="xs:string">
+                            <Value>WP2</Value>
+                        </Attribute>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="PreCondition" AttributeDataType="xs:string">
+                    <Attribute Name="Configuration" AttributeDataType="xs:string">
+                        <Value>neutral</Value>
+                    </Attribute>
+                    <Attribute Name="Product" AttributeDataType="xs:string">
+                        <Value>empty</Value>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="PostCondition" AttributeDataType="xs:string">
+                    <Attribute Name="Configuration" AttributeDataType="xs:string">
+                        <Value>pos-wp2</Value>
+                    </Attribute>
+                    <Attribute Name="Product" AttributeDataType="xs:string">
+                        <Value>empty</Value>
+                    </Attribute>
+                </Attribute>
+                <SupportedRoleClass RefRoleClassPath="HannoverDemoRoleClassLib/Transport3D"/>
+                <RoleRequirements RefBaseRoleClassPath="SkillProRoleClassLib/ResourceExecutableSkill"/>
+            </InternalElement>
+            <RoleRequirements RefBaseRoleClassPath="SkillProRoleClassLib/ExecutableSkill"/>
+        </InternalElement>
+        <InternalElement Name="PlatformCreateBoxAtpos-wp1-SChoc" ID="ID_PlatformCreateBoxAtpos-wp1-SChoc">
+            <InternalElement Name="PlatformCreateBoxAtpos-wp1-SChoc" ID="ID_PlatformCreateBoxAtpos-wp1-SChoc">
+                <Attribute Name="ResourceId" AttributeDataType="xs:string">
+                    <Value>MobilePlatform</Value>
+                </Attribute>
+                <Attribute Name="ResponsibleSEE" AttributeDataType="xs:string">
+                    <Value>MobilePlatform</Value>
+                </Attribute>
+                <Attribute Name="Duration" Unit="sec" AttributeDataType="xs:integer">
+                    <Value>0</Value>
+                </Attribute>
+                <Attribute Name="Slack" Unit="sec" AttributeDataType="xs:integer">
+                    <Value>0</Value>
+                </Attribute>
+                <Attribute Name="Execution" AttributeDataType="xs:string">
+                    <Attribute Name="Type" AttributeDataType="xs:string">
+                        <Value>Waiting</Value>
+                    </Attribute>
+                    <Attribute Name="Data" AttributeDataType="xs:string">
+                        <Attribute Name="Duration" Unit="sec" AttributeDataType="xs:string">
+                            <Value>0</Value>
+                        </Attribute>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="PreCondition" AttributeDataType="xs:string">
+                    <Attribute Name="Configuration" AttributeDataType="xs:string">
+                        <Value>pos-wp1</Value>
+                    </Attribute>
+                    <Attribute Name="Product" AttributeDataType="xs:string">
+                        <Value>empty</Value>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="PostCondition" AttributeDataType="xs:string">
+                    <Attribute Name="Configuration" AttributeDataType="xs:string">
+                        <Value>pos-wp1</Value>
+                    </Attribute>
+                    <Attribute Name="Product" AttributeDataType="xs:string">
+                        <Value>box-empty</Value>
+                    </Attribute>
+                </Attribute>
+                <SupportedRoleClass RefRoleClassPath="HannoverDemoRoleClassLib/Waiting"/>
+                <RoleRequirements RefBaseRoleClassPath="SkillProRoleClassLib/ResourceExecutableSkill"/>
+            </InternalElement>
+            <RoleRequirements RefBaseRoleClassPath="SkillProRoleClassLib/ExecutableSkill"/>
+        </InternalElement>
+        <InternalElement Name="MoveEmptyPlatformFromUR5ToNeutralempty-SChoc" ID="ID_MoveEmptyPlatformFromUR5ToNeutralempty-SChoc">
+            <InternalElement Name="MobilePlatform-MoveEmptyPlatformFromUR5ToNeutralempty-SChoc" ID="ID_MobilePlatform-MoveEmptyPlatformFromUR5ToNeutralempty-SChoc">
+                <Attribute Name="ResourceId" AttributeDataType="xs:string">
+                    <Value>MobilePlatform</Value>
+                </Attribute>
+                <Attribute Name="ResponsibleSEE" AttributeDataType="xs:string">
+                    <Value>MobilePlatform</Value>
+                </Attribute>
+                <Attribute Name="Duration" Unit="sec" AttributeDataType="xs:integer">
+                    <Value>30</Value>
+                </Attribute>
+                <Attribute Name="Slack" Unit="sec" AttributeDataType="xs:integer">
+                    <Value>0</Value>
+                </Attribute>
+                <Attribute Name="Execution" AttributeDataType="xs:string">
+                    <Attribute Name="Type" AttributeDataType="xs:string">
+                        <Value>Transport3D</Value>
+                    </Attribute>
+                    <Attribute Name="Data" AttributeDataType="xs:string">
+                        <Attribute Name="Position" AttributeDataType="xs:string">
+                            <Value>NEUT</Value>
+                        </Attribute>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="PreCondition" AttributeDataType="xs:string">
+                    <Attribute Name="Configuration" AttributeDataType="xs:string">
+                        <Value>pos-ur5</Value>
+                    </Attribute>
+                    <Attribute Name="Product" AttributeDataType="xs:string">
+                        <Value>empty</Value>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="PostCondition" AttributeDataType="xs:string">
+                    <Attribute Name="Configuration" AttributeDataType="xs:string">
+                        <Value>neutral</Value>
+                    </Attribute>
+                    <Attribute Name="Product" AttributeDataType="xs:string">
+                        <Value>empty</Value>
+                    </Attribute>
+                </Attribute>
+                <SupportedRoleClass RefRoleClassPath="HannoverDemoRoleClassLib/Transport3D"/>
+                <RoleRequirements RefBaseRoleClassPath="SkillProRoleClassLib/ResourceExecutableSkill"/>
+            </InternalElement>
+            <RoleRequirements RefBaseRoleClassPath="SkillProRoleClassLib/ExecutableSkill"/>
+        </InternalElement>
+        <InternalElement Name="GoFromBoxToNeutralPosition-SChoc" ID="ID_GoFromBoxToNeutralPosition-SChoc">
+            <InternalElement Name="UR5-GoFromBoxToNeutralPosition-SChoc" ID="ID_UR5-GoFromBoxToNeutralPosition-SChoc">
+                <Attribute Name="ResourceId" AttributeDataType="xs:string">
+                    <Value>UR5</Value>
+                </Attribute>
+                <Attribute Name="ResponsibleSEE" AttributeDataType="xs:string">
+                    <Value>UR5</Value>
+                </Attribute>
+                <Attribute Name="Duration" Unit="sec" AttributeDataType="xs:integer">
+                    <Value>30</Value>
+                </Attribute>
+                <Attribute Name="Slack" Unit="sec" AttributeDataType="xs:integer">
+                    <Value>0</Value>
+                </Attribute>
+                <Attribute Name="Execution" AttributeDataType="xs:string">
+                    <Attribute Name="Type" AttributeDataType="xs:string">
+                        <Value>Transport6D</Value>
+                    </Attribute>
+                    <Attribute Name="Data" AttributeDataType="xs:string">
+                        <Attribute Name="Position" AttributeDataType="xs:string">
+                            <Value>basepos</Value>
+                        </Attribute>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="PreCondition" AttributeDataType="xs:string">
+                    <Attribute Name="Configuration" AttributeDataType="xs:string">
+                        <Value>pos-box</Value>
+                    </Attribute>
+                    <Attribute Name="Product" AttributeDataType="xs:string">
+                        <Value>empty</Value>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="PostCondition" AttributeDataType="xs:string">
+                    <Attribute Name="Configuration" AttributeDataType="xs:string">
+                        <Value>neutral</Value>
+                    </Attribute>
+                    <Attribute Name="Product" AttributeDataType="xs:string">
+                        <Value>empty</Value>
+                    </Attribute>
+                </Attribute>
+                <SupportedRoleClass RefRoleClassPath="HannoverDemoRoleClassLib/Transport6D"/>
+                <RoleRequirements RefBaseRoleClassPath="SkillProRoleClassLib/ResourceExecutableSkill"/>
+            </InternalElement>
+            <RoleRequirements RefBaseRoleClassPath="SkillProRoleClassLib/ExecutableSkill"/>
+        </InternalElement>
+        <InternalElement Name="MoveEmptyPlatformFromKR6ToNeutralempty-SChoc" ID="ID_MoveEmptyPlatformFromKR6ToNeutralempty-SChoc">
+            <InternalElement Name="MobilePlatform-MoveEmptyPlatformFromKR6ToNeutralempty-SChoc" ID="ID_MobilePlatform-MoveEmptyPlatformFromKR6ToNeutralempty-SChoc">
+                <Attribute Name="ResourceId" AttributeDataType="xs:string">
+                    <Value>MobilePlatform</Value>
+                </Attribute>
+                <Attribute Name="ResponsibleSEE" AttributeDataType="xs:string">
+                    <Value>MobilePlatform</Value>
+                </Attribute>
+                <Attribute Name="Duration" Unit="sec" AttributeDataType="xs:integer">
+                    <Value>30</Value>
+                </Attribute>
+                <Attribute Name="Slack" Unit="sec" AttributeDataType="xs:integer">
+                    <Value>0</Value>
+                </Attribute>
+                <Attribute Name="Execution" AttributeDataType="xs:string">
+                    <Attribute Name="Type" AttributeDataType="xs:string">
+                        <Value>Transport3D</Value>
+                    </Attribute>
+                    <Attribute Name="Data" AttributeDataType="xs:string">
+                        <Attribute Name="Position" AttributeDataType="xs:string">
+                            <Value>NEUT</Value>
+                        </Attribute>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="PreCondition" AttributeDataType="xs:string">
+                    <Attribute Name="Configuration" AttributeDataType="xs:string">
+                        <Value>pos-kr6</Value>
+                    </Attribute>
+                    <Attribute Name="Product" AttributeDataType="xs:string">
+                        <Value>empty</Value>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="PostCondition" AttributeDataType="xs:string">
+                    <Attribute Name="Configuration" AttributeDataType="xs:string">
+                        <Value>neutral</Value>
+                    </Attribute>
+                    <Attribute Name="Product" AttributeDataType="xs:string">
+                        <Value>empty</Value>
+                    </Attribute>
+                </Attribute>
+                <SupportedRoleClass RefRoleClassPath="HannoverDemoRoleClassLib/Transport3D"/>
+                <RoleRequirements RefBaseRoleClassPath="SkillProRoleClassLib/ResourceExecutableSkill"/>
+            </InternalElement>
+            <RoleRequirements RefBaseRoleClassPath="SkillProRoleClassLib/ExecutableSkill"/>
+        </InternalElement>
+        <InternalElement Name="PlatformCreateBoxAtpos-ur5-SChoc" ID="ID_PlatformCreateBoxAtpos-ur5-SChoc">
+            <InternalElement Name="PlatformCreateBoxAtpos-ur5-SChoc" ID="ID_PlatformCreateBoxAtpos-ur5-SChoc">
+                <Attribute Name="ResourceId" AttributeDataType="xs:string">
+                    <Value>MobilePlatform</Value>
+                </Attribute>
+                <Attribute Name="ResponsibleSEE" AttributeDataType="xs:string">
+                    <Value>MobilePlatform</Value>
+                </Attribute>
+                <Attribute Name="Duration" Unit="sec" AttributeDataType="xs:integer">
+                    <Value>0</Value>
+                </Attribute>
+                <Attribute Name="Slack" Unit="sec" AttributeDataType="xs:integer">
+                    <Value>0</Value>
+                </Attribute>
+                <Attribute Name="Execution" AttributeDataType="xs:string">
+                    <Attribute Name="Type" AttributeDataType="xs:string">
+                        <Value>Waiting</Value>
+                    </Attribute>
+                    <Attribute Name="Data" AttributeDataType="xs:string">
+                        <Attribute Name="Duration" Unit="sec" AttributeDataType="xs:string">
+                            <Value>0</Value>
+                        </Attribute>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="PreCondition" AttributeDataType="xs:string">
+                    <Attribute Name="Configuration" AttributeDataType="xs:string">
+                        <Value>pos-ur5</Value>
+                    </Attribute>
+                    <Attribute Name="Product" AttributeDataType="xs:string">
+                        <Value>empty</Value>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="PostCondition" AttributeDataType="xs:string">
+                    <Attribute Name="Configuration" AttributeDataType="xs:string">
+                        <Value>pos-ur5</Value>
+                    </Attribute>
+                    <Attribute Name="Product" AttributeDataType="xs:string">
+                        <Value>box-empty</Value>
+                    </Attribute>
+                </Attribute>
+                <SupportedRoleClass RefRoleClassPath="HannoverDemoRoleClassLib/Waiting"/>
+                <RoleRequirements RefBaseRoleClassPath="SkillProRoleClassLib/ResourceExecutableSkill"/>
+            </InternalElement>
+            <RoleRequirements RefBaseRoleClassPath="SkillProRoleClassLib/ExecutableSkill"/>
+        </InternalElement>
+        <InternalElement Name="UR5GoesBackToNeutral-SChoc" ID="ID_UR5GoesBackToNeutral-SChoc">
+            <InternalElement Name="UR5-UR5GoesBackToNeutral-SChoc" ID="ID_UR5-UR5GoesBackToNeutral-SChoc">
+                <Attribute Name="ResourceId" AttributeDataType="xs:string">
+                    <Value>UR5</Value>
+                </Attribute>
+                <Attribute Name="ResponsibleSEE" AttributeDataType="xs:string">
+                    <Value>UR5</Value>
+                </Attribute>
+                <Attribute Name="Duration" Unit="sec" AttributeDataType="xs:integer">
+                    <Value>3</Value>
+                </Attribute>
+                <Attribute Name="Slack" Unit="sec" AttributeDataType="xs:integer">
+                    <Value>0</Value>
+                </Attribute>
+                <Attribute Name="Execution" AttributeDataType="xs:string">
+                    <Attribute Name="Type" AttributeDataType="xs:string">
+                        <Value>Transport6D</Value>
+                    </Attribute>
+                    <Attribute Name="Data" AttributeDataType="xs:string">
+                        <Attribute Name="Position" AttributeDataType="xs:string">
+                            <Value>basepos</Value>
+                        </Attribute>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="PreCondition" AttributeDataType="xs:string">
+                    <Attribute Name="Configuration" AttributeDataType="xs:string">
+                        <Value>pos-box</Value>
+                    </Attribute>
+                    <Attribute Name="Product" AttributeDataType="xs:string">
+                        <Value>empty</Value>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="PostCondition" AttributeDataType="xs:string">
+                    <Attribute Name="Configuration" AttributeDataType="xs:string">
+                        <Value>neutral</Value>
+                    </Attribute>
+                    <Attribute Name="Product" AttributeDataType="xs:string">
+                        <Value>empty</Value>
+                    </Attribute>
+                </Attribute>
+                <SupportedRoleClass RefRoleClassPath="HannoverDemoRoleClassLib/Transport6D"/>
+                <RoleRequirements RefBaseRoleClassPath="SkillProRoleClassLib/ResourceExecutableSkill"/>
+            </InternalElement>
+            <RoleRequirements RefBaseRoleClassPath="SkillProRoleClassLib/ExecutableSkill"/>
+        </InternalElement>
+        <InternalElement Name="GoFromChocolateToNeutralPosition-SChoc" ID="ID_GoFromChocolateToNeutralPosition-SChoc">
+            <InternalElement Name="UR5-GoFromChocolateToNeutralPosition-SChoc" ID="ID_UR5-GoFromChocolateToNeutralPosition-SChoc">
+                <Attribute Name="ResourceId" AttributeDataType="xs:string">
+                    <Value>UR5</Value>
+                </Attribute>
+                <Attribute Name="ResponsibleSEE" AttributeDataType="xs:string">
+                    <Value>UR5</Value>
+                </Attribute>
+                <Attribute Name="Duration" Unit="sec" AttributeDataType="xs:integer">
+                    <Value>30</Value>
+                </Attribute>
+                <Attribute Name="Slack" Unit="sec" AttributeDataType="xs:integer">
+                    <Value>0</Value>
+                </Attribute>
+                <Attribute Name="Execution" AttributeDataType="xs:string">
+                    <Attribute Name="Type" AttributeDataType="xs:string">
+                        <Value>Transport6D</Value>
+                    </Attribute>
+                    <Attribute Name="Data" AttributeDataType="xs:string">
+                        <Attribute Name="Position" AttributeDataType="xs:string">
+                            <Value>basepos</Value>
+                        </Attribute>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="PreCondition" AttributeDataType="xs:string">
+                    <Attribute Name="Configuration" AttributeDataType="xs:string">
+                        <Value>pos-chocolate</Value>
+                    </Attribute>
+                    <Attribute Name="Product" AttributeDataType="xs:string">
+                        <Value>empty</Value>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="PostCondition" AttributeDataType="xs:string">
+                    <Attribute Name="Configuration" AttributeDataType="xs:string">
+                        <Value>neutral</Value>
+                    </Attribute>
+                    <Attribute Name="Product" AttributeDataType="xs:string">
+                        <Value>empty</Value>
+                    </Attribute>
+                </Attribute>
+                <SupportedRoleClass RefRoleClassPath="HannoverDemoRoleClassLib/Transport6D"/>
+                <RoleRequirements RefBaseRoleClassPath="SkillProRoleClassLib/ResourceExecutableSkill"/>
+            </InternalElement>
+            <RoleRequirements RefBaseRoleClassPath="SkillProRoleClassLib/ExecutableSkill"/>
+        </InternalElement>
+        <InternalElement Name="PlatformGoesToWP1box-empty-SChoc" ID="ID_PlatformGoesToWP1box-empty-SChoc">
+            <InternalElement Name="MobilePlatform-PlatformGoesToWP1box-empty-SChoc" ID="ID_MobilePlatform-PlatformGoesToWP1box-empty-SChoc">
+                <Attribute Name="ResourceId" AttributeDataType="xs:string">
+                    <Value>MobilePlatform</Value>
+                </Attribute>
+                <Attribute Name="ResponsibleSEE" AttributeDataType="xs:string">
+                    <Value>MobilePlatform</Value>
+                </Attribute>
+                <Attribute Name="Duration" Unit="sec" AttributeDataType="xs:integer">
+                    <Value>30</Value>
+                </Attribute>
+                <Attribute Name="Slack" Unit="sec" AttributeDataType="xs:integer">
+                    <Value>0</Value>
+                </Attribute>
+                <Attribute Name="Execution" AttributeDataType="xs:string">
+                    <Attribute Name="Type" AttributeDataType="xs:string">
+                        <Value>Transport3D</Value>
+                    </Attribute>
+                    <Attribute Name="Data" AttributeDataType="xs:string">
+                        <Attribute Name="Position" AttributeDataType="xs:string">
+                            <Value>WP1</Value>
+                        </Attribute>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="PreCondition" AttributeDataType="xs:string">
+                    <Attribute Name="Configuration" AttributeDataType="xs:string">
+                        <Value>neutral</Value>
+                    </Attribute>
+                    <Attribute Name="Product" AttributeDataType="xs:string">
+                        <Value>box-empty</Value>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="PostCondition" AttributeDataType="xs:string">
+                    <Attribute Name="Configuration" AttributeDataType="xs:string">
+                        <Value>pos-wp1</Value>
+                    </Attribute>
+                    <Attribute Name="Product" AttributeDataType="xs:string">
+                        <Value>box-empty</Value>
+                    </Attribute>
+                </Attribute>
+                <SupportedRoleClass RefRoleClassPath="HannoverDemoRoleClassLib/Transport3D"/>
+                <RoleRequirements RefBaseRoleClassPath="SkillProRoleClassLib/ResourceExecutableSkill"/>
+            </InternalElement>
+            <RoleRequirements RefBaseRoleClassPath="SkillProRoleClassLib/ExecutableSkill"/>
+        </InternalElement>
+        <InternalElement Name="PlatformGoesToWP2box-empty-SChoc" ID="ID_PlatformGoesToWP2box-empty-SChoc">
+            <InternalElement Name="MobilePlatform-PlatformGoesToWP2box-empty-SChoc" ID="ID_MobilePlatform-PlatformGoesToWP2box-empty-SChoc">
+                <Attribute Name="ResourceId" AttributeDataType="xs:string">
+                    <Value>MobilePlatform</Value>
+                </Attribute>
+                <Attribute Name="ResponsibleSEE" AttributeDataType="xs:string">
+                    <Value>MobilePlatform</Value>
+                </Attribute>
+                <Attribute Name="Duration" Unit="sec" AttributeDataType="xs:integer">
+                    <Value>30</Value>
+                </Attribute>
+                <Attribute Name="Slack" Unit="sec" AttributeDataType="xs:integer">
+                    <Value>0</Value>
+                </Attribute>
+                <Attribute Name="Execution" AttributeDataType="xs:string">
+                    <Attribute Name="Type" AttributeDataType="xs:string">
+                        <Value>Transport3D</Value>
+                    </Attribute>
+                    <Attribute Name="Data" AttributeDataType="xs:string">
+                        <Attribute Name="Position" AttributeDataType="xs:string">
+                            <Value>WP2</Value>
+                        </Attribute>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="PreCondition" AttributeDataType="xs:string">
+                    <Attribute Name="Configuration" AttributeDataType="xs:string">
+                        <Value>neutral</Value>
+                    </Attribute>
+                    <Attribute Name="Product" AttributeDataType="xs:string">
+                        <Value>box-empty</Value>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="PostCondition" AttributeDataType="xs:string">
+                    <Attribute Name="Configuration" AttributeDataType="xs:string">
+                        <Value>pos-wp2</Value>
+                    </Attribute>
+                    <Attribute Name="Product" AttributeDataType="xs:string">
+                        <Value>box-empty</Value>
+                    </Attribute>
+                </Attribute>
+                <SupportedRoleClass RefRoleClassPath="HannoverDemoRoleClassLib/Transport3D"/>
+                <RoleRequirements RefBaseRoleClassPath="SkillProRoleClassLib/ResourceExecutableSkill"/>
+            </InternalElement>
+            <RoleRequirements RefBaseRoleClassPath="SkillProRoleClassLib/ExecutableSkill"/>
+        </InternalElement>
+        <InternalElement Name="HumanWP3FoldsBox-SChoc" ID="ID_HumanWP3FoldsBox-SChoc">
+            <InternalElement Name="Human-HumanWP3FoldsBox-SChoc" ID="ID_Human-HumanWP3FoldsBox-SChoc">
+                <Attribute Name="ResourceId" AttributeDataType="xs:string">
+                    <Value>HumanWP3</Value>
+                </Attribute>
+                <Attribute Name="ResponsibleSEE" AttributeDataType="xs:string">
+                    <Value>HumanWP3</Value>
+                </Attribute>
+                <Attribute Name="Duration" Unit="sec" AttributeDataType="xs:integer">
+                    <Value>3</Value>
+                </Attribute>
+                <Attribute Name="Slack" Unit="sec" AttributeDataType="xs:integer">
+                    <Value>0</Value>
+                </Attribute>
+                <Attribute Name="Execution" AttributeDataType="xs:string">
+                    <Attribute Name="Type" AttributeDataType="xs:string">
+                        <Value>Instruction</Value>
+                    </Attribute>
+                    <Attribute Name="Data" AttributeDataType="xs:string">
+                        <Attribute Name="Instruction" AttributeDataType="xs:string">
+                            <Value>Please fold a new box!</Value>
+                        </Attribute>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="PreCondition" AttributeDataType="xs:string">
+                    <Attribute Name="Configuration" AttributeDataType="xs:string">
+                        <Value>neutral</Value>
+                    </Attribute>
+                    <Attribute Name="Product" AttributeDataType="xs:string">
+                        <Value>box-unfolded</Value>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="PostCondition" AttributeDataType="xs:string">
+                    <Attribute Name="Configuration" AttributeDataType="xs:string">
+                        <Value>neutral</Value>
+                    </Attribute>
+                    <Attribute Name="Product" AttributeDataType="xs:string">
+                        <Value>box-empty</Value>
+                    </Attribute>
+                </Attribute>
+                <SupportedRoleClass RefRoleClassPath="HannoverDemoRoleClassLib/Instruction"/>
+                <RoleRequirements RefBaseRoleClassPath="SkillProRoleClassLib/ResourceExecutableSkill"/>
+            </InternalElement>
+            <RoleRequirements RefBaseRoleClassPath="SkillProRoleClassLib/ExecutableSkill"/>
+        </InternalElement>
+        <InternalElement Name="MoveEmptyPlatformFromUR5ToNeutralbox-empty-SChoc" ID="ID_MoveEmptyPlatformFromUR5ToNeutralbox-empty-SChoc">
+            <InternalElement Name="MobilePlatform-MoveEmptyPlatformFromUR5ToNeutralbox-empty-SChoc" ID="ID_MobilePlatform-MoveEmptyPlatformFromUR5ToNeutralbox-empty-SChoc">
+                <Attribute Name="ResourceId" AttributeDataType="xs:string">
+                    <Value>MobilePlatform</Value>
+                </Attribute>
+                <Attribute Name="ResponsibleSEE" AttributeDataType="xs:string">
+                    <Value>MobilePlatform</Value>
+                </Attribute>
+                <Attribute Name="Duration" Unit="sec" AttributeDataType="xs:integer">
+                    <Value>30</Value>
+                </Attribute>
+                <Attribute Name="Slack" Unit="sec" AttributeDataType="xs:integer">
+                    <Value>0</Value>
+                </Attribute>
+                <Attribute Name="Execution" AttributeDataType="xs:string">
+                    <Attribute Name="Type" AttributeDataType="xs:string">
+                        <Value>Transport3D</Value>
+                    </Attribute>
+                    <Attribute Name="Data" AttributeDataType="xs:string">
+                        <Attribute Name="Position" AttributeDataType="xs:string">
+                            <Value>NEUT</Value>
+                        </Attribute>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="PreCondition" AttributeDataType="xs:string">
+                    <Attribute Name="Configuration" AttributeDataType="xs:string">
+                        <Value>pos-ur5</Value>
+                    </Attribute>
+                    <Attribute Name="Product" AttributeDataType="xs:string">
+                        <Value>box-empty</Value>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="PostCondition" AttributeDataType="xs:string">
+                    <Attribute Name="Configuration" AttributeDataType="xs:string">
+                        <Value>neutral</Value>
+                    </Attribute>
+                    <Attribute Name="Product" AttributeDataType="xs:string">
+                        <Value>box-empty</Value>
+                    </Attribute>
+                </Attribute>
+                <SupportedRoleClass RefRoleClassPath="HannoverDemoRoleClassLib/Transport3D"/>
+                <RoleRequirements RefBaseRoleClassPath="SkillProRoleClassLib/ResourceExecutableSkill"/>
+            </InternalElement>
+            <RoleRequirements RefBaseRoleClassPath="SkillProRoleClassLib/ExecutableSkill"/>
+        </InternalElement>
+        <InternalElement Name="ProduceChocolate:chocolate-$chocolate-color$-SChoc" ID="ID_ProduceChocolate:chocolate-$chocolate-color$-SChoc">
+            <InternalElement Name="Simulation-ProduceChocolate:chocolate-$chocolate-color$-SChoc" ID="ID_Simulation-ProduceChocolate:chocolate-$chocolate-color$-SChoc">
+                <Attribute Name="ResourceId" AttributeDataType="xs:string">
+                    <Value>Simulation</Value>
+                </Attribute>
+                <Attribute Name="ResponsibleSEE" AttributeDataType="xs:string">
+                    <Value>Simulation</Value>
+                </Attribute>
+                <Attribute Name="Duration" Unit="sec" AttributeDataType="xs:integer">
+                    <Value>60</Value>
+                </Attribute>
+                <Attribute Name="Slack" Unit="sec" AttributeDataType="xs:integer">
+                    <Value>0</Value>
+                </Attribute>
+                <Attribute Name="Execution" AttributeDataType="xs:string">
+                    <Attribute Name="Type" AttributeDataType="xs:string">
+                        <Value>Produce</Value>
+                    </Attribute>
+                    <Attribute Name="Data" AttributeDataType="xs:string"/>
+                </Attribute>
+                <Attribute Name="PreCondition" AttributeDataType="xs:string">
+                    <Attribute Name="Configuration" AttributeDataType="xs:string">
+                        <Value>neutral</Value>
+                    </Attribute>
+                    <Attribute Name="Product" AttributeDataType="xs:string">
+                        <Value>empty</Value>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="PostCondition" AttributeDataType="xs:string">
+                    <Attribute Name="Configuration" AttributeDataType="xs:string">
+                        <Value>neutral</Value>
+                    </Attribute>
+                    <Attribute Name="Product" AttributeDataType="xs:string">
+                        <Value>chocolate</Value>
+                    </Attribute>
+                </Attribute>
+                <SupportedRoleClass RefRoleClassPath="HannoverDemoRoleClassLib/Produce"/>
+                <RoleRequirements RefBaseRoleClassPath="SkillProRoleClassLib/ResourceExecutableSkill"/>
+            </InternalElement>
+            <RoleRequirements RefBaseRoleClassPath="SkillProRoleClassLib/ExecutableSkill"/>
+        </InternalElement>
+    </InstanceHierarchy>
+</CAEXFile>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.ui.commands">
+      <command
+            defaultHandler="calculation.GenerateExSkills"
+            id="calculation.GenerateExSkills"
+            name="GenerateExSkills">
+      </command>
+   </extension>
+   <extension
+         point="org.eclipse.ui.menus">
+      <menuContribution
+            allPopups="false"
+            locationURI="menu:org.eclipse.ui.main.menu?after=skillpro.menu.see">
+         <menu
+               id="skillpro.menu.ministate"
+               label="Generation">
+            <command
+                  commandId="calculation.GenerateExSkills"
+                  label="Generate ExSkills"
+                  style="push">
+            </command>
+         </menu>
+      </menuContribution>
+   </extension>
+
+</plugin>

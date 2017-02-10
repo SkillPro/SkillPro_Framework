@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns="http://java.sun.com/xml/ns/javaee" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" 
+	id="WebApp_ID" version="3.0">
+  <display-name>FZI</display-name>
+  <welcome-file-list>
+      <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+  <!-- 
+  <servlet>
+    <servlet-name>RegisterCostumer</servlet-name>
+    <servlet-class>eu.skillpro.ams.service.servlets.customerrequest.RegisterCustomerRequest</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>RegisterCostumer</servlet-name>
+    <url-pattern>/registerCustomerRequest</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+    <servlet-name>RetrieveCustomerRequests</servlet-name>
+    <servlet-class>eu.skillpro.ams.service.servlets.customerrequest.RetrieveCustomerRequests</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>RetrieveCustomerRequests</servlet-name>
+    <url-pattern>/retrieveCustomerRequests</url-pattern>
+  </servlet-mapping>
+   -->
+  <jsp-config>
+  	<jsp-property-group>
+            <url-pattern>*.jsp</url-pattern>
+            <include-prelude>/WEB-INF/taglibs.jsp</include-prelude>
+     </jsp-property-group>
+  </jsp-config>
+</web-app>

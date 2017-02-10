@@ -1,0 +1,79 @@
+[*] --> LoadSMTAssemblyLine
+LoadSMTAssemblyLine : SMTLineOperator (transportHuman-Master; {}, {}; pos_SMTAssemblyLine, {})
+LoadSMTAssemblyLine : SMTLine (load-Slave; {}, {'emptyPCB': [(">=", 0),("<", 65531)]}; {}, {'emptyPCB': 5})
+
+LoadSMTAssemblyLine -down-> PrepareSMTAssemblyLine
+PrepareSMTAssemblyLine : SMTLineOperator (configureSMTLineOperator-Master; pos_SMTAssemblyLine, {}; pos_SMTAssemblyLine, {})
+PrepareSMTAssemblyLine : SMTLine (configureSMTLine-Slave; {}, {}; idle-prodA, {})
+
+PrepareSMTAssemblyLine -down-> SMTAssembly
+SMTAssembly : SMTLine (produce; idle-prodA, {'emptyPCB': [(">=", 1),("<", 65535)], 'oneLayerPCB-prodA': [(">=", 0), ("<", 65535)]}; {}, {'emptyPCB': -1, 'oneLayerPCB-prodA': 1})
+
+SMTAssembly -down-> TransportSMTtoTHT1
+TransportSMTtoTHT1 : THTOperator1 (transportHuman-Master; {}, {}; pos_THTAssemblyWorkplace1, {})
+TransportSMTtoTHT1 : SMTLine (unload-Slave; {}, {'oneLayerPCB-prodA': [(">=", 5), ("<", 65531)]}; {}, {'oneLayerPCB-prodA': -5})
+TransportSMTtoTHT1 : THTWorkplace1 (load-Slave; {}, {'oneLayerPCB-prodA': [(">=", 0), ("<", 65531)]}; {}, {'oneLayerPCB-prodA': 5})
+
+TransportSMTtoTHT1 -down-> THT1Assembly
+THT1Assembly : THTOperator1 (doTHTAssembly-Master; pos_THTAssemblyWorkplace1, {}; pos_THTAssemblyWorkplace1, {})
+THT1Assembly :  THTWorkplace1 (produce-Slave; {}, {'oneLayerPCB-prodA': [(">=", 1), ("<", 65536)], 'THTassembledPCB-prodA': [(">=", 0), ("<", 65535)]}; {}, {'oneLayerPCB-prodA': -1, 'THTassembledPCB-prodA': 1})
+
+THT1Assembly -down-> TransportTHT1toTHTWaveSolderingOven
+TransportTHT1toTHTWaveSolderingOven : THTOperator1 (transportHuman-Master; {}, {}; pos_THTWaveSoldering, {})
+TransportTHT1toTHTWaveSolderingOven : THTWorkplace1 (unload-Slave; {}, {'THTassembledPCB-prodA': [(">=", 5), ("<", 65531)]}; {}, {'THTassembledPCB-prodA': -5})
+TransportTHT1toTHTWaveSolderingOven : THTWaveSolderingOven (load-Slave; {}, {'THTassembledPCB-prodA': [(">=", 0), ("<", 65531)]}; {}, {'THTassembledPCB-prodA': 5})
+
+TransportTHT1toTHTWaveSolderingOven -down-> PrepareTHT1WaveSolderingOven
+PrepareTHT1WaveSolderingOven : THTOperator1 (configureTHTWaveSolderingOperator-Master; pos_THTWaveSoldering, {}; pos_THTWaveSoldering, {})
+PrepareTHT1WaveSolderingOven : THTWaveSolderingOven (configureTHTWaveSoldering-Slave; {}, {}; idle-prodA, {})
+
+SMTAssembly -down-> TransportSMTtoTHT2
+TransportSMTtoTHT2 : THTOperator2 (transportHuman-Master; {}, {}; pos_THTAssemblyWorkplace2, {})
+TransportSMTtoTHT2 : SMTLine (unload-Slave; {}, {'oneLayerPCB-prodA': [(">=", 5), ("<", 65531)]}; {}, {'oneLayerPCB-prodA': -5})
+TransportSMTtoTHT2 : THTWorkplace2 (load-Slave; {}, {'oneLayerPCB-prodA': [(">=", 0), ("<", 65531)]}; {}, {'oneLayerPCB-prodA': 5})
+
+TransportSMTtoTHT2 -down-> THT2Assembly
+THT2Assembly : THTOperator2 (doTHTAssembly-Master; pos_THTAssemblyWorkplace2, {}; pos_THTAssemblyWorkplace2, {})
+THT2Assembly :  THTWorkplace2 (produce-Slave; {}, {'oneLayerPCB-prodA': [(">=", 1), ("<", 65535)], 'THTassembledPCB-prodA': [(">=", 0), ("<", 65535)]}; {}, {'oneLayerPCB-prodA': -1, 'THTassembledPCB-prodA': 1})
+
+THT2Assembly -down-> TransportTHT2toTHTWaveSolderingOven
+TransportTHT2toTHTWaveSolderingOven : THTOperator2 (transportHuman-Master; {}, {}; pos_THTWaveSoldering, {})
+TransportTHT2toTHTWaveSolderingOven : THTWorkplace2 (unload-Slave; {}, {'THTassembledPCB-prodA': [(">=", 5), ("<", 65531)]}; {}, {'THTassembledPCB-prodA': -5})
+TransportTHT2toTHTWaveSolderingOven : THTWaveSolderingOven (load-Slave; {}, {'THTassembledPCB-prodA': [(">=", 0), ("<", 65531)]}; {}, {'THTassembledPCB-prodA': 5})
+
+TransportTHT2toTHTWaveSolderingOven -down-> PrepareTHT2WaveSolderingOven
+PrepareTHT2WaveSolderingOven : THTOperator2 (configureTHTWaveSolderingOperator-Master; pos_THTWaveSoldering, {}; pos_THTWaveSoldering, {})
+PrepareTHT2WaveSolderingOven : THTWaveSolderingOven (configureTHTWaveSoldering-Slave; {}, {}; idle-prodA, {})
+
+PrepareTHT1WaveSolderingOven -down-> THTWaveSoldering
+PrepareTHT2WaveSolderingOven -down-> THTWaveSoldering
+THTWaveSoldering : THTWaveSolderingOven (produce; idle-prodA, {'THTassembledPCB-prodA': [(">=", 1),("<", 65535)], 'THTSolderedPCB-prodA': [(">=", 0), ("<", 65535)]}; {}, {'THTassembledPCB-prodA': -1, 'THTSolderedPCB-prodA': 1})
+
+THTWaveSoldering -down-> TransportTHTWaveSolderingOventoManualInspectionWorkplace
+TransportTHTWaveSolderingOventoManualInspectionWorkplace : THTOperator1 (transportHuman-Master; {}, {}; pos_ManualInspectionWorkplace, {})
+TransportTHTWaveSolderingOventoManualInspectionWorkplace : THTWaveSolderingOven (unload-Slave; {}, {'THTSolderedPCB-prodA': [(">=", 5), ("<", 65535)]}; {}, {'THTSolderedPCB-prodA': -5})
+TransportTHTWaveSolderingOventoManualInspectionWorkplace : ManualInspectionWorkplace (load-Slave; {}, {'THTSolderedPCB-prodA': [(">=", 0), ("<", 65531)]}; {}, {'THTSolderedPCB-prodA': 5})
+
+TransportTHTWaveSolderingOventoManualInspectionWorkplace -down-> ManualInspection
+ManualInspection : THTOperator1 (manualInspection-Master; pos_ManualInspectionWorkplace, {}; pos_ManualInspectionWorkplace, {})
+ManualInspection : ManualInspectionWorkplace (produce-Slave; {}, {'THTSolderedPCB-prodA': [(">=", 1), ("<", 65531)], 'ManualInspectedPCB-prodA': [(">=", 0), ("<", 65535)]}; {}, {'THTSolderedPCB-prodA': -1, 'ManualInspectedPCB-prodA': 1})
+
+ManualInspection -down-> TransportManualInspectionWorkplacetoFunctionalTestingWorkplace
+TransportManualInspectionWorkplacetoFunctionalTestingWorkplace : FunctionalTestingOperator (transportHuman-Master; {}, {}; pos_FunctionalTestingWorkplace, {})
+TransportManualInspectionWorkplacetoFunctionalTestingWorkplace : ManualInspectionWorkplace (unload-Slave; {}, {'ManualInspectedPCB-prodA': [(">=", 5), ("<", 65535)]}; {}, {'ManualInspectedPCB-prodA': -5})
+TransportManualInspectionWorkplacetoFunctionalTestingWorkplace : FunctionalTestingWorkplace (load-Slave; {}, {'ManualInspectedPCB-prodA': [(">=", 0), ("<", 65531)]}; {}, {'ManualInspectedPCB-prodA': 5})
+
+TransportManualInspectionWorkplacetoFunctionalTestingWorkplace -down-> FunctionalTesting
+FunctionalTesting : FunctionalTestingOperator (functionalTesting-Master; pos_FunctionalTestingWorkplace, {}; pos_FunctionalTestingWorkplace, {})
+FunctionalTesting : FunctionalTestingWorkplace (produce-Slave; {}, {'ManualInspectedPCB-prodA': [(">=", 1), ("<", 65531)], 'FunctionalTestedPCB-prodA': [(">=", 0), ("<", 65535)]}; {}, {'ManualInspectedPCB-prodA': -1, 'FunctionalTestedPCB-prodA': 1})
+
+FunctionalTesting -down-> TransportFunctionalTestingWorkplacetoQualityControlWorkplace
+TransportFunctionalTestingWorkplacetoQualityControlWorkplace : QualityControlOperator (transportHuman-Master; {}, {}; pos_QualityControlWorkplace, {})
+TransportFunctionalTestingWorkplacetoQualityControlWorkplace : FunctionalTestingWorkplace (unload-Slave; {}, {'FunctionalTestedPCB-prodA': [(">=", 5), ("<", 65531)]}; {}, {'FunctionalTestedPCB-prodA': -5})
+TransportFunctionalTestingWorkplacetoQualityControlWorkplace : QualityControlWorkplace (load-Slave; {}, {'FunctionalTestedPCB-prodA': [(">=", 0), ("<", 65531)]}; {}, {'FunctionalTestedPCB-prodA': 5})
+
+TransportFunctionalTestingWorkplacetoQualityControlWorkplace -down-> QualityControl
+QualityControl : QualityControlOperator (qualityControl-Master; pos_QualityControlWorkplace, {}; pos_QualityControlWorkplace, {})
+QualityControl : QualityControlWorkplace (produce-Slave; {}, {'FunctionalTestedPCB-prodA': [(">=", 1), ("<", 65531)], 'QualityControledPCB-prodA': [(">=", 0), ("<", 65535)]}; {}, {'FunctionalTestedPCB-prodA': -1, 'QualityControledPCB-prodA': 1})
+
+QualityControl -down-> [*]

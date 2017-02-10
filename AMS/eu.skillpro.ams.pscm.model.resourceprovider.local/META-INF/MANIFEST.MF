@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: local resource provider
+Bundle-SymbolicName: eu.skillpro.ams.pscm.model.resourceprovider.local;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-Vendor: FZI
+Fragment-Host: eu.skillpro.ams.pscm.model.resourceprovider;bundle-version="1.0.0"
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Export-Package: pscm.resourceprovider.local

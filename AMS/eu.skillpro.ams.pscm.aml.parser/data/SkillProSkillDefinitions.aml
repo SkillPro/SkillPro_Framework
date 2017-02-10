@@ -1,0 +1,555 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CAEXFile xsi:noNamespaceSchemaLocation="CAEX_ClassModel_V2.15.xsd" FileName="SkillProSkillDefinitions.aml" SchemaVersion="2.15" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Version>0.1</Version>
+	<AdditionalInformation AutomationMLVersion="2.0" />
+	<AdditionalInformation>
+		<WriterHeader>
+			<WriterName>FraunhoferIOSB manual creation</WriterName>
+			<WriterID>IOSB20131119</WriterID>
+			<WriterVendor>FraunhoferIOSB</WriterVendor>
+			<WriterVendorURL>www.iosb.fraunhofer.de</WriterVendorURL>
+			<WriterVersion>1.0</WriterVersion>
+			<WriterRelease>1.0</WriterRelease>
+			<LastWritingDateTime>2013-11-19T13:18:04.9473539+01:00</LastWritingDateTime>
+			<WriterProjectTitle>SkillPro</WriterProjectTitle>
+			<WriterProjectID>
+			</WriterProjectID>
+		</WriterHeader>
+	</AdditionalInformation>
+	<InstanceHierarchy Name="SkillExample">
+		<Description>Production of "Wooden stick with two holes and milled line" by a small plant.</Description>
+		<Version>0.1</Version>
+		<InternalElement Name="SmallPlant" ID="{cd5645e9-b43d-4062-ab86-e89fdeed12c9}">
+			<InternalElement Name="Assets" ID="{fa367d78-827b-4e49-a80e-46afbd05e510}">
+				<InternalElement Name="One-drill-robot (ODR)" ID="{296a8d00-b6d7-49a9-b585-8709923dfddd}">
+					<Attribute Name="Condition">
+						<Constraint Name="NewAttributeConstraintNominalRequirement">
+							<NominalScaledType>
+								<RequiredValue>ready</RequiredValue>
+								<RequiredValue>drilling</RequiredValue>
+							</NominalScaledType>
+						</Constraint>
+					</Attribute>
+					<Attribute Name="Configuration">
+						<Constraint Name="NewAttributeConstraintNominalRequirement">
+							<NominalScaledType>
+								<RequiredValue>no driller</RequiredValue>
+								<RequiredValue>driller 1</RequiredValue>
+								<RequiredValue>driller 2</RequiredValue>
+								<RequiredValue>driller 3</RequiredValue>
+								<RequiredValue>driller 4</RequiredValue>
+								<RequiredValue>driller 5</RequiredValue>
+								<RequiredValue>driller 6</RequiredValue>
+							</NominalScaledType>
+						</Constraint>
+					</Attribute>
+					<Attribute Name="Contained product" />
+					<InternalElement Name="DrillingSkill" ID="{4e2cdbfe-9609-4c62-bb47-6ba409204168}">
+						<Attribute Name="Depth" AttributeDataType="xs:float" Unit="mm" />
+						<Attribute Name="HoleSize" AttributeDataType="xs:float" Unit="mm">
+							<Constraint Name="NewAttributeConstraintNominalRequirement">
+								<NominalScaledType>
+									<RequiredValue>1</RequiredValue>
+									<RequiredValue>2</RequiredValue>
+									<RequiredValue>3</RequiredValue>
+									<RequiredValue>4</RequiredValue>
+									<RequiredValue>5</RequiredValue>
+									<RequiredValue>6</RequiredValue>
+								</NominalScaledType>
+							</Constraint>
+						</Attribute>
+						<Attribute Name="WorkingArea">
+							<Attribute Name="X" AttributeDataType="xs:float" Unit="mm">
+								<Constraint Name="NewAttributeConstraintOrdinalRequirement">
+									<OrdinalScaledType>
+										<RequiredMaxValue>2</RequiredMaxValue>
+										<RequiredValue />
+										<RequiredMinValue>-2</RequiredMinValue>
+									</OrdinalScaledType>
+								</Constraint>
+							</Attribute>
+							<Attribute Name="Y" AttributeDataType="xs:float" Unit="mm">
+								<Constraint Name="NewAttributeConstraintOrdinalRequirement">
+									<OrdinalScaledType>
+										<RequiredMaxValue>2</RequiredMaxValue>
+										<RequiredValue />
+										<RequiredMinValue>-2</RequiredMinValue>
+									</OrdinalScaledType>
+								</Constraint>
+							</Attribute>
+							<Attribute Name="Z" AttributeDataType="xs:float" Unit="mm">
+								<Constraint Name="NewAttributeConstraintOrdinalRequirement">
+									<OrdinalScaledType>
+										<RequiredMaxValue>2</RequiredMaxValue>
+										<RequiredValue />
+										<RequiredMinValue>-2</RequiredMinValue>
+									</OrdinalScaledType>
+								</Constraint>
+							</Attribute>
+						</Attribute>
+						<Attribute Name="HoleCoordinates">
+							<Attribute Name="X" AttributeDataType="xs:float" Unit="mm" />
+							<Attribute Name="Y" AttributeDataType="xs:float" Unit="mm" />
+							<Attribute Name="Z" AttributeDataType="xs:float" Unit="mm" />
+						</Attribute>
+						<SupportedRoleClass RefRoleClassPath="ExampleSkillLib/Drilling" />
+						<RoleRequirements RefBaseRoleClassPath="SkillProRoleClassLib/ResourceSkill" />
+					</InternalElement>
+					<SupportedRoleClass RefRoleClassPath="SkillProRoleClassLib/SkillProAsset" />
+					<RoleRequirements RefBaseRoleClassPath="AutomationMLDMIRoleClassLib/DiscManufacturingEquipment/Robot" />
+				</InternalElement>
+				<InternalElement Name="Small-milling-robot (SMR)" ID="{e43084af-10c3-49b1-a7fb-7069c2abb035}">
+					<Attribute Name="Condition" />
+					<Attribute Name="Configuration" />
+					<Attribute Name="Contained product" />
+					<InternalElement Name="MillingSkill" ID="{af9758c6-af5f-45e5-8cfb-d211a3c9cb12}">
+						<Attribute Name="WorkingArea" />
+						<SupportedRoleClass RefRoleClassPath="ExampleSkillLib/Milling" />
+						<RoleRequirements RefBaseRoleClassPath="SkillProRoleClassLib/ResourceSkill" />
+					</InternalElement>
+					<SupportedRoleClass RefRoleClassPath="SkillProRoleClassLib/SkillProAsset" />
+					<RoleRequirements RefBaseRoleClassPath="AutomationMLDMIRoleClassLib/DiscManufacturingEquipment/Robot" />
+				</InternalElement>
+				<InternalElement Name="Big-milling-robot (BMR)" ID="{9d94dd17-903c-4336-86a1-82145454a2b5}">
+					<Attribute Name="Condition" />
+					<Attribute Name="Configuration" />
+					<Attribute Name="Contained product" />
+					<InternalElement Name="MillingSkill" ID="{0178897d-222e-4ea4-a741-96d33d0c129b}">
+						<Attribute Name="WorkingArea" />
+						<SupportedRoleClass RefRoleClassPath="ExampleSkillLib/Milling" />
+						<RoleRequirements RefBaseRoleClassPath="SkillProRoleClassLib/ResourceSkill" />
+					</InternalElement>
+					<SupportedRoleClass RefRoleClassPath="SkillProRoleClassLib/SkillProAsset" />
+					<RoleRequirements RefBaseRoleClassPath="AutomationMLDMIRoleClassLib/DiscManufacturingEquipment/Robot" />
+				</InternalElement>
+				<RoleRequirements RefBaseRoleClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Structure/ResourceStructure" />
+			</InternalElement>
+			<InternalElement Name="WoodenStickWithTwoHolesAndMiledLine" ID="{9ae25c7d-8109-4f3a-8518-038768722d7d}">
+				<InternalElement Name="IntermediateProducts" ID="{5f4bd4f6-c2f8-41f1-8253-9fe7dd49b0fa}">
+					<InternalElement Name="Material (M)" ID="{79787229-50f1-40c8-afd3-1cb3277b7376}">
+						<ExternalInterface Name="ProductionSkillInterface" ID="{07d6ccbf-2bb5-4bec-986f-b41f2f89b9e8}" RefBaseClassPath="SkillProInterfaceClassLib/ProductProductionSkillConnector" />
+						<RoleRequirements RefBaseRoleClassPath="SkillProRoleClassLib/IntermediateProduct" />
+					</InternalElement>
+					<InternalElement Name="IntermediateProduct1 (IP1)" ID="{df5bfe36-fa44-4e14-b220-e47be25d72f3}">
+						<ExternalInterface Name="ProductionSkillInterface" ID="{26d3b516-bbf3-4960-b0db-ecb36a607154}" RefBaseClassPath="SkillProInterfaceClassLib/ProductProductionSkillConnector" />
+						<RoleRequirements RefBaseRoleClassPath="SkillProRoleClassLib/IntermediateProduct" />
+					</InternalElement>
+					<InternalElement Name="IntermediateProduct2 (IP2)" ID="{6215be67-0ed1-43ad-a0bc-9cd11cedef88}">
+						<ExternalInterface Name="ProductionSkillInterface" ID="{79d39876-ad1c-4915-99c8-c821df5731a7}" RefBaseClassPath="SkillProInterfaceClassLib/ProductProductionSkillConnector" />
+						<RoleRequirements RefBaseRoleClassPath="SkillProRoleClassLib/IntermediateProduct" />
+					</InternalElement>
+					<InternalElement Name="FinalProduct (FP)" ID="{9ff98de5-7d5b-4d5e-a3ba-7bd3a7992c3a}">
+						<ExternalInterface Name="ProductionSkillInterface" ID="{a656e30d-784a-4a88-8886-82092095788d}" RefBaseClassPath="SkillProInterfaceClassLib/ProductProductionSkillConnector" />
+						<RoleRequirements RefBaseRoleClassPath="SkillProRoleClassLib/IntermediateProduct" />
+					</InternalElement>
+					<RoleRequirements RefBaseRoleClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Structure/ProductStructure" />
+				</InternalElement>
+				<InternalElement Name="ProductionSkills" ID="{a5fc4192-c498-4522-8365-dab541390a1a}">
+					<InternalElement Name="Drilling M-IP1" ID="{215d422c-d6f5-4721-a977-36f4211335a4}">
+						<Attribute Name="Depth" AttributeDataType="xs:float" Unit="mm">
+							<Value>0.5</Value>
+						</Attribute>
+						<Attribute Name="HoleSize" AttributeDataType="xs:float" Unit="mm">
+							<Value>4</Value>
+						</Attribute>
+						<Attribute Name="WorkingArea" />
+						<Attribute Name="HoleCoordinates">
+							<Attribute Name="X" AttributeDataType="xs:float" Unit="mm">
+								<Value>0.5</Value>
+							</Attribute>
+							<Attribute Name="Y" AttributeDataType="xs:float" Unit="mm">
+								<Value>1</Value>
+							</Attribute>
+							<Attribute Name="Z" AttributeDataType="xs:float" Unit="mm">
+								<Value>0.2</Value>
+							</Attribute>
+						</Attribute>
+						<ExternalInterface Name="PreProductInterface" ID="{1f435dcc-8130-47d8-8e54-65e9773228f5}" RefBaseClassPath="SkillProInterfaceClassLib/ProductProductionSkillConnector" />
+						<ExternalInterface Name="PostProductInterface" ID="{89947e1f-e53c-46f9-88c4-54b6f1345561}" RefBaseClassPath="SkillProInterfaceClassLib/ProductProductionSkillConnector" />
+						<SupportedRoleClass RefRoleClassPath="ExampleSkillLib/Drilling" />
+						<RoleRequirements RefBaseRoleClassPath="SkillProRoleClassLib/ProductionSkill" />
+					</InternalElement>
+					<InternalElement Name="Drilling IP1-IP2" ID="{509c23e9-5000-49a2-95eb-2b14341c1af4}">
+						<Attribute Name="HoleSize" AttributeDataType="xs:float" Unit="mm">
+							<Value>4</Value>
+						</Attribute>
+						<Attribute Name="Depth" AttributeDataType="xs:float" Unit="mm">
+							<Value>0.5</Value>
+						</Attribute>
+						<Attribute Name="WorkingArea" />
+						<Attribute Name="HoleCoordinates">
+							<Attribute Name="X" AttributeDataType="xs:float" Unit="mm">
+								<Value>0.5</Value>
+							</Attribute>
+							<Attribute Name="Y" AttributeDataType="xs:float" Unit="mm">
+								<Value>-1</Value>
+							</Attribute>
+							<Attribute Name="Z" AttributeDataType="xs:float" Unit="mm">
+								<Value>0.2</Value>
+							</Attribute>
+						</Attribute>
+						<ExternalInterface Name="PostProductInterface" ID="{dee874fb-9bef-46d6-9d6f-4f7b19d897e9}" RefBaseClassPath="SkillProInterfaceClassLib/ProductProductionSkillConnector" />
+						<ExternalInterface Name="PreProductInterface" ID="{90b09940-5dff-49cc-88c2-3a5daceecb0d}" RefBaseClassPath="SkillProInterfaceClassLib/ProductProductionSkillConnector" />
+						<SupportedRoleClass RefRoleClassPath="ExampleSkillLib/Drilling" />
+						<RoleRequirements RefBaseRoleClassPath="SkillProRoleClassLib/ProductionSkill" />
+					</InternalElement>
+					<InternalElement Name="Milling IP2-FP" ID="{72456f0a-54c9-487c-af91-8bffdb42abd8}">
+						<Attribute Name="WorkingArea" />
+						<ExternalInterface Name="PreProductInterface" ID="{a6b6141d-0bd5-4ab1-aaf6-66524c7b1285}" RefBaseClassPath="SkillProInterfaceClassLib/ProductProductionSkillConnector" />
+						<ExternalInterface Name="PostProductInterface" ID="{e0535984-55a2-43b1-9eb2-ec95eb92009b}" RefBaseClassPath="SkillProInterfaceClassLib/ProductProductionSkillConnector" />
+						<SupportedRoleClass RefRoleClassPath="ExampleSkillLib/Milling" />
+						<RoleRequirements RefBaseRoleClassPath="SkillProRoleClassLib/ProductionSkill" />
+					</InternalElement>
+					<RoleRequirements RefBaseRoleClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Structure/ProcessStructure" />
+				</InternalElement>
+				<InternalLink Name="Pre M" RefPartnerSideA="{79787229-50f1-40c8-afd3-1cb3277b7376}:ProductionSkillInterface" RefPartnerSideB="{215d422c-d6f5-4721-a977-36f4211335a4}:PreProductInterface" />
+				<InternalLink Name="Post IP1" RefPartnerSideA="{df5bfe36-fa44-4e14-b220-e47be25d72f3}:ProductionSkillInterface" RefPartnerSideB="{215d422c-d6f5-4721-a977-36f4211335a4}:PostProductInterface" />
+				<InternalLink Name="Pre IP1" RefPartnerSideA="{df5bfe36-fa44-4e14-b220-e47be25d72f3}:ProductionSkillInterface" RefPartnerSideB="{509c23e9-5000-49a2-95eb-2b14341c1af4}:PreProductInterface" />
+				<InternalLink Name="Post IP2" RefPartnerSideA="{6215be67-0ed1-43ad-a0bc-9cd11cedef88}:ProductionSkillInterface" RefPartnerSideB="{509c23e9-5000-49a2-95eb-2b14341c1af4}:PostProductInterface" />
+				<InternalLink Name="Pre IP2" RefPartnerSideA="{6215be67-0ed1-43ad-a0bc-9cd11cedef88}:ProductionSkillInterface" RefPartnerSideB="{72456f0a-54c9-487c-af91-8bffdb42abd8}:PreProductInterface" />
+				<InternalLink Name="Post FP" RefPartnerSideA="{9ff98de5-7d5b-4d5e-a3ba-7bd3a7992c3a}:ProductionSkillInterface" RefPartnerSideB="{72456f0a-54c9-487c-af91-8bffdb42abd8}:PostProductInterface" />
+				<RoleRequirements RefBaseRoleClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Product" />
+			</InternalElement>
+			<InternalElement Name="ExecutableSkills" ID="{d58a1974-0a08-45a1-b502-7dbbe5b7ff10}">
+				<InternalElement Name="Drilling M-IP1 ODR" ID="{917cbe25-d8bb-44cb-a98c-61a366e711a9}">
+					<Attribute Name="PreCondition" />
+					<Attribute Name="PreConfiguration" />
+					<InternalElement Name="Mirror2ProductSkill" ID="{f1130fad-67d5-496f-8873-43f124c313e3}" RefBaseSystemUnitPath="{215d422c-d6f5-4721-a977-36f4211335a4}" />
+					<InternalElement Name="DrillingRobot" ID="{86383c99-0f51-49e0-afa2-1adde797ac64}">
+						<Attribute Name="PostCondition">
+							<Value>ready</Value>
+						</Attribute>
+						<Attribute Name="PostConfiguration">
+							<Value>driller 4</Value>
+						</Attribute>
+						<Attribute Name="PostContained product">
+							<Value>{df5bfe36-fa44-4e14-b220-e47be25d72f3}</Value>
+						</Attribute>
+						<Attribute Name="PreCondition">
+							<Value>ready</Value>
+						</Attribute>
+						<Attribute Name="PreConfiguration">
+							<Value>driller 4</Value>
+						</Attribute>
+						<Attribute Name="PreContained product">
+							<Value>{79787229-50f1-40c8-afd3-1cb3277b7376}</Value>
+						</Attribute>
+						<InternalElement Name="Mirror2Asset" ID="{dba0dd31-68dc-4c23-9aa4-4f771bbf3ae1}" RefBaseSystemUnitPath="{296a8d00-b6d7-49a9-b585-8709923dfddd}" />
+						<InternalElement Name="Mirror2RessourceSkill" ID="{f6a44ce9-36d8-405b-9797-a56dc7ec3919}" RefBaseSystemUnitPath="{4e2cdbfe-9609-4c62-bb47-6ba409204168}" />
+						<RoleRequirements RefBaseRoleClassPath="SkillProRoleClassLib/PrePostCondition" />
+					</InternalElement>
+					<RoleRequirements RefBaseRoleClassPath="SkillProRoleClassLib/ExecutableSkill" />
+				</InternalElement>
+				<RoleRequirements RefBaseRoleClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Structure/ProcessStructure" />
+			</InternalElement>
+			<RoleRequirements RefBaseRoleClassPath="AutomationMLExtendedRoleClassLib/ProductionLine" />
+		</InternalElement>
+	</InstanceHierarchy>
+	<InterfaceClassLib Name="AutomationMLInterfaceClassLib">
+		<Description>Standard AutomationML Interface Class Library</Description>
+		<Version>2.1.1</Version>
+		<InterfaceClass Name="AutomationMLBaseInterface">
+			<InterfaceClass Name="Order" RefBaseClassPath="AutomationMLBaseInterface">
+				<Attribute Name="Direction" AttributeDataType="xs:string">
+					<Description>The attribute "direction" shall be used in order to specify the direction. Permitted values are "In", "Out" or "InOut".</Description>
+					<Constraint Name="DirectionConstraint">
+						<NominalScaledType>
+							<RequiredValue>In</RequiredValue>
+							<RequiredValue>Out</RequiredValue>
+							<RequiredValue>InOut</RequiredValue>
+						</NominalScaledType>
+					</Constraint>
+				</Attribute>
+			</InterfaceClass>
+			<InterfaceClass Name="PortConnector" RefBaseClassPath="AutomationMLBaseInterface" />
+			<InterfaceClass Name="InterlockingConnector" RefBaseClassPath="AutomationMLBaseInterface" />
+			<InterfaceClass Name="PPRConnector" RefBaseClassPath="AutomationMLBaseInterface" />
+			<InterfaceClass Name="ExternalDataConnector" RefBaseClassPath="AutomationMLBaseInterface">
+				<Attribute Name="refURI" AttributeDataType="xs:anyURI" />
+				<InterfaceClass Name="COLLADAInterface" RefBaseClassPath="ExternalDataConnector">
+					<Attribute Name="refType" AttributeDataType="xs:string" />
+					<InterfaceClass Name="AttachmentPointInterface" RefBaseClassPath="COLLADAInterface" />
+					<InterfaceClass Name="RepresentationInterface" RefBaseClassPath="COLLADAInterface" />
+				</InterfaceClass>
+				<InterfaceClass Name="PLCopenXMLInterface" RefBaseClassPath="ExternalDataConnector">
+					<InterfaceClass Name="LogicInterface" RefBaseClassPath="PLCopenXMLInterface" />
+					<InterfaceClass Name="VariableInterface" RefBaseClassPath="PLCopenXMLInterface" />
+				</InterfaceClass>
+			</InterfaceClass>
+			<InterfaceClass Name="Communication" RefBaseClassPath="AutomationMLBaseInterface">
+				<InterfaceClass Name="SignalInterface" RefBaseClassPath="Communication" />
+			</InterfaceClass>
+		</InterfaceClass>
+	</InterfaceClassLib>
+	<InterfaceClassLib Name="SkillProInterfaceClassLib">
+		<Version>0.1</Version>
+		<InterfaceClass Name="ProductProductionSkillConnector" RefBaseClassPath="AutomationMLInterfaceClassLib/AutomationMLBaseInterface" />
+	</InterfaceClassLib>
+	<RoleClassLib Name="UserDefinedRoleClassLib_RedBookVDMA">
+		<Version>2.1</Version>
+		<RoleClass Name="Spanende Werkzeugmaschinen" RefBaseClassPath="AutomationMLDMIRoleClassLib/DiscManufacturingEquipment/Machine">
+			<RoleClass Name="Drehmaschinen und Drehautomaten" RefBaseClassPath="Spanende Werkzeugmaschinen" />
+			<RoleClass Name="Bohrmaschinen" RefBaseClassPath="Spanende Werkzeugmaschinen" />
+			<RoleClass Name="Fraesmaschinen" RefBaseClassPath="Spanende Werkzeugmaschinen" />
+			<RoleClass Name="Hobelmaschinen. Stossmaschinen, Raeummaschinen" RefBaseClassPath="Spanende Werkzeugmaschinen" />
+			<RoleClass Name="Saegemaschinen" RefBaseClassPath="Spanende Werkzeugmaschinen" />
+			<RoleClass Name="Schleifmaschinen" RefBaseClassPath="Spanende Werkzeugmaschinen" />
+			<RoleClass Name="Honmaschinen, Finishmaschinen, Laeppmaschinen, Poliermaschinen" RefBaseClassPath="Spanende Werkzeugmaschinen" />
+			<RoleClass Name="Transfermaschinen, Bearbeitungszentren, Flexible Fertigungszellen, Flexible Fertigungssysteme" RefBaseClassPath="Spanende Werkzeugmaschinen" />
+			<RoleClass Name="Baueinheiten fuer Werkzeugmaschinen" RefBaseClassPath="Spanende Werkzeugmaschinen" />
+			<RoleClass Name="Verzahnmaschinen und -Pruefmaschinen" RefBaseClassPath="Spanende Werkzeugmaschinen" />
+			<RoleClass Name="Sondermaschinen fuer die spanende Metallbearbeitung" RefBaseClassPath="Spanende Werkzeugmaschinen" />
+		</RoleClass>
+		<RoleClass Name="Abtrage Werkzeuge" RefBaseClassPath="AutomationMLDMIRoleClassLib/DiscManufacturingEquipment/Machine">
+			<RoleClass Name="Funkenerodieranlagen (EDM-Technik)" RefBaseClassPath="Abtrage Werkzeuge" />
+			<RoleClass Name="Elektrochemisch abtragende Anlagen (ECM-Technik)" RefBaseClassPath="Abtrage Werkzeuge" />
+			<RoleClass Name="Thermisch abtragende Anlagen (TEM-Technik)" RefBaseClassPath="Abtrage Werkzeuge" />
+			<RoleClass Name="Termische Strahlanlagen und Strahquellen" RefBaseClassPath="Abtrage Werkzeuge" />
+			<RoleClass Name="Sonstige abtragende Werkzeugmaschinen" RefBaseClassPath="Abtrage Werkzeuge" />
+		</RoleClass>
+		<RoleClass Name="Zerteilende Werkzeugmaschinen" RefBaseClassPath="AutomationMLDMIRoleClassLib/DiscManufacturingEquipment/Machine">
+			<RoleClass Name="Scheren fuer Blechbearbeitung" RefBaseClassPath="Zerteilende Werkzeugmaschinen" />
+			<RoleClass Name="Scheren fuer Profilmaterial" RefBaseClassPath="Zerteilende Werkzeugmaschinen" />
+			<RoleClass Name="Schneidpressen" RefBaseClassPath="Zerteilende Werkzeugmaschinen" />
+			<RoleClass Name="Kombinierte Stanz-, Nibbel-, Umform-, und Stahlschneid-Maschinen" RefBaseClassPath="Zerteilende Werkzeugmaschinen" />
+			<RoleClass Name="Sonstige zerteilende Werkzeuge" RefBaseClassPath="Zerteilende Werkzeugmaschinen" />
+		</RoleClass>
+		<RoleClass Name="Umformende Werkzeugmaschinen" RefBaseClassPath="AutomationMLDMIRoleClassLib/DiscManufacturingEquipment/Machine">
+			<RoleClass Name="Exzenterpressen" RefBaseClassPath="Umformende Werkzeugmaschinen" />
+			<RoleClass Name="Kurbelpressen" RefBaseClassPath="Umformende Werkzeugmaschinen" />
+			<RoleClass Name="Kniehebelpressen" RefBaseClassPath="Umformende Werkzeugmaschinen" />
+			<RoleClass Name="Spindelpressen" RefBaseClassPath="Umformende Werkzeugmaschinen" />
+			<RoleClass Name="Sonstige mechanische Pressen" RefBaseClassPath="Umformende Werkzeugmaschinen" />
+			<RoleClass Name="Hydraulische Pressen" RefBaseClassPath="Umformende Werkzeugmaschinen" />
+			<RoleClass Name="Biege- und Richtpressen" RefBaseClassPath="Umformende Werkzeugmaschinen" />
+			<RoleClass Name="Pressen fuer Spezialanwendungen" RefBaseClassPath="Umformende Werkzeugmaschinen" />
+			<RoleClass Name="Pressenstrassen" RefBaseClassPath="Umformende Werkzeugmaschinen" />
+			<RoleClass Name="Flexible automatische Pressenstrassen und Pressensysteme" RefBaseClassPath="Umformende Werkzeugmaschinen" />
+			<RoleClass Name="Haemmer" RefBaseClassPath="Umformende Werkzeugmaschinen" />
+			<RoleClass Name="Walzmaschinen" RefBaseClassPath="Umformende Werkzeugmaschinen" />
+			<RoleClass Name="Biegemaschinen und Richtmaschinen" RefBaseClassPath="Umformende Werkzeugmaschinen" />
+			<RoleClass Name="Ziehmaschinen" RefBaseClassPath="Umformende Werkzeugmaschinen" />
+			<RoleClass Name="Sonstige Umformmaschinen" RefBaseClassPath="Umformende Werkzeugmaschinen" />
+			<RoleClass Name="Sondermaschinen fuer die zerteilende und umformende Metallbearbeitung" RefBaseClassPath="Umformende Werkzeugmaschinen" />
+		</RoleClass>
+	</RoleClassLib>
+	<RoleClassLib Name="UserDefinedRoleClassLib_FoodAndBeverage">
+		<Version>2.0</Version>
+		<RoleClass Name="Food and beverage equipment" RefBaseClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Resource">
+			<RoleClass Name="Filling machine" RefBaseClassPath="UserDefinedRoleClassLib_FoodAndBeverage/Food and beverage equipment" />
+			<RoleClass Name="Packaging machine" RefBaseClassPath="UserDefinedRoleClassLib_FoodAndBeverage/Food and beverage equipment" />
+			<RoleClass Name="Closing machine" RefBaseClassPath="UserDefinedRoleClassLib_FoodAndBeverage/Food and beverage equipment" />
+		</RoleClass>
+		<RoleClass Name="Food and beverage processes" RefBaseClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Process">
+			<RoleClass Name="Fill" RefBaseClassPath="UserDefinedRoleClassLib_FoodAndBeverage/Food and beverage processes">
+				<Description>Fill substance in an entity</Description>
+			</RoleClass>
+			<RoleClass Name="Package" RefBaseClassPath="UserDefinedRoleClassLib_FoodAndBeverage/Food and beverage processes">
+				<Description>Cluster primary packages in different packaging constellations</Description>
+			</RoleClass>
+			<RoleClass Name="Close" RefBaseClassPath="UserDefinedRoleClassLib_FoodAndBeverage/Food and beverage processes">
+				<Description>Close entity e.g. put lid on jar</Description>
+			</RoleClass>
+		</RoleClass>
+		<RoleClass Name="Food and beverage products" RefBaseClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Product">
+			<RoleClass Name="Infant formula" RefBaseClassPath="UserDefinedRoleClassLib_FoodAndBeverage/Food and beverage products" />
+			<RoleClass Name="Baby food" RefBaseClassPath="UserDefinedRoleClassLib_FoodAndBeverage/Food and beverage products" />
+			<RoleClass Name="Primary package" RefBaseClassPath="UserDefinedRoleClassLib_FoodAndBeverage/Food and beverage products">
+				<Description>beverage carton/tetrapack</Description>
+			</RoleClass>
+			<RoleClass Name="Secondary package" RefBaseClassPath="UserDefinedRoleClassLib_FoodAndBeverage/Food and beverage products">
+				<Description>6-pack</Description>
+			</RoleClass>
+			<RoleClass Name="Lid" RefBaseClassPath="UserDefinedRoleClassLib_FoodAndBeverage/Food and beverage products" />
+			<RoleClass Name="Jar" RefBaseClassPath="UserDefinedRoleClassLib_FoodAndBeverage/Food and beverage products" />
+		</RoleClass>
+	</RoleClassLib>
+	<RoleClassLib Name="UserDefinedRoleClassLib_DaimlerStructureRoleClassLib">
+		<Version>2.0</Version>
+		<RoleClass Name="Location" RefBaseClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Structure" />
+		<RoleClass Name="ShopfloorArea" RefBaseClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Structure" />
+		<RoleClass Name="Assembly" RefBaseClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Structure" />
+		<RoleClass Name="Component" RefBaseClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Structure" />
+		<RoleClass Name="Station" RefBaseClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Structure" />
+		<RoleClass Name="Line" RefBaseClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Structure" />
+		<RoleClass Name="Emergency_Stop" RefBaseClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Structure" />
+		<RoleClass Name="PLC_Area" RefBaseClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Structure" />
+		<RoleClass Name="Safety_Area" RefBaseClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Structure" />
+	</RoleClassLib>
+	<RoleClassLib Name="AutomationMLBaseRoleClassLib">
+		<Description>AutomationML base role library</Description>
+		<Version>2.1.2</Version>
+		<RoleClass Name="AutomationMLBaseRole">
+			<RoleClass Name="Group" RefBaseClassPath="AutomationMLBaseRole">
+				<Attribute Name="AssociatedFacet" AttributeDataType="xs:string" />
+			</RoleClass>
+			<RoleClass Name="Facet" RefBaseClassPath="AutomationMLBaseRole" />
+			<RoleClass Name="Port" RefBaseClassPath="AutomationMLBaseRole">
+				<Attribute Name="Direction" AttributeDataType="xs:string" />
+				<Attribute Name="Cardinality">
+					<Attribute Name="MinOccur" AttributeDataType="xs:unsignedInt" />
+					<Attribute Name="MaxOccur" AttributeDataType="xs:unsignedInt" />
+				</Attribute>
+				<Attribute Name="Category" AttributeDataType="xs:string" />
+				<ExternalInterface Name="ConnectionPoint" ID="1c6a2bb9-8f93-4394-8fae-ef0e0074716a" RefBaseClassPath="AutomationMLInterfaceClassLib/AutomationMLBaseInterface/PortConnector" />
+			</RoleClass>
+			<RoleClass Name="Resource" RefBaseClassPath="AutomationMLBaseRole" />
+			<RoleClass Name="Product" RefBaseClassPath="AutomationMLBaseRole" />
+			<RoleClass Name="Process" RefBaseClassPath="AutomationMLBaseRole" />
+			<RoleClass Name="Structure" RefBaseClassPath="AutomationMLBaseRole">
+				<RoleClass Name="ProductStructure" RefBaseClassPath="Structure" />
+				<RoleClass Name="ProcessStructure" RefBaseClassPath="Structure" />
+				<RoleClass Name="ResourceStructure" RefBaseClassPath="Structure">
+					<RoleClass Name="Cell" RefBaseClassPath="ResourceStructure" />
+					<RoleClass Name="MainGroup" RefBaseClassPath="ResourceStructure" />
+					<RoleClass Name="FunctionGroup" RefBaseClassPath="ResourceStructure" />
+					<RoleClass Name="SubFunctionGroup" RefBaseClassPath="ResourceStructure" />
+					<RoleClass Name="MechatronicAssembly" RefBaseClassPath="ResourceStructure" />
+					<RoleClass Name="MechanicalAssembly" RefBaseClassPath="ResourceStructure" />
+					<RoleClass Name="MechanicalPart" RefBaseClassPath="ResourceStructure" />
+					<RoleClass Name="Device" RefBaseClassPath="ResourceStructure" />
+				</RoleClass>
+			</RoleClass>
+			<RoleClass Name="PropertySet" RefBaseClassPath="AutomationMLBaseRole" />
+		</RoleClass>
+	</RoleClassLib>
+	<RoleClassLib Name="AutomationMLBMIRoleClassLib">
+		<Description>Automation Markup Language Batch Manufacturing Industry Role Class Library</Description>
+		<Version>1.1.0</Version>
+		<RoleClass Name="BatchManufacturingEquipment" RefBaseClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Resource" />
+	</RoleClassLib>
+	<RoleClassLib Name="AutomationMLCMIRoleClassLib">
+		<Description>Automation Markup Language Continuous Manufacturing Industry Role Class Library</Description>
+		<Version>1.1.0</Version>
+		<RoleClass Name="ContManufacturingEquipment" RefBaseClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Resource" />
+	</RoleClassLib>
+	<RoleClassLib Name="AutomationMLCSRoleClassLib">
+		<Description>Automation Markup Language Control Industry Role Class Library</Description>
+		<Version>2.3.0</Version>
+		<RoleClass Name="ControlEquipment" RefBaseClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Resource">
+			<RoleClass Name="Communication" RefBaseClassPath="ControlEquipment" />
+			<RoleClass Name="ControlHardware" RefBaseClassPath="ControlEquipment">
+				<RoleClass Name="PC" RefBaseClassPath="ControlHardware" />
+				<RoleClass Name="IPC" RefBaseClassPath="ControlHardware" />
+				<RoleClass Name="EmbeddedDevice" RefBaseClassPath="ControlHardware" />
+				<RoleClass Name="Handheld" RefBaseClassPath="ControlHardware" />
+			</RoleClass>
+			<RoleClass Name="Sensor" RefBaseClassPath="ControlEquipment" />
+			<RoleClass Name="Actuator" RefBaseClassPath="ControlEquipment" />
+			<RoleClass Name="Controller" RefBaseClassPath="ControlEquipment">
+				<RoleClass Name="PLC" RefBaseClassPath="Controller" />
+				<RoleClass Name="NC" RefBaseClassPath="Controller" />
+				<RoleClass Name="RC" RefBaseClassPath="Controller" />
+				<RoleClass Name="PAC" RefBaseClassPath="Controller" />
+			</RoleClass>
+		</RoleClass>
+	</RoleClassLib>
+	<RoleClassLib Name="AutomationMLDMIRoleClassLib">
+		<Description>Automation Markup Language  Discrete Manufacturing Industry Role Class Library</Description>
+		<Version>2.4.0</Version>
+		<RoleClass Name="DiscManufacturingEquipment" RefBaseClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Resource">
+			<RoleClass Name="Transport" RefBaseClassPath="DiscManufacturingEquipment" />
+			<RoleClass Name="Storage" RefBaseClassPath="DiscManufacturingEquipment" />
+			<RoleClass Name="Fixture" RefBaseClassPath="DiscManufacturingEquipment" />
+			<RoleClass Name="Gate" RefBaseClassPath="DiscManufacturingEquipment" />
+			<RoleClass Name="Robot" RefBaseClassPath="DiscManufacturingEquipment" />
+			<RoleClass Name="Tool" RefBaseClassPath="DiscManufacturingEquipment" />
+			<RoleClass Name="Carrier" RefBaseClassPath="DiscManufacturingEquipment" />
+			<RoleClass Name="Machine" RefBaseClassPath="DiscManufacturingEquipment" />
+			<RoleClass Name="StaticObject" RefBaseClassPath="DiscManufacturingEquipment" />
+		</RoleClass>
+	</RoleClassLib>
+	<RoleClassLib Name="AutomationMLExtendedRoleClassLib">
+		<Version>2.7.0</Version>
+		<RoleClass Name="PLCFacet" RefBaseClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Facet" />
+		<RoleClass Name="HMIFacet" RefBaseClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Facet" />
+		<RoleClass Name="Enterprise" RefBaseClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Structure/ResourceStructure" />
+		<RoleClass Name="Site" RefBaseClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Structure/ResourceStructure" />
+		<RoleClass Name="Area" RefBaseClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Structure/ResourceStructure" />
+		<RoleClass Name="ProductionLine" RefBaseClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Structure/ResourceStructure" />
+		<RoleClass Name="WorkCell" RefBaseClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Structure/ResourceStructure" />
+		<RoleClass Name="ProcessCell" RefBaseClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Structure/ResourceStructure" />
+		<RoleClass Name="Unit" RefBaseClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Structure/ResourceStructure" />
+		<RoleClass Name="ProductionUnit" RefBaseClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Structure/ResourceStructure" />
+		<RoleClass Name="StorageZone" RefBaseClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Structure/ResourceStructure" />
+		<RoleClass Name="StorageUnit" RefBaseClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Structure/ResourceStructure" />
+		<RoleClass Name="Turntable" RefBaseClassPath="AutomationMLDMIRoleClassLib/DiscManufacturingEquipment/Transport" />
+		<RoleClass Name="Conveyor" RefBaseClassPath="AutomationMLDMIRoleClassLib/DiscManufacturingEquipment/Transport">
+			<RoleClass Name="BeltConveyor" RefBaseClassPath="Conveyor" />
+			<RoleClass Name="RollConveyor" RefBaseClassPath="Conveyor" />
+			<RoleClass Name="ChainConveyor" RefBaseClassPath="Conveyor" />
+			<RoleClass Name="PalletConveyor" RefBaseClassPath="Conveyor" />
+			<RoleClass Name="OverheadConveyor" RefBaseClassPath="Conveyor" />
+		</RoleClass>
+		<RoleClass Name="LiftingTable" RefBaseClassPath="AutomationMLDMIRoleClassLib/DiscManufacturingEquipment/Transport" />
+		<RoleClass Name="AGV" RefBaseClassPath="AutomationMLDMIRoleClassLib/DiscManufacturingEquipment/Transport" />
+		<RoleClass Name="Transposer" RefBaseClassPath="AutomationMLDMIRoleClassLib/DiscManufacturingEquipment/Transport" />
+		<RoleClass Name="CarrierHandlingSystem" RefBaseClassPath="AutomationMLDMIRoleClassLib/DiscManufacturingEquipment/Transport" />
+		<RoleClass Name="BodyStore" RefBaseClassPath="AutomationMLDMIRoleClassLib/DiscManufacturingEquipment/Storage" />
+		<RoleClass Name="Lift" RefBaseClassPath="AutomationMLDMIRoleClassLib/DiscManufacturingEquipment/Transport" />
+		<RoleClass Name="Rollerbed" RefBaseClassPath="AutomationMLDMIRoleClassLib/DiscManufacturingEquipment/Transport" />
+		<RoleClass Name="StationaryTool" RefBaseClassPath="AutomationMLDMIRoleClassLib/DiscManufacturingEquipment/Tool" />
+		<RoleClass Name="MovableTool" RefBaseClassPath="AutomationMLDMIRoleClassLib/DiscManufacturingEquipment/Tool" />
+		<RoleClass Name="ControlCabinet" RefBaseClassPath="AutomationMLCSRoleClassLib/ControlEquipment" />
+		<RoleClass Name="IODevice" RefBaseClassPath="AutomationMLCSRoleClassLib/ControlEquipment" />
+		<RoleClass Name="HMI" RefBaseClassPath="AutomationMLCSRoleClassLib/ControlEquipment">
+			<RoleClass Name="WarningEquipment" RefBaseClassPath="AutomationMLExtendedRoleClassLib/HMI" />
+		</RoleClass>
+		<RoleClass Name="ActuatingDrive" RefBaseClassPath="AutomationMLCSRoleClassLib/ControlEquipment/Actuator" />
+		<RoleClass Name="MotionController" RefBaseClassPath="AutomationMLCSRoleClassLib/ControlEquipment" />
+		<RoleClass Name="Panel" RefBaseClassPath="AutomationMLCSRoleClassLib/ControlEquipment/ControlHardware" />
+		<RoleClass Name="MeasuringEquipment" RefBaseClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Resource" />
+		<RoleClass Name="Clamp" RefBaseClassPath="AutomationMLDMIRoleClassLib/DiscManufacturingEquipment/Fixture" />
+		<RoleClass Name="ProcessController" RefBaseClassPath="AutomationMLCSRoleClassLib/ControlEquipment/Controller" />
+		<RoleClass Name="Loader" RefBaseClassPath="AutomationMLDMIRoleClassLib/DiscManufacturingEquipment/Storage" />
+		<RoleClass Name="Unloader" RefBaseClassPath="AutomationMLDMIRoleClassLib/DiscManufacturingEquipment/Storage" />
+	</RoleClassLib>
+	<RoleClassLib Name="SkillProRoleClassLib">
+		<Version>0.1</Version>
+		<RoleClass Name="TemplateSkill" RefBaseClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Process" />
+		<RoleClass Name="ProductionSkill" RefBaseClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Product">
+			<Description>Instances has to support a TemplateSkill also. The ProductionSkill provides values for the parameters of the skill templates that are required for the transformation. </Description>
+			<ExternalInterface Name="PreProductInterface" ID="{4dccc7e1-acad-4510-b908-ca1366afa6b9}" RefBaseClassPath="SkillProInterfaceClassLib/ProductProductionSkillConnector" />
+			<ExternalInterface Name="PostProductInterface" ID="{3e089ef2-195f-4550-8e76-d093e40103f6}" RefBaseClassPath="SkillProInterfaceClassLib/ProductProductionSkillConnector" />
+		</RoleClass>
+		<RoleClass Name="ResourceSkill" RefBaseClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Resource">
+			<Description>Instances has to support a TemplateSkill also. ResourceSkill defines the ability of a resource to perform a TemplateSkill. It provides value ranges or restrictions for the parameters of the skill templates.</Description>
+		</RoleClass>
+		<RoleClass Name="ExecutableSkill" RefBaseClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Process">
+			<Description>ExecutionSkill is a match of ProductionSkill and ResourceSkill.</Description>
+		</RoleClass>
+		<RoleClass Name="IntermediateProduct" RefBaseClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Product">
+			<ExternalInterface Name="ProductionSkillInterface" ID="{0440498b-7ef6-4e40-a6f7-ed4698b84c23}" RefBaseClassPath="SkillProInterfaceClassLib/ProductProductionSkillConnector" />
+		</RoleClass>
+		<RoleClass Name="SkillProAsset" RefBaseClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole/Resource">
+			<Version>0.1</Version>
+			<Attribute Name="Condition" />
+			<Attribute Name="Configuration" />
+			<Attribute Name="Contained product" AttributeDataType="xs:ID" />
+		</RoleClass>
+		<RoleClass Name="PrePostCondition" RefBaseClassPath="AutomationMLBaseRoleClassLib/AutomationMLBaseRole">
+			<Attribute Name="PreCondition" />
+			<Attribute Name="PreConfiguration" />
+			<Attribute Name="PreContained product" />
+			<Attribute Name="PostCondition" />
+			<Attribute Name="PostConfiguration" />
+			<Attribute Name="PostContained product" />
+		</RoleClass>
+	</RoleClassLib>
+	<RoleClassLib Name="ExampleSkillLib">
+		<Version>0.1</Version>
+		<RoleClass Name="TempSkillWithWorkingArea" RefBaseClassPath="SkillProRoleClassLib/TemplateSkill">
+			<Attribute Name="WorkingArea" />
+		</RoleClass>
+		<RoleClass Name="Drilling" RefBaseClassPath="ExampleSkillLib/TempSkillWithWorkingArea">
+			<Attribute Name="HoleSize" AttributeDataType="xs:float" Unit="mm" />
+			<Attribute Name="Depth" AttributeDataType="xs:float" Unit="mm" />
+			<Attribute Name="HoleCoordinates">
+				<Attribute Name="X" AttributeDataType="xs:float" Unit="mm" />
+				<Attribute Name="Y" AttributeDataType="xs:float" Unit="mm" />
+				<Attribute Name="Z" AttributeDataType="xs:float" Unit="mm" />
+			</Attribute>
+		</RoleClass>
+		<RoleClass Name="Milling" RefBaseClassPath="ExampleSkillLib/TempSkillWithWorkingArea" />
+	</RoleClassLib>
+</CAEXFile>

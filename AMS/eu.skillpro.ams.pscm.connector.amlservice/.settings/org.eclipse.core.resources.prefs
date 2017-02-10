@@ -1,0 +1,11 @@
+eclipse.preferences.version=1
+encoding//src/de.fzi.skillpro.connector.amlservice.gen.v2/Exception.java=UTF-8
+encoding//src/de.fzi.skillpro.connector.amlservice.gen.v2/SkillServerServicePortBindingStub.java=UTF-8
+encoding//src/de.fzi.skillpro.connector.amlservice.gen.v2/SkillServerService_PortType.java=UTF-8
+encoding//src/de.fzi.skillpro.connector.amlservice.gen.v2/SkillServerService_Service.java=UTF-8
+encoding//src/de.fzi.skillpro.connector.amlservice.gen.v2/SkillServerService_ServiceLocator.java=UTF-8
+encoding//src/eu/skillpro/ams/pscm/connector/amlservice/gen/AMLServerServicePortBindingStub.java=UTF-8
+encoding//src/eu/skillpro/ams/pscm/connector/amlservice/gen/AMLServerService_PortType.java=UTF-8
+encoding//src/eu/skillpro/ams/pscm/connector/amlservice/gen/AMLServerService_Service.java=UTF-8
+encoding//src/eu/skillpro/ams/pscm/connector/amlservice/gen/AMLServerService_ServiceLocator.java=UTF-8
+encoding/<project>=UTF-8

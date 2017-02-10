@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.ui.commands">
+      <command
+            defaultHandler="eu.skillpro.ams.pscm.connector.amlservice.ui.ImportAMLHandler"
+            id="de.fzi.skillpro.connector.amlservice.ui.importAML"
+            name="Import AML ">
+      </command>
+      <command
+            defaultHandler="eu.skillpro.ams.pscm.connector.amlservice.ui.ExportAMLHandler"
+            id="eu.skillpro.ams.pscm.connector.amlservice.ui.ExportAMLHandler"
+            name="Export AML">
+      </command>
+      <command
+            defaultHandler="eu.skillpro.ams.pscm.connector.amlservice.ui.SaveAMLHandler"
+            id="de.fzi.skillpro.connector.amlservice.ui.saveRemoteAML"
+            name="Save AML File">
+      </command>
+      <command
+            defaultHandler="eu.skillpro.ams.pscm.connector.amlservice.ui.DeleteAMLHandler"
+            id="de.fzi.skillpro.connector.amlservice.ui.deleteRemoteAML"
+            name="Delete AML File">
+      </command>
+      <command
+            defaultHandler="eu.skillpro.ams.pscm.connector.amlservice.ui.OpenPPRHandler"
+            id="eu.skillpro.ams.pscm.connector.amlservice.ui.OpenPPRHandler"
+            name="Open PPR">
+      </command>
+      <command
+            defaultHandler="eu.skillpro.ams.pscm.connector.amlservice.ui.SavePPRHandler"
+            id="eu.skillpro.ams.pscm.connector.amlservice.ui.SavePPRHandler"
+            name="Save PPR">
+      </command>
+      <command
+            defaultHandler="eu.skillpro.ams.pscm.connector.amlservice.ui.SavePPRAsHandler"
+            id="eu.skillpro.ams.pscm.connector.amlservice.ui.SavePPRAsHandler"
+            name="Save PPR As..">
+      </command>
+      <command
+            defaultHandler="eu.skillpro.ams.pscm.connector.amlservice.ui.NewFileHandler"
+            id="eu.skillpro.ams.pscm.connector.amlservice.ui.NewFileHandler"
+            name="New File Handler">
+      </command>
+   </extension>
+   <extension
+         point="org.eclipse.ui.menus">
+      <menuContribution
+            allPopups="false"
+            locationURI="menu:org.eclipse.ui.main.menu">
+         <menu
+               id="skillpro.menu.data"
+               label="Data">
+            <menu
+                  id="skillpro.menu.configuration.mapping"
+                  label="Configuration">
+            </menu>
+            <separator
+                  name="de.fzi.skillpro.connector.amlservice.ui.separator3"
+                  visible="true">
+            </separator>
+            <command
+                  commandId="eu.skillpro.ams.pscm.connector.amlservice.ui.NewFileHandler"
+                  label="New File"
+                  style="push">
+            </command>
+            <command
+                  commandId="eu.skillpro.ams.pscm.connector.amlservice.ui.OpenPPRHandler"
+                  icon="icons/import_wiz.gif"
+                  label="Open PPR"
+                  style="push">
+            </command>
+            <command
+                  commandId="eu.skillpro.ams.pscm.connector.amlservice.ui.SavePPRHandler"
+                  icon="icons/export_wiz.gif"
+                  label="Save PPR"
+                  style="push">
+            </command>
+            <command
+                  commandId="eu.skillpro.ams.pscm.connector.amlservice.ui.SavePPRAsHandler"
+                  label="Save PPR As.."
+                  style="push">
+            </command>
+            <separator
+                  name="eu.skillpro.ams.pscm.connector.amlservice.ui.separator2"
+                  visible="true">
+            </separator>
+            <command
+                  commandId="de.fzi.skillpro.connector.amlservice.ui.importAML"
+                  icon="icons/import_wiz.gif"
+                  label="Import AML"
+                  style="push">
+            </command>
+            <command
+                  commandId="eu.skillpro.ams.pscm.connector.amlservice.ui.ExportAMLHandler"
+                  icon="icons/export_wiz.gif"
+                  label="Export AML"
+                  style="push">
+            </command>
+            <separator
+                  name="de.fzi.skillpro.connector.amlservice.ui.separator1"
+                  visible="true">
+            </separator>
+            <command
+                  commandId="de.fzi.skillpro.connector.amlservice.ui.saveRemoteAML"
+                  icon="icons/save_edit.gif"
+                  label="Save AML File to Server"
+                  mode="FORCE_TEXT"
+                  style="push"
+                  tooltip="Save AML File on Server">
+            </command>
+            <command
+                  commandId="de.fzi.skillpro.connector.amlservice.ui.deleteRemoteAML"
+                  icon="icons/delete.gif"
+                  label="Delete AML File from Server"
+                  style="push">
+            </command>
+         </menu>
+      </menuContribution>
+   </extension>
+	<extension
+         point="org.eclipse.ui.bindings">
+      <key
+            commandId="eu.skillpro.ams.pscm.connector.amlservice.ui.NewFileHandler"
+            schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"
+            sequence="M1+1">
+      </key>
+      <key
+            commandId="eu.skillpro.ams.pscm.connector.amlservice.ui.SavePPRAsHandler"
+            schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"
+            sequence="M1+4">
+      </key>
+      <key
+            commandId="eu.skillpro.ams.pscm.connector.amlservice.ui.SavePPRHandler"
+            schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"
+            sequence="M1+3">
+      </key>
+      <key
+            commandId="eu.skillpro.ams.pscm.connector.amlservice.ui.OpenPPRHandler"
+            schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"
+            sequence="M1+2">
+      </key>
+   </extension>
+</plugin>

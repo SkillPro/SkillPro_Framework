@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         id="eu.skillpro.ams.pscm.application"
+         name="Skillpro"
+         point="org.eclipse.core.runtime.applications">
+      <application
+            cardinality="singleton-global"
+            icon="icons/skillpro-tray.png"
+            thread="main"
+            visible="true">
+         <run
+               class="skillpro.rcp.SkillproApplication">
+         </run>
+      </application>
+   </extension>
+   <extension
+         point="org.eclipse.ui.perspectives">
+      <perspective
+            class="skillpro.rcp.perspectives.MainPerspective"
+            fixed="true"
+            id="skillpro.rcp.perspectives.MainPerspective"
+            name="Main Perspective">
+      </perspective>
+   </extension>
+   <extension
+         point="org.eclipse.ui.views">
+      <view
+            allowMultiple="false"
+            class="skillpro.rcp.views.PerspectiveView"
+            id="skillpro.rcp.views.PerspectiveView"
+            name="Perspectives"
+            restorable="false">
+      </view>
+      <view
+            allowMultiple="false"
+            class="skillpro.rcp.views.WelcomeScreenView"
+            id="skillpro.rcp.views.WelcomeScreenView"
+            name="Welcome Screen"
+            restorable="false">
+      </view>
+      <stickyView
+            closeable="false"
+            id="skillpro.rcp.views.PerspectiveView"
+            location="TOP"
+            moveable="false">
+      </stickyView>
+   </extension>
+   <extension
+         point="org.eclipse.ui.commands">
+      <command
+            defaultHandler="skillpro.rcp.commands.OpenDefaultPerspective"
+            id="skillpro.rcp.commands.OpenDefaultPerspective"
+            name="Open default perspective">
+      </command>
+   </extension>
+   <extension
+         id="SkillProduct"
+         point="org.eclipse.core.runtime.products">
+      <product
+            application="eu.skillpro.ams.pscm.application"
+            name="PSCM">
+         <property
+               name="appName"
+               value="PSCM">
+         </property>
+         <property
+               name="windowImages"
+               value="icons/windowimages/skillpro-16.png,icons/windowimages/skillpro-32.png,icons/windowimages/skillpro-48.png,icons/windowimages/skillpro-64.png,icons/windowimages/skillpro-128.png">
+         </property>
+      </product>
+   </extension>
+</plugin>

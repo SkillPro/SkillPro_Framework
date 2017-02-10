@@ -1,0 +1,22 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: VIS-Client
+Bundle-SymbolicName: eu.skillpro.ams.pscm.vc.client;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Export-Package: 
+ eu.skillpro.ams.pscm.vc.client,
+ skillpro.vc.client.gen,
+ skillpro.vc.client.gen.datacontract,
+ skillpro.vc.csclient,
+ skillpro.vc.ui,
+ skillpro.vc.ui.providers
+Require-Bundle: org.eclipse.ui;bundle-version="3.7.0",
+ org.apache.axis,
+ javax.xml.rpc,
+ eu.skillpro.ams.pscm.model;bundle-version="1.0.0",
+ org.eclipse.core.runtime;bundle-version="3.7.0",
+ eu.skillpro.ams.pscm.model.resourceprovider;bundle-version="1.0.0",
+ eu.skillpro.ams.pscm.gui.icons;bundle-version="1.0.0",
+ eu.skillpro.ams.pscm.gui.masterviews.skillpro;bundle-version="1.0.0"
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Bundle-Activator: eu.skillpro.ams.pscm.vc.client.Activator

@@ -1,0 +1,7 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: eu.skillpro.ams.pscm.aml.transformation.providers.local
+Bundle-SymbolicName: eu.skillpro.ams.pscm.aml.transformation.providers.local;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Fragment-Host: eu.skillpro.ams.pscm.aml.transformation.service;bundle-version="1.0.0"
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7

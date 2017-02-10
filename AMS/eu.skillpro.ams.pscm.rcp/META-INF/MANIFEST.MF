@@ -1,0 +1,17 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Skillpro
+Bundle-SymbolicName: eu.skillpro.ams.pscm.rcp;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: skillpro.rcp.activator.SkillproActivator
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime,
+ eu.skillpro.ams.pscm.gui.icons;bundle-version="1.0.0"
+Bundle-ActivationPolicy: lazy
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7,
+ JavaSE-1.6
+Export-Package: skillpro.rcp,
+ skillpro.rcp.activator,
+ skillpro.rcp.perspectives,
+ skillpro.rcp.utils,
+ skillpro.rcp.views

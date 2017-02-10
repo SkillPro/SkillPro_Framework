@@ -1,0 +1,13 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: amsservice.transferobjects
+Bundle-SymbolicName: eu.skillpro.ams.service.to
+Bundle-Version: 1.0.0.qualifier
+Export-Package: eu.skillpro.ams.service.to,
+ eu.skillpro.ams.service.to.assets,
+ eu.skillpro.ams.service.to.ros,
+ eu.skillpro.ams.service.to.test,
+ eu.skillpro.ams.service.utils
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Bundle-ClassPath: .
+Require-Bundle: eu.skillpro.ams.pscm.model;bundle-version="1.0.0"

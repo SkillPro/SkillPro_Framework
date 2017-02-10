@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<title>Server state manager</title>
+	<link type="text/css" rel="stylesheet" href="templates/style.css" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<script src="templates/serverState.js"></script>
+</head>
+<body>
+	<header>
+		<div id="main_title">
+			<img src="templates/logo_skill_pro.png" alt="Logo Skillpro" id="logo" />
+		</div>
+	</header>
+	<div class="main">
+		<!--%message%-->
+		<h1 id="top">Server state management</h1>
+		<p>You can export contents of the AMS server and download them, or upload a file
+			and restore the state of the server. You can also view some parts of the
+			server's contents.</p>
+		<h2>Export:</h2>
+		<form action="" method="POST">
+			<p><input type="submit" name="export" value="Export" /></p>
+		</form>
+		<h2>Import:</h2>
+		<form action="" method="POST" enctype="multipart/form-data">
+			<p><input type="file" name="importfile" /><input type="submit" name="import" value="Import" /></p>
+		</form>
+		<h2>Show data:</h2>
+		<p>Show
+			<a href="?show=SEEs">SEEs</a>,
+			<a href="?show=resourceExecutableSkills">Resource Executable Skills</a>.
+			</p>
+		<!--%showdata%-->
+	</div>
+</body>
+</html>

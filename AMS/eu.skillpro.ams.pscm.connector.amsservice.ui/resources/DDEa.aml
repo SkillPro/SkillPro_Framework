@@ -1,0 +1,2108 @@
+<?xml version="1.0" encoding="UTF-8"?><CAEXFile FileName="D:\SkillPro-Workspace\projects\common\eu.skillpro.automationml.data\ExecutableSkill-Test\DDEa.aml">
+    <InstanceHierarchy Name="Configuration">
+        <InternalElement Name="LoadSMTAssemblyLine-DDEa" ID="ID_LoadSMTAssemblyLine-DDEa">
+            <InternalElement Name="SMTLineOperatorLoadSMTAssemblyLine-DDEa" ID="ID_SMTLineOperatorLoadSMTAssemblyLine-DDEa">
+                <Attribute Name="ResourceId" AttributeDataType="xs:string">
+                    <Value>SMTLineOperator</Value>
+                </Attribute>
+                <Attribute Name="ResponsibleSEE" AttributeDataType="xs:string">
+                    <Value>SMTLineOperator</Value>
+                </Attribute>
+                <Attribute Name="Duration" Unit="sec" AttributeDataType="xs:integer">
+                    <Value>0</Value>
+                </Attribute>
+                <Attribute Name="Slack" Unit="sec" AttributeDataType="xs:integer">
+                    <Value>0</Value>
+                </Attribute>
+                <Attribute Name="Execution" AttributeDataType="xs:string">
+                    <Attribute Name="Type" AttributeDataType="xs:string">
+                        <Value>transportHuman-Master</Value>
+                    </Attribute>
+                    <Attribute Name="Data" AttributeDataType="xs:string">
+                        <Attribute Name="Products">
+                            <Value>{'emptyPCB': 5}</Value>
+                        </Attribute>
+                        <Attribute Name="LocationStart" AttributeDataType="xs:string">
+                            <Value>Empty PCB Storage</Value>
+                        </Attribute>
+                        <Attribute Name="LocationGoal" AttributeDataType="xs:string">
+                            <Value>SMT Assembly Line</Value>
+                        </Attribute>
+                        <Attribute Name="NodeID" AttributeDataType="xs:string">
+                            <Value>{'ns=2;i=3095': 'DONE'}</Value>
+                        </Attribute>
+                        <Attribute Name="BrowseTree" AttributeDataType="xs:string">
+                            <Value>{'SMTLine;Inter_SEE_comm;Synchronisation;message': 'DONE'}</Value>
+                        </Attribute>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="PreCondition" AttributeDataType="xs:string">
+                    <Attribute Name="Configuration" AttributeDataType="xs:string">
+                        <Value>{}</Value>
+                    </Attribute>
+                    <Attribute Name="Product" AttributeDataType="xs:string">
+                        <Value>{}</Value>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="PostCondition" AttributeDataType="xs:string">
+                    <Attribute Name="Configuration" AttributeDataType="xs:string">
+                        <Value>pos_SMTAssemblyLine</Value>
+                    </Attribute>
+                    <Attribute Name="Product" AttributeDataType="xs:string">
+                        <Value>{}</Value>
+                    </Attribute>
+                </Attribute>
+                <SupportedRoleClass RefRoleClassPath="DDEDemoRoleClassLib/transportHuman-Master"/>
+                <RoleRequirements RefBaseRoleClassPath="SkillProRoleClassLib/ResourceExecutableSkill"/>
+            </InternalElement>
+            <InternalElement Name="SMTLineLoadSMTAssemblyLine-DDEa" ID="ID_SMTLineLoadSMTAssemblyLine-DDEa">
+                <Attribute Name="ResourceId" AttributeDataType="xs:string">
+                    <Value>SMTLine</Value>
+                </Attribute>
+                <Attribute Name="ResponsibleSEE" AttributeDataType="xs:string">
+                    <Value>SMTLine</Value>
+                </Attribute>
+                <Attribute Name="Duration" Unit="sec" AttributeDataType="xs:integer">
+                    <Value>0</Value>
+                </Attribute>
+                <Attribute Name="Slack" Unit="sec" AttributeDataType="xs:integer">
+                    <Value>0</Value>
+                </Attribute>
+                <Attribute Name="Execution" AttributeDataType="xs:string">
+                    <Attribute Name="Type" AttributeDataType="xs:string">
+                        <Value>load-Slave</Value>
+                    </Attribute>
+                    <Attribute Name="Data" AttributeDataType="xs:string">
+                        <Attribute Name="Products">
+                            <Value>{'emptyPCB': 5}</Value>
+                        </Attribute>
+                        <Attribute Name="NodeID" AttributeDataType="xs:string">
+                            <Value>{'ns=2;i=3095': 'DONE'}</Value>
+                        </Attribute>
+                        <Attribute Name="BrowseTree" AttributeDataType="xs:string">
+                            <Value>{'SMTLine;Inter_SEE_comm;Synchronisation;message': 'DONE'}</Value>
+                        </Attribute>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="PreCondition" AttributeDataType="xs:string">
+                    <Attribute Name="Configuration" AttributeDataType="xs:string">
+                        <Value>{}</Value>
+                    </Attribute>
+                    <Attribute Name="Product" AttributeDataType="xs:string">
+                        <Value>{'emptyPCB': [("&gt;=", 0),("&lt;", 65531)]}</Value>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="PostCondition" AttributeDataType="xs:string">
+                    <Attribute Name="Configuration" AttributeDataType="xs:string">
+                        <Value>{}</Value>
+                    </Attribute>
+                    <Attribute Name="Product" AttributeDataType="xs:string">
+                        <Value>{'emptyPCB': 5}</Value>
+                    </Attribute>
+                </Attribute>
+                <SupportedRoleClass RefRoleClassPath="DDEDemoRoleClassLib/load-Slave"/>
+                <RoleRequirements RefBaseRoleClassPath="SkillProRoleClassLib/ResourceExecutableSkill"/>
+            </InternalElement>
+            <RoleRequirements RefBaseRoleClassPath="SkillProRoleClassLib/ExecutableSkill"/>
+        </InternalElement>
+        <InternalElement Name="THT2Assembly-DDEa" ID="ID_THT2Assembly-DDEa">
+            <InternalElement Name="THTOperator2THT2Assembly-DDEa" ID="ID_THTOperator2THT2Assembly-DDEa">
+                <Attribute Name="ResourceId" AttributeDataType="xs:string">
+                    <Value>THTOperator2</Value>
+                </Attribute>
+                <Attribute Name="ResponsibleSEE" AttributeDataType="xs:string">
+                    <Value>THTOperator2</Value>
+                </Attribute>
+                <Attribute Name="Duration" Unit="sec" AttributeDataType="xs:integer">
+                    <Value>0</Value>
+                </Attribute>
+                <Attribute Name="Slack" Unit="sec" AttributeDataType="xs:integer">
+                    <Value>0</Value>
+                </Attribute>
+                <Attribute Name="Execution" AttributeDataType="xs:string">
+                    <Attribute Name="Type" AttributeDataType="xs:string">
+                        <Value>doTHTAssembly-Master</Value>
+                    </Attribute>
+                    <Attribute Name="Data" AttributeDataType="xs:string">
+                        <Attribute Name="Plan">
+                            <Value>http://10.69.69.199:8080/app/images/schematic.jpg</Value>
+                        </Attribute>
+                        <Attribute Name="Instruction" AttributeDataType="xs:string">
+                            <Value>Please do THT assembly according to the plan</Value>
+                        </Attribute>
+                        <Attribute Name="NodeID" AttributeDataType="xs:string">
+                            <Value>{'ns=2;i=3169': 'DONE'}</Value>
+                        </Attribute>
+                        <Attribute Name="BrowseTree" AttributeDataType="xs:string">
+                            <Value>{'THTWorkplace2;Inter_SEE_comm;Synchronisation;message': 'DONE'}</Value>
+                        </Attribute>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="PreCondition" AttributeDataType="xs:string">
+                    <Attribute Name="Configuration" AttributeDataType="xs:string">
+                        <Value>pos_THTAssemblyWorkplace2</Value>
+                    </Attribute>
+                    <Attribute Name="Product" AttributeDataType="xs:string">
+                        <Value>{}</Value>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="PostCondition" AttributeDataType="xs:string">
+                    <Attribute Name="Configuration" AttributeDataType="xs:string">
+                        <Value>pos_THTAssemblyWorkplace2</Value>
+                    </Attribute>
+                    <Attribute Name="Product" AttributeDataType="xs:string">
+                        <Value>{}</Value>
+                    </Attribute>
+                </Attribute>
+                <SupportedRoleClass RefRoleClassPath="DDEDemoRoleClassLib/doTHTAssembly-Master"/>
+                <RoleRequirements RefBaseRoleClassPath="SkillProRoleClassLib/ResourceExecutableSkill"/>
+            </InternalElement>
+            <InternalElement Name="THTWorkplace2THT2Assembly-DDEa" ID="ID_THTWorkplace2THT2Assembly-DDEa">
+                <Attribute Name="ResourceId" AttributeDataType="xs:string">
+                    <Value>THTWorkplace2</Value>
+                </Attribute>
+                <Attribute Name="ResponsibleSEE" AttributeDataType="xs:string">
+                    <Value>THTWorkplace2</Value>
+                </Attribute>
+                <Attribute Name="Duration" Unit="sec" AttributeDataType="xs:integer">
+                    <Value>0</Value>
+                </Attribute>
+                <Attribute Name="Slack" Unit="sec" AttributeDataType="xs:integer">
+                    <Value>0</Value>
+                </Attribute>
+                <Attribute Name="Execution" AttributeDataType="xs:string">
+                    <Attribute Name="Type" AttributeDataType="xs:string">
+                        <Value>produce-Slave</Value>
+                    </Attribute>
+                    <Attribute Name="Data" AttributeDataType="xs:string">
+                        <Attribute Name="NodeID" AttributeDataType="xs:string">
+                            <Value>{'ns=2;i=3169': 'DONE'}</Value>
+                        </Attribute>
+                        <Attribute Name="BrowseTree" AttributeDataType="xs:string">
+                            <Value>{'THTWorkplace2;Inter_SEE_comm;Synchronisation;message': 'DONE'}</Value>
+                        </Attribute>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="PreCondition" AttributeDataType="xs:string">
+                    <Attribute Name="Configuration" AttributeDataType="xs:string">
+                        <Value>{}</Value>
+                    </Attribute>
+                    <Attribute Name="Product" AttributeDataType="xs:string">
+                        <Value>{'oneLayerPCB-prodA': [("&gt;=", 1), ("&lt;", 65535)], 'THTassembledPCB-prodA': [("&gt;=", 0), ("&lt;", 65535)]}</Value>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="PostCondition" AttributeDataType="xs:string">
+                    <Attribute Name="Configuration" AttributeDataType="xs:string">
+                        <Value>{}</Value>
+                    </Attribute>
+                    <Attribute Name="Product" AttributeDataType="xs:string">
+                        <Value>{'oneLayerPCB-prodA': -1, 'THTassembledPCB-prodA': 1}</Value>
+                    </Attribute>
+                </Attribute>
+                <SupportedRoleClass RefRoleClassPath="DDEDemoRoleClassLib/produce-Slave"/>
+                <RoleRequirements RefBaseRoleClassPath="SkillProRoleClassLib/ResourceExecutableSkill"/>
+            </InternalElement>
+            <RoleRequirements RefBaseRoleClassPath="SkillProRoleClassLib/ExecutableSkill"/>
+        </InternalElement>
+        <InternalElement Name="SMTAssembly-DDEa" ID="ID_SMTAssembly-DDEa">
+            <InternalElement Name="SMTLineSMTAssembly-DDEa" ID="ID_SMTLineSMTAssembly-DDEa">
+                <Attribute Name="ResourceId" AttributeDataType="xs:string">
+                    <Value>SMTLine</Value>
+                </Attribute>
+                <Attribute Name="ResponsibleSEE" AttributeDataType="xs:string">
+                    <Value>SMTLine</Value>
+                </Attribute>
+                <Attribute Name="Duration" Unit="sec" AttributeDataType="xs:integer">
+                    <Value>0</Value>
+                </Attribute>
+                <Attribute Name="Slack" Unit="sec" AttributeDataType="xs:integer">
+                    <Value>0</Value>
+                </Attribute>
+                <Attribute Name="Execution" AttributeDataType="xs:string">
+                    <Attribute Name="Type" AttributeDataType="xs:string">
+                        <Value>produce</Value>
+                    </Attribute>
+                    <Attribute Name="Data" AttributeDataType="xs:string"/>
+                </Attribute>
+                <Attribute Name="PreCondition" AttributeDataType="xs:string">
+                    <Attribute Name="Configuration" AttributeDataType="xs:string">
+                        <Value>idle-prodA</Value>
+                    </Attribute>
+                    <Attribute Name="Product" AttributeDataType="xs:string">
+                        <Value>{'emptyPCB': [("&gt;=", 1),("&lt;", 65535)], 'oneLayerPCB-prodA': [("&gt;=", 0), ("&lt;", 65535)]}</Value>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="PostCondition" AttributeDataType="xs:string">
+                    <Attribute Name="Configuration" AttributeDataType="xs:string">
+                        <Value>{}</Value>
+                    </Attribute>
+                    <Attribute Name="Product" AttributeDataType="xs:string">
+                        <Value>{'emptyPCB': -1, 'oneLayerPCB-prodA': 1}</Value>
+                    </Attribute>
+                </Attribute>
+                <SupportedRoleClass RefRoleClassPath="DDEDemoRoleClassLib/produce"/>
+                <RoleRequirements RefBaseRoleClassPath="SkillProRoleClassLib/ResourceExecutableSkill"/>
+            </InternalElement>
+            <RoleRequirements RefBaseRoleClassPath="SkillProRoleClassLib/ExecutableSkill"/>
+        </InternalElement>
+        <InternalElement Name="TransportTHT1toTHTWaveSolderingOven-DDEa" ID="ID_TransportTHT1toTHTWaveSolderingOven-DDEa">
+            <InternalElement Name="THTOperator1TransportTHT1toTHTWaveSolderingOven-DDEa" ID="ID_THTOperator1TransportTHT1toTHTWaveSolderingOven-DDEa">
+                <Attribute Name="ResourceId" AttributeDataType="xs:string">
+                    <Value>THTOperator1</Value>
+                </Attribute>
+                <Attribute Name="ResponsibleSEE" AttributeDataType="xs:string">
+                    <Value>THTOperator1</Value>
+                </Attribute>
+                <Attribute Name="Duration" Unit="sec" AttributeDataType="xs:integer">
+                    <Value>0</Value>
+                </Attribute>
+                <Attribute Name="Slack" Unit="sec" AttributeDataType="xs:integer">
+                    <Value>0</Value>
+                </Attribute>
+                <Attribute Name="Execution" AttributeDataType="xs:string">
+                    <Attribute Name="Type" AttributeDataType="xs:string">
+                        <Value>transportHuman-Master</Value>
+                    </Attribute>
+                    <Attribute Name="Data" AttributeDataType="xs:string">
+                        <Attribute Name="Products">
+                            <Value>{'THTassembledPCB-prodA': 5}</Value>
+                        </Attribute>
+                        <Attribute Name="LocationStart" AttributeDataType="xs:string">
+                            <Value>THT Workplace 1</Value>
+                        </Attribute>
+                        <Attribute Name="LocationGoal" AttributeDataType="xs:string">
+                            <Value>THT Wave Soldering Oven</Value>
+                        </Attribute>
+                        <Attribute Name="NodeID" AttributeDataType="xs:string">
+                            <Value>{'ns=2;i=3151': 'DONE', 'ns=2;i=3138': 'DONE'}</Value>
+                        </Attribute>
+                        <Attribute Name="BrowseTree" AttributeDataType="xs:string">
+                            <Value>{'THTWorkplace1;Inter_SEE_comm;Synchronisation;message': 'DONE', 'THTWaveSolderingOven;Inter_SEE_comm;Synchronisation;message': 'DONE'}</Value>
+                        </Attribute>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="PreCondition" AttributeDataType="xs:string">
+                    <Attribute Name="Configuration" AttributeDataType="xs:string">
+                        <Value>{}</Value>
+                    </Attribute>
+                    <Attribute Name="Product" AttributeDataType="xs:string">
+                        <Value>{}</Value>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="PostCondition" AttributeDataType="xs:string">
+                    <Attribute Name="Configuration" AttributeDataType="xs:string">
+                        <Value>pos_THTWaveSoldering</Value>
+                    </Attribute>
+                    <Attribute Name="Product" AttributeDataType="xs:string">
+                        <Value>{}</Value>
+                    </Attribute>
+                </Attribute>
+                <SupportedRoleClass RefRoleClassPath="DDEDemoRoleClassLib/transportHuman-Master"/>
+                <RoleRequirements RefBaseRoleClassPath="SkillProRoleClassLib/ResourceExecutableSkill"/>
+            </InternalElement>
+            <InternalElement Name="THTWorkplace1TransportTHT1toTHTWaveSolderingOven-DDEa" ID="ID_THTWorkplace1TransportTHT1toTHTWaveSolderingOven-DDEa">
+                <Attribute Name="ResourceId" AttributeDataType="xs:string">
+                    <Value>THTWorkplace1</Value>
+                </Attribute>
+                <Attribute Name="ResponsibleSEE" AttributeDataType="xs:string">
+                    <Value>THTWorkplace1</Value>
+                </Attribute>
+                <Attribute Name="Duration" Unit="sec" AttributeDataType="xs:integer">
+                    <Value>0</Value>
+                </Attribute>
+                <Attribute Name="Slack" Unit="sec" AttributeDataType="xs:integer">
+                    <Value>0</Value>
+                </Attribute>
+                <Attribute Name="Execution" AttributeDataType="xs:string">
+                    <Attribute Name="Type" AttributeDataType="xs:string">
+                        <Value>unload-Slave</Value>
+                    </Attribute>
+                    <Attribute Name="Data" AttributeDataType="xs:string">
+                        <Attribute Name="Products">
+                            <Value>{'THTassembledPCB-prodA': -5}</Value>
+                        </Attribute>
+                        <Attribute Name="NodeID" AttributeDataType="xs:string">
+                            <Value>{'ns=2;i=3151': 'DONE'}</Value>
+                        </Attribute>
+                        <Attribute Name="BrowseTree" AttributeDataType="xs:string">
+                            <Value>{'THTWorkplace1;Inter_SEE_comm;Synchronisation;message': 'DONE'}</Value>
+                        </Attribute>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="PreCondition" AttributeDataType="xs:string">
+                    <Attribute Name="Configuration" AttributeDataType="xs:string">
+                        <Value>{}</Value>
+                    </Attribute>
+                    <Attribute Name="Product" AttributeDataType="xs:string">
+                        <Value>{'THTassembledPCB-prodA': [("&gt;=", 5), ("&lt;", 65531)]}</Value>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="PostCondition" AttributeDataType="xs:string">
+                    <Attribute Name="Configuration" AttributeDataType="xs:string">
+                        <Value>{}</Value>
+                    </Attribute>
+                    <Attribute Name="Product" AttributeDataType="xs:string">
+                        <Value>{'THTassembledPCB-prodA': -5}</Value>
+                    </Attribute>
+                </Attribute>
+                <SupportedRoleClass RefRoleClassPath="DDEDemoRoleClassLib/unload-Slave"/>
+                <RoleRequirements RefBaseRoleClassPath="SkillProRoleClassLib/ResourceExecutableSkill"/>
+            </InternalElement>
+            <InternalElement Name="THTWaveSolderingOvenTransportTHT1toTHTWaveSolderingOven-DDEa" ID="ID_THTWaveSolderingOvenTransportTHT1toTHTWaveSolderingOven-DDEa">
+                <Attribute Name="ResourceId" AttributeDataType="xs:string">
+                    <Value>THTWaveSolderingOven</Value>
+                </Attribute>
+                <Attribute Name="ResponsibleSEE" AttributeDataType="xs:string">
+                    <Value>THTWaveSolderingOven</Value>
+                </Attribute>
+                <Attribute Name="Duration" Unit="sec" AttributeDataType="xs:integer">
+                    <Value>0</Value>
+                </Attribute>
+                <Attribute Name="Slack" Unit="sec" AttributeDataType="xs:integer">
+                    <Value>0</Value>
+                </Attribute>
+                <Attribute Name="Execution" AttributeDataType="xs:string">
+                    <Attribute Name="Type" AttributeDataType="xs:string">
+                        <Value>load-Slave</Value>
+                    </Attribute>
+                    <Attribute Name="Data" AttributeDataType="xs:string">
+                        <Attribute Name="Products">
+                            <Value>{'THTassembledPCB-prodA': 5}</Value>
+                        </Attribute>
+                        <Attribute Name="NodeID" AttributeDataType="xs:string">
+                            <Value>{'ns=2;i=3138': 'DONE'}</Value>
+                        </Attribute>
+                        <Attribute Name="BrowseTree" AttributeDataType="xs:string">
+                            <Value>{'THTWaveSolderingOven;Inter_SEE_comm;Synchronisation;message': 'DONE'}</Value>
+                        </Attribute>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="PreCondition" AttributeDataType="xs:string">
+                    <Attribute Name="Configuration" AttributeDataType="xs:string">
+                        <Value>{}</Value>
+                    </Attribute>
+                    <Attribute Name="Product" AttributeDataType="xs:string">
+                        <Value>{'THTassembledPCB-prodA': [("&gt;=", 0), ("&lt;", 65531)]}</Value>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="PostCondition" AttributeDataType="xs:string">
+                    <Attribute Name="Configuration" AttributeDataType="xs:string">
+                        <Value>{}</Value>
+                    </Attribute>
+                    <Attribute Name="Product" AttributeDataType="xs:string">
+                        <Value>{'THTassembledPCB-prodA': 5}</Value>
+                    </Attribute>
+                </Attribute>
+                <SupportedRoleClass RefRoleClassPath="DDEDemoRoleClassLib/load-Slave"/>
+                <RoleRequirements RefBaseRoleClassPath="SkillProRoleClassLib/ResourceExecutableSkill"/>
+            </InternalElement>
+            <RoleRequirements RefBaseRoleClassPath="SkillProRoleClassLib/ExecutableSkill"/>
+        </InternalElement>
+        <InternalElement Name="THT1Assembly-DDEa" ID="ID_THT1Assembly-DDEa">
+            <InternalElement Name="THTOperator1THT1Assembly-DDEa" ID="ID_THTOperator1THT1Assembly-DDEa">
+                <Attribute Name="ResourceId" AttributeDataType="xs:string">
+                    <Value>THTOperator1</Value>
+                </Attribute>
+                <Attribute Name="ResponsibleSEE" AttributeDataType="xs:string">
+                    <Value>THTOperator1</Value>
+                </Attribute>
+                <Attribute Name="Duration" Unit="sec" AttributeDataType="xs:integer">
+                    <Value>0</Value>
+                </Attribute>
+                <Attribute Name="Slack" Unit="sec" AttributeDataType="xs:integer">
+                    <Value>0</Value>
+                </Attribute>
+                <Attribute Name="Execution" AttributeDataType="xs:string">
+                    <Attribute Name="Type" AttributeDataType="xs:string">
+                        <Value>doTHTAssembly-Master</Value>
+                    </Attribute>
+                    <Attribute Name="Data" AttributeDataType="xs:string">
+                        <Attribute Name="Plan">
+                            <Value>http://10.69.69.199:8080/app/images/schematic.jpg</Value>
+                        </Attribute>
+                        <Attribute Name="Instruction" AttributeDataType="xs:string">
+                            <Value>Please do THT assembly according to the plan</Value>
+                        </Attribute>
+                        <Attribute Name="NodeID" AttributeDataType="xs:string">
+                            <Value>{'ns=2;i=3151': 'DONE'}</Value>
+                        </Attribute>
+                        <Attribute Name="BrowseTree" AttributeDataType="xs:string">
+                            <Value>{'THTWorkplace1;Inter_SEE_comm;Synchronisation;message': 'DONE'}</Value>
+                        </Attribute>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="PreCondition" AttributeDataType="xs:string">
+                    <Attribute Name="Configuration" AttributeDataType="xs:string">
+                        <Value>pos_THTAssemblyWorkplace1</Value>
+                    </Attribute>
+                    <Attribute Name="Product" AttributeDataType="xs:string">
+                        <Value>{}</Value>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="PostCondition" AttributeDataType="xs:string">
+                    <Attribute Name="Configuration" AttributeDataType="xs:string">
+                        <Value>pos_THTAssemblyWorkplace1</Value>
+                    </Attribute>
+                    <Attribute Name="Product" AttributeDataType="xs:string">
+                        <Value>{}</Value>
+                    </Attribute>
+                </Attribute>
+                <SupportedRoleClass RefRoleClassPath="DDEDemoRoleClassLib/doTHTAssembly-Master"/>
+                <RoleRequirements RefBaseRoleClassPath="SkillProRoleClassLib/ResourceExecutableSkill"/>
+            </InternalElement>
+            <InternalElement Name="THTWorkplace1THT1Assembly-DDEa" ID="ID_THTWorkplace1THT1Assembly-DDEa">
+                <Attribute Name="ResourceId" AttributeDataType="xs:string">
+                    <Value>THTWorkplace1</Value>
+                </Attribute>
+                <Attribute Name="ResponsibleSEE" AttributeDataType="xs:string">
+                    <Value>THTWorkplace1</Value>
+                </Attribute>
+                <Attribute Name="Duration" Unit="sec" AttributeDataType="xs:integer">
+                    <Value>0</Value>
+                </Attribute>
+                <Attribute Name="Slack" Unit="sec" AttributeDataType="xs:integer">
+                    <Value>0</Value>
+                </Attribute>
+                <Attribute Name="Execution" AttributeDataType="xs:string">
+                    <Attribute Name="Type" AttributeDataType="xs:string">
+                        <Value>produce-Slave</Value>
+                    </Attribute>
+                    <Attribute Name="Data" AttributeDataType="xs:string">
+                        <Attribute Name="NodeID" AttributeDataType="xs:string">
+                            <Value>{'ns=2;i=3151': 'DONE'}</Value>
+                        </Attribute>
+                        <Attribute Name="BrowseTree" AttributeDataType="xs:string">
+                            <Value>{'THTWorkplace1;Inter_SEE_comm;Synchronisation;message': 'DONE'}</Value>
+                        </Attribute>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="PreCondition" AttributeDataType="xs:string">
+                    <Attribute Name="Configuration" AttributeDataType="xs:string">
+                        <Value>{}</Value>
+                    </Attribute>
+                    <Attribute Name="Product" AttributeDataType="xs:string">
+                        <Value>{'oneLayerPCB-prodA': [("&gt;=", 1), ("&lt;", 65536)], 'THTassembledPCB-prodA': [("&gt;=", 0), ("&lt;", 65535)]}</Value>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="PostCondition" AttributeDataType="xs:string">
+                    <Attribute Name="Configuration" AttributeDataType="xs:string">
+                        <Value>{}</Value>
+                    </Attribute>
+                    <Attribute Name="Product" AttributeDataType="xs:string">
+                        <Value>{'oneLayerPCB-prodA': -1, 'THTassembledPCB-prodA': 1}</Value>
+                    </Attribute>
+                </Attribute>
+                <SupportedRoleClass RefRoleClassPath="DDEDemoRoleClassLib/produce-Slave"/>
+                <RoleRequirements RefBaseRoleClassPath="SkillProRoleClassLib/ResourceExecutableSkill"/>
+            </InternalElement>
+            <RoleRequirements RefBaseRoleClassPath="SkillProRoleClassLib/ExecutableSkill"/>
+        </InternalElement>
+        <InternalElement Name="TransportTHTWaveSolderingOventoManualInspectionWorkplace-DDEa" ID="ID_TransportTHTWaveSolderingOventoManualInspectionWorkplace-DDEa">
+            <InternalElement Name="THTOperator1TransportTHTWaveSolderingOventoManualInspectionWorkplace-DDEa" ID="ID_THTOperator1TransportTHTWaveSolderingOventoManualInspectionWorkplace-DDEa">
+                <Attribute Name="ResourceId" AttributeDataType="xs:string">
+                    <Value>THTOperator1</Value>
+                </Attribute>
+                <Attribute Name="ResponsibleSEE" AttributeDataType="xs:string">
+                    <Value>THTOperator1</Value>
+                </Attribute>
+                <Attribute Name="Duration" Unit="sec" AttributeDataType="xs:integer">
+                    <Value>0</Value>
+                </Attribute>
+                <Attribute Name="Slack" Unit="sec" AttributeDataType="xs:integer">
+                    <Value>0</Value>
+                </Attribute>
+                <Attribute Name="Execution" AttributeDataType="xs:string">
+                    <Attribute Name="Type" AttributeDataType="xs:string">
+                        <Value>transportHuman-Master</Value>
+                    </Attribute>
+                    <Attribute Name="Data" AttributeDataType="xs:string">
+                        <Attribute Name="Products">
+                            <Value>{'THTSolderedPCB-prodA': 5}</Value>
+                        </Attribute>
+                        <Attribute Name="LocationStart" AttributeDataType="xs:string">
+                            <Value>THT Wave Soldering Oven</Value>
+                        </Attribute>
+                        <Attribute Name="LocationGoal" AttributeDataType="xs:string">
+                            <Value>Manual Inspection Workplace</Value>
+                        </Attribute>
+                        <Attribute Name="NodeID" AttributeDataType="xs:string">
+                            <Value>{'ns=2;i=3138': 'DONE', 'ns=2;i=3036': 'DONE'}</Value>
+                        </Attribute>
+                        <Attribute Name="BrowseTree" AttributeDataType="xs:string">
+                            <Value>{'THTWaveSolderingOven;Inter_SEE_comm;Synchronisation;message': 'DONE', 'ManualInspectionWorkplace;Inter_SEE_comm;Synchronisation;message': 'DONE'}</Value>
+                        </Attribute>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="PreCondition" AttributeDataType="xs:string">
+                    <Attribute Name="Configuration" AttributeDataType="xs:string">
+                        <Value>{}</Value>
+                    </Attribute>
+                    <Attribute Name="Product" AttributeDataType="xs:string">
+                        <Value>{}</Value>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="PostCondition" AttributeDataType="xs:string">
+                    <Attribute Name="Configuration" AttributeDataType="xs:string">
+                        <Value>pos_ManualInspectionWorkplace</Value>
+                    </Attribute>
+                    <Attribute Name="Product" AttributeDataType="xs:string">
+                        <Value>{}</Value>
+                    </Attribute>
+                </Attribute>
+                <SupportedRoleClass RefRoleClassPath="DDEDemoRoleClassLib/transportHuman-Master"/>
+                <RoleRequirements RefBaseRoleClassPath="SkillProRoleClassLib/ResourceExecutableSkill"/>
+            </InternalElement>
+            <InternalElement Name="THTWaveSolderingOvenTransportTHTWaveSolderingOventoManualInspectionWorkplace-DDEa" ID="ID_THTWaveSolderingOvenTransportTHTWaveSolderingOventoManualInspectionWorkplace-DDEa">
+                <Attribute Name="ResourceId" AttributeDataType="xs:string">
+                    <Value>THTWaveSolderingOven</Value>
+                </Attribute>
+                <Attribute Name="ResponsibleSEE" AttributeDataType="xs:string">
+                    <Value>THTWaveSolderingOven</Value>
+                </Attribute>
+                <Attribute Name="Duration" Unit="sec" AttributeDataType="xs:integer">
+                    <Value>0</Value>
+                </Attribute>
+                <Attribute Name="Slack" Unit="sec" AttributeDataType="xs:integer">
+                    <Value>0</Value>
+                </Attribute>
+                <Attribute Name="Execution" AttributeDataType="xs:string">
+                    <Attribute Name="Type" AttributeDataType="xs:string">
+                        <Value>unload-Slave</Value>
+                    </Attribute>
+                    <Attribute Name="Data" AttributeDataType="xs:string">
+                        <Attribute Name="Products">
+                            <Value>{'THTSolderedPCB-prodA': -5}</Value>
+                        </Attribute>
+                        <Attribute Name="NodeID" AttributeDataType="xs:string">
+                            <Value>{'ns=2;i=3138': 'DONE'}</Value>
+                        </Attribute>
+                        <Attribute Name="BrowseTree" AttributeDataType="xs:string">
+                            <Value>{'THTWaveSolderingOven;Inter_SEE_comm;Synchronisation;message': 'DONE'}</Value>
+                        </Attribute>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="PreCondition" AttributeDataType="xs:string">
+                    <Attribute Name="Configuration" AttributeDataType="xs:string">
+                        <Value>{}</Value>
+                    </Attribute>
+                    <Attribute Name="Product" AttributeDataType="xs:string">
+                        <Value>{'THTSolderedPCB-prodA': [("&gt;=", 5), ("&lt;", 65535)]}</Value>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="PostCondition" AttributeDataType="xs:string">
+                    <Attribute Name="Configuration" AttributeDataType="xs:string">
+                        <Value>{}</Value>
+                    </Attribute>
+                    <Attribute Name="Product" AttributeDataType="xs:string">
+                        <Value>{'THTSolderedPCB-prodA': -5}</Value>
+                    </Attribute>
+                </Attribute>
+                <SupportedRoleClass RefRoleClassPath="DDEDemoRoleClassLib/unload-Slave"/>
+                <RoleRequirements RefBaseRoleClassPath="SkillProRoleClassLib/ResourceExecutableSkill"/>
+            </InternalElement>
+            <InternalElement Name="ManualInspectionWorkplaceTransportTHTWaveSolderingOventoManualInspectionWorkplace-DDEa" ID="ID_ManualInspectionWorkplaceTransportTHTWaveSolderingOventoManualInspectionWorkplace-DDEa">
+                <Attribute Name="ResourceId" AttributeDataType="xs:string">
+                    <Value>ManualInspectionWorkplace</Value>
+                </Attribute>
+                <Attribute Name="ResponsibleSEE" AttributeDataType="xs:string">
+                    <Value>ManualInspectionWorkplace</Value>
+                </Attribute>
+                <Attribute Name="Duration" Unit="sec" AttributeDataType="xs:integer">
+                    <Value>0</Value>
+                </Attribute>
+                <Attribute Name="Slack" Unit="sec" AttributeDataType="xs:integer">
+                    <Value>0</Value>
+                </Attribute>
+                <Attribute Name="Execution" AttributeDataType="xs:string">
+                    <Attribute Name="Type" AttributeDataType="xs:string">
+                        <Value>load-Slave</Value>
+                    </Attribute>
+                    <Attribute Name="Data" AttributeDataType="xs:string">
+                        <Attribute Name="Products">
+                            <Value>{'THTSolderedPCB-prodA': 5}</Value>
+                        </Attribute>
+                        <Attribute Name="NodeID" AttributeDataType="xs:string">
+                            <Value>{'ns=2;i=3036': 'DONE'}</Value>
+                        </Attribute>
+                        <Attribute Name="BrowseTree" AttributeDataType="xs:string">
+                            <Value>{'ManualInspectionWorkplace;Inter_SEE_comm;Synchronisation;message': 'DONE'}</Value>
+                        </Attribute>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="PreCondition" AttributeDataType="xs:string">
+                    <Attribute Name="Configuration" AttributeDataType="xs:string">
+                        <Value>{}</Value>
+                    </Attribute>
+                    <Attribute Name="Product" AttributeDataType="xs:string">
+                        <Value>{'THTSolderedPCB-prodA': [("&gt;=", 0), ("&lt;", 65531)]}</Value>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="PostCondition" AttributeDataType="xs:string">
+                    <Attribute Name="Configuration" AttributeDataType="xs:string">
+                        <Value>{}</Value>
+                    </Attribute>
+                    <Attribute Name="Product" AttributeDataType="xs:string">
+                        <Value>{'THTSolderedPCB-prodA': 5}</Value>
+                    </Attribute>
+                </Attribute>
+                <SupportedRoleClass RefRoleClassPath="DDEDemoRoleClassLib/load-Slave"/>
+                <RoleRequirements RefBaseRoleClassPath="SkillProRoleClassLib/ResourceExecutableSkill"/>
+            </InternalElement>
+            <RoleRequirements RefBaseRoleClassPath="SkillProRoleClassLib/ExecutableSkill"/>
+        </InternalElement>
+        <InternalElement Name="THTWaveSoldering-DDEa" ID="ID_THTWaveSoldering-DDEa">
+            <InternalElement Name="THTWaveSolderingOvenTHTWaveSoldering-DDEa" ID="ID_THTWaveSolderingOvenTHTWaveSoldering-DDEa">
+                <Attribute Name="ResourceId" AttributeDataType="xs:string">
+                    <Value>THTWaveSolderingOven</Value>
+                </Attribute>
+                <Attribute Name="ResponsibleSEE" AttributeDataType="xs:string">
+                    <Value>THTWaveSolderingOven</Value>
+                </Attribute>
+                <Attribute Name="Duration" Unit="sec" AttributeDataType="xs:integer">
+                    <Value>0</Value>
+                </Attribute>
+                <Attribute Name="Slack" Unit="sec" AttributeDataType="xs:integer">
+                    <Value>0</Value>
+                </Attribute>
+                <Attribute Name="Execution" AttributeDataType="xs:string">
+                    <Attribute Name="Type" AttributeDataType="xs:string">
+                        <Value>produce</Value>
+                    </Attribute>
+                    <Attribute Name="Data" AttributeDataType="xs:string"/>
+                </Attribute>
+                <Attribute Name="PreCondition" AttributeDataType="xs:string">
+                    <Attribute Name="Configuration" AttributeDataType="xs:string">
+                        <Value>idle-prodA</Value>
+                    </Attribute>
+                    <Attribute Name="Product" AttributeDataType="xs:string">
+                        <Value>{'THTassembledPCB-prodA': [("&gt;=", 1),("&lt;", 65535)], 'THTSolderedPCB-prodA': [("&gt;=", 0), ("&lt;", 65535)]}</Value>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="PostCondition" AttributeDataType="xs:string">
+                    <Attribute Name="Configuration" AttributeDataType="xs:string">
+                        <Value>{}</Value>
+                    </Attribute>
+                    <Attribute Name="Product" AttributeDataType="xs:string">
+                        <Value>{'THTassembledPCB-prodA': -1, 'THTSolderedPCB-prodA': 1}</Value>
+                    </Attribute>
+                </Attribute>
+                <SupportedRoleClass RefRoleClassPath="DDEDemoRoleClassLib/produce"/>
+                <RoleRequirements RefBaseRoleClassPath="SkillProRoleClassLib/ResourceExecutableSkill"/>
+            </InternalElement>
+            <RoleRequirements RefBaseRoleClassPath="SkillProRoleClassLib/ExecutableSkill"/>
+        </InternalElement>
+        <InternalElement Name="PrepareTHT2WaveSolderingOven-DDEa" ID="ID_PrepareTHT2WaveSolderingOven-DDEa">
+            <InternalElement Name="THTOperator2PrepareTHT2WaveSolderingOven-DDEa" ID="ID_THTOperator2PrepareTHT2WaveSolderingOven-DDEa">
+                <Attribute Name="ResourceId" AttributeDataType="xs:string">
+                    <Value>THTOperator2</Value>
+                </Attribute>
+                <Attribute Name="ResponsibleSEE" AttributeDataType="xs:string">
+                    <Value>THTOperator2</Value>
+                </Attribute>
+                <Attribute Name="Duration" Unit="sec" AttributeDataType="xs:integer">
+                    <Value>0</Value>
+                </Attribute>
+                <Attribute Name="Slack" Unit="sec" AttributeDataType="xs:integer">
+                    <Value>0</Value>
+                </Attribute>
+                <Attribute Name="Execution" AttributeDataType="xs:string">
+                    <Attribute Name="Type" AttributeDataType="xs:string">
+                        <Value>configureTHTWaveSolderingOperator-Master</Value>
+                    </Attribute>
+                    <Attribute Name="Data" AttributeDataType="xs:string">
+                        <Attribute Name="ConveyorSpeed" Unit="m/s" AttributeDataType="xs:double">
+                            <Value>1</Value>
+                        </Attribute>
+                        <Attribute Name="HeatingZoneTemperatures" Unit="°C">
+                            <Value>[1: 250, 2: 400, 3: 300]</Value>
+                        </Attribute>
+                        <Attribute Name="Instruction" AttributeDataType="xs:string">
+                            <Value>Please configure the THT Wave Soldering Oven</Value>
+                        </Attribute>
+                        <Attribute Name="NodeID" AttributeDataType="xs:string">
+                            <Value>{'ns=2;i=3138': 'DONE'}</Value>
+                        </Attribute>
+                        <Attribute Name="BrowseTree" AttributeDataType="xs:string">
+                            <Value>{'THTWaveSolderingOven;Inter_SEE_comm;Synchronisation;message': 'DONE'}</Value>
+                        </Attribute>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="PreCondition" AttributeDataType="xs:string">
+                    <Attribute Name="Configuration" AttributeDataType="xs:string">
+                        <Value>pos_THTWaveSoldering</Value>
+                    </Attribute>
+                    <Attribute Name="Product" AttributeDataType="xs:string">
+                        <Value>{}</Value>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="PostCondition" AttributeDataType="xs:string">
+                    <Attribute Name="Configuration" AttributeDataType="xs:string">
+                        <Value>pos_THTWaveSoldering</Value>
+                    </Attribute>
+                    <Attribute Name="Product" AttributeDataType="xs:string">
+                        <Value>{}</Value>
+                    </Attribute>
+                </Attribute>
+                <SupportedRoleClass RefRoleClassPath="DDEDemoRoleClassLib/configureTHTWaveSolderingOperator-Master"/>
+                <RoleRequirements RefBaseRoleClassPath="SkillProRoleClassLib/ResourceExecutableSkill"/>
+            </InternalElement>
+            <InternalElement Name="THTWaveSolderingOvenPrepareTHT2WaveSolderingOven-DDEa" ID="ID_THTWaveSolderingOvenPrepareTHT2WaveSolderingOven-DDEa">
+                <Attribute Name="ResourceId" AttributeDataType="xs:string">
+                    <Value>THTWaveSolderingOven</Value>
+                </Attribute>
+                <Attribute Name="ResponsibleSEE" AttributeDataType="xs:string">
+                    <Value>THTWaveSolderingOven</Value>
+                </Attribute>
+                <Attribute Name="Duration" Unit="sec" AttributeDataType="xs:integer">
+                    <Value>0</Value>
+                </Attribute>
+                <Attribute Name="Slack" Unit="sec" AttributeDataType="xs:integer">
+                    <Value>0</Value>
+                </Attribute>
+                <Attribute Name="Execution" AttributeDataType="xs:string">
+                    <Attribute Name="Type" AttributeDataType="xs:string">
+                        <Value>configureTHTWaveSoldering-Slave</Value>
+                    </Attribute>
+                    <Attribute Name="Data" AttributeDataType="xs:string">
+                        <Attribute Name="ConveyorSpeed" Unit="m/s" AttributeDataType="xs:double">
+                            <Value>1</Value>
+                        </Attribute>
+                        <Attribute Name="HeatingZoneTemperatures" Unit="°C">
+                            <Value>[1: 250, 2: 400, 3: 300]</Value>
+                        </Attribute>
+                        <Attribute Name="NodeID" AttributeDataType="xs:string">
+                            <Value>{'ns=2;i=3138': 'DONE'}</Value>
+                        </Attribute>
+                        <Attribute Name="BrowseTree" AttributeDataType="xs:string">
+                            <Value>{'THTWaveSolderingOven;Inter_SEE_comm;Synchronisation;message': 'DONE'}</Value>
+                        </Attribute>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="PreCondition" AttributeDataType="xs:string">
+                    <Attribute Name="Configuration" AttributeDataType="xs:string">
+                        <Value>{}</Value>
+                    </Attribute>
+                    <Attribute Name="Product" AttributeDataType="xs:string">
+                        <Value>{}</Value>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="PostCondition" AttributeDataType="xs:string">
+                    <Attribute Name="Configuration" AttributeDataType="xs:string">
+                        <Value>idle-prodA</Value>
+                    </Attribute>
+                    <Attribute Name="Product" AttributeDataType="xs:string">
+                        <Value>{}</Value>
+                    </Attribute>
+                </Attribute>
+                <SupportedRoleClass RefRoleClassPath="DDEDemoRoleClassLib/configureTHTWaveSoldering-Slave"/>
+                <RoleRequirements RefBaseRoleClassPath="SkillProRoleClassLib/ResourceExecutableSkill"/>
+            </InternalElement>
+            <RoleRequirements RefBaseRoleClassPath="SkillProRoleClassLib/ExecutableSkill"/>
+        </InternalElement>
+        <InternalElement Name="TransportSMTtoTHT2-DDEa" ID="ID_TransportSMTtoTHT2-DDEa">
+            <InternalElement Name="THTOperator2TransportSMTtoTHT2-DDEa" ID="ID_THTOperator2TransportSMTtoTHT2-DDEa">
+                <Attribute Name="ResourceId" AttributeDataType="xs:string">
+                    <Value>THTOperator2</Value>
+                </Attribute>
+                <Attribute Name="ResponsibleSEE" AttributeDataType="xs:string">
+                    <Value>THTOperator2</Value>
+                </Attribute>
+                <Attribute Name="Duration" Unit="sec" AttributeDataType="xs:integer">
+                    <Value>0</Value>
+                </Attribute>
+                <Attribute Name="Slack" Unit="sec" AttributeDataType="xs:integer">
+                    <Value>0</Value>
+                </Attribute>
+                <Attribute Name="Execution" AttributeDataType="xs:string">
+                    <Attribute Name="Type" AttributeDataType="xs:string">
+                        <Value>transportHuman-Master</Value>
+                    </Attribute>
+                    <Attribute Name="Data" AttributeDataType="xs:string">
+                        <Attribute Name="Products">
+                            <Value>{'oneLayerPCB-prodA': 5}</Value>
+                        </Attribute>
+                        <Attribute Name="LocationStart" AttributeDataType="xs:string">
+                            <Value>SMT Assembly Line</Value>
+                        </Attribute>
+                        <Attribute Name="LocationGoal" AttributeDataType="xs:string">
+                            <Value>THT Workplace 2</Value>
+                        </Attribute>
+                        <Attribute Name="NodeID" AttributeDataType="xs:string">
+                            <Value>{'ns=2;i=3095': 'DONE', 'ns=2;i=3169': 'DONE'}</Value>
+                        </Attribute>
+                        <Attribute Name="BrowseTree" AttributeDataType="xs:string">
+                            <Value>{'SMTLine;Inter_SEE_comm;Synchronisation;message': 'DONE', 'THTWorkplace2;Inter_SEE_comm;Synchronisation;message': 'DONE'}</Value>
+                        </Attribute>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="PreCondition" AttributeDataType="xs:string">
+                    <Attribute Name="Configuration" AttributeDataType="xs:string">
+                        <Value>{}</Value>
+                    </Attribute>
+                    <Attribute Name="Product" AttributeDataType="xs:string">
+                        <Value>{}</Value>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="PostCondition" AttributeDataType="xs:string">
+                    <Attribute Name="Configuration" AttributeDataType="xs:string">
+                        <Value>pos_THTAssemblyWorkplace2</Value>
+                    </Attribute>
+                    <Attribute Name="Product" AttributeDataType="xs:string">
+                        <Value>{}</Value>
+                    </Attribute>
+                </Attribute>
+                <SupportedRoleClass RefRoleClassPath="DDEDemoRoleClassLib/transportHuman-Master"/>
+                <RoleRequirements RefBaseRoleClassPath="SkillProRoleClassLib/ResourceExecutableSkill"/>
+            </InternalElement>
+            <InternalElement Name="SMTLineTransportSMTtoTHT2-DDEa" ID="ID_SMTLineTransportSMTtoTHT2-DDEa">
+                <Attribute Name="ResourceId" AttributeDataType="xs:string">
+                    <Value>SMTLine</Value>
+                </Attribute>
+                <Attribute Name="ResponsibleSEE" AttributeDataType="xs:string">
+                    <Value>SMTLine</Value>
+                </Attribute>
+                <Attribute Name="Duration" Unit="sec" AttributeDataType="xs:integer">
+                    <Value>0</Value>
+                </Attribute>
+                <Attribute Name="Slack" Unit="sec" AttributeDataType="xs:integer">
+                    <Value>0</Value>
+                </Attribute>
+                <Attribute Name="Execution" AttributeDataType="xs:string">
+                    <Attribute Name="Type" AttributeDataType="xs:string">
+                        <Value>unload-Slave</Value>
+                    </Attribute>
+                    <Attribute Name="Data" AttributeDataType="xs:string">
+                        <Attribute Name="Products">
+                            <Value>{'oneLayerPCB-prodA': -5}</Value>
+                        </Attribute>
+                        <Attribute Name="NodeID" AttributeDataType="xs:string">
+                            <Value>{'ns=2;i=3095': 'DONE'}</Value>
+                        </Attribute>
+                        <Attribute Name="BrowseTree" AttributeDataType="xs:string">
+                            <Value>{'SMTLine;Inter_SEE_comm;Synchronisation;message': 'DONE'}</Value>
+                        </Attribute>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="PreCondition" AttributeDataType="xs:string">
+                    <Attribute Name="Configuration" AttributeDataType="xs:string">
+                        <Value>{}</Value>
+                    </Attribute>
+                    <Attribute Name="Product" AttributeDataType="xs:string">
+                        <Value>{'oneLayerPCB-prodA': [("&gt;=", 5), ("&lt;", 65531)]}</Value>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="PostCondition" AttributeDataType="xs:string">
+                    <Attribute Name="Configuration" AttributeDataType="xs:string">
+                        <Value>{}</Value>
+                    </Attribute>
+                    <Attribute Name="Product" AttributeDataType="xs:string">
+                        <Value>{'oneLayerPCB-prodA': -5}</Value>
+                    </Attribute>
+                </Attribute>
+                <SupportedRoleClass RefRoleClassPath="DDEDemoRoleClassLib/unload-Slave"/>
+                <RoleRequirements RefBaseRoleClassPath="SkillProRoleClassLib/ResourceExecutableSkill"/>
+            </InternalElement>
+            <InternalElement Name="THTWorkplace2TransportSMTtoTHT2-DDEa" ID="ID_THTWorkplace2TransportSMTtoTHT2-DDEa">
+                <Attribute Name="ResourceId" AttributeDataType="xs:string">
+                    <Value>THTWorkplace2</Value>
+                </Attribute>
+                <Attribute Name="ResponsibleSEE" AttributeDataType="xs:string">
+                    <Value>THTWorkplace2</Value>
+                </Attribute>
+                <Attribute Name="Duration" Unit="sec" AttributeDataType="xs:integer">
+                    <Value>0</Value>
+                </Attribute>
+                <Attribute Name="Slack" Unit="sec" AttributeDataType="xs:integer">
+                    <Value>0</Value>
+                </Attribute>
+                <Attribute Name="Execution" AttributeDataType="xs:string">
+                    <Attribute Name="Type" AttributeDataType="xs:string">
+                        <Value>load-Slave</Value>
+                    </Attribute>
+                    <Attribute Name="Data" AttributeDataType="xs:string">
+                        <Attribute Name="Products">
+                            <Value>{'oneLayerPCB-prodA': 5}</Value>
+                        </Attribute>
+                        <Attribute Name="NodeID" AttributeDataType="xs:string">
+                            <Value>{'ns=2;i=3169': 'DONE'}</Value>
+                        </Attribute>
+                        <Attribute Name="BrowseTree" AttributeDataType="xs:string">
+                            <Value>{'THTWorkplace2;Inter_SEE_comm;Synchronisation;message': 'DONE'}</Value>
+                        </Attribute>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="PreCondition" AttributeDataType="xs:string">
+                    <Attribute Name="Configuration" AttributeDataType="xs:string">
+                        <Value>{}</Value>
+                    </Attribute>
+                    <Attribute Name="Product" AttributeDataType="xs:string">
+                        <Value>{'oneLayerPCB-prodA': [("&gt;=", 0), ("&lt;", 65531)]}</Value>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="PostCondition" AttributeDataType="xs:string">
+                    <Attribute Name="Configuration" AttributeDataType="xs:string">
+                        <Value>{}</Value>
+                    </Attribute>
+                    <Attribute Name="Product" AttributeDataType="xs:string">
+                        <Value>{'oneLayerPCB-prodA': 5}</Value>
+                    </Attribute>
+                </Attribute>
+                <SupportedRoleClass RefRoleClassPath="DDEDemoRoleClassLib/load-Slave"/>
+                <RoleRequirements RefBaseRoleClassPath="SkillProRoleClassLib/ResourceExecutableSkill"/>
+            </InternalElement>
+            <RoleRequirements RefBaseRoleClassPath="SkillProRoleClassLib/ExecutableSkill"/>
+        </InternalElement>
+        <InternalElement Name="TransportSMTtoTHT1-DDEa" ID="ID_TransportSMTtoTHT1-DDEa">
+            <InternalElement Name="THTOperator1TransportSMTtoTHT1-DDEa" ID="ID_THTOperator1TransportSMTtoTHT1-DDEa">
+                <Attribute Name="ResourceId" AttributeDataType="xs:string">
+                    <Value>THTOperator1</Value>
+                </Attribute>
+                <Attribute Name="ResponsibleSEE" AttributeDataType="xs:string">
+                    <Value>THTOperator1</Value>
+                </Attribute>
+                <Attribute Name="Duration" Unit="sec" AttributeDataType="xs:integer">
+                    <Value>0</Value>
+                </Attribute>
+                <Attribute Name="Slack" Unit="sec" AttributeDataType="xs:integer">
+                    <Value>0</Value>
+                </Attribute>
+                <Attribute Name="Execution" AttributeDataType="xs:string">
+                    <Attribute Name="Type" AttributeDataType="xs:string">
+                        <Value>transportHuman-Master</Value>
+                    </Attribute>
+                    <Attribute Name="Data" AttributeDataType="xs:string">
+                        <Attribute Name="Products">
+                            <Value>{'oneLayerPCB-prodA': 5}</Value>
+                        </Attribute>
+                        <Attribute Name="LocationStart" AttributeDataType="xs:string">
+                            <Value>SMT Assembly Line</Value>
+                        </Attribute>
+                        <Attribute Name="LocationGoal" AttributeDataType="xs:string">
+                            <Value>THT Workplace 1</Value>
+                        </Attribute>
+                        <Attribute Name="NodeID" AttributeDataType="xs:string">
+                            <Value>{'ns=2;i=3095': 'DONE', 'ns=2;i=3151': 'DONE'}</Value>
+                        </Attribute>
+                        <Attribute Name="BrowseTree" AttributeDataType="xs:string">
+                            <Value>{'SMTLine;Inter_SEE_comm;Synchronisation;message': 'DONE', 'THTWorkplace1;Inter_SEE_comm;Synchronisation;message': 'DONE'}</Value>
+                        </Attribute>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="PreCondition" AttributeDataType="xs:string">
+                    <Attribute Name="Configuration" AttributeDataType="xs:string">
+                        <Value>{}</Value>
+                    </Attribute>
+                    <Attribute Name="Product" AttributeDataType="xs:string">
+                        <Value>{}</Value>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="PostCondition" AttributeDataType="xs:string">
+                    <Attribute Name="Configuration" AttributeDataType="xs:string">
+                        <Value>pos_THTAssemblyWorkplace1</Value>
+                    </Attribute>
+                    <Attribute Name="Product" AttributeDataType="xs:string">
+                        <Value>{}</Value>
+                    </Attribute>
+                </Attribute>
+                <SupportedRoleClass RefRoleClassPath="DDEDemoRoleClassLib/transportHuman-Master"/>
+                <RoleRequirements RefBaseRoleClassPath="SkillProRoleClassLib/ResourceExecutableSkill"/>
+            </InternalElement>
+            <InternalElement Name="SMTLineTransportSMTtoTHT1-DDEa" ID="ID_SMTLineTransportSMTtoTHT1-DDEa">
+                <Attribute Name="ResourceId" AttributeDataType="xs:string">
+                    <Value>SMTLine</Value>
+                </Attribute>
+                <Attribute Name="ResponsibleSEE" AttributeDataType="xs:string">
+                    <Value>SMTLine</Value>
+                </Attribute>
+                <Attribute Name="Duration" Unit="sec" AttributeDataType="xs:integer">
+                    <Value>0</Value>
+                </Attribute>
+                <Attribute Name="Slack" Unit="sec" AttributeDataType="xs:integer">
+                    <Value>0</Value>
+                </Attribute>
+                <Attribute Name="Execution" AttributeDataType="xs:string">
+                    <Attribute Name="Type" AttributeDataType="xs:string">
+                        <Value>unload-Slave</Value>
+                    </Attribute>
+                    <Attribute Name="Data" AttributeDataType="xs:string">
+                        <Attribute Name="Products">
+                            <Value>{'oneLayerPCB-prodA': -5}</Value>
+                        </Attribute>
+                        <Attribute Name="NodeID" AttributeDataType="xs:string">
+                            <Value>{'ns=2;i=3095': 'DONE'}</Value>
+                        </Attribute>
+                        <Attribute Name="BrowseTree" AttributeDataType="xs:string">
+                            <Value>{'SMTLine;Inter_SEE_comm;Synchronisation;message': 'DONE'}</Value>
+                        </Attribute>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="PreCondition" AttributeDataType="xs:string">
+                    <Attribute Name="Configuration" AttributeDataType="xs:string">
+                        <Value>{}</Value>
+                    </Attribute>
+                    <Attribute Name="Product" AttributeDataType="xs:string">
+                        <Value>{'oneLayerPCB-prodA': [("&gt;=", 5), ("&lt;", 65531)]}</Value>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="PostCondition" AttributeDataType="xs:string">
+                    <Attribute Name="Configuration" AttributeDataType="xs:string">
+                        <Value>{}</Value>
+                    </Attribute>
+                    <Attribute Name="Product" AttributeDataType="xs:string">
+                        <Value>{'oneLayerPCB-prodA': -5}</Value>
+                    </Attribute>
+                </Attribute>
+                <SupportedRoleClass RefRoleClassPath="DDEDemoRoleClassLib/unload-Slave"/>
+                <RoleRequirements RefBaseRoleClassPath="SkillProRoleClassLib/ResourceExecutableSkill"/>
+            </InternalElement>
+            <InternalElement Name="THTWorkplace1TransportSMTtoTHT1-DDEa" ID="ID_THTWorkplace1TransportSMTtoTHT1-DDEa">
+                <Attribute Name="ResourceId" AttributeDataType="xs:string">
+                    <Value>THTWorkplace1</Value>
+                </Attribute>
+                <Attribute Name="ResponsibleSEE" AttributeDataType="xs:string">
+                    <Value>THTWorkplace1</Value>
+                </Attribute>
+                <Attribute Name="Duration" Unit="sec" AttributeDataType="xs:integer">
+                    <Value>0</Value>
+                </Attribute>
+                <Attribute Name="Slack" Unit="sec" AttributeDataType="xs:integer">
+                    <Value>0</Value>
+                </Attribute>
+                <Attribute Name="Execution" AttributeDataType="xs:string">
+                    <Attribute Name="Type" AttributeDataType="xs:string">
+                        <Value>load-Slave</Value>
+                    </Attribute>
+                    <Attribute Name="Data" AttributeDataType="xs:string">
+                        <Attribute Name="Products">
+                            <Value>{'oneLayerPCB-prodA': 5}</Value>
+                        </Attribute>
+                        <Attribute Name="NodeID" AttributeDataType="xs:string">
+                            <Value>{'ns=2;i=3151': 'DONE'}</Value>
+                        </Attribute>
+                        <Attribute Name="BrowseTree" AttributeDataType="xs:string">
+                            <Value>{'THTWorkplace1;Inter_SEE_comm;Synchronisation;message': 'DONE'}</Value>
+                        </Attribute>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="PreCondition" AttributeDataType="xs:string">
+                    <Attribute Name="Configuration" AttributeDataType="xs:string">
+                        <Value>{}</Value>
+                    </Attribute>
+                    <Attribute Name="Product" AttributeDataType="xs:string">
+                        <Value>{'oneLayerPCB-prodA': [("&gt;=", 0), ("&lt;", 65531)]}</Value>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="PostCondition" AttributeDataType="xs:string">
+                    <Attribute Name="Configuration" AttributeDataType="xs:string">
+                        <Value>{}</Value>
+                    </Attribute>
+                    <Attribute Name="Product" AttributeDataType="xs:string">
+                        <Value>{'oneLayerPCB-prodA': 5}</Value>
+                    </Attribute>
+                </Attribute>
+                <SupportedRoleClass RefRoleClassPath="DDEDemoRoleClassLib/load-Slave"/>
+                <RoleRequirements RefBaseRoleClassPath="SkillProRoleClassLib/ResourceExecutableSkill"/>
+            </InternalElement>
+            <RoleRequirements RefBaseRoleClassPath="SkillProRoleClassLib/ExecutableSkill"/>
+        </InternalElement>
+        <InternalElement Name="TransportManualInspectionWorkplacetoFunctionalTestingWorkplace-DDEa" ID="ID_TransportManualInspectionWorkplacetoFunctionalTestingWorkplace-DDEa">
+            <InternalElement Name="FunctionalTestingOperatorTransportManualInspectionWorkplacetoFunctionalTestingWorkplace-DDEa" ID="ID_FunctionalTestingOperatorTransportManualInspectionWorkplacetoFunctionalTestingWorkplace-DDEa">
+                <Attribute Name="ResourceId" AttributeDataType="xs:string">
+                    <Value>FunctionalTestingOperator</Value>
+                </Attribute>
+                <Attribute Name="ResponsibleSEE" AttributeDataType="xs:string">
+                    <Value>FunctionalTestingOperator</Value>
+                </Attribute>
+                <Attribute Name="Duration" Unit="sec" AttributeDataType="xs:integer">
+                    <Value>0</Value>
+                </Attribute>
+                <Attribute Name="Slack" Unit="sec" AttributeDataType="xs:integer">
+                    <Value>0</Value>
+                </Attribute>
+                <Attribute Name="Execution" AttributeDataType="xs:string">
+                    <Attribute Name="Type" AttributeDataType="xs:string">
+                        <Value>transportHuman-Master</Value>
+                    </Attribute>
+                    <Attribute Name="Data" AttributeDataType="xs:string">
+                        <Attribute Name="Products">
+                            <Value>{'ManualInspectedPCB-prodA': 5}</Value>
+                        </Attribute>
+                        <Attribute Name="LocationStart" AttributeDataType="xs:string">
+                            <Value>Manual Inspection Workplace</Value>
+                        </Attribute>
+                        <Attribute Name="LocationGoal" AttributeDataType="xs:string">
+                            <Value>Functional Testing Workplace</Value>
+                        </Attribute>
+                        <Attribute Name="NodeID" AttributeDataType="xs:string">
+                            <Value>{'ns=2;i=3036': 'DONE', 'ns=2;i=3023': 'DONE'}</Value>
+                        </Attribute>
+                        <Attribute Name="BrowseTree" AttributeDataType="xs:string">
+                            <Value>{'ManualInspectionWorkplace;Inter_SEE_comm;Synchronisation;message': 'DONE', 'FunctionalTestingWorkplace;Inter_SEE_comm;Synchronisation;message': 'DONE',}</Value>
+                        </Attribute>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="PreCondition" AttributeDataType="xs:string">
+                    <Attribute Name="Configuration" AttributeDataType="xs:string">
+                        <Value>{}</Value>
+                    </Attribute>
+                    <Attribute Name="Product" AttributeDataType="xs:string">
+                        <Value>{}</Value>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="PostCondition" AttributeDataType="xs:string">
+                    <Attribute Name="Configuration" AttributeDataType="xs:string">
+                        <Value>pos_FunctionalTestingWorkplace</Value>
+                    </Attribute>
+                    <Attribute Name="Product" AttributeDataType="xs:string">
+                        <Value>{}</Value>
+                    </Attribute>
+                </Attribute>
+                <SupportedRoleClass RefRoleClassPath="DDEDemoRoleClassLib/transportHuman-Master"/>
+                <RoleRequirements RefBaseRoleClassPath="SkillProRoleClassLib/ResourceExecutableSkill"/>
+            </InternalElement>
+            <InternalElement Name="ManualInspectionWorkplaceTransportManualInspectionWorkplacetoFunctionalTestingWorkplace-DDEa" ID="ID_ManualInspectionWorkplaceTransportManualInspectionWorkplacetoFunctionalTestingWorkplace-DDEa">
+                <Attribute Name="ResourceId" AttributeDataType="xs:string">
+                    <Value>ManualInspectionWorkplace</Value>
+                </Attribute>
+                <Attribute Name="ResponsibleSEE" AttributeDataType="xs:string">
+                    <Value>ManualInspectionWorkplace</Value>
+                </Attribute>
+                <Attribute Name="Duration" Unit="sec" AttributeDataType="xs:integer">
+                    <Value>0</Value>
+                </Attribute>
+                <Attribute Name="Slack" Unit="sec" AttributeDataType="xs:integer">
+                    <Value>0</Value>
+                </Attribute>
+                <Attribute Name="Execution" AttributeDataType="xs:string">
+                    <Attribute Name="Type" AttributeDataType="xs:string">
+                        <Value>unload-Slave</Value>
+                    </Attribute>
+                    <Attribute Name="Data" AttributeDataType="xs:string">
+                        <Attribute Name="Products">
+                            <Value>{'ManualInspectedPCB-prodA': -5}</Value>
+                        </Attribute>
+                        <Attribute Name="NodeID" AttributeDataType="xs:string">
+                            <Value>{'ns=2;i=3036': 'DONE'}</Value>
+                        </Attribute>
+                        <Attribute Name="BrowseTree" AttributeDataType="xs:string">
+                            <Value>{'ManualInspectionWorkplace;Inter_SEE_comm;Synchronisation;message': 'DONE'}</Value>
+                        </Attribute>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="PreCondition" AttributeDataType="xs:string">
+                    <Attribute Name="Configuration" AttributeDataType="xs:string">
+                        <Value>{}</Value>
+                    </Attribute>
+                    <Attribute Name="Product" AttributeDataType="xs:string">
+                        <Value>{'ManualInspectedPCB-prodA': [("&gt;=", 5), ("&lt;", 65535)]}</Value>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="PostCondition" AttributeDataType="xs:string">
+                    <Attribute Name="Configuration" AttributeDataType="xs:string">
+                        <Value>{}</Value>
+                    </Attribute>
+                    <Attribute Name="Product" AttributeDataType="xs:string">
+                        <Value>{'ManualInspectedPCB-prodA': -5}</Value>
+                    </Attribute>
+                </Attribute>
+                <SupportedRoleClass RefRoleClassPath="DDEDemoRoleClassLib/unload-Slave"/>
+                <RoleRequirements RefBaseRoleClassPath="SkillProRoleClassLib/ResourceExecutableSkill"/>
+            </InternalElement>
+            <InternalElement Name="FunctionalTestingWorkplaceTransportManualInspectionWorkplacetoFunctionalTestingWorkplace-DDEa" ID="ID_FunctionalTestingWorkplaceTransportManualInspectionWorkplacetoFunctionalTestingWorkplace-DDEa">
+                <Attribute Name="ResourceId" AttributeDataType="xs:string">
+                    <Value>FunctionalTestingWorkplace</Value>
+                </Attribute>
+                <Attribute Name="ResponsibleSEE" AttributeDataType="xs:string">
+                    <Value>FunctionalTestingWorkplace</Value>
+                </Attribute>
+                <Attribute Name="Duration" Unit="sec" AttributeDataType="xs:integer">
+                    <Value>0</Value>
+                </Attribute>
+                <Attribute Name="Slack" Unit="sec" AttributeDataType="xs:integer">
+                    <Value>0</Value>
+                </Attribute>
+                <Attribute Name="Execution" AttributeDataType="xs:string">
+                    <Attribute Name="Type" AttributeDataType="xs:string">
+                        <Value>load-Slave</Value>
+                    </Attribute>
+                    <Attribute Name="Data" AttributeDataType="xs:string">
+                        <Attribute Name="Products">
+                            <Value>{'ManualInspectedPCB-prodA': 5}</Value>
+                        </Attribute>
+                        <Attribute Name="NodeID" AttributeDataType="xs:string">
+                            <Value>{'ns=2;i=3023': 'DONE'}</Value>
+                        </Attribute>
+                        <Attribute Name="BrowseTree" AttributeDataType="xs:string">
+                            <Value>{'FunctionalTestingWorkplace;Inter_SEE_comm;Synchronisation;message': 'DONE'}</Value>
+                        </Attribute>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="PreCondition" AttributeDataType="xs:string">
+                    <Attribute Name="Configuration" AttributeDataType="xs:string">
+                        <Value>{}</Value>
+                    </Attribute>
+                    <Attribute Name="Product" AttributeDataType="xs:string">
+                        <Value>{'ManualInspectedPCB-prodA': [("&gt;=", 0), ("&lt;", 65531)]}</Value>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="PostCondition" AttributeDataType="xs:string">
+                    <Attribute Name="Configuration" AttributeDataType="xs:string">
+                        <Value>{}</Value>
+                    </Attribute>
+                    <Attribute Name="Product" AttributeDataType="xs:string">
+                        <Value>{'ManualInspectedPCB-prodA': 5}</Value>
+                    </Attribute>
+                </Attribute>
+                <SupportedRoleClass RefRoleClassPath="DDEDemoRoleClassLib/load-Slave"/>
+                <RoleRequirements RefBaseRoleClassPath="SkillProRoleClassLib/ResourceExecutableSkill"/>
+            </InternalElement>
+            <RoleRequirements RefBaseRoleClassPath="SkillProRoleClassLib/ExecutableSkill"/>
+        </InternalElement>
+        <InternalElement Name="PrepareSMTAssemblyLine-DDEa" ID="ID_PrepareSMTAssemblyLine-DDEa">
+            <InternalElement Name="SMTLineOperatorPrepareSMTAssemblyLine-DDEa" ID="ID_SMTLineOperatorPrepareSMTAssemblyLine-DDEa">
+                <Attribute Name="ResourceId" AttributeDataType="xs:string">
+                    <Value>SMTLineOperator</Value>
+                </Attribute>
+                <Attribute Name="ResponsibleSEE" AttributeDataType="xs:string">
+                    <Value>SMTLineOperator</Value>
+                </Attribute>
+                <Attribute Name="Duration" Unit="sec" AttributeDataType="xs:integer">
+                    <Value>0</Value>
+                </Attribute>
+                <Attribute Name="Slack" Unit="sec" AttributeDataType="xs:integer">
+                    <Value>0</Value>
+                </Attribute>
+                <Attribute Name="Execution" AttributeDataType="xs:string">
+                    <Attribute Name="Type" AttributeDataType="xs:string">
+                        <Value>configureSMTLineOperator-Master</Value>
+                    </Attribute>
+                    <Attribute Name="Data" AttributeDataType="xs:string">
+                        <Attribute Name="OvenHeatingZoneTemperatures" Unit="°C">
+                            <Value>[1: 250, 2: 400, 3: 300]</Value>
+                        </Attribute>
+                        <Attribute Name="OvenConveyorSpeed" Unit="m/s" AttributeDataType="xs:double">
+                            <Value>1</Value>
+                        </Attribute>
+                        <Attribute Name="OvenNitorgenUsage" Unit="l/min" AttributeDataType="xs:double">
+                            <Value>2</Value>
+                        </Attribute>
+                        <Attribute Name="PastType" AttributeDataType="xs:string">
+                            <Value>Black</Value>
+                        </Attribute>
+                        <Attribute Name="StancilThickness" Unit="mm" AttributeDataType="xs:double">
+                            <Value>1</Value>
+                        </Attribute>
+                        <Attribute Name="ProgramName" Unit="path" AttributeDataType="xs:string">
+                            <Value>/home/machine/SkillPro.prog</Value>
+                        </Attribute>
+                        <Attribute Name="PartsFeedersProperty">
+                            <Value>[1: 250, 2: 400, 3: 300]</Value>
+                        </Attribute>
+                        <Attribute Name="Instruction" AttributeDataType="xs:string">
+                            <Value>Please configure SMT Assembli Line</Value>
+                        </Attribute>
+                        <Attribute Name="NodeID" AttributeDataType="xs:string">
+                            <Value>{'ns=2;i=3095': 'DONE'}</Value>
+                        </Attribute>
+                        <Attribute Name="BrowseTree" AttributeDataType="xs:string">
+                            <Value>{'SMTLine;Inter_SEE_comm;Synchronisation;message': 'DONE'}</Value>
+                        </Attribute>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="PreCondition" AttributeDataType="xs:string">
+                    <Attribute Name="Configuration" AttributeDataType="xs:string">
+                        <Value>pos_SMTAssemblyLine</Value>
+                    </Attribute>
+                    <Attribute Name="Product" AttributeDataType="xs:string">
+                        <Value>{}</Value>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="PostCondition" AttributeDataType="xs:string">
+                    <Attribute Name="Configuration" AttributeDataType="xs:string">
+                        <Value>pos_SMTAssemblyLine</Value>
+                    </Attribute>
+                    <Attribute Name="Product" AttributeDataType="xs:string">
+                        <Value>{}</Value>
+                    </Attribute>
+                </Attribute>
+                <SupportedRoleClass RefRoleClassPath="DDEDemoRoleClassLib/configureSMTLineOperator-Master"/>
+                <RoleRequirements RefBaseRoleClassPath="SkillProRoleClassLib/ResourceExecutableSkill"/>
+            </InternalElement>
+            <InternalElement Name="SMTLinePrepareSMTAssemblyLine-DDEa" ID="ID_SMTLinePrepareSMTAssemblyLine-DDEa">
+                <Attribute Name="ResourceId" AttributeDataType="xs:string">
+                    <Value>SMTLine</Value>
+                </Attribute>
+                <Attribute Name="ResponsibleSEE" AttributeDataType="xs:string">
+                    <Value>SMTLine</Value>
+                </Attribute>
+                <Attribute Name="Duration" Unit="sec" AttributeDataType="xs:integer">
+                    <Value>0</Value>
+                </Attribute>
+                <Attribute Name="Slack" Unit="sec" AttributeDataType="xs:integer">
+                    <Value>0</Value>
+                </Attribute>
+                <Attribute Name="Execution" AttributeDataType="xs:string">
+                    <Attribute Name="Type" AttributeDataType="xs:string">
+                        <Value>configureSMTLine-Slave</Value>
+                    </Attribute>
+                    <Attribute Name="Data" AttributeDataType="xs:string">
+                        <Attribute Name="OvenHeatingZoneTemperatures" Unit="°C">
+                            <Value>[1: 250, 2: 400, 3: 300]</Value>
+                        </Attribute>
+                        <Attribute Name="OvenConveyorSpeed" Unit="m/s" AttributeDataType="xs:double">
+                            <Value>1</Value>
+                        </Attribute>
+                        <Attribute Name="OvenNitorgenUsage" Unit="l/min" AttributeDataType="xs:double">
+                            <Value>2</Value>
+                        </Attribute>
+                        <Attribute Name="PastType" AttributeDataType="xs:string">
+                            <Value>Black</Value>
+                        </Attribute>
+                        <Attribute Name="StancilThickness" Unit="mm" AttributeDataType="xs:double">
+                            <Value>1</Value>
+                        </Attribute>
+                        <Attribute Name="ProgramName" Unit="path" AttributeDataType="xs:string">
+                            <Value>/home/machine/SkillPro.prog</Value>
+                        </Attribute>
+                        <Attribute Name="PartsFeedersProperty">
+                            <Value>[1: 250, 2: 400, 3: 300]</Value>
+                        </Attribute>
+                        <Attribute Name="NodeID" AttributeDataType="xs:string">
+                            <Value>{'ns=2;i=3095': 'DONE'}</Value>
+                        </Attribute>
+                        <Attribute Name="BrowseTree" AttributeDataType="xs:string">
+                            <Value>{'SMTLine;Inter_SEE_comm;Synchronisation;message': 'DONE'}</Value>
+                        </Attribute>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="PreCondition" AttributeDataType="xs:string">
+                    <Attribute Name="Configuration" AttributeDataType="xs:string">
+                        <Value>{}</Value>
+                    </Attribute>
+                    <Attribute Name="Product" AttributeDataType="xs:string">
+                        <Value>{}</Value>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="PostCondition" AttributeDataType="xs:string">
+                    <Attribute Name="Configuration" AttributeDataType="xs:string">
+                        <Value>idle-prodA</Value>
+                    </Attribute>
+                    <Attribute Name="Product" AttributeDataType="xs:string">
+                        <Value>{}</Value>
+                    </Attribute>
+                </Attribute>
+                <SupportedRoleClass RefRoleClassPath="DDEDemoRoleClassLib/configureSMTLine-Slave"/>
+                <RoleRequirements RefBaseRoleClassPath="SkillProRoleClassLib/ResourceExecutableSkill"/>
+            </InternalElement>
+            <RoleRequirements RefBaseRoleClassPath="SkillProRoleClassLib/ExecutableSkill"/>
+        </InternalElement>
+        <InternalElement Name="TransportTHT2toTHTWaveSolderingOven-DDEa" ID="ID_TransportTHT2toTHTWaveSolderingOven-DDEa">
+            <InternalElement Name="THTOperator2TransportTHT2toTHTWaveSolderingOven-DDEa" ID="ID_THTOperator2TransportTHT2toTHTWaveSolderingOven-DDEa">
+                <Attribute Name="ResourceId" AttributeDataType="xs:string">
+                    <Value>THTOperator2</Value>
+                </Attribute>
+                <Attribute Name="ResponsibleSEE" AttributeDataType="xs:string">
+                    <Value>THTOperator2</Value>
+                </Attribute>
+                <Attribute Name="Duration" Unit="sec" AttributeDataType="xs:integer">
+                    <Value>0</Value>
+                </Attribute>
+                <Attribute Name="Slack" Unit="sec" AttributeDataType="xs:integer">
+                    <Value>0</Value>
+                </Attribute>
+                <Attribute Name="Execution" AttributeDataType="xs:string">
+                    <Attribute Name="Type" AttributeDataType="xs:string">
+                        <Value>transportHuman-Master</Value>
+                    </Attribute>
+                    <Attribute Name="Data" AttributeDataType="xs:string">
+                        <Attribute Name="Products">
+                            <Value>{'THTassembledPCB-prodA': 5}</Value>
+                        </Attribute>
+                        <Attribute Name="LocationStart" AttributeDataType="xs:string">
+                            <Value>THT Workplace 2</Value>
+                        </Attribute>
+                        <Attribute Name="LocationGoal" AttributeDataType="xs:string">
+                            <Value>THT Wave Soldering Oven</Value>
+                        </Attribute>
+                        <Attribute Name="NodeID" AttributeDataType="xs:string">
+                            <Value>{'ns=2;i=3169': 'DONE', 'ns=2;i=3138': 'DONE'}</Value>
+                        </Attribute>
+                        <Attribute Name="BrowseTree" AttributeDataType="xs:string">
+                            <Value>{'THTWorkplace2;Inter_SEE_comm;Synchronisation;message': 'DONE', 'THTWaveSolderingOven;Inter_SEE_comm;Synchronisation;message': 'DONE'}</Value>
+                        </Attribute>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="PreCondition" AttributeDataType="xs:string">
+                    <Attribute Name="Configuration" AttributeDataType="xs:string">
+                        <Value>{}</Value>
+                    </Attribute>
+                    <Attribute Name="Product" AttributeDataType="xs:string">
+                        <Value>{}</Value>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="PostCondition" AttributeDataType="xs:string">
+                    <Attribute Name="Configuration" AttributeDataType="xs:string">
+                        <Value>pos_THTWaveSoldering</Value>
+                    </Attribute>
+                    <Attribute Name="Product" AttributeDataType="xs:string">
+                        <Value>{}</Value>
+                    </Attribute>
+                </Attribute>
+                <SupportedRoleClass RefRoleClassPath="DDEDemoRoleClassLib/transportHuman-Master"/>
+                <RoleRequirements RefBaseRoleClassPath="SkillProRoleClassLib/ResourceExecutableSkill"/>
+            </InternalElement>
+            <InternalElement Name="THTWorkplace2TransportTHT2toTHTWaveSolderingOven-DDEa" ID="ID_THTWorkplace2TransportTHT2toTHTWaveSolderingOven-DDEa">
+                <Attribute Name="ResourceId" AttributeDataType="xs:string">
+                    <Value>THTWorkplace2</Value>
+                </Attribute>
+                <Attribute Name="ResponsibleSEE" AttributeDataType="xs:string">
+                    <Value>THTWorkplace2</Value>
+                </Attribute>
+                <Attribute Name="Duration" Unit="sec" AttributeDataType="xs:integer">
+                    <Value>0</Value>
+                </Attribute>
+                <Attribute Name="Slack" Unit="sec" AttributeDataType="xs:integer">
+                    <Value>0</Value>
+                </Attribute>
+                <Attribute Name="Execution" AttributeDataType="xs:string">
+                    <Attribute Name="Type" AttributeDataType="xs:string">
+                        <Value>unload-Slave</Value>
+                    </Attribute>
+                    <Attribute Name="Data" AttributeDataType="xs:string">
+                        <Attribute Name="Products">
+                            <Value>{'THTassembledPCB-prodA': -5}</Value>
+                        </Attribute>
+                        <Attribute Name="NodeID" AttributeDataType="xs:string">
+                            <Value>{'ns=2;i=3169': 'DONE'}</Value>
+                        </Attribute>
+                        <Attribute Name="BrowseTree" AttributeDataType="xs:string">
+                            <Value>{'THTWorkplace2;Inter_SEE_comm;Synchronisation;message': 'DONE'}</Value>
+                        </Attribute>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="PreCondition" AttributeDataType="xs:string">
+                    <Attribute Name="Configuration" AttributeDataType="xs:string">
+                        <Value>{}</Value>
+                    </Attribute>
+                    <Attribute Name="Product" AttributeDataType="xs:string">
+                        <Value>{'THTassembledPCB-prodA': [("&gt;=", 5), ("&lt;", 65531)]}</Value>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="PostCondition" AttributeDataType="xs:string">
+                    <Attribute Name="Configuration" AttributeDataType="xs:string">
+                        <Value>{}</Value>
+                    </Attribute>
+                    <Attribute Name="Product" AttributeDataType="xs:string">
+                        <Value>{'THTassembledPCB-prodA': -5}</Value>
+                    </Attribute>
+                </Attribute>
+                <SupportedRoleClass RefRoleClassPath="DDEDemoRoleClassLib/unload-Slave"/>
+                <RoleRequirements RefBaseRoleClassPath="SkillProRoleClassLib/ResourceExecutableSkill"/>
+            </InternalElement>
+            <InternalElement Name="THTWaveSolderingOvenTransportTHT2toTHTWaveSolderingOven-DDEa" ID="ID_THTWaveSolderingOvenTransportTHT2toTHTWaveSolderingOven-DDEa">
+                <Attribute Name="ResourceId" AttributeDataType="xs:string">
+                    <Value>THTWaveSolderingOven</Value>
+                </Attribute>
+                <Attribute Name="ResponsibleSEE" AttributeDataType="xs:string">
+                    <Value>THTWaveSolderingOven</Value>
+                </Attribute>
+                <Attribute Name="Duration" Unit="sec" AttributeDataType="xs:integer">
+                    <Value>0</Value>
+                </Attribute>
+                <Attribute Name="Slack" Unit="sec" AttributeDataType="xs:integer">
+                    <Value>0</Value>
+                </Attribute>
+                <Attribute Name="Execution" AttributeDataType="xs:string">
+                    <Attribute Name="Type" AttributeDataType="xs:string">
+                        <Value>load-Slave</Value>
+                    </Attribute>
+                    <Attribute Name="Data" AttributeDataType="xs:string">
+                        <Attribute Name="Products">
+                            <Value>{'THTassembledPCB-prodA': 5}</Value>
+                        </Attribute>
+                        <Attribute Name="NodeID" AttributeDataType="xs:string">
+                            <Value>{'ns=2;i=3138': 'DONE'}</Value>
+                        </Attribute>
+                        <Attribute Name="BrowseTree" AttributeDataType="xs:string">
+                            <Value>{'THTWaveSolderingOven;Inter_SEE_comm;Synchronisation;message': 'DONE'}</Value>
+                        </Attribute>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="PreCondition" AttributeDataType="xs:string">
+                    <Attribute Name="Configuration" AttributeDataType="xs:string">
+                        <Value>{}</Value>
+                    </Attribute>
+                    <Attribute Name="Product" AttributeDataType="xs:string">
+                        <Value>{'THTassembledPCB-prodA': [("&gt;=", 0), ("&lt;", 65531)]}</Value>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="PostCondition" AttributeDataType="xs:string">
+                    <Attribute Name="Configuration" AttributeDataType="xs:string">
+                        <Value>{}</Value>
+                    </Attribute>
+                    <Attribute Name="Product" AttributeDataType="xs:string">
+                        <Value>{'THTassembledPCB-prodA': 5}</Value>
+                    </Attribute>
+                </Attribute>
+                <SupportedRoleClass RefRoleClassPath="DDEDemoRoleClassLib/load-Slave"/>
+                <RoleRequirements RefBaseRoleClassPath="SkillProRoleClassLib/ResourceExecutableSkill"/>
+            </InternalElement>
+            <RoleRequirements RefBaseRoleClassPath="SkillProRoleClassLib/ExecutableSkill"/>
+        </InternalElement>
+        <InternalElement Name="QualityControl-DDEa" ID="ID_QualityControl-DDEa">
+            <InternalElement Name="QualityControlOperatorQualityControl-DDEa" ID="ID_QualityControlOperatorQualityControl-DDEa">
+                <Attribute Name="ResourceId" AttributeDataType="xs:string">
+                    <Value>QualityControlOperator</Value>
+                </Attribute>
+                <Attribute Name="ResponsibleSEE" AttributeDataType="xs:string">
+                    <Value>QualityControlOperator</Value>
+                </Attribute>
+                <Attribute Name="Duration" Unit="sec" AttributeDataType="xs:integer">
+                    <Value>0</Value>
+                </Attribute>
+                <Attribute Name="Slack" Unit="sec" AttributeDataType="xs:integer">
+                    <Value>0</Value>
+                </Attribute>
+                <Attribute Name="Execution" AttributeDataType="xs:string">
+                    <Attribute Name="Type" AttributeDataType="xs:string">
+                        <Value>qualityControl-Master</Value>
+                    </Attribute>
+                    <Attribute Name="Data" AttributeDataType="xs:string">
+                        <Attribute Name="ControlPlan">
+                            <Value>Please do standard control procedure</Value>
+                        </Attribute>
+                        <Attribute Name="NodeID" AttributeDataType="xs:string">
+                            <Value>{'ns=2;i=3082': 'DONE'}</Value>
+                        </Attribute>
+                        <Attribute Name="BrowseTree" AttributeDataType="xs:string">
+                            <Value>{'QualityControlWorkplace;Inter_SEE_comm;Synchronisation;message': 'DONE'}</Value>
+                        </Attribute>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="PreCondition" AttributeDataType="xs:string">
+                    <Attribute Name="Configuration" AttributeDataType="xs:string">
+                        <Value>pos_QualityControlWorkplace</Value>
+                    </Attribute>
+                    <Attribute Name="Product" AttributeDataType="xs:string">
+                        <Value>{}</Value>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="PostCondition" AttributeDataType="xs:string">
+                    <Attribute Name="Configuration" AttributeDataType="xs:string">
+                        <Value>pos_QualityControlWorkplace</Value>
+                    </Attribute>
+                    <Attribute Name="Product" AttributeDataType="xs:string">
+                        <Value>{}</Value>
+                    </Attribute>
+                </Attribute>
+                <SupportedRoleClass RefRoleClassPath="DDEDemoRoleClassLib/qualityControl-Master"/>
+                <RoleRequirements RefBaseRoleClassPath="SkillProRoleClassLib/ResourceExecutableSkill"/>
+            </InternalElement>
+            <InternalElement Name="QualityControlWorkplaceQualityControl-DDEa" ID="ID_QualityControlWorkplaceQualityControl-DDEa">
+                <Attribute Name="ResourceId" AttributeDataType="xs:string">
+                    <Value>QualityControlWorkplace</Value>
+                </Attribute>
+                <Attribute Name="ResponsibleSEE" AttributeDataType="xs:string">
+                    <Value>QualityControlWorkplace</Value>
+                </Attribute>
+                <Attribute Name="Duration" Unit="sec" AttributeDataType="xs:integer">
+                    <Value>0</Value>
+                </Attribute>
+                <Attribute Name="Slack" Unit="sec" AttributeDataType="xs:integer">
+                    <Value>0</Value>
+                </Attribute>
+                <Attribute Name="Execution" AttributeDataType="xs:string">
+                    <Attribute Name="Type" AttributeDataType="xs:string">
+                        <Value>produce-Slave</Value>
+                    </Attribute>
+                    <Attribute Name="Data" AttributeDataType="xs:string">
+                        <Attribute Name="NodeID" AttributeDataType="xs:string">
+                            <Value>{'ns=2;i=3082': 'DONE'}</Value>
+                        </Attribute>
+                        <Attribute Name="BrowseTree" AttributeDataType="xs:string">
+                            <Value>{'QualityControlWorkplace;Inter_SEE_comm;Synchronisation;message': 'DONE'}</Value>
+                        </Attribute>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="PreCondition" AttributeDataType="xs:string">
+                    <Attribute Name="Configuration" AttributeDataType="xs:string">
+                        <Value>{}</Value>
+                    </Attribute>
+                    <Attribute Name="Product" AttributeDataType="xs:string">
+                        <Value>{'FunctionalTestedPCB-prodA': [("&gt;=", 1), ("&lt;", 65531)], 'QualityControledPCB-prodA': [("&gt;=", 0), ("&lt;", 65535)]}</Value>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="PostCondition" AttributeDataType="xs:string">
+                    <Attribute Name="Configuration" AttributeDataType="xs:string">
+                        <Value>{}</Value>
+                    </Attribute>
+                    <Attribute Name="Product" AttributeDataType="xs:string">
+                        <Value>{'FunctionalTestedPCB-prodA': -1, 'QualityControledPCB-prodA': 1}</Value>
+                    </Attribute>
+                </Attribute>
+                <SupportedRoleClass RefRoleClassPath="DDEDemoRoleClassLib/produce-Slave"/>
+                <RoleRequirements RefBaseRoleClassPath="SkillProRoleClassLib/ResourceExecutableSkill"/>
+            </InternalElement>
+            <RoleRequirements RefBaseRoleClassPath="SkillProRoleClassLib/ExecutableSkill"/>
+        </InternalElement>
+        <InternalElement Name="PrepareTHT1WaveSolderingOven-DDEa" ID="ID_PrepareTHT1WaveSolderingOven-DDEa">
+            <InternalElement Name="THTOperator1PrepareTHT1WaveSolderingOven-DDEa" ID="ID_THTOperator1PrepareTHT1WaveSolderingOven-DDEa">
+                <Attribute Name="ResourceId" AttributeDataType="xs:string">
+                    <Value>THTOperator1</Value>
+                </Attribute>
+                <Attribute Name="ResponsibleSEE" AttributeDataType="xs:string">
+                    <Value>THTOperator1</Value>
+                </Attribute>
+                <Attribute Name="Duration" Unit="sec" AttributeDataType="xs:integer">
+                    <Value>0</Value>
+                </Attribute>
+                <Attribute Name="Slack" Unit="sec" AttributeDataType="xs:integer">
+                    <Value>0</Value>
+                </Attribute>
+                <Attribute Name="Execution" AttributeDataType="xs:string">
+                    <Attribute Name="Type" AttributeDataType="xs:string">
+                        <Value>configureTHTWaveSolderingOperator-Master</Value>
+                    </Attribute>
+                    <Attribute Name="Data" AttributeDataType="xs:string">
+                        <Attribute Name="ConveyorSpeed" Unit="m/s" AttributeDataType="xs:double">
+                            <Value>1</Value>
+                        </Attribute>
+                        <Attribute Name="HeatingZoneTemperatures" Unit="°C">
+                            <Value>[1: 250, 2: 400, 3: 300]</Value>
+                        </Attribute>
+                        <Attribute Name="Instruction" AttributeDataType="xs:string">
+                            <Value>Please configure the THT Wave Soldering Oven</Value>
+                        </Attribute>
+                        <Attribute Name="NodeID" AttributeDataType="xs:string">
+                            <Value>{'ns=2;i=3138': 'DONE'}</Value>
+                        </Attribute>
+                        <Attribute Name="BrowseTree" AttributeDataType="xs:string">
+                            <Value>{'THTWaveSolderingOven;Inter_SEE_comm;Synchronisation;message': 'DONE'}</Value>
+                        </Attribute>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="PreCondition" AttributeDataType="xs:string">
+                    <Attribute Name="Configuration" AttributeDataType="xs:string">
+                        <Value>pos_THTWaveSoldering</Value>
+                    </Attribute>
+                    <Attribute Name="Product" AttributeDataType="xs:string">
+                        <Value>{}</Value>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="PostCondition" AttributeDataType="xs:string">
+                    <Attribute Name="Configuration" AttributeDataType="xs:string">
+                        <Value>pos_THTWaveSoldering</Value>
+                    </Attribute>
+                    <Attribute Name="Product" AttributeDataType="xs:string">
+                        <Value>{}</Value>
+                    </Attribute>
+                </Attribute>
+                <SupportedRoleClass RefRoleClassPath="DDEDemoRoleClassLib/configureTHTWaveSolderingOperator-Master"/>
+                <RoleRequirements RefBaseRoleClassPath="SkillProRoleClassLib/ResourceExecutableSkill"/>
+            </InternalElement>
+            <InternalElement Name="THTWaveSolderingOvenPrepareTHT1WaveSolderingOven-DDEa" ID="ID_THTWaveSolderingOvenPrepareTHT1WaveSolderingOven-DDEa">
+                <Attribute Name="ResourceId" AttributeDataType="xs:string">
+                    <Value>THTWaveSolderingOven</Value>
+                </Attribute>
+                <Attribute Name="ResponsibleSEE" AttributeDataType="xs:string">
+                    <Value>THTWaveSolderingOven</Value>
+                </Attribute>
+                <Attribute Name="Duration" Unit="sec" AttributeDataType="xs:integer">
+                    <Value>0</Value>
+                </Attribute>
+                <Attribute Name="Slack" Unit="sec" AttributeDataType="xs:integer">
+                    <Value>0</Value>
+                </Attribute>
+                <Attribute Name="Execution" AttributeDataType="xs:string">
+                    <Attribute Name="Type" AttributeDataType="xs:string">
+                        <Value>configureTHTWaveSoldering-Slave</Value>
+                    </Attribute>
+                    <Attribute Name="Data" AttributeDataType="xs:string">
+                        <Attribute Name="ConveyorSpeed" Unit="m/s" AttributeDataType="xs:double">
+                            <Value>1</Value>
+                        </Attribute>
+                        <Attribute Name="HeatingZoneTemperatures" Unit="°C">
+                            <Value>[1: 250, 2: 400, 3: 300]</Value>
+                        </Attribute>
+                        <Attribute Name="NodeID" AttributeDataType="xs:string">
+                            <Value>{'ns=2;i=3138': 'DONE'}</Value>
+                        </Attribute>
+                        <Attribute Name="BrowseTree" AttributeDataType="xs:string">
+                            <Value>{'THTWaveSolderingOven;Inter_SEE_comm;Synchronisation;message': 'DONE'}</Value>
+                        </Attribute>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="PreCondition" AttributeDataType="xs:string">
+                    <Attribute Name="Configuration" AttributeDataType="xs:string">
+                        <Value>{}</Value>
+                    </Attribute>
+                    <Attribute Name="Product" AttributeDataType="xs:string">
+                        <Value>{}</Value>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="PostCondition" AttributeDataType="xs:string">
+                    <Attribute Name="Configuration" AttributeDataType="xs:string">
+                        <Value>idle-prodA</Value>
+                    </Attribute>
+                    <Attribute Name="Product" AttributeDataType="xs:string">
+                        <Value>{}</Value>
+                    </Attribute>
+                </Attribute>
+                <SupportedRoleClass RefRoleClassPath="DDEDemoRoleClassLib/configureTHTWaveSoldering-Slave"/>
+                <RoleRequirements RefBaseRoleClassPath="SkillProRoleClassLib/ResourceExecutableSkill"/>
+            </InternalElement>
+            <RoleRequirements RefBaseRoleClassPath="SkillProRoleClassLib/ExecutableSkill"/>
+        </InternalElement>
+        <InternalElement Name="TransportFunctionalTestingWorkplacetoQualityControlWorkplace-DDEa" ID="ID_TransportFunctionalTestingWorkplacetoQualityControlWorkplace-DDEa">
+            <InternalElement Name="QualityControlOperatorTransportFunctionalTestingWorkplacetoQualityControlWorkplace-DDEa" ID="ID_QualityControlOperatorTransportFunctionalTestingWorkplacetoQualityControlWorkplace-DDEa">
+                <Attribute Name="ResourceId" AttributeDataType="xs:string">
+                    <Value>QualityControlOperator</Value>
+                </Attribute>
+                <Attribute Name="ResponsibleSEE" AttributeDataType="xs:string">
+                    <Value>QualityControlOperator</Value>
+                </Attribute>
+                <Attribute Name="Duration" Unit="sec" AttributeDataType="xs:integer">
+                    <Value>0</Value>
+                </Attribute>
+                <Attribute Name="Slack" Unit="sec" AttributeDataType="xs:integer">
+                    <Value>0</Value>
+                </Attribute>
+                <Attribute Name="Execution" AttributeDataType="xs:string">
+                    <Attribute Name="Type" AttributeDataType="xs:string">
+                        <Value>transportHuman-Master</Value>
+                    </Attribute>
+                    <Attribute Name="Data" AttributeDataType="xs:string">
+                        <Attribute Name="Products">
+                            <Value>{'FunctionalTestedPCB-prodA': 5}</Value>
+                        </Attribute>
+                        <Attribute Name="LocationStart" AttributeDataType="xs:string">
+                            <Value>Functional Testing Workplace</Value>
+                        </Attribute>
+                        <Attribute Name="LocationGoal" AttributeDataType="xs:string">
+                            <Value>Quality Control Workplace</Value>
+                        </Attribute>
+                        <Attribute Name="NodeID" AttributeDataType="xs:string">
+                            <Value>{'ns=2;i=3023': 'DONE', 'ns=2;i=3082': 'DONE'}</Value>
+                        </Attribute>
+                        <Attribute Name="BrowseTree" AttributeDataType="xs:string">
+                            <Value>{'FunctionalTestingWorkplace;Inter_SEE_comm;Synchronisation;message': 'DONE', 'QualityControlWorkplace;Inter_SEE_comm;Synchronisation;message': 'DONE'}</Value>
+                        </Attribute>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="PreCondition" AttributeDataType="xs:string">
+                    <Attribute Name="Configuration" AttributeDataType="xs:string">
+                        <Value>{}</Value>
+                    </Attribute>
+                    <Attribute Name="Product" AttributeDataType="xs:string">
+                        <Value>{}</Value>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="PostCondition" AttributeDataType="xs:string">
+                    <Attribute Name="Configuration" AttributeDataType="xs:string">
+                        <Value>pos_QualityControlWorkplace</Value>
+                    </Attribute>
+                    <Attribute Name="Product" AttributeDataType="xs:string">
+                        <Value>{}</Value>
+                    </Attribute>
+                </Attribute>
+                <SupportedRoleClass RefRoleClassPath="DDEDemoRoleClassLib/transportHuman-Master"/>
+                <RoleRequirements RefBaseRoleClassPath="SkillProRoleClassLib/ResourceExecutableSkill"/>
+            </InternalElement>
+            <InternalElement Name="FunctionalTestingWorkplaceTransportFunctionalTestingWorkplacetoQualityControlWorkplace-DDEa" ID="ID_FunctionalTestingWorkplaceTransportFunctionalTestingWorkplacetoQualityControlWorkplace-DDEa">
+                <Attribute Name="ResourceId" AttributeDataType="xs:string">
+                    <Value>FunctionalTestingWorkplace</Value>
+                </Attribute>
+                <Attribute Name="ResponsibleSEE" AttributeDataType="xs:string">
+                    <Value>FunctionalTestingWorkplace</Value>
+                </Attribute>
+                <Attribute Name="Duration" Unit="sec" AttributeDataType="xs:integer">
+                    <Value>0</Value>
+                </Attribute>
+                <Attribute Name="Slack" Unit="sec" AttributeDataType="xs:integer">
+                    <Value>0</Value>
+                </Attribute>
+                <Attribute Name="Execution" AttributeDataType="xs:string">
+                    <Attribute Name="Type" AttributeDataType="xs:string">
+                        <Value>unload-Slave</Value>
+                    </Attribute>
+                    <Attribute Name="Data" AttributeDataType="xs:string">
+                        <Attribute Name="Products">
+                            <Value>{'FunctionalTestedPCB-prodA': -5}</Value>
+                        </Attribute>
+                        <Attribute Name="NodeID" AttributeDataType="xs:string">
+                            <Value>{'ns=2;i=3023': 'DONE'}</Value>
+                        </Attribute>
+                        <Attribute Name="BrowseTree" AttributeDataType="xs:string">
+                            <Value>{'FunctionalTestingWorkplace;Inter_SEE_comm;Synchronisation;message': 'DONE'}</Value>
+                        </Attribute>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="PreCondition" AttributeDataType="xs:string">
+                    <Attribute Name="Configuration" AttributeDataType="xs:string">
+                        <Value>{}</Value>
+                    </Attribute>
+                    <Attribute Name="Product" AttributeDataType="xs:string">
+                        <Value>{'FunctionalTestedPCB-prodA': [("&gt;=", 5), ("&lt;", 65531)]}</Value>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="PostCondition" AttributeDataType="xs:string">
+                    <Attribute Name="Configuration" AttributeDataType="xs:string">
+                        <Value>{}</Value>
+                    </Attribute>
+                    <Attribute Name="Product" AttributeDataType="xs:string">
+                        <Value>{'FunctionalTestedPCB-prodA': -5}</Value>
+                    </Attribute>
+                </Attribute>
+                <SupportedRoleClass RefRoleClassPath="DDEDemoRoleClassLib/unload-Slave"/>
+                <RoleRequirements RefBaseRoleClassPath="SkillProRoleClassLib/ResourceExecutableSkill"/>
+            </InternalElement>
+            <InternalElement Name="QualityControlWorkplaceTransportFunctionalTestingWorkplacetoQualityControlWorkplace-DDEa" ID="ID_QualityControlWorkplaceTransportFunctionalTestingWorkplacetoQualityControlWorkplace-DDEa">
+                <Attribute Name="ResourceId" AttributeDataType="xs:string">
+                    <Value>QualityControlWorkplace</Value>
+                </Attribute>
+                <Attribute Name="ResponsibleSEE" AttributeDataType="xs:string">
+                    <Value>QualityControlWorkplace</Value>
+                </Attribute>
+                <Attribute Name="Duration" Unit="sec" AttributeDataType="xs:integer">
+                    <Value>0</Value>
+                </Attribute>
+                <Attribute Name="Slack" Unit="sec" AttributeDataType="xs:integer">
+                    <Value>0</Value>
+                </Attribute>
+                <Attribute Name="Execution" AttributeDataType="xs:string">
+                    <Attribute Name="Type" AttributeDataType="xs:string">
+                        <Value>load-Slave</Value>
+                    </Attribute>
+                    <Attribute Name="Data" AttributeDataType="xs:string">
+                        <Attribute Name="Products">
+                            <Value>{'FunctionalTestedPCB-prodA': 5}</Value>
+                        </Attribute>
+                        <Attribute Name="NodeID" AttributeDataType="xs:string">
+                            <Value>{'ns=2;i=3082': 'DONE'}</Value>
+                        </Attribute>
+                        <Attribute Name="BrowseTree" AttributeDataType="xs:string">
+                            <Value>{'QualityControlWorkplace;Inter_SEE_comm;Synchronisation;message': 'DONE'}</Value>
+                        </Attribute>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="PreCondition" AttributeDataType="xs:string">
+                    <Attribute Name="Configuration" AttributeDataType="xs:string">
+                        <Value>{}</Value>
+                    </Attribute>
+                    <Attribute Name="Product" AttributeDataType="xs:string">
+                        <Value>{'FunctionalTestedPCB-prodA': [("&gt;=", 0), ("&lt;", 65531)]}</Value>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="PostCondition" AttributeDataType="xs:string">
+                    <Attribute Name="Configuration" AttributeDataType="xs:string">
+                        <Value>{}</Value>
+                    </Attribute>
+                    <Attribute Name="Product" AttributeDataType="xs:string">
+                        <Value>{'FunctionalTestedPCB-prodA': 5}</Value>
+                    </Attribute>
+                </Attribute>
+                <SupportedRoleClass RefRoleClassPath="DDEDemoRoleClassLib/load-Slave"/>
+                <RoleRequirements RefBaseRoleClassPath="SkillProRoleClassLib/ResourceExecutableSkill"/>
+            </InternalElement>
+            <RoleRequirements RefBaseRoleClassPath="SkillProRoleClassLib/ExecutableSkill"/>
+        </InternalElement>
+        <InternalElement Name="FunctionalTesting-DDEa" ID="ID_FunctionalTesting-DDEa">
+            <InternalElement Name="FunctionalTestingOperatorFunctionalTesting-DDEa" ID="ID_FunctionalTestingOperatorFunctionalTesting-DDEa">
+                <Attribute Name="ResourceId" AttributeDataType="xs:string">
+                    <Value>FunctionalTestingOperator</Value>
+                </Attribute>
+                <Attribute Name="ResponsibleSEE" AttributeDataType="xs:string">
+                    <Value>FunctionalTestingOperator</Value>
+                </Attribute>
+                <Attribute Name="Duration" Unit="sec" AttributeDataType="xs:integer">
+                    <Value>0</Value>
+                </Attribute>
+                <Attribute Name="Slack" Unit="sec" AttributeDataType="xs:integer">
+                    <Value>0</Value>
+                </Attribute>
+                <Attribute Name="Execution" AttributeDataType="xs:string">
+                    <Attribute Name="Type" AttributeDataType="xs:string">
+                        <Value>functionalTesting-Master</Value>
+                    </Attribute>
+                    <Attribute Name="Data" AttributeDataType="xs:string">
+                        <Attribute Name="TestPlan">
+                            <Value>Please do standard testing</Value>
+                        </Attribute>
+                        <Attribute Name="TestEquipement">
+                            <Value>{'Oscilloscope': 1, 'Multimeter': 2, 'Magnifier': 1}</Value>
+                        </Attribute>
+                        <Attribute Name="NodeID" AttributeDataType="xs:string">
+                            <Value>{'ns=2;i=3023': 'DONE'}</Value>
+                        </Attribute>
+                        <Attribute Name="BrowseTree" AttributeDataType="xs:string">
+                            <Value>{'FunctionalTestingWorkplace;Inter_SEE_comm;Synchronisation;message': 'DONE'}</Value>
+                        </Attribute>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="PreCondition" AttributeDataType="xs:string">
+                    <Attribute Name="Configuration" AttributeDataType="xs:string">
+                        <Value>pos_FunctionalTestingWorkplace</Value>
+                    </Attribute>
+                    <Attribute Name="Product" AttributeDataType="xs:string">
+                        <Value>{}</Value>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="PostCondition" AttributeDataType="xs:string">
+                    <Attribute Name="Configuration" AttributeDataType="xs:string">
+                        <Value>pos_FunctionalTestingWorkplace</Value>
+                    </Attribute>
+                    <Attribute Name="Product" AttributeDataType="xs:string">
+                        <Value>{}</Value>
+                    </Attribute>
+                </Attribute>
+                <SupportedRoleClass RefRoleClassPath="DDEDemoRoleClassLib/functionalTesting-Master"/>
+                <RoleRequirements RefBaseRoleClassPath="SkillProRoleClassLib/ResourceExecutableSkill"/>
+            </InternalElement>
+            <InternalElement Name="FunctionalTestingWorkplaceFunctionalTesting-DDEa" ID="ID_FunctionalTestingWorkplaceFunctionalTesting-DDEa">
+                <Attribute Name="ResourceId" AttributeDataType="xs:string">
+                    <Value>FunctionalTestingWorkplace</Value>
+                </Attribute>
+                <Attribute Name="ResponsibleSEE" AttributeDataType="xs:string">
+                    <Value>FunctionalTestingWorkplace</Value>
+                </Attribute>
+                <Attribute Name="Duration" Unit="sec" AttributeDataType="xs:integer">
+                    <Value>0</Value>
+                </Attribute>
+                <Attribute Name="Slack" Unit="sec" AttributeDataType="xs:integer">
+                    <Value>0</Value>
+                </Attribute>
+                <Attribute Name="Execution" AttributeDataType="xs:string">
+                    <Attribute Name="Type" AttributeDataType="xs:string">
+                        <Value>produce-Slave</Value>
+                    </Attribute>
+                    <Attribute Name="Data" AttributeDataType="xs:string">
+                        <Attribute Name="NodeID" AttributeDataType="xs:string">
+                            <Value>{'ns=2;i=3023': 'DONE'}</Value>
+                        </Attribute>
+                        <Attribute Name="BrowseTree" AttributeDataType="xs:string">
+                            <Value>{'FunctionalTestingWorkplace;Inter_SEE_comm;Synchronisation;message': 'DONE'}</Value>
+                        </Attribute>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="PreCondition" AttributeDataType="xs:string">
+                    <Attribute Name="Configuration" AttributeDataType="xs:string">
+                        <Value>{}</Value>
+                    </Attribute>
+                    <Attribute Name="Product" AttributeDataType="xs:string">
+                        <Value>{'ManualInspectedPCB-prodA': [("&gt;=", 1), ("&lt;", 65531)], 'FunctionalTestedPCB-prodA': [("&gt;=", 0), ("&lt;", 65535)]}</Value>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="PostCondition" AttributeDataType="xs:string">
+                    <Attribute Name="Configuration" AttributeDataType="xs:string">
+                        <Value>{}</Value>
+                    </Attribute>
+                    <Attribute Name="Product" AttributeDataType="xs:string">
+                        <Value>{'ManualInspectedPCB-prodA': -1, 'FunctionalTestedPCB-prodA': 1}</Value>
+                    </Attribute>
+                </Attribute>
+                <SupportedRoleClass RefRoleClassPath="DDEDemoRoleClassLib/produce-Slave"/>
+                <RoleRequirements RefBaseRoleClassPath="SkillProRoleClassLib/ResourceExecutableSkill"/>
+            </InternalElement>
+            <RoleRequirements RefBaseRoleClassPath="SkillProRoleClassLib/ExecutableSkill"/>
+        </InternalElement>
+        <InternalElement Name="ManualInspection-DDEa" ID="ID_ManualInspection-DDEa">
+            <InternalElement Name="THTOperator1ManualInspection-DDEa" ID="ID_THTOperator1ManualInspection-DDEa">
+                <Attribute Name="ResourceId" AttributeDataType="xs:string">
+                    <Value>THTOperator1</Value>
+                </Attribute>
+                <Attribute Name="ResponsibleSEE" AttributeDataType="xs:string">
+                    <Value>THTOperator1</Value>
+                </Attribute>
+                <Attribute Name="Duration" Unit="sec" AttributeDataType="xs:integer">
+                    <Value>0</Value>
+                </Attribute>
+                <Attribute Name="Slack" Unit="sec" AttributeDataType="xs:integer">
+                    <Value>0</Value>
+                </Attribute>
+                <Attribute Name="Execution" AttributeDataType="xs:string">
+                    <Attribute Name="Type" AttributeDataType="xs:string">
+                        <Value>manualInspection-Master</Value>
+                    </Attribute>
+                    <Attribute Name="Data" AttributeDataType="xs:string">
+                        <Attribute Name="ProductInformation">
+                            <Value>http://10.69.69.199:8080/app/images/schematic.jpg</Value>
+                        </Attribute>
+                        <Attribute Name="Instruction">
+                            <Value>Please do standard inspection</Value>
+                        </Attribute>
+                        <Attribute Name="NodeID" AttributeDataType="xs:string">
+                            <Value>{'ns=2;i=3036': 'DONE'}</Value>
+                        </Attribute>
+                        <Attribute Name="BrowseTree" AttributeDataType="xs:string">
+                            <Value>{'ManualInspectionWorkplace;Inter_SEE_comm;Synchronisation;message': 'DONE'}</Value>
+                        </Attribute>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="PreCondition" AttributeDataType="xs:string">
+                    <Attribute Name="Configuration" AttributeDataType="xs:string">
+                        <Value>pos_ManualInspectionWorkplace</Value>
+                    </Attribute>
+                    <Attribute Name="Product" AttributeDataType="xs:string">
+                        <Value>{}</Value>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="PostCondition" AttributeDataType="xs:string">
+                    <Attribute Name="Configuration" AttributeDataType="xs:string">
+                        <Value>pos_ManualInspectionWorkplace</Value>
+                    </Attribute>
+                    <Attribute Name="Product" AttributeDataType="xs:string">
+                        <Value>{}</Value>
+                    </Attribute>
+                </Attribute>
+                <SupportedRoleClass RefRoleClassPath="DDEDemoRoleClassLib/manualInspection-Master"/>
+                <RoleRequirements RefBaseRoleClassPath="SkillProRoleClassLib/ResourceExecutableSkill"/>
+            </InternalElement>
+            <InternalElement Name="ManualInspectionWorkplaceManualInspection-DDEa" ID="ID_ManualInspectionWorkplaceManualInspection-DDEa">
+                <Attribute Name="ResourceId" AttributeDataType="xs:string">
+                    <Value>ManualInspectionWorkplace</Value>
+                </Attribute>
+                <Attribute Name="ResponsibleSEE" AttributeDataType="xs:string">
+                    <Value>ManualInspectionWorkplace</Value>
+                </Attribute>
+                <Attribute Name="Duration" Unit="sec" AttributeDataType="xs:integer">
+                    <Value>0</Value>
+                </Attribute>
+                <Attribute Name="Slack" Unit="sec" AttributeDataType="xs:integer">
+                    <Value>0</Value>
+                </Attribute>
+                <Attribute Name="Execution" AttributeDataType="xs:string">
+                    <Attribute Name="Type" AttributeDataType="xs:string">
+                        <Value>produce-Slave</Value>
+                    </Attribute>
+                    <Attribute Name="Data" AttributeDataType="xs:string">
+                        <Attribute Name="NodeID" AttributeDataType="xs:string">
+                            <Value>{'ns=2;i=3036': 'DONE'}</Value>
+                        </Attribute>
+                        <Attribute Name="BrowseTree" AttributeDataType="xs:string">
+                            <Value>{'ManualInspectionWorkplace;Inter_SEE_comm;Synchronisation;message': 'DONE'}</Value>
+                        </Attribute>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="PreCondition" AttributeDataType="xs:string">
+                    <Attribute Name="Configuration" AttributeDataType="xs:string">
+                        <Value>{}</Value>
+                    </Attribute>
+                    <Attribute Name="Product" AttributeDataType="xs:string">
+                        <Value>{'THTSolderedPCB-prodA': [("&gt;=", 1), ("&lt;", 65531)], 'ManualInspectedPCB-prodA': [("&gt;=", 0), ("&lt;", 65535)]}</Value>
+                    </Attribute>
+                </Attribute>
+                <Attribute Name="PostCondition" AttributeDataType="xs:string">
+                    <Attribute Name="Configuration" AttributeDataType="xs:string">
+                        <Value>{}</Value>
+                    </Attribute>
+                    <Attribute Name="Product" AttributeDataType="xs:string">
+                        <Value>{'THTSolderedPCB-prodA': -1, 'ManualInspectedPCB-prodA': 1}</Value>
+                    </Attribute>
+                </Attribute>
+                <SupportedRoleClass RefRoleClassPath="DDEDemoRoleClassLib/produce-Slave"/>
+                <RoleRequirements RefBaseRoleClassPath="SkillProRoleClassLib/ResourceExecutableSkill"/>
+            </InternalElement>
+            <RoleRequirements RefBaseRoleClassPath="SkillProRoleClassLib/ExecutableSkill"/>
+        </InternalElement>
+    </InstanceHierarchy>
+</CAEXFile>

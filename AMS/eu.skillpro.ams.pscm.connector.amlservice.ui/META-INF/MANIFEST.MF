@@ -1,0 +1,25 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: UI Connector-AMLservice
+Bundle-SymbolicName: eu.skillpro.ams.pscm.connector.amlservice.ui;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: eu.skillpro.ams.pscm.connector.amlservice.ui.Activator
+Bundle-Vendor: FZI
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime,
+ eu.skillpro.ams.pscm.connector.amlservice;bundle-version="1.0.0",
+ eu.skillpro.ams.pscm.aml.parser;bundle-version="1.0.0",
+ eu.skillpro.ams.pscm.model.resourceprovider;bundle-version="1.0.0",
+ eu.skillpro.ams.pscm.model;bundle-version="1.0.0",
+ eu.skillpro.ams.pscm.gui.icons;bundle-version="1.0.0",
+ eu.skillpro.ams.pscm.aml.transformation.service;bundle-version="1.0.0",
+ eu.skillpro.ams.pscm.aml.transformation.core;bundle-version="1.0.0",
+ eu.skillpro.ams.pscm.gui.masterviews.skillpro;bundle-version="1.0.0",
+ eu.skillpro.ams.pscm.aml.gui.transformator;bundle-version="1.0.0",
+ eu.skillpro.ams.pscm.gui.masterviews.amltransformation;bundle-version="1.0.0",
+ eu.skillpro.ams.pscm.gui.masterviews;bundle-version="1.0.0",
+ eu.skillpro.ams.pscm.aml.metamodel;bundle-version="1.0.0"
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Bundle-ActivationPolicy: lazy
+Bundle-ClassPath: .
+Export-Package: eu.skillpro.ams.pscm.connector.amlservice.ui.dialogs

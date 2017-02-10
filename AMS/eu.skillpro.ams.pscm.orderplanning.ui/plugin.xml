@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+
+   <extension
+         point="org.eclipse.ui.perspectives">
+      <perspective
+            name="Orders"
+            class="de.fzi.skillpro.order.perspectives.OrderPerspective"
+            id="de.fzi.skillpro.order.perspectives.OrderPerspective">
+      </perspective>
+   </extension>
+   <extension
+         point="org.eclipse.ui.views">
+      <view
+            name="KPI Evaluation"
+            class="de.fzi.skillpro.order.views.EvaluationView"
+            id="de.fzi.skillpro.order.views.EvaluationView">
+      </view>
+      <view
+            class="de.fzi.skillpro.order.views.ExecutableSkillView"
+            id="de.fzi.skillpro.order.views.ExecutableSkillView"
+            name="Executable Skills"
+            restorable="true">
+      </view>
+      <view
+            class="de.fzi.skillpro.order.views.OrderTreeView"
+            id="de.fzi.skillpro.order.views.OrderTreeView"
+            name="Order"
+            restorable="true">
+      </view>
+      <view
+            class="de.fzi.skillpro.order.views.OrderAlternativeEvaluation"
+            id="de.fzi.skillpro.order.views.OrderAlternativeEvaluation"
+            name="Order Alternatives Evaluation"
+            restorable="true">
+      </view>
+   </extension>
+   <extension
+         point="org.eclipse.ui.commands">
+      <command
+            defaultHandler="de.fzi.skillpro.order.commands.OpenOrderPerspective"
+            id="de.fzi.skillpro.order.commands.OpenOrderPerspective"
+            name="OpenOrderPerspective">
+      </command>
+   </extension>
+
+</plugin>

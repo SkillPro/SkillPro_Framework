@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.ui.perspectives">
+      <perspective
+            class="pscm.gui.combo.ComboPerspective"
+            id="pscm.gui.combo.ComboPerspective"
+            name="Combo perspective">
+      </perspective>
+   </extension>
+   <extension
+         point="org.eclipse.ui.commands">
+      <command
+            defaultHandler="pscm.gui.combo.OpenComboPerspective"
+            id="pscm.gui.combo.OpenComboPerspective"
+            name="Open combo perspective">
+      </command>
+   	</extension>
+	<extension
+         point="org.eclipse.ui.views">
+      <view
+            class="skillpro.asset.views.AssetTreeView"
+            id="skillpro.asset.views.AssetTreeView"
+            name="Assets"
+            restorable="true">
+      </view>
+      <view
+            class="skillpro.asset.views.CatalogView"
+            id="skillpro.asset.views.CatalogView"
+            name="Catalog"
+            restorable="true">
+      </view>
+      <view
+            class="skillpro.asset.views.SEEView"
+            id="skillpro.asset.views.SEEView"
+            name="SEEs"
+            restorable="true">
+      </view>
+      <view
+            class="skillpro.product.views.ProductTreeView"
+            id="skillpro.product.views.ProductTreeView"
+            name="Products"
+            restorable="true">
+      </view>
+      <view
+            class="skillpro.gui.skills.views.AttributeTableView"
+            id="skillpro.gui.skills.views.AttributeTableView"
+            name="Attribute"
+            restorable="true">
+      </view>
+      <view
+            class="skillpro.gui.skills.views.CompleteSkillTreeView"
+            id="skillpro.gui.skills.views.CompleteSkillTreeView"
+            name="Template Skills"
+            restorable="true">
+      </view>
+      <view
+            class="skillpro.gui.skills.views.SupportedAssetsView"
+            id="skillpro.gui.skills.views.SupportedAssetsView"
+            name="Resource Skills"
+            restorable="true">
+      </view>
+      <view
+            class="skillpro.gui.skills.views.ProblemsView"
+            id="skillpro.gui.skills.views.ProblemsView"
+            name="Problems"
+            restorable="true">
+      </view>
+   </extension>
+</plugin>

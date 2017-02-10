@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.ui.commands">
+      <command
+            defaultHandler="eu.skillpro.ams.pscm.connector.opcua.ui.ConfigureOPCUA"
+            id="eu.skillpro.ams.pscm.connector.opcua.ui.ConfigureOPCUA"
+            name="Configure OPC-UA Connector">
+      </command>
+      <command
+            defaultHandler="eu.skillpro.ams.pscm.connector.opcua.ui.Connect"
+            id="eu.skillpro.ams.pscm.connector.opcua.ui.Connect"
+            name="Connect to OPC-UA server">
+      </command>
+      <command
+            defaultHandler="eu.skillpro.ams.pscm.connector.opcua.ui.Disconnect"
+            id="eu.skillpro.ams.pscm.connector.opcua.ui.Disconnect"
+            name="Disconnect from OPC-UA server">
+      </command>
+      <command
+            defaultHandler="eu.skillpro.ams.pscm.connector.opcua.ui.TestMethodCall"
+            id="eu.skillpro.ams.pscm.connector.opcua.ui.TestMethodCall"
+            name="Test Method Call">
+      </command>
+      <command
+            defaultHandler="eu.skillpro.ams.pscm.connector.opcua.ui.SendOrders"
+            id="eu.skillpro.ams.pscm.connector.opcua.ui.SendOrders"
+            name="Send orders">
+      </command>
+   </extension>
+   <extension
+         point="org.eclipse.ui.menus">
+      <menuContribution
+            allPopups="true"
+            locationURI="menu:org.eclipse.ui.main.menu">
+         <menu
+               id="skillpro.menu.opcua.connector"
+               label="OPC-UA">
+            <command
+                  commandId="eu.skillpro.ams.pscm.connector.opcua.ui.SendOrders"
+                  label="Send Orders"
+                  style="push">
+            </command>
+            <separator
+                  name="eu.skillpro.ams.pscm.connector.opcua.ui.separator"
+                  visible="true">
+            </separator>
+            <command
+                  commandId="eu.skillpro.ams.pscm.connector.opcua.ui.ConfigureOPCUA"
+                  label="Configure OPC-UA connection"
+                  style="push">
+            </command>
+         </menu>
+      </menuContribution>
+   </extension>
+
+</plugin>

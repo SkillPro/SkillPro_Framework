@@ -1,0 +1,14 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Model
+Bundle-SymbolicName: eu.skillpro.ams.pscm.model
+Bundle-Version: 1.0.0.qualifier
+Bundle-ActivationPolicy: lazy
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Export-Package: skillpro.model.assets,
+ skillpro.model.costs,
+ skillpro.model.products,
+ skillpro.model.properties,
+ skillpro.model.skills,
+ skillpro.model.skills.dummy,
+ skillpro.model.utils

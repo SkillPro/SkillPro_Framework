@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Metamodel
+Bundle-SymbolicName: eu.skillpro.ams.pscm.aml.metamodel
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: eu.skillpro.ams.pscm.aml.metamodel.Activator
+Require-Bundle: org.eclipse.core.runtime
+Bundle-ActivationPolicy: lazy
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Export-Package: aml.domain,
+ aml.model

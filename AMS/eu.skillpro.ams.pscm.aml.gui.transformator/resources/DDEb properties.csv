@@ -1,0 +1,274 @@
+LoadSMTAssemblyLine_Empty;SMTLineOperator;transportHuman-Master;Products;list;;{'emptyPCB': 5}
+LoadSMTAssemblyLine_Empty;SMTLineOperator;transportHuman-Master;LocationStart;string;;Empty PCB Storage
+LoadSMTAssemblyLine_Empty;SMTLineOperator;transportHuman-Master;LocationGoal;string;;SMT Assembly Line
+LoadSMTAssemblyLine_Empty;SMTLineOperator;transportHuman-Master;NodeID;string;;"{'ns=2;i=3095': 'DONE'}"
+LoadSMTAssemblyLine_Empty;SMTLineOperator;transportHuman-Master;BrowseTree;string;;"{'SMTLine;Inter_SEE_comm;Synchronisation;message': 'DONE'}"
+LoadSMTAssemblyLine_Empty;SMTLine;load-Slave;Products;list;;{'emptyPCB': 5}
+LoadSMTAssemblyLine_Empty;SMTLine;load-Slave;NodeIDCommand;string;;"{'ns=2;i=3095': 'DONE'}"
+LoadSMTAssemblyLine_Empty;SMTLine;load-Slave;BrowseTree;string;;"{'SMTLine;Inter_SEE_comm;Synchronisation;message': 'DONE'}"
+;;;;;;
+;;;;;;
+PrepareSMTAssemblyLine_Bottom;SMTLineOperator;configureSMTLineOperator-Master;OvenHeatingZoneTemperatures;list;°C;[1: 250, 2: 400, 3: 300]
+PrepareSMTAssemblyLine_Bottom;SMTLineOperator;configureSMTLineOperator-Master;OvenConveyorSpeed;double;m/s;1
+PrepareSMTAssemblyLine_Bottom;SMTLineOperator;configureSMTLineOperator-Master;OvenNitorgenUsage;double;l/min;2
+PrepareSMTAssemblyLine_Bottom;SMTLineOperator;configureSMTLineOperator-Master;PastType;string;;Black
+PrepareSMTAssemblyLine_Bottom;SMTLineOperator;configureSMTLineOperator-Master;StancilThickness;double;mm;1
+PrepareSMTAssemblyLine_Bottom;SMTLineOperator;configureSMTLineOperator-Master;ProgramName;string;path;/home/machine/SkillPro-bottom.prog
+PrepareSMTAssemblyLine_Bottom;SMTLineOperator;configureSMTLineOperator-Master;PartsFeedersProperty;list;;[1: 250, 2: 400, 3: 300]
+PrepareSMTAssemblyLine_Bottom;SMTLineOperator;configureSMTLineOperator-Master;Instruction;string;;Please configure SMT Assembli Line
+PrepareSMTAssemblyLine_Bottom;SMTLineOperator;configureSMTLineOperator-Master;NodeID;string;;"{'ns=2;i=3095': 'DONE'}"
+PrepareSMTAssemblyLine_Bottom;SMTLineOperator;configureSMTLineOperator-Master;BrowseTree;string;;"{'SMTLine;Inter_SEE_comm;Synchronisation;message': 'DONE'}"
+PrepareSMTAssemblyLine_Bottom;SMTLine;configureSMTLine-Slave;OvenHeatingZoneTemperatures;list;°C;[1: 250, 2: 400, 3: 300]
+PrepareSMTAssemblyLine_Bottom;SMTLine;configureSMTLine-Slave;OvenConveyorSpeed;double;m/s;1
+PrepareSMTAssemblyLine_Bottom;SMTLine;configureSMTLine-Slave;OvenNitorgenUsage;double;l/min;2
+PrepareSMTAssemblyLine_Bottom;SMTLine;configureSMTLine-Slave;PastType;string;;Black
+PrepareSMTAssemblyLine_Bottom;SMTLine;configureSMTLine-Slave;StancilThickness;double;mm;1
+PrepareSMTAssemblyLine_Bottom;SMTLine;configureSMTLine-Slave;ProgramName;string;path;/home/machine/SkillPro-bottom.prog
+PrepareSMTAssemblyLine_Bottom;SMTLine;configureSMTLine-Slave;PartsFeedersProperty;list;;[1: 250, 2: 400, 3: 300]
+PrepareSMTAssemblyLine_Bottom;SMTLine;configureSMTLine-Slave;NodeID;string;;"{'ns=2;i=3095': 'DONE'}"
+PrepareSMTAssemblyLine_Bottom;SMTLine;configureSMTLine-Slave;BrowseTree;string;;"{'SMTLine;Inter_SEE_comm;Synchronisation;message': 'DONE'}"
+;;;;;;
+;;;;;;
+TransportSMTtoSMT;SMTLineOperator;transportHuman-Master;Products;list;;{'oneLayerPCB-prodB': -5, 'oneLayerPCB-prodB-Bottom': 5}
+TransportSMTtoSMT;SMTLineOperator;transportHuman-Master;LocationStart;string;;SMT Assembly Line Output
+TransportSMTtoSMT;SMTLineOperator;transportHuman-Master;LocationGoal;string;;SMT Assembly Line Input
+TransportSMTtoSMT;SMTLineOperator;transportHuman-Master;NodeID;string;;"{'ns=2;i=3095': 'DONE'}"
+TransportSMTtoSMT;SMTLineOperator;transportHuman-Master;BrowseTree;string;;"{'SMTLine;Inter_SEE_comm;Synchronisation;message': 'DONE'}"
+TransportSMTtoSMT;SMTLine;reload-Slave;Products;list;;{'oneLayerPCB-prodB': -5, 'oneLayerPCB-prodB-Bottom': 5}
+TransportSMTtoSMT;SMTLine;reload-Slave;NodeIDCommand;string;;"{'ns=2;i=3095': 'DONE'}"
+TransportSMTtoSMT;SMTLine;reload-Slave;BrowseTree;string;;"{'SMTLine;Inter_SEE_comm;Synchronisation;message': 'DONE'}"
+;;;;;;
+;;;;;;
+PrepareSMTAssemblyLine_Top;SMTLineOperator;configureSMTLineOperator-Master;OvenHeatingZoneTemperatures;list;°C;[1: 250, 2: 400, 3: 300]
+PrepareSMTAssemblyLine_Top;SMTLineOperator;configureSMTLineOperator-Master;OvenConveyorSpeed;double;m/s;1
+PrepareSMTAssemblyLine_Top;SMTLineOperator;configureSMTLineOperator-Master;OvenNitorgenUsage;double;l/min;2
+PrepareSMTAssemblyLine_Top;SMTLineOperator;configureSMTLineOperator-Master;PastType;string;;Black
+PrepareSMTAssemblyLine_Top;SMTLineOperator;configureSMTLineOperator-Master;StancilThickness;double;mm;1
+PrepareSMTAssemblyLine_Top;SMTLineOperator;configureSMTLineOperator-Master;ProgramName;string;path;/home/machine/SkillPro-top.prog
+PrepareSMTAssemblyLine_Top;SMTLineOperator;configureSMTLineOperator-Master;PartsFeedersProperty;list;;[1: 250, 2: 400, 3: 300]
+PrepareSMTAssemblyLine_Top;SMTLineOperator;configureSMTLineOperator-Master;Instruction;string;;Please configure SMT Assembli Line
+PrepareSMTAssemblyLine_Top;SMTLineOperator;configureSMTLineOperator-Master;NodeID;string;;"{'ns=2;i=3095': 'DONE'}"
+PrepareSMTAssemblyLine_Top;SMTLineOperator;configureSMTLineOperator-Master;BrowseTree;string;;"{'SMTLine;Inter_SEE_comm;Synchronisation;message': 'DONE'}"
+PrepareSMTAssemblyLine_Top;SMTLine;configureSMTLine-Slave;OvenHeatingZoneTemperatures;list;°C;[1: 250, 2: 400, 3: 300]
+PrepareSMTAssemblyLine_Top;SMTLine;configureSMTLine-Slave;OvenConveyorSpeed;double;m/s;1
+PrepareSMTAssemblyLine_Top;SMTLine;configureSMTLine-Slave;OvenNitorgenUsage;double;l/min;2
+PrepareSMTAssemblyLine_Top;SMTLine;configureSMTLine-Slave;PastType;string;;Black
+PrepareSMTAssemblyLine_Top;SMTLine;configureSMTLine-Slave;StancilThickness;double;mm;1
+PrepareSMTAssemblyLine_Top;SMTLine;configureSMTLine-Slave;ProgramName;string;path;/home/machine/SkillPro-top.prog
+PrepareSMTAssemblyLine_Top;SMTLine;configureSMTLine-Slave;PartsFeedersProperty;list;;[1: 250, 2: 400, 3: 300]
+PrepareSMTAssemblyLine_Top;SMTLine;configureSMTLine-Slave;NodeID;string;;"{'ns=2;i=3095': 'DONE'}"
+PrepareSMTAssemblyLine_Top;SMTLine;configureSMTLine-Slave;BrowseTree;string;;"{'SMTLine;Inter_SEE_comm;Synchronisation;message': 'DONE'}"
+;;;;;;
+;;;;;;
+TransportSMTtoTHT1;THTOperator1;transportHuman-Master;Products;list;;{'oneLayerPCB-prodB': 5}
+TransportSMTtoTHT1;THTOperator1;transportHuman-Master;LocationStart;string;;SMT Assembly Line
+TransportSMTtoTHT1;THTOperator1;transportHuman-Master;LocationGoal;string;;THT Workplace 1
+TransportSMTtoTHT1;THTOperator1;transportHuman-Master;NodeID;string;;"{'ns=2;i=3095': 'DONE', 'ns=2;i=3151': 'DONE'}"
+TransportSMTtoTHT1;THTOperator1;transportHuman-Master;BrowseTree;string;;"{'SMTLine;Inter_SEE_comm;Synchronisation;message': 'DONE', 'THTWorkplace1;Inter_SEE_comm;Synchronisation;message': 'DONE'}"
+TransportSMTtoTHT1;SMTLine;unload-Slave;Products;list;;{'oneLayerPCB-prodB': -5}
+TransportSMTtoTHT1;SMTLine;unload-Slave;NodeID;string;;"{'ns=2;i=3095': 'DONE'}"
+TransportSMTtoTHT1;SMTLine;unload-Slave;BrowseTree;string;;"{'SMTLine;Inter_SEE_comm;Synchronisation;message': 'DONE'}"
+TransportSMTtoTHT1;THTWorkplace1;load-Slave;Products;list;;{'oneLayerPCB-prodB': 5}
+TransportSMTtoTHT1;THTWorkplace1;load-Slave;NodeID;string;;"{'ns=2;i=3151': 'DONE'}"
+TransportSMTtoTHT1;THTWorkplace1;load-Slave;BrowseTree;string;;"{'THTWorkplace1;Inter_SEE_comm;Synchronisation;message': 'DONE'}"
+;;;;;;
+;;;;;;
+THT1Assembly;THTOperator1;doTHTAssembly-Master;Plan;;;http://10.69.69.199:8080/app/images/schematic.jpg
+THT1Assembly;THTOperator1;doTHTAssembly-Master;Instruction;string;;Please do THT assembly
+THT1Assembly;THTOperator1;doTHTAssembly-Master;NodeID;string;;"{'ns=2;i=3151': 'DONE'}"
+THT1Assembly;THTOperator1;doTHTAssembly-Master;BrowseTree;string;;"{'THTWorkplace1;Inter_SEE_comm;Synchronisation;message': 'DONE'}"
+THT1Assembly;THTWorkplace1;produce-Main;NodeID;string;;"{'ns=2;i=3151': 'DONE'}"
+THT1Assembly;THTWorkplace1;produce-Main;BrowseTree;string;;"{'THTWorkplace1;Inter_SEE_comm;Synchronisation;message': 'DONE'}"
+;;;;;;
+;;;;;;
+TransportTHT1toTHTWaveSolderingOven;THTOperator1;transportHuman-Master;Products;list;;{'THTassembledPCB-prodB': 5}
+TransportTHT1toTHTWaveSolderingOven;THTOperator1;transportHuman-Master;LocationStart;string;;THT Workplace 1
+TransportTHT1toTHTWaveSolderingOven;THTOperator1;transportHuman-Master;LocationGoal;string;;THT Wave Soldering Oven
+TransportTHT1toTHTWaveSolderingOven;THTOperator1;transportHuman-Master;NodeID;string;;"{'ns=2;i=3151': 'DONE', 'ns=2;i=3138': 'DONE'}"
+TransportTHT1toTHTWaveSolderingOven;THTOperator1;transportHuman-Master;BrowseTree;string;;"{'THTWorkplace1;Inter_SEE_comm;Synchronisation;message': 'DONE', 'THTWaveSolderingOven;Inter_SEE_comm;Synchronisation;message': 'DONE'}"
+TransportTHT1toTHTWaveSolderingOven;THTWorkplace1;unload-Slave;Products;list;;{'THTassembledPCB-prodB': -5}
+TransportTHT1toTHTWaveSolderingOven;THTWorkplace1;unload-Slave;NodeID;string;;"{'ns=2;i=3151': 'DONE'}"
+TransportTHT1toTHTWaveSolderingOven;THTWorkplace1;unload-Slave;BrowseTree;string;;"{'THTWorkplace1;Inter_SEE_comm;Synchronisation;message': 'DONE'}"
+TransportTHT1toTHTWaveSolderingOven;THTWaveSolderingOven;load-Slave;Products;list;;{'THTassembledPCB-prodB': 5}
+TransportTHT1toTHTWaveSolderingOven;THTWaveSolderingOven;load-Slave;NodeID;string;;"{'ns=2;i=3138': 'DONE'}"
+TransportTHT1toTHTWaveSolderingOven;THTWaveSolderingOven;load-Slave;BrowseTree;string;;"{'THTWaveSolderingOven;Inter_SEE_comm;Synchronisation;message': 'DONE'}"
+;;;;;;
+;;;;;;
+PrepareTHT1WaveSolderingOven;THTOperator1;configureTHTWaveSolderingOperator-Master;ConveyorSpeed;double;m/s;1
+PrepareTHT1WaveSolderingOven;THTOperator1;configureTHTWaveSolderingOperator-Master;HeatingZoneTemperatures;list;°C;[1: 250, 2: 400, 3: 300]
+PrepareTHT1WaveSolderingOven;THTOperator1;configureTHTWaveSolderingOperator-Master;Instruction;string;;Please configure the THT Wave Soldering Oven
+PrepareTHT1WaveSolderingOven;THTOperator1;configureTHTWaveSolderingOperator-Master;NodeID;string;;"{'ns=2;i=3138': 'DONE'}"
+PrepareTHT1WaveSolderingOven;THTOperator1;configureTHTWaveSolderingOperator-Master;BrowseTree;string;;"{'THTWaveSolderingOven;Inter_SEE_comm;Synchronisation;message': 'DONE'}"
+PrepareTHT1WaveSolderingOven;THTWaveSolderingOven;configureTHTWaveSoldering-Slave;ConveyorSpeed;double;m/s;1
+PrepareTHT1WaveSolderingOven;THTWaveSolderingOven;configureTHTWaveSoldering-Slave;HeatingZoneTemperatures;list;°C;[1: 250, 2: 400, 3: 300]
+PrepareTHT1WaveSolderingOven;THTWaveSolderingOven;configureTHTWaveSoldering-Slave;NodeID;string;;"{'ns=2;i=3138': 'DONE'}"
+PrepareTHT1WaveSolderingOven;THTWaveSolderingOven;configureTHTWaveSoldering-Slave;BrowseTree;string;;"{'THTWaveSolderingOven;Inter_SEE_comm;Synchronisation;message': 'DONE'}"
+;;;;;;
+;;;;;;
+TransportSMTtoTHT2;THTOperator2;transportHuman-Master;Products;list;;{'oneLayerPCB-prodB': 5}
+TransportSMTtoTHT2;THTOperator2;transportHuman-Master;LocationStart;string;;SMT Assembly Line
+TransportSMTtoTHT2;THTOperator2;transportHuman-Master;LocationGoal;string;;THT Workplace 2
+TransportSMTtoTHT2;THTOperator2;transportHuman-Master;NodeID;string;;"{'ns=2;i=3095': 'DONE', 'ns=2;i=3169': 'DONE'}"
+TransportSMTtoTHT2;THTOperator2;transportHuman-Master;BrowseTree;string;;"{'SMTLine;Inter_SEE_comm;Synchronisation;message': 'DONE', 'THTWorkplace2;Inter_SEE_comm;Synchronisation;message': 'DONE'}"
+TransportSMTtoTHT2;SMTLine;unload-Slave;Products;list;;{'oneLayerPCB-prodB': -5}
+TransportSMTtoTHT2;SMTLine;unload-Slave;NodeID;string;;"{'ns=2;i=3095': 'DONE'}"
+TransportSMTtoTHT2;SMTLine;unload-Slave;BrowseTree;string;;"{'SMTLine;Inter_SEE_comm;Synchronisation;message': 'DONE'}"
+TransportSMTtoTHT2;THTWorkplace2;load-Slave;Products;list;;{'oneLayerPCB-prodB': 5}
+TransportSMTtoTHT2;THTWorkplace2;load-Slave;NodeID;string;;"{'ns=2;i=3169': 'DONE'}"
+TransportSMTtoTHT2;THTWorkplace2;load-Slave;BrowseTree;string;;"{'THTWorkplace2;Inter_SEE_comm;Synchronisation;message': 'DONE'}"
+;;;;;;
+;;;;;;
+THT2Assembly;THTOperator2;doTHTAssembly-Master;Plan;;;http://10.69.69.199:8080/app/images/schematic.jpg
+THT2Assembly;THTOperator2;doTHTAssembly-Master;Instruction;string;;Please do THT assembly according to the plan
+THT2Assembly;THTOperator2;doTHTAssembly-Master;NodeID;string;;"{'ns=2;i=3169': 'DONE'}"
+THT2Assembly;THTOperator2;doTHTAssembly-Master;BrowseTree;string;;"{'THTWorkplace2;Inter_SEE_comm;Synchronisation;message': 'DONE'}"
+THT2Assembly;THTWorkplace2;produce-Main;NodeID;string;;"{'ns=2;i=3169': 'DONE'}"
+THT2Assembly;THTWorkplace2;produce-Main;BrowseTree;string;;"{'THTWorkplace2;Inter_SEE_comm;Synchronisation;message': 'DONE'}"
+;;;;;;
+;;;;;;
+TransportTHT2toTHTWaveSolderingOven;THTOperator2;transportHuman-Master;Products;list;;{'THTassembledPCB-prodB': 5}
+TransportTHT2toTHTWaveSolderingOven;THTOperator2;transportHuman-Master;LocationStart;string;;THT Workplace 2
+TransportTHT2toTHTWaveSolderingOven;THTOperator2;transportHuman-Master;LocationGoal;string;;THT Wave Soldering Oven
+TransportTHT2toTHTWaveSolderingOven;THTOperator2;transportHuman-Master;NodeID;string;;"{'ns=2;i=3169': 'DONE', 'ns=2;i=3138': 'DONE'}"
+TransportTHT2toTHTWaveSolderingOven;THTOperator2;transportHuman-Master;BrowseTree;string;;"{'THTWorkplace2;Inter_SEE_comm;Synchronisation;message': 'DONE', 'THTWaveSolderingOven;Inter_SEE_comm;Synchronisation;message': 'DONE'}"
+TransportTHT2toTHTWaveSolderingOven;THTWorkplace2;unload-Slave;Products;list;;{'THTassembledPCB-prodB': -5}
+TransportTHT2toTHTWaveSolderingOven;THTWorkplace2;unload-Slave;NodeID;string;;"{'ns=2;i=3169': 'DONE'}"
+TransportTHT2toTHTWaveSolderingOven;THTWorkplace2;unload-Slave;BrowseTree;string;;"{'THTWorkplace2;Inter_SEE_comm;Synchronisation;message': 'DONE'}"
+TransportTHT2toTHTWaveSolderingOven;THTWaveSolderingOven;load-Slave;Products;list;;{'THTassembledPCB-prodB': 5}
+TransportTHT2toTHTWaveSolderingOven;THTWaveSolderingOven;load-Slave;NodeID;string;;"{'ns=2;i=3138': 'DONE'}"
+TransportTHT2toTHTWaveSolderingOven;THTWaveSolderingOven;load-Slave;BrowseTree;string;;"{'THTWaveSolderingOven;Inter_SEE_comm;Synchronisation;message': 'DONE'}"
+;;;;;;
+;;;;;;
+PrepareTHT2WaveSolderingOven;THTOperator2;configureTHTWaveSolderingOperator-Master;ConveyorSpeed;double;m/s;1
+PrepareTHT2WaveSolderingOven;THTOperator2;configureTHTWaveSolderingOperator-Master;HeatingZoneTemperatures;list;°C;[1: 250, 2: 400, 3: 300]
+PrepareTHT2WaveSolderingOven;THTOperator2;configureTHTWaveSolderingOperator-Master;Instruction;string;;Please configure the THT Wave Soldering Oven
+PrepareTHT2WaveSolderingOven;THTOperator2;configureTHTWaveSolderingOperator-Master;NodeID;string;;"{'ns=2;i=3138': 'DONE'}"
+PrepareTHT2WaveSolderingOven;THTOperator2;configureTHTWaveSolderingOperator-Master;BrowseTree;string;;"{'THTWaveSolderingOven;Inter_SEE_comm;Synchronisation;message': 'DONE'}"
+PrepareTHT2WaveSolderingOven;THTWaveSolderingOven;configureTHTWaveSoldering-Slave;ConveyorSpeed;double;m/s;1
+PrepareTHT2WaveSolderingOven;THTWaveSolderingOven;configureTHTWaveSoldering-Slave;HeatingZoneTemperatures;list;°C;[1: 250, 2: 400, 3: 300]
+PrepareTHT2WaveSolderingOven;THTWaveSolderingOven;configureTHTWaveSoldering-Slave;NodeID;string;;"{'ns=2;i=3138': 'DONE'}"
+PrepareTHT2WaveSolderingOven;THTWaveSolderingOven;configureTHTWaveSoldering-Slave;BrowseTree;string;;"{'THTWaveSolderingOven;Inter_SEE_comm;Synchronisation;message': 'DONE'}"
+;;;;;;
+;;;;;;
+TransportTHTWaveSolderingOventoOpticalInspectionWorkplace;OpticalInspectionOperator;transportHuman-Master;Products;list;;{'THTSolderedPCB-prodB': 5}
+TransportTHTWaveSolderingOventoOpticalInspectionWorkplace;OpticalInspectionOperator;transportHuman-Master;LocationStart;string;;THT Wave Soldering Oven
+TransportTHTWaveSolderingOventoOpticalInspectionWorkplace;OpticalInspectionOperator;transportHuman-Master;LocationGoal;string;;Optical Inspection Workplace
+TransportTHTWaveSolderingOventoOpticalInspectionWorkplace;OpticalInspectionOperator;transportHuman-Master;NodeID;string;;"{'ns=2;i=3138': 'DONE', 'ns=2;i=3059': 'DONE'}"
+TransportTHTWaveSolderingOventoOpticalInspectionWorkplace;OpticalInspectionOperator;transportHuman-Master;BrowseTree;string;;"{'THTWaveSolderingOven;Inter_SEE_comm;Synchronisation;message': 'DONE', 'OpticalInspectionWorkplace;Inter_SEE_comm;Synchronisation;message': 'DONE'}"
+TransportTHTWaveSolderingOventoOpticalInspectionWorkplace;THTWaveSolderingOven;unload-Slave;Products;list;;{'THTSolderedPCB-prodB': -5}
+TransportTHTWaveSolderingOventoOpticalInspectionWorkplace;THTWaveSolderingOven;unload-Slave;NodeID;string;;"{'ns=2;i=3138': 'DONE'}"
+TransportTHTWaveSolderingOventoOpticalInspectionWorkplace;THTWaveSolderingOven;unload-Slave;BrowseTree;string;;"{'THTWaveSolderingOven;Inter_SEE_comm;Synchronisation;message': 'DONE'}"
+TransportTHTWaveSolderingOventoOpticalInspectionWorkplace;OpticalInspectionWorkplace;load-Slave;Products;list;;{'THTSolderedPCB-prodB': 5}
+TransportTHTWaveSolderingOventoOpticalInspectionWorkplace;OpticalInspectionWorkplace;load-Slave;NodeID;string;;"{'ns=2;i=3059': 'DONE'}"
+TransportTHTWaveSolderingOventoOpticalInspectionWorkplace;OpticalInspectionWorkplace;load-Slave;BrowseTree;string;;"{'OpticalInspectionWorkplace;Inter_SEE_comm;Synchronisation;message': 'DONE'}"
+;;;;;;
+;;;;;;
+OpticalInspection;OpticalInspectionOperator;opticalInspection-Master;InspectionPlan;;;http://10.69.69.199:8080/app/images/schematic.jpg
+OpticalInspection;OpticalInspectionOperator;opticalInspection-Master;Instruction;string;;Please do standard inspection
+OpticalInspection;OpticalInspectionOperator;opticalInspection-Master;NodeID;string;;"{'ns=2;i=3059': 'DONE'}"
+OpticalInspection;OpticalInspectionOperator;opticalInspection-Master;BrowseTree;string;;"{'OpticalInspectionWorkplace;Inter_SEE_comm;Synchronisation;message': 'DONE'}"
+OpticalInspection;OpticalInspectionWorkplace;produce-Main;NodeID;string;;"{'ns=2;i=3059': 'DONE'}"
+OpticalInspection;OpticalInspectionWorkplace;produce-Main;BrowseTree;string;;"{'OpticalInspectionWorkplace;Inter_SEE_comm;Synchronisation;message': 'DONE'}"
+;;;;;;
+;;;;;;
+TransportOpticalInspectionWorkplacetoTHTHandSoldering;THTOperator1;transportHuman-Master;Products;list;;{'opticalInspectedPCB-prodB': 5}
+TransportOpticalInspectionWorkplacetoTHTHandSoldering;THTOperator1;transportHuman-Master;LocationStart;string;;Optical Inspection Workplace
+TransportOpticalInspectionWorkplacetoTHTHandSoldering;THTOperator1;transportHuman-Master;LocationGoal;string;;THT Workplace 1
+TransportOpticalInspectionWorkplacetoTHTHandSoldering;THTOperator1;transportHuman-Master;NodeID;string;;"{'ns=2;i=3059': 'DONE', 'ns=2;i=3151': 'DONE'}"
+TransportOpticalInspectionWorkplacetoTHTHandSoldering;THTOperator1;transportHuman-Master;BrowseTree;string;;"{'OpticalInspectionWorkplace;Inter_SEE_comm;Synchronisation;message': 'DONE', 'THTWorkplace1;Inter_SEE_comm;Synchronisation;message': 'DONE'}"
+TransportOpticalInspectionWorkplacetoTHTHandSoldering;OpticalInspectionWorkplace;unload-Slave;Products;list;;{'opticalInspectedPCB-prodB': -5}
+TransportOpticalInspectionWorkplacetoTHTHandSoldering;OpticalInspectionWorkplace;unload-Slave;NodeID;string;;"{'ns=2;i=3059': 'DONE'}"
+TransportOpticalInspectionWorkplacetoTHTHandSoldering;OpticalInspectionWorkplace;unload-Slave;BrowseTree;string;;"{'OpticalInspectionWorkplace;Inter_SEE_comm;Synchronisation;message': 'DONE'}"
+TransportOpticalInspectionWorkplacetoTHTHandSoldering;THTWorkplace1;load-Slave;Products;list;;{'opticalInspectedPCB-prodB': 5}
+TransportOpticalInspectionWorkplacetoTHTHandSoldering;THTWorkplace1;load-Slave;NodeID;string;;"{'ns=2;i=3151': 'DONE'}"
+TransportOpticalInspectionWorkplacetoTHTHandSoldering;THTWorkplace1;load-Slave;BrowseTree;string;;"{'THTWorkplace1;Inter_SEE_comm;Synchronisation;message': 'DONE'}"
+;;;;;;
+;;;;;;
+THTHandSoldering;THTOperator1;handSoldering-Master;Plan;;;http://10.69.69.199:8080/app/images/schematic.jpg
+THTHandSoldering;THTOperator1;handSoldering-Master;Instruction;string;;Please do hand soldering
+THTHandSoldering;THTOperator1;handSoldering-Master;NodeID;string;;"{'ns=2;i=3151': 'DONE'}"
+THTHandSoldering;THTOperator1;handSoldering-Master;BrowseTree;string;;"{'THTWorkplace1;Inter_SEE_comm;Synchronisation;message': 'DONE'}"
+THTHandSoldering;THTWorkplace1;produce-Main;NodeID;string;;"{'ns=2;i=3151': 'DONE'}"
+THTHandSoldering;THTWorkplace1;produce-Main;BrowseTree;string;;"{'THTWorkplace1;Inter_SEE_comm;Synchronisation;message': 'DONE'}"
+;;;;;;
+;;;;;;
+TransportTHTHandSolderingtoManualInspectionWorkplace;THTOperator1;transportHuman-Master;Products;list;;{'THTHandSolderedPCB-prodB': 5}
+TransportTHTHandSolderingtoManualInspectionWorkplace;THTOperator1;transportHuman-Master;LocationStart;string;;THT Workplace 1
+TransportTHTHandSolderingtoManualInspectionWorkplace;THTOperator1;transportHuman-Master;LocationGoal;string;;Manual Inspection Workplace
+TransportTHTHandSolderingtoManualInspectionWorkplace;THTOperator1;transportHuman-Master;NodeID;string;;"{'ns=2;i=3151': 'DONE', 'ns=2;i=3036': 'DONE'}"
+TransportTHTHandSolderingtoManualInspectionWorkplace;THTOperator1;transportHuman-Master;BrowseTree;string;;"{'THTWorkplace1;Inter_SEE_comm;Synchronisation;message': 'DONE', 'ManualInspectionWorkplace;Inter_SEE_comm;Synchronisation;message': 'DONE'}"
+TransportTHTHandSolderingtoManualInspectionWorkplace;THTWorkplace1;unload-Slave;Products;list;;{'THTHandSolderedPCB-prodB': -5}
+TransportTHTHandSolderingtoManualInspectionWorkplace;THTWorkplace1;unload-Slave;NodeID;string;;"{'ns=2;i=3151': 'DONE'}"
+TransportTHTHandSolderingtoManualInspectionWorkplace;THTWorkplace1;unload-Slave;BrowseTree;string;;"{'THTWorkplace1;Inter_SEE_comm;Synchronisation;message': 'DONE'}"
+TransportTHTHandSolderingtoManualInspectionWorkplace;ManualInspectionWorkplace;load-Slave;Products;list;;{'THTHandSolderedPCB-prodB': 5}
+TransportTHTHandSolderingtoManualInspectionWorkplace;ManualInspectionWorkplace;load-Slave;NodeID;string;;"{'ns=2;i=3036': 'DONE'}"
+TransportTHTHandSolderingtoManualInspectionWorkplace;ManualInspectionWorkplace;load-Slave;BrowseTree;string;;"{'ManualInspectionWorkplace;Inter_SEE_comm;Synchronisation;message': 'DONE'}"
+;;;;;;
+;;;;;;
+ManualInspection;THTOperator1;manualInspection-Master;ProductInformation;;;http://10.69.69.199:8080/app/images/schematic.jpg
+ManualInspection;THTOperator1;manualInspection-Master;Instruction;;;Please do standard inspection
+ManualInspection;THTOperator1;manualInspection-Master;NodeID;string;;"{'ns=2;i=3036': 'DONE'}"
+ManualInspection;THTOperator1;manualInspection-Master;BrowseTree;string;;"{'ManualInspectionWorkplace;Inter_SEE_comm;Synchronisation;message': 'DONE'}"
+ManualInspection;ManualInspectionWorkplace;produce-Main;NodeID;string;;"{'ns=2;i=3036': 'DONE'}"
+ManualInspection;ManualInspectionWorkplace;produce-Main;BrowseTree;string;;"{'ManualInspectionWorkplace;Inter_SEE_comm;Synchronisation;message': 'DONE'}"
+;;;;;;
+;;;;;;
+TransportManualInspectionWorkplaceToWashingWorkplace;WashingOperator;transportHuman-Master;Products;list;;{'ManualInspectedPCB-prodB': 5}
+TransportManualInspectionWorkplaceToWashingWorkplace;WashingOperator;transportHuman-Master;LocationStart;string;;Manual Inspection Workplace
+TransportManualInspectionWorkplaceToWashingWorkplace;WashingOperator;transportHuman-Master;LocationGoal;string;;Washing Workplace
+TransportManualInspectionWorkplaceToWashingWorkplace;WashingOperator;transportHuman-Master;NodeID;string;;"{'ns=2;i=3036': 'DONE', 'ns=2;i=3187': 'DONE'}"
+TransportManualInspectionWorkplaceToWashingWorkplace;WashingOperator;transportHuman-Master;BrowseTree;string;;"{'ManualInspectionWorkplace;Inter_SEE_comm;Synchronisation;message': 'DONE', 'WashingWorkplace;Inter_SEE_comm;Synchronisation;message': 'DONE',}"
+TransportManualInspectionWorkplaceToWashingWorkplace;ManualInspectionWorkplace;unload-Slave;Products;list;;{'ManualInspectedPCB-prodB': -5}
+TransportManualInspectionWorkplaceToWashingWorkplace;ManualInspectionWorkplace;unload-Slave;NodeID;string;;"{'ns=2;i=3036': 'DONE'}"
+TransportManualInspectionWorkplaceToWashingWorkplace;ManualInspectionWorkplace;unload-Slave;BrowseTree;string;;"{'ManualInspectionWorkplace;Inter_SEE_comm;Synchronisation;message': 'DONE'}"
+TransportManualInspectionWorkplaceToWashingWorkplace;WashingWorkplace;load-Slave;Products;list;;{'ManualInspectedPCB-prodB': 5}
+TransportManualInspectionWorkplaceToWashingWorkplace;WashingWorkplace;load-Slave;NodeID;string;;"{'ns=2;i=3187': 'DONE'}"
+TransportManualInspectionWorkplaceToWashingWorkplace;WashingWorkplace;load-Slave;BrowseTree;string;;"{'WashingWorkplace;Inter_SEE_comm;Synchronisation;message': 'DONE'}"
+;;;;;;
+;;;;;;
+Washing;WashingOperator;washing-Master;Instruction;;;Please wash the PCB
+Washing;WashingOperator;washing-Master;NodeID;string;;"{'ns=2;i=3187': 'DONE'}"
+Washing;WashingOperator;washing-Master;BrowseTree;string;;"{'WashingWorkplace;Inter_SEE_comm;Synchronisation;message': 'DONE'}"
+Washing;WashingWorkplace;produce-Main;NodeID;string;;"{'ns=2;i=3187': 'DONE'}"
+Washing;WashingWorkplace;produce-Main;BrowseTree;string;;"{'WashingWorkplace;Inter_SEE_comm;Synchronisation;message': 'DONE'}"
+;;;;;;
+;;;;;;
+TransportWashingWorkplacetoFunctionalTestingWorkplace;FunctionalTestingOperator;transportHuman-Master;Products;list;;{'WashedPCB-prodB': 5}
+TransportWashingWorkplacetoFunctionalTestingWorkplace;FunctionalTestingOperator;transportHuman-Master;LocationStart;string;;Washing Workplace
+TransportWashingWorkplacetoFunctionalTestingWorkplace;FunctionalTestingOperator;transportHuman-Master;LocationGoal;string;;Functional Testing Workplace
+TransportWashingWorkplacetoFunctionalTestingWorkplace;FunctionalTestingOperator;transportHuman-Master;NodeID;string;;"{'ns=2;i=3187': 'DONE', 'ns=2;i=3023': 'DONE'}"
+TransportWashingWorkplacetoFunctionalTestingWorkplace;FunctionalTestingOperator;transportHuman-Master;BrowseTree;string;;"{'WashingWorkplace;Inter_SEE_comm;Synchronisation;message': 'DONE', 'FunctionalTestingWorkplace;Inter_SEE_comm;Synchronisation;message': 'DONE',}"
+TransportWashingWorkplacetoFunctionalTestingWorkplace;WashingWorkplace;unload-Slave;Products;list;;{'WashedPCB-prodB': -5}
+TransportWashingWorkplacetoFunctionalTestingWorkplace;WashingWorkplace;unload-Slave;NodeID;string;;"{'ns=2;i=3187': 'DONE'}"
+TransportWashingWorkplacetoFunctionalTestingWorkplace;WashingWorkplace;unload-Slave;BrowseTree;string;;"{'WashingWorkplace;Inter_SEE_comm;Synchronisation;message': 'DONE'}"
+TransportWashingWorkplacetoFunctionalTestingWorkplace;FunctionalTestingWorkplace;load-Slave;Products;list;;{'WashedPCB-prodB': 5}
+TransportWashingWorkplacetoFunctionalTestingWorkplace;FunctionalTestingWorkplace;load-Slave;NodeID;string;;"{'ns=2;i=3023': 'DONE'}"
+TransportWashingWorkplacetoFunctionalTestingWorkplace;FunctionalTestingWorkplace;load-Slave;BrowseTree;string;;"{'FunctionalTestingWorkplace;Inter_SEE_comm;Synchronisation;message': 'DONE'}"
+;;;;;;
+;;;;;;
+FunctionalTesting;FunctionalTestingOperator;functionalTesting-Master;TestPlan;;;Please do standard testing
+FunctionalTesting;FunctionalTestingOperator;functionalTesting-Master;TestEquipement;list;;{'Oscilloscope': 1, 'Multimeter': 2, 'Magnifier': 1}
+FunctionalTesting;FunctionalTestingOperator;functionalTesting-Master;NodeID;string;;"{'ns=2;i=3023': 'DONE'}"
+FunctionalTesting;FunctionalTestingOperator;functionalTesting-Master;BrowseTree;string;;"{'FunctionalTestingWorkplace;Inter_SEE_comm;Synchronisation;message': 'DONE'}"
+FunctionalTesting;FunctionalTestingWorkplace;produce-Main;NodeID;string;;"{'ns=2;i=3023': 'DONE'}"
+FunctionalTesting;FunctionalTestingWorkplace;produce-Main;BrowseTree;string;;"{'FunctionalTestingWorkplace;Inter_SEE_comm;Synchronisation;message': 'DONE'}"
+;;;;;;
+;;;;;;
+TransportFunctionalTestingWorkplacetoQualityControlWorkplace;QualityControlOperator;transportHuman-Master;Products;list;;{'FunctionalTestedPCB-prodB': 5}
+TransportFunctionalTestingWorkplacetoQualityControlWorkplace;QualityControlOperator;transportHuman-Master;LocationStart;string;;Functional Testing Workplace
+TransportFunctionalTestingWorkplacetoQualityControlWorkplace;QualityControlOperator;transportHuman-Master;LocationGoal;string;;Quality Control Workplace
+TransportFunctionalTestingWorkplacetoQualityControlWorkplace;QualityControlOperator;transportHuman-Master;NodeID;string;;"{'ns=2;i=3023': 'DONE', 'ns=2;i=3082': 'DONE'}"
+TransportFunctionalTestingWorkplacetoQualityControlWorkplace;QualityControlOperator;transportHuman-Master;BrowseTree;string;;"{'FunctionalTestingWorkplace;Inter_SEE_comm;Synchronisation;message': 'DONE', 'QualityControlWorkplace;Inter_SEE_comm;Synchronisation;message': 'DONE'}"
+TransportFunctionalTestingWorkplacetoQualityControlWorkplace;FunctionalTestingWorkplace;unload-Slave;Products;list;;{'FunctionalTestedPCB-prodB': -5}
+TransportFunctionalTestingWorkplacetoQualityControlWorkplace;FunctionalTestingWorkplace;unload-Slave;NodeID;string;;"{'ns=2;i=3023': 'DONE'}"
+TransportFunctionalTestingWorkplacetoQualityControlWorkplace;FunctionalTestingWorkplace;unload-Slave;BrowseTree;string;;"{'FunctionalTestingWorkplace;Inter_SEE_comm;Synchronisation;message': 'DONE'}"
+TransportFunctionalTestingWorkplacetoQualityControlWorkplace;QualityControlWorkplace;load-Slave;Products;list;;{'FunctionalTestedPCB-prodB': 5}
+TransportFunctionalTestingWorkplacetoQualityControlWorkplace;QualityControlWorkplace;load-Slave;NodeID;string;;"{'ns=2;i=3082': 'DONE'}"
+TransportFunctionalTestingWorkplacetoQualityControlWorkplace;QualityControlWorkplace;load-Slave;BrowseTree;string;;"{'QualityControlWorkplace;Inter_SEE_comm;Synchronisation;message': 'DONE'}"
+;;;;;;
+;;;;;;
+QualityControl;QualityControlOperator;qualityControl-Master;ControlPlan;;;Please do standard control procedure
+QualityControl;QualityControlOperator;qualityControl-Master;NodeID;string;;"{'ns=2;i=3082': 'DONE'}"
+QualityControl;QualityControlOperator;qualityControl-Master;BrowseTree;string;;"{'QualityControlWorkplace;Inter_SEE_comm;Synchronisation;message': 'DONE'}"
+QualityControl;QualityControlWorkplace;produce-Main;NodeID;string;;"{'ns=2;i=3082': 'DONE'}"
+QualityControl;QualityControlWorkplace;produce-Main;BrowseTree;string;;"{'QualityControlWorkplace;Inter_SEE_comm;Synchronisation;message': 'DONE'}"

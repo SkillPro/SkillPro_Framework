@@ -1,0 +1,95 @@
+/*****************************************************************************
+ *
+ * Copyright 2012-2016 SkillPro Consortium
+ *
+ * Author: PDE, FZI, pde@fzi.de
+ *
+ * Date of creation: 2012-2016
+ *
+ * Module: Production System Configuration Manager (PSCM)
+ *
+ * +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ *
+ * This file is part of the AMS (Asset Management System), which has been developed
+ * at the PDE department of the FZI, Karlsruhe. It is part of the SkillPro Framework,
+ * which is is developed in the SkillPro project, funded by the European FP7
+ * programme (Grant Agreement 287733).
+ *
+ * The SkillPro Framework is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU Lesser General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ * 
+ * The SkillPro Framework is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+ * GNU Lesser General Public License for more details.
+ * 
+ * You should have received a copy of the GNU Lesser General Public License
+ * along with the SkillPro Framework. If not, see <http://www.gnu.org/licenses/>.
+*****************************************************************************/
+
+package skillpro.providers.skill;
+
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.List;
+
+import org.eclipse.jface.viewers.ITreeContentProvider;
+import org.eclipse.jface.viewers.Viewer;
+
+import skillpro.model.skills.TemplateSkill;
+
+public class CompleteSkillContentProvider implements ITreeContentProvider {
+	@Override
+	public void dispose() {
+	}
+
+	@Override
+	public void inputChanged(Viewer viewer, Object oldInput, Object newInput) {
+		viewer.refresh();
+	}
+
+	@Override
+	public Object[] getElements(Object inputElement) {
+		if (inputElement == null) {
+			return new Object[] {};
+		} else if (inputElement instanceof Collection<?>) {
+			List<TemplateSkill> roots = new ArrayList<>();
+			Collection<?> collection = (Collection<?>) inputElement;
+			for (Object obj : collection) {
+				if (obj instanceof TemplateSkill) {
+					TemplateSkill skill = (TemplateSkill) obj;
+					if (skill.getParent() == null) {
+						roots.add(skill);
+					}
+				}
+			}
+			return roots.toArray();
+		} else
+			return new Object[] {};
+	}
+
+	@Override
+	public Object[] getChildren(Object parentElement) {
+		List<TemplateSkill> children = ((TemplateSkill) parentElement).getChildren();
+		if (children != null) {
+			return children.toArray();
+		}
+		return null;
+	}
+
+	@Override
+	public Object getParent(Object element) {
+		return ((TemplateSkill) element).getParent();
+	}
+
+	@Override
+	public boolean hasChildren(Object element) {
+		List<TemplateSkill> children = ((TemplateSkill) element).getChildren();
+		if (children != null && !children.isEmpty()) {
+			return true;
+		}
+		return false;
+	}
+}

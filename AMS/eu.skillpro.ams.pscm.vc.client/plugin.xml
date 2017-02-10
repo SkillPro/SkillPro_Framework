@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<!DOCTYPE xml>
+<plugin>
+   <extension
+         point="org.eclipse.ui.menus">
+      <menuContribution
+            allPopups="false"
+            locationURI="menu:org.eclipse.ui.main.menu">
+         <menu
+               id="skillpro.menu.synchronize"
+               label="Synchronize VIS">
+            <command
+                  commandId="skillpro.vc.ui.VCSynchronizeHandler"
+                  icon="icons/synch_participants.gif"
+                  label="VIS Synchronize"
+                  style="push">
+            </command>
+            <command
+                  commandId="skillpro.vc.ui.VCStartStopHandler"
+                  icon="icons/synced.gif"
+                  label="Start/Stop Synchronization"
+                  style="push">
+            </command>
+            <separator
+                  name="eu.skillpro.ams.pscm.vc.client.separator2"
+                  visible="true">
+            </separator>
+            <command
+                  commandId="skillpro.vc.httpclient.ui.handler.ConfigureVISConnector"
+                  icon="icons/configure.gif"
+                  label="Configure VIS Connector"
+                  style="push">
+            </command>
+         </menu>
+      </menuContribution>
+   </extension>
+   <extension
+         point="org.eclipse.ui.commands">
+      <command
+            defaultHandler="skillpro.vc.ui.ConfigureVISConnector"
+            id="skillpro.vc.httpclient.ui.handler.ConfigureVISConnector"
+            name="Configure VIS Connector">
+      </command>
+      <command
+            defaultHandler="skillpro.vc.ui.VCSynchronizeHandler"
+            id="skillpro.vc.ui.VCSynchronizeHandler"
+            name="VCSynchronize">
+      </command>
+      <command
+            defaultHandler="skillpro.vc.ui.VCStartStopHandler"
+            id="skillpro.vc.ui.VCStartStopHandler"
+            name="VCStartStop">
+      </command>
+   </extension>
+
+</plugin>

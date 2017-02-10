@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.ui.views">
+      <view
+            class="aml.gui.transformator.views.ParserView"
+            id="aml.gui.transformator.views.ParserView"
+            name="Parser"
+            restorable="true">
+      </view>
+      <view
+            class="aml.gui.transformator.views.RoleView"
+            id="aml.gui.transformator.views.RoleView"
+            name="Roles"
+            restorable="true">
+      </view>
+      <view
+            class="aml.gui.transformator.views.InternalElementView"
+            id="aml.gui.transformator.views.InternalElementView"
+            name="Instances"
+            restorable="true">
+      </view>
+   </extension>
+   <extension
+         point="org.eclipse.ui.commands">
+      <command
+            defaultHandler="aml.gui.transformator.commands.OpenAMLPerspective"
+            id="aml.gui.transformator.commands.OpenAMLPerspective"
+            name="Open AML Perspective">
+      </command>
+      <command
+            defaultHandler="aml.gui.transformator.commands.SaveDefaultMapping"
+            id="aml.gui.transformator.commands.SaveDefaultMapping"
+            name="Save default mapping">
+      </command>
+      <command
+            defaultHandler="aml.gui.transformator.commands.SaveMappingAs"
+            id="aml.gui.transformator.commands.SaveMappingAs"
+            name="Save mapping as">
+      </command>
+      <command
+            defaultHandler="aml.gui.transformator.commands.LoadMapping"
+            id="aml.gui.transformator.commands.LoadMapping"
+            name="Load mapping">
+      </command>
+      <command
+            defaultHandler="aml.gui.transformator.commands.LoadDefaultMapping"
+            id="aml.gui.transformator.commands.LoadDefaultMapping"
+            name="Load default mapping">
+      </command>
+      <command
+            defaultHandler="skillpro.asset.handlers.CreateSEEHandler"
+            id="skillpro.asset.handlers.CreateSEEHandler"
+            name="Create SEE">
+      </command>
+      <command
+            defaultHandler="dummy.generate.executableskill.ExportAndTestDummyExSkillsHandler"
+            id="dummy.generate.executableskill.ExportAndTestDummyExSkillsHandler"
+            name="Export and Test Dummies">
+      </command>
+      <command
+            defaultHandler="skillpro.asset.handlers.UpdateSEEsAMLHandler"
+            id="skillpro.asset.handlers.UpdateSEEsAMLHandler"
+            name="Update SEEs&apos; AML Description">
+      </command>
+   </extension>
+   <extension
+         point="org.eclipse.ui.perspectives">
+      <perspective
+            class="aml.gui.transformator.perspectives.AMLPerspective"
+            id="aml.gui.transformator.perspectives.AMLPerspective"
+            name="AML Perspective">
+      </perspective>
+   </extension>
+   <extension
+         point="org.eclipse.ui.menus">
+      <menuContribution
+            allPopups="false"
+            locationURI="menu:org.eclipse.ui.main.menu">
+         <menu
+               id="skillpro.menu.data"
+               label="Data">
+            <menu
+                  id="skillpro.menu.configuration.mapping"
+                  label="Configuration">
+               <command
+                     commandId="aml.gui.transformator.commands.SaveDefaultMapping"
+                     label="Save default mapping"
+                     style="push">
+               </command>
+               <command
+                     commandId="aml.gui.transformator.commands.LoadDefaultMapping"
+                     label="Load default mapping"
+                     style="push">
+               </command>
+               <separator
+                     name="eu.skillpro.ams.pscm.aml.gui.transformator.separator1"
+                     visible="true">
+               </separator>
+               <command
+                     commandId="aml.gui.transformator.commands.SaveMappingAs"
+                     label="Save mapping as"
+                     style="push">
+               </command>
+               <command
+                     commandId="aml.gui.transformator.commands.LoadMapping"
+                     label="Load mapping from"
+                     style="push">
+               </command>
+               <separator
+                     name="eu.skillpro.ams.pscm.aml.gui.transformator.separator2"
+                     visible="true">
+               </separator>
+            </menu>
+         </menu>
+      </menuContribution>
+      <menuContribution
+            allPopups="false"
+            locationURI="menu:org.eclipse.ui.main.menu?after=skillpro.menu.ams.service">
+         <menu
+               id="skillpro.menu.see"
+               label="SEE">
+            <command
+                  commandId="skillpro.asset.handlers.CreateSEEHandler"
+                  label="Create SEE"
+                  style="push">
+            </command>
+            <command
+                  commandId="skillpro.asset.handlers.UpdateSEEsAMLHandler"
+                  label="Update SEEs&apos; AML Description"
+                  style="push">
+            </command>
+         </menu>
+      </menuContribution>
+      <menuContribution
+            allPopups="false"
+            locationURI="menu:org.eclipse.ui.main.menu?after=skillpro.menu.see">
+         <menu
+               id="skillpro.menu.exskill"
+               label="ExecutableSkills">
+            <command
+                  commandId="dummy.generate.executableskill.ExportAndTestDummyExSkillsHandler"
+                  label="Export and Test Dummies"
+                  style="push">
+            </command>
+         </menu>
+      </menuContribution>
+   </extension>
+
+</plugin>

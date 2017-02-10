@@ -1,0 +1,17 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Service
+Bundle-SymbolicName: eu.skillpro.ams.pscm.aml.transformation.service;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: eu.skillpro.ams.pscm.aml.transformation.service.Activator
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime,
+ eu.skillpro.ams.pscm.aml.metamodel;bundle-version="1.0.0",
+ eu.skillpro.ams.pscm.aml.transformation.model;bundle-version="1.0.0"
+Bundle-ActivationPolicy: lazy
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Export-Package: aml.transformation.providers,
+ aml.transformation.repo,
+ aml.transformation.repo.aml,
+ aml.transformation.repo.transformation,
+ aml.transformation.service
