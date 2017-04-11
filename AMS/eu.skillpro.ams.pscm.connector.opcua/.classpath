@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry exported="true" kind="lib" path="libs/ant-contrib-1.0b3.jar"/>
+	<classpathentry exported="true" kind="lib" path="libs/bcpkix-jdk15on-147.jar"/>
+	<classpathentry exported="true" kind="lib" path="libs/bcprov-jdk15on-147.jar"/>
+	<classpathentry exported="true" kind="lib" path="libs/log4j-1.2.17.jar"/>
+	<classpathentry exported="true" kind="lib" path="libs/Opc.Ua.Stack-1.02.335.7.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/F:/devel/Prosys-OPC-UA-Java-SDK-Client-Server-Binary-2.0.2-275/Prosys-OPC-UA-Java-SDK-Client-Server-Binary-2.0.2-275/doc/Opc.Ua.Stack-1.02.335.7-javadoc.zip!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry exported="true" kind="lib" path="libs/Prosys-OPC-UA-Java-SDK-Client-Server-Binary-2.0.2-275.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/F:/devel/Prosys-OPC-UA-Java-SDK-Client-Server-Binary-2.0.2-275/Prosys-OPC-UA-Java-SDK-Client-Server-Binary-2.0.2-275/doc/Prosys-OPC-UA-Java-SDK-Client-Server-Binary-2.0.2-275-javadoc.zip!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry exported="true" kind="lib" path="libs/sc-light-jdk15on-1.47.0.2.jar"/>
+	<classpathentry exported="true" kind="lib" path="libs/scpkix-jdk15on-1.47.0.2.jar"/>
+	<classpathentry exported="true" kind="lib" path="libs/scprov-jdk15on-1.47.0.2.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.7"/>
+	<classpathentry kind="con" path="org.eclipse.pde.core.requiredPlugins"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

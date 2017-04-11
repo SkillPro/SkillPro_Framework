@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry exported="true" kind="lib" path="lib/jena/jena-core-2.10.0.jar"/>
+	<classpathentry kind="lib" path="lib/pellet/pellet-owlapiv3-2.3.2.jar"/>
+	<classpathentry kind="lib" path="lib/pellet/aterm-java-1.8.2-p1.jar"/>
+	<classpathentry kind="lib" path="lib/pellet/jjtraveler-0.6.jar"/>
+	<classpathentry kind="lib" path="lib/pellet-rules.jar"/>
+	<classpathentry kind="lib" path="lib/pellet/shared-objects-1.4.9-p1.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.7"/>
+	<classpathentry kind="con" path="org.eclipse.pde.core.requiredPlugins"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="lib/owlapi-distribution-3.4.4-bin.jar"/>
+	<classpathentry kind="lib" path="lib/pellet-core.jar"/>
+	<classpathentry kind="lib" path="lib/pellet-jena.jar"/>
+	<classpathentry kind="lib" path="lib/pellet/pellet-cli.jar"/>
+	<classpathentry kind="lib" path="lib/pellet/pellet-datatypes.jar"/>
+	<classpathentry kind="lib" path="lib/pellet/pellet-el.jar"/>
+	<classpathentry kind="lib" path="lib/pellet/pellet-explanation.jar"/>
+	<classpathentry kind="lib" path="lib/pellet/pellet-modularity.jar"/>
+	<classpathentry kind="lib" path="lib/pellet/pellet-pellint.jar"/>
+	<classpathentry kind="lib" path="lib/pellet/pellet-query.jar"/>
+	<classpathentry kind="lib" path="lib/pellet/pellet-test.jar"/>
+	<classpathentry kind="lib" path="lib/jgrapht/jgrapht-jdk1.5.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
